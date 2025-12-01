@@ -1,0 +1,17 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Calculateur Probabilité Roulette Casino | GigaBonus 2025",
+  description: "Calculateur de probabilités roulette gratuit. Analysez vos chances de gains sur tous les types de paris à la roulette.",
+  alternates: {
+    canonical: "https://gigabonus.fr/calculateur-roulette",
+  },
+};
+
+export default function CalculateurRouletteLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return children;
+}

@@ -1,0 +1,278 @@
+# GigaBonus - Documentation pour LLM
+
+## Vue d'ensemble du projet
+
+GigaBonus est un comparateur de bonus de casinos en ligne français, construit avec Next.js 14. Le site permet aux utilisateurs de comparer les meilleurs casinos en ligne, leurs bonus, conditions de wager, méthodes de paiement et fournisseurs de jeux.
+
+**URL de production**: https://gigabonus.fr
+**Framework**: Next.js 14.2.0 (App Router)
+**Langage**: TypeScript
+**Styling**: Tailwind CSS + shadcn/ui
+**Thème**: Dark/Light mode avec next-themes
+
+## Structure du projet
+
+### Architecture Next.js (App Router)
+
+```
+app/
+├── layout.tsx              # Layout principal avec ThemeProvider et loader
+├── page.tsx                 # Page d'accueil (comparateur principal)
+├── robots.ts                # Configuration robots.txt
+├── sitemap.ts               # Génération dynamique du sitemap
+├── not-found.tsx            # Page 404
+├── blog/                    # Pages blog et avis casinos
+│   ├── page.tsx            # Liste des articles
+│   └── avis-*-2025/        # Pages d'avis individuels
+├── depot/                   # Pages méthodes de dépôt
+│   ├── carte/
+│   ├── crypto/
+│   ├── neosurf/
+│   └── ...
+├── [casino-name]/           # Pages individuelles pour chaque casino
+└── [guide-name]/            # Pages guides (top-casinos-crypto, casinos-sans-kyc, etc.)
+
+src/
+├── components/              # Composants React réutilisables
+│   ├── CasinoCard.tsx      # Carte casino avec vidéo/background
+│   ├── CasinoTable.tsx     # Tableau comparatif
+│   ├── FilterBar.tsx       # Barre de filtres
+│   ├── Navbar.tsx          # Navigation principale
+│   ├── Footer.tsx          # Pied de page
+│   ├── SEOHead.tsx         # Gestion SEO dynamique
+│   └── ui/                 # Composants shadcn/ui
+├── data/
+│   ├── casinos.ts          # Base de données des casinos (45+ casinos)
+│   └── providers.ts        # Liste normalisée des fournisseurs de jeux
+```
+
+## Données principales
+
+### Structure Casino (src/data/casinos.ts)
+
+```typescript
+interface Casino {
+  id: number;
+  name: string;
+  bonusPercent: number;        // Pourcentage du bonus (ex: 100, 200, 300)
+  bonusText: string;           // Texte descriptif du bonus
+  playUrl: string;             // URL d'affiliation
+  wager: number | null;        // Conditions de wager (null = sans wager)
+  methods: string[];           // Méthodes de paiement normalisées
+  minDeposit: string;          // Dépôt minimum
+  video?: string;              // Vidéo de présentation (/videos/*.mp4)
+  backgroundImage?: string;   // Image de fond (/images/*B.webp)
+  logo: string;                // Logo (/images/*.webp)
+  isBookmaker?: boolean;       // Présence d'une section bookmaker
+  providers: string[];         // Fournisseurs de jeux normalisés
+  affiliationType: 'CPA' | 'RS'; // Type d'affiliation
+  rank: number;                // Classement (1 = meilleur)
+  score: number;               // Score calculé automatiquement
+  rating: number;              // Note sur 10
+}
+```
+
+### Calcul du score
+
+Le score est calculé automatiquement via `calculateScore()` :
+- Bonus (20%) : max 700% = 14 points
+- Wager (20%) : null = 20 points, sinon 20 - (wager/2)
+- Méthodes de paiement (8%) : max 8 méthodes = 8 points
+- Bookmaker (8%) : +8 si présent
+- Rating (16%) : note/10 * 16
+- Providers (8%) : max 80 providers = 8 points
+
+### Méthodes de paiement normalisées
+
+- CB (Carte bancaire)
+- crypto (Cryptomonnaies)
+- virement (Virement bancaire)
+- paypal
+- neosurf
+- paysafecard
+- skrill
+- neteller
+- cashlib
+- jetonbank
+- mifinity
+
+### Fournisseurs de jeux
+
+Liste complète dans `src/data/providers.ts` avec normalisation (ex: "Pragmatic Play" → "pragmatic", "NetEnt" → "netent").
+
+## Fonctionnalités principales
+
+### 1. Comparateur de casinos (page d'accueil)
+
+- Affichage en grille ou tableau
+- Filtres : recherche, wager, méthodes de paiement, bookmaker, providers
+- Tri par score, bonus, wager, rating
+- Cartes interactives avec vidéo/background
+- Tooltips sur mobile (tap to open/close)
+- Mode sombre/clair persistant
+
+### 2. Pages individuelles de casinos
+
+Chaque casino a sa propre page (`/casino-name/page.tsx`) avec :
+- Présentation détaillée
+- Informations bonus complètes
+- Liste des fournisseurs
+- Méthodes de paiement
+- Bouton CTA vers le casino
+- SEO optimisé
+
+### 3. Pages blog/avis
+
+Structure `/blog/avis-[casino]-2025/page.tsx` :
+- Avis détaillés des casinos
+- SEOHead pour métadonnées dynamiques
+- Breadcrumbs
+- Schema.org JSON-LD
+- Contenu riche optimisé SEO
+
+### 4. Guides et outils
+
+- `/top-casinos-crypto` : Top casinos crypto
+- `/casinos-sans-kyc` : Casinos sans vérification
+- `/bonus-cashback` : Guide cashback
+- `/bonus-sans-wager` : Bonus sans conditions
+- `/top-slots-2025` : Meilleures machines à sous
+- `/astuces-casino` : Astuces et conseils
+- `/meilleurs-bookmakers` : Comparateur bookmakers
+- `/calculateur-roulette` : Calculateur de probabilités
+- `/calculateur-cotes-sportives` : Calculateur de cotes (API The Odds API)
+
+### 5. Pages méthodes de dépôt
+
+Structure `/depot/[method]/page.tsx` pour chaque méthode :
+- Carte, crypto, neosurf, paysafecard, skrill, neteller, cashlib, jetonbank, mifinity, virement
+
+## SEO et métadonnées
+
+### SEOHead Component
+
+Composant réutilisable pour gérer le SEO dynamique :
+- Title, description, keywords
+- Canonical URLs
+- Open Graph
+- Twitter Cards
+- Schema.org JSON-LD
+- Gestion des balises meta multiples
+
+### Sitemap dynamique (app/sitemap.ts)
+
+Génération automatique avec priorités :
+- Routes principales : priority 1.0, daily
+- Guides : priority 0.9, weekly
+- Casinos : priority 0.85, weekly
+- Blog : priority 0.9, weekly
+- Dépôts : priority 0.75, monthly
+
+### Robots.txt (app/robots.ts)
+
+Configuration pour :
+- Googlebot, Bingbot
+- Disallow : /api/, /admin/, /_next/, /private/
+- Sitemap : https://gigabonus.fr/sitemap.xml
+
+## Thème et UI
+
+### ThemeProvider (next-themes)
+
+- Mode sombre/clair
+- Persistance via localStorage (key: "gigabonus-theme")
+- enableSystem: false (pas de détection système)
+- Support complet dans tous les composants
+
+### Composants UI
+
+- shadcn/ui pour tous les composants de base
+- Tailwind CSS pour le styling
+- Animations avec tailwindcss-animate
+- Responsive design mobile-first
+
+## Gestion des erreurs
+
+### Loader initial
+
+Script robuste dans `app/layout.tsx` pour :
+- Afficher le loader au chargement
+- Le masquer une fois la page chargée
+- Gestion d'erreurs avec try-catch
+- Flags pour éviter les exécutions multiples
+- Support refresh/reload
+
+### Hydration
+
+Composants décoratifs (Diamonds, PlayingCards, CasinoChips) :
+- Utilisation de `mounted` state avec useEffect
+- Génération de valeurs aléatoires uniquement côté client
+- Évite les erreurs d'hydratation SSR/CSR
+
+## Casinos actuellement en base
+
+45+ casinos avec classement TOP :
+1. AmonBet (rank: 1)
+2. SlotLair (rank: 2)
+3. Aphrodite (rank: 3)
+4. MadCasino (rank: 4)
+5. SlotMonkey (rank: 5)
+6. LuckyWave (rank: 6)
+7. WildDice (rank: 7)
+... et 38+ autres casinos
+
+## Points techniques importants
+
+### Variables d'environnement
+
+- `NEXT_PUBLIC_THE_ODDS_API_KEY` : Clé API pour calculateur de cotes sportives
+- Format Next.js : `process.env.NEXT_PUBLIC_*` (pas `import.meta.env`)
+
+### Routing
+
+- Next.js App Router uniquement
+- Pas de React Router (migration complète effectuée)
+- Dynamic routes pour casinos et guides
+- Layouts hiérarchiques
+
+### Images et médias
+
+- Format WebP pour les images
+- MP4 pour les vidéos de présentation
+- Structure : `/public/images/` et `/public/videos/`
+- Next.js Image component pour optimisation
+
+### Performance
+
+- Lazy loading des composants below-the-fold
+- Code splitting automatique Next.js
+- Optimisation des images
+- SSR pour SEO
+
+## Commandes de développement
+
+```bash
+npm run dev      # Développement local
+npm run build    # Build de production
+npm run start    # Serveur de production
+npm run lint     # Linting ESLint
+```
+
+## Notes importantes
+
+1. **Pas de multilangue** : Focus uniquement sur le français (FR) pour le SEO
+2. **Wager null = sans wager** : Valeur spéciale pour les bonus sans conditions
+3. **Normalisation des données** : Tous les providers et méthodes sont normalisés en lowercase
+4. **SEO-first** : Chaque page a son propre SEOHead avec métadonnées complètes
+5. **Mobile-first** : Tous les composants sont optimisés pour mobile et desktop
+
+## Fichiers supprimés (nettoyage)
+
+- Anciens fichiers Vite/React Router
+- Scripts de migration
+- Documentation de migration
+- Dossier `src/pages/` (ancien système)
+- Dossier `scripts/` (vide)
+
+Le projet est maintenant 100% Next.js App Router.
+

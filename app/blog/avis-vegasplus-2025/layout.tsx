@@ -1,0 +1,7 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Avis VegasPlus Casino 2025 Jackpots | GigaBonus",
+  description: "Avis détaillé VegasPlus Casino 2025. Jackpots progressifs et programme VIP.",
+  alternates: { canonical: "https://gigabonus.fr/blog/avis-vegasplus-2025" },
+};
+export default function Layout({ children }: { children: React.ReactNode }) { return children; }
