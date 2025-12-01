@@ -88,7 +88,7 @@ export default function VegasPlusPage() {
           "@type": "Product",
           "name": "Vegas Plus Casino - Bonus 125% jusqu'à 2250€ + 100 FS",
           "description": "Bonus Vegas progressif 125% jusqu'à 2250€ + 100 Free Spins sur Vegas Plus Casino - VIP quotidien jusqu'à 750€ - Cashback 100€ sans wager - Retraits 24-48h",
-          "image": "https://gigabonus.fr/images/vegasplus.webp",
+          "image": "https://gigabonus.win/images/vegasplus.webp",
           "brand": {
             "@type": "Brand",
             "name": "Vegas Plus Casino"
@@ -128,7 +128,7 @@ export default function VegasPlusPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -154,10 +154,10 @@ export default function VegasPlusPage() {
         title="Avis Vegas Plus Casino 2025 : Bonus 125% jusqu'à 2250€ + 100 FS | Notre Test Complet"
         description="Notre avis complet sur Vegas Plus Casino 2025 : bonus 125% jusqu'à 2250€ + 100 FS, VIP quotidien 750€, cashback 100€, retraits 24-48h. Test détaillé !"
         keywords="vegas plus casino, avis vegas plus, bonus vegas plus, vegas plus casino avis, bonus 125%, vip quotidien, cashback vegas"
-        canonical="https://gigabonus.fr/vegasplus"
+        canonical="https://gigabonus.win/vegasplus"
         ogTitle="Avis Vegas Plus Casino 2025 : Bonus 125% jusqu'à 2250€ + 100 FS"
         ogDescription="Notre avis complet sur Vegas Plus Casino : bonus Vegas progressif, programme VIP exceptionnel, cashback quotidien."
-        ogImage="https://gigabonus.fr/images/vegasplus.webp"
+        ogImage="https://gigabonus.win/images/vegasplus.webp"
         twitterTitle="Avis Vegas Plus Casino 2025 : Bonus 125% jusqu'à 2250€ + 100 FS"
         twitterDescription="Notre avis complet sur Vegas Plus Casino : bonus Vegas progressif, programme VIP exceptionnel."
         schema={schemaData}

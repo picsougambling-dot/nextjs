@@ -130,7 +130,7 @@ export default function I24SlotsPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "i24Slots Casino",
-          "image": "https://gigabonus.fr/images/i24slots.webp"
+          "image": "https://gigabonus.win/images/i24slots.webp"
         },
         "author": {
           "@type": "Person",
@@ -165,7 +165,7 @@ export default function I24SlotsPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -199,10 +199,10 @@ export default function I24SlotsPage() {
         title="i24Slots Casino : Avis 2025, Bonus 400% jusqu'à 15000€ + 500 FS | GigaBonus"
         description="Avis i24Slots Casino 2025 : pack bonus record 15000€ + 500 FS, bonus progressif jusqu'à 400%, programme VIP exceptionnel. Test complet!"
         keywords="i24slots casino, avis i24slots, bonus i24slots, i24slots casino avis, bonus 400%, bonus 15000 euros, pack bonus record"
-        canonical="https://gigabonus.fr/i24slots"
+        canonical="https://gigabonus.win/i24slots"
         ogTitle="i24Slots Casino : Avis 2025, Bonus 400% jusqu'à 15000€ + 500 FS"
         ogDescription="Avis i24Slots Casino 2025 : pack bonus record 15000€ + 500 FS, bonus progressif jusqu'à 400%."
-        ogImage="https://gigabonus.fr/images/i24slots.webp"
+        ogImage="https://gigabonus.win/images/i24slots.webp"
         twitterTitle="i24Slots Casino : Avis 2025, Bonus 400% jusqu'à 15000€ + 500 FS"
         twitterDescription="Avis i24Slots Casino 2025 : pack bonus record 15000€ + 500 FS."
         schema={schemaData}

@@ -206,10 +206,10 @@ export default function CalculateurCotesSportivesPage() {
         title="Comparateur de Cotes Sportives : Comparez et Calculez vos Gains | GigaBonus"
         description="Comparez les cotes en temps réel et calculez vos gains potentiels avec notre outil gratuit. Trouvez les meilleures cotes pour vos paris sportifs."
         keywords="comparateur cotes sportives, cotes paris sportifs, calculateur gains paris, meilleures cotes, comparateur bookmakers, odds comparateur"
-        canonical="https://gigabonus.fr/calculateur-cotes-sportives"
+        canonical="https://gigabonus.win/calculateur-cotes-sportives"
         ogTitle="Comparateur de Cotes Sportives : Comparez et Calculez vos Gains"
         ogDescription="Comparez les cotes en temps réel et calculez vos gains potentiels avec notre outil gratuit."
-        ogImage="https://gigabonus.fr/og-image.png"
+        ogImage="https://gigabonus.win/og-image.png"
         twitterTitle="Comparateur de Cotes Sportives : Comparez et Calculez vos Gains"
         twitterDescription="Comparez les cotes en temps réel et calculez vos gains potentiels avec notre outil gratuit."
         schema={schemaData}

@@ -88,7 +88,7 @@ export default function DepotPage() {
         title="Méthodes de Dépôt Casino 2025 | Guide Complet"
         description="Découvrez toutes les méthodes de dépôt disponibles dans les casinos en ligne : carte bancaire, crypto, e-wallets, cartes prépayées. Guide complet avec avantages et délais."
         keywords="méthodes dépôt casino, carte bancaire casino, crypto casino, skrill casino, neteller casino, paysafecard casino"
-        canonical="https://gigabonus.fr/depot"
+        canonical="https://gigabonus.win/depot"
       />
       <Navbar />
       <div className="min-h-screen bg-gradient-to-b from-background to-muted/20">

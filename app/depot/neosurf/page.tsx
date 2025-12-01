@@ -61,7 +61,7 @@ export default function DepotNeosurfPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Neosurf 2025 : Dépôt par Code Prépayé | GigaBonus",
       "description": "Guide complet des casinos acceptant Neosurf. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !",
-      "image": "https://gigabonus.fr/images/methods/neosurf.webp",
+      "image": "https://gigabonus.win/images/methods/neosurf.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.111Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotNeosurfPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotNeosurfPage() {
         title="Casinos Acceptant Neosurf 2025 : Dépôt par Code Prépayé | GigaBonus"
         description="Guide complet des casinos acceptant Neosurf. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !"
         keywords="casino neosurf, dépôt neosurf, code neosurf casino, casino prépayé neosurf, neosurf 2025"
-        canonical="https://gigabonus.fr/depot/neosurf"
+        canonical="https://gigabonus.win/depot/neosurf"
         ogTitle="Casinos Acceptant Neosurf 2025 : Dépôt par Code Prépayé | GigaBonus"
         ogDescription="Guide complet des casinos acceptant Neosurf. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !"
-        ogImage="https://gigabonus.fr/images/methods/neosurf.webp"
+        ogImage="https://gigabonus.win/images/methods/neosurf.webp"
         twitterTitle="Casinos Acceptant Neosurf 2025 : Dépôt par Code Prépayé | GigaBonus"
         twitterDescription="Guide complet des casinos acceptant Neosurf. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !"
         schema={schemaData}

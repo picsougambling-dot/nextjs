@@ -1,27 +1,44 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 import { Providers } from "@/components/Providers";
 import DecorativeShapes from "@/components/DecorativeShapes";
 import ScrollToTop from "@/components/ScrollToTop";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "GigaBonus",
-    template: "%s",
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.name}`,
   },
-  description: "Comparateur N°1 des bonus de casino en ligne 2025 ⭐ Bonus jusqu'à 700% + 725 Free Spins ✓ Avis d'experts ✓ Casinos fiables et sécurisés ✓ Retraits rapides",
-  keywords: ["comparateur bonus casino", "meilleurs bonus casino 2025", "bonus casino en ligne", "casino fiable", "bonus 400%", "bonus sans wager", "casino crypto", "cashback casino", "free spins", "wager casino", "depot casino"],
-  authors: [{ name: "GigaBonus" }],
-  creator: "GigaBonus",
-  publisher: "GigaBonus",
-  metadataBase: new URL("https://gigabonus.fr"),
+  description: siteConfig.description,
+  alternates: {
+    canonical: "/",
+  },
+  keywords: [
+    "comparateur bonus casino",
+    "meilleurs bonus casino 2025",
+    "bonus casino en ligne",
+    "casino fiable",
+    "bonus 400%",
+    "bonus sans wager",
+    "casino crypto",
+    "cashback casino",
+    "free spins",
+    "wager casino",
+    "depot casino",
+  ],
+  authors: [{ name: siteConfig.name }],
+  creator: siteConfig.name,
+  publisher: siteConfig.name,
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://gigabonus.fr",
-    siteName: "GigaBonus",
-    title: "GigaBonus | Meilleurs Casinos en Ligne 2025 avec Bonus Exclusifs",
-    description: "Comparateur des meilleurs casinos en ligne 2025 avec bonus exclusifs jusqu'à 300%. Revues détaillées, casinos crypto, retraits rapides.",
+    url: siteConfig.url,
+    siteName: siteConfig.name,
+    title: `${siteConfig.name} | Meilleurs Casinos en Ligne 2025 avec Bonus Exclusifs`,
+    description:
+      "Comparateur des meilleurs casinos en ligne 2025 avec bonus exclusifs jusqu'à 300%. Revues détaillées, casinos crypto, retraits rapides.",
     images: [
       {
         url: "/og-image.png",
@@ -33,8 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "GigaBonus | Meilleurs Casinos en Ligne 2025 avec Bonus Exclusifs",
-    description: "Comparateur des meilleurs casinos en ligne 2025 avec bonus exclusifs jusqu'à 300%. Revues détaillées, casinos crypto, retraits rapides.",
+    title: `${siteConfig.name} | Meilleurs Casinos en Ligne 2025 avec Bonus Exclusifs`,
+    description:
+      "Comparateur des meilleurs casinos en ligne 2025 avec bonus exclusifs jusqu'à 300%. Revues détaillées, casinos crypto, retraits rapides.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -104,22 +122,22 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              "name": "GigaBonus",
-              "url": "https://gigabonus.fr",
+              "name": siteConfig.name,
+              "url": siteConfig.url,
               "description": "Comparateur des meilleurs bonus de casino en ligne 2025",
               "publisher": {
                 "@type": "Organization",
-                "name": "GigaBonus",
+                "name": siteConfig.name,
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://gigabonus.fr/pwa-512x512.png",
+                  "url": `${siteConfig.url}/pwa-512x512.png`,
                 },
               },
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": {
                   "@type": "EntryPoint",
-                  "urlTemplate": "https://gigabonus.fr/?search={search_term_string}",
+                  "urlTemplate": `${siteConfig.url}/?search={search_term_string}`,
                 },
                 "query-input": "required name=search_term_string",
               },
@@ -134,9 +152,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "GigaBonus",
-              "url": "https://gigabonus.fr",
-              "logo": "https://gigabonus.fr/pwa-512x512.png",
+              "name": siteConfig.name,
+              "url": siteConfig.url,
+              "logo": `${siteConfig.url}/pwa-512x512.png`,
               "description": "Comparateur des meilleurs bonus de casino en ligne avec avis d'experts",
               "contactPoint": {
                 "@type": "ContactPoint",

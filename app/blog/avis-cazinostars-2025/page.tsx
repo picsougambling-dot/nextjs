@@ -24,7 +24,7 @@ export default function AvisCazinoStarsPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Cazino Stars 2025",
-        "image": "https://gigabonus.fr/images/cazinostars.webp"
+        "image": "https://gigabonus.win/images/cazinostars.webp"
       },
       "author": {
         "@type": "Person",
@@ -48,7 +48,7 @@ export default function AvisCazinoStarsPage() {
       "@type": "Article",
       "headline": "🎰 Avis Cazino Stars 2025 : Test Complet + Bonus 200% jusqu'à 1500€ | GigaBonus",
       "description": "⭐ Avis complet Cazino Stars 2025 : bonus 200% jusqu'à 1500€ + 100 FS, roue de la fortune, interface moderne. Test détaillé par nos experts casino.",
-      "image": "https://gigabonus.fr/images/cazinostars.webp",
+      "image": "https://gigabonus.win/images/cazinostars.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.324Z",
       "author": {
@@ -60,7 +60,7 @@ export default function AvisCazinoStarsPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -73,10 +73,10 @@ export default function AvisCazinoStarsPage() {
         title="🎰 Avis Cazino Stars 2025 : Test Complet + Bonus 200% jusqu'à 1500€ | GigaBonus"
         description="⭐ Avis complet Cazino Stars 2025 : bonus 200% jusqu'à 1500€ + 100 FS, roue de la fortune, interface moderne. Test détaillé par nos experts casino."
         keywords="avis cazino stars, cazino stars casino, bonus cazino stars, cazino stars 2025, test cazino stars, cazino stars fiable"
-        canonical="https://gigabonus.fr/blog/avis-cazinostars-2025"
+        canonical="https://gigabonus.win/blog/avis-cazinostars-2025"
         ogTitle="🎰 Avis Cazino Stars 2025 : Test Complet + Bonus 200%"
         ogDescription="⭐ Notre test détaillé de Cazino Stars : bonus 200%, roue quotidienne, design moderne. Avis d'experts."
-        ogImage="https://gigabonus.fr/images/cazinostars.webp"
+        ogImage="https://gigabonus.win/images/cazinostars.webp"
         twitterTitle="🎰 Avis Cazino Stars 2025 : Test Complet + Bonus 200%"
         twitterDescription="⭐ Notre test détaillé de Cazino Stars : bonus 200%, roue quotidienne, design moderne. Avis d'experts."
         schema={schemaData}

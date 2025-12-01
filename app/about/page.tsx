@@ -17,8 +17,8 @@ export default function AboutPage() {
     "mainEntity": {
       "@type": "Organization",
       "name": "GigaBonus",
-      "url": "https://gigabonus.fr",
-      "logo": "https://gigabonus.fr/gigabonus-logo.webp",
+      "url": "https://gigabonus.win",
+      "logo": "https://gigabonus.win/gigabonus-logo.webp",
       "foundingDate": "2019",
       "description": "Comparateur expert des meilleurs bonus de casinos en ligne en France. Tests indépendants et avis transparents depuis 2019.",
       "address": {
@@ -41,10 +41,10 @@ export default function AboutPage() {
         title="À Propos de GigaBonus | Équipe d'Experts Casino 2025"
         description="Découvrez l'équipe GigaBonus : experts casino depuis 2019, +500 casinos testés, méthodologie transparente. Notre mission : vous guider vers les meilleurs bonus."
         keywords="gigabonus équipe, experts casino en ligne, avis casino fiables, test casino indépendant, méthodologie test casino, équipe GigaBonus"
-        canonical="https://gigabonus.fr/about"
+        canonical="https://gigabonus.win/about"
         ogTitle="À Propos de GigaBonus | Équipe d'Experts Casino 2025"
         ogDescription="Équipe d'experts casino depuis 2019. +500 casinos testés avec méthodologie transparente."
-        ogImage="https://gigabonus.fr/gigabonus-logo.webp"
+        ogImage="https://gigabonus.win/gigabonus-logo.webp"
         twitterTitle="À Propos de GigaBonus | Équipe d'Experts Casino 2025"
         twitterDescription="Équipe d'experts casino depuis 2019. +500 casinos testés."
         schema={schemaData}

@@ -27,7 +27,7 @@ export default function AvisMegawinPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Megawin 2025",
-        "image": "https://gigabonus.fr/images/megawin.webp"
+        "image": "https://gigabonus.win/images/megawin.webp"
       },
       "author": {
         "@type": "Person",
@@ -51,7 +51,7 @@ export default function AvisMegawinPage() {
       "@type": "Article",
       "headline": "🚀 Avis Megawin 2025 : Test Complet + Bonus 300% jusqu'à 8000€ | GigaBonus",
       "description": "⭐ Avis complet Megawin 2025 : bonus 300% jusqu'à 8000€, retraits crypto instantanés, 6000+ jeux, tournois 50 000€. Test détaillé par nos experts casino.",
-      "image": "https://gigabonus.fr/images/megawin.webp",
+      "image": "https://gigabonus.win/images/megawin.webp",
       "datePublished": "2025-10-05T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.351Z",
       "author": {
@@ -63,7 +63,7 @@ export default function AvisMegawinPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -76,10 +76,10 @@ export default function AvisMegawinPage() {
         title="🚀 Avis Megawin 2025 : Test Complet + Bonus 300% jusqu'à 8000€ | GigaBonus"
         description="⭐ Avis complet Megawin 2025 : bonus 300% jusqu'à 8000€, retraits crypto instantanés, 6000+ jeux, tournois 50 000€. Test détaillé par nos experts casino."
         keywords="avis megawin, megawin casino, bonus megawin 300%, megawin crypto, megawin 2025, test megawin, megawin fiable, retraits instantanés, casino crypto megawin"
-        canonical="https://gigabonus.fr/blog/avis-megawin-2025"
+        canonical="https://gigabonus.win/blog/avis-megawin-2025"
         ogTitle="🚀 Avis Megawin 2025 : Test Complet + Bonus 300% jusqu'à 8000€"
         ogDescription="⭐ Notre test détaillé de Megawin : bonus 300%, retraits crypto instantanés, 6000+ jeux. Avis d'experts avec avantages et inconvénients."
-        ogImage="https://gigabonus.fr/images/megawin.webp"
+        ogImage="https://gigabonus.win/images/megawin.webp"
         twitterTitle="🚀 Avis Megawin 2025 : Test Complet + Bonus 300% jusqu'à 8000€"
         twitterDescription="⭐ Notre test détaillé de Megawin : bonus 300%, retraits crypto instantanés, 6000+ jeux. Avis d'experts avec avantages et inconvénients."
         schema={schemaData}

@@ -61,7 +61,7 @@ export default function DepotPaysafecardPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Paysafecard 2025 : Dépôt Prépayé Sécurisé | GigaBonus",
       "description": "Guide des casinos acceptant Paysafecard. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !",
-      "image": "https://gigabonus.fr/images/methods/paysafecard.webp",
+      "image": "https://gigabonus.win/images/methods/paysafecard.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.114Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotPaysafecardPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotPaysafecardPage() {
         title="Casinos Acceptant Paysafecard 2025 : Dépôt Prépayé Sécurisé | GigaBonus"
         description="Guide des casinos acceptant Paysafecard. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !"
         keywords="casino paysafecard, dépôt paysafecard, code paysafecard casino, casino prépayé paysafecard, paysafecard 2025"
-        canonical="https://gigabonus.fr/depot/paysafecard"
+        canonical="https://gigabonus.win/depot/paysafecard"
         ogTitle="Casinos Acceptant Paysafecard 2025 : Dépôt Prépayé Sécurisé | GigaBonus"
         ogDescription="Guide des casinos acceptant Paysafecard. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !"
-        ogImage="https://gigabonus.fr/images/methods/paysafecard.webp"
+        ogImage="https://gigabonus.win/images/methods/paysafecard.webp"
         twitterTitle="Casinos Acceptant Paysafecard 2025 : Dépôt Prépayé Sécurisé | GigaBonus"
         twitterDescription="Guide des casinos acceptant Paysafecard. Dépôts sécurisés avec codes prépayés, bonus exclusifs et retraits rapides !"
         schema={schemaData}

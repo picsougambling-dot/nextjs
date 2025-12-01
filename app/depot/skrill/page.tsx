@@ -61,7 +61,7 @@ export default function DepotSkrillPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Skrill 2025 : E-Wallet Rapide et Sécurisé | GigaBonus",
       "description": "Découvrez les casinos acceptant Skrill. Dépôts et retraits ultra-rapides avec e-wallet, bonus exclusifs !",
-      "image": "https://gigabonus.fr/images/methods/skrill.webp",
+      "image": "https://gigabonus.win/images/methods/skrill.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.115Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotSkrillPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotSkrillPage() {
         title="Casinos Acceptant Skrill 2025 : E-Wallet Rapide et Sécurisé | GigaBonus"
         description="Découvrez les casinos acceptant Skrill. Dépôts et retraits ultra-rapides avec e-wallet, bonus exclusifs !"
         keywords="casino skrill, dépôt skrill, e-wallet skrill casino, skrill casino 2025, paiement skrill"
-        canonical="https://gigabonus.fr/depot/skrill"
+        canonical="https://gigabonus.win/depot/skrill"
         ogTitle="Casinos Acceptant Skrill 2025 : E-Wallet Rapide et Sécurisé | GigaBonus"
         ogDescription="Découvrez les casinos acceptant Skrill. Dépôts et retraits ultra-rapides avec e-wallet, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/images/methods/skrill.webp"
+        ogImage="https://gigabonus.win/images/methods/skrill.webp"
         twitterTitle="Casinos Acceptant Skrill 2025 : E-Wallet Rapide et Sécurisé | GigaBonus"
         twitterDescription="Découvrez les casinos acceptant Skrill. Dépôts et retraits ultra-rapides avec e-wallet, bonus exclusifs !"
         schema={schemaData}

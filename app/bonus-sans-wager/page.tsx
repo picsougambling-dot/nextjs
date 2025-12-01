@@ -61,10 +61,10 @@ export default function BonusSansWagerPage() {
         title="Bonus Sans Wager 2025 : Casinos Sans Conditions de Mise | GigaBonus"
         description="Découvrez les meilleurs bonus sans wager 2025 : retraits immédiats, aucune condition de mise. Comparatif complet des casinos proposant des bonus 0x wager en France."
         keywords="bonus sans wager, casino sans condition de mise, bonus 0x wager, casino sans wager france, bonus sans exigence de mise, retrait immédiat casino"
-        canonical="https://gigabonus.fr/bonus-sans-wager"
+        canonical="https://gigabonus.win/bonus-sans-wager"
         ogTitle="Bonus Sans Wager 2025 : Casinos Sans Conditions de Mise"
         ogDescription="Découvrez les meilleurs bonus sans wager 2025 : retraits immédiats, aucune condition de mise. Comparatif complet."
-        ogImage="https://gigabonus.fr/og-image.png"
+        ogImage="https://gigabonus.win/og-image.png"
         twitterTitle="Bonus Sans Wager 2025 : Casinos Sans Conditions de Mise"
         twitterDescription="Découvrez les meilleurs bonus sans wager 2025 : retraits immédiats, aucune condition de mise."
         schema={{
@@ -109,7 +109,7 @@ export default function BonusSansWagerPage() {
                 "name": "GigaBonus",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://gigabonus.fr/gigabonus-logo.webp"
+                  "url": "https://gigabonus.win/gigabonus-logo.webp"
                 }
               },
               "description": "Découvrez les meilleurs bonus sans wager 2025 : retraits immédiats, aucune condition de mise. Comparatif complet des casinos proposant des bonus 0x wager en France."

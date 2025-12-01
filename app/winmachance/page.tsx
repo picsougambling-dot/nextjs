@@ -102,7 +102,7 @@ export default function MaChancePage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Ma Chance Casino",
-          "image": "https://gigabonus.fr/images/machance.webp"
+          "image": "https://gigabonus.win/images/machance.webp"
         },
         "author": {
           "@type": "Person",
@@ -137,7 +137,7 @@ export default function MaChancePage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -163,10 +163,10 @@ export default function MaChancePage() {
         title="Ma Chance Casino : Avis 2025, Bonus 150% jusqu'à 2500€ + 100 FS | GigaBonus"
         description="Avis Ma Chance Casino 2025 : triple bonus jusqu'à 2500€ + 100 FS, wager x30 favorable, ludothèque variée. Test complet!"
         keywords="ma chance casino, avis ma chance, bonus ma chance, ma chance casino avis, bonus 150%, wager x30, casino ma chance"
-        canonical="https://gigabonus.fr/winmachance"
+        canonical="https://gigabonus.win/winmachance"
         ogTitle="Ma Chance Casino : Avis 2025, Bonus 150% jusqu'à 2500€ + 100 FS"
         ogDescription="Avis Ma Chance Casino 2025 : triple bonus jusqu'à 2500€ + 100 FS, wager x30 favorable."
-        ogImage="https://gigabonus.fr/images/machance.webp"
+        ogImage="https://gigabonus.win/images/machance.webp"
         twitterTitle="Ma Chance Casino : Avis 2025, Bonus 150% jusqu'à 2500€ + 100 FS"
         twitterDescription="Avis Ma Chance Casino 2025 : triple bonus jusqu'à 2500€ + 100 FS."
         schema={schemaData}

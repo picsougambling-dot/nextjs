@@ -86,7 +86,7 @@ export default function MeilleursBookmakersPage() {
       "@type": "Article",
       "headline": "Meilleurs Bookmakers 2025 : Top Sites de Paris Sportifs | GigaBonus",
       "description": "Comparateur des meilleurs bookmakers 2025 : cotes compétitives, bonus exclusifs, paris sportifs et casino. Guide complet !",
-      "image": "https://gigabonus.fr/gigabonus-logo.webp",
+      "image": "https://gigabonus.win/gigabonus-logo.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.128Z",
       "author": {
@@ -98,7 +98,7 @@ export default function MeilleursBookmakersPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -111,10 +111,10 @@ export default function MeilleursBookmakersPage() {
         title="Meilleurs Bookmakers 2025 : Top Sites de Paris Sportifs | GigaBonus"
         description="Comparateur des meilleurs bookmakers 2025 : cotes compétitives, bonus exclusifs, paris sportifs et casino. Guide complet !"
         keywords="meilleurs bookmakers, meilleur bookmaker, sites paris sportifs, bookmaker 2025, comparateur bookmaker"
-        canonical="https://gigabonus.fr/meilleurs-bookmakers"
+        canonical="https://gigabonus.win/meilleurs-bookmakers"
         ogTitle="Meilleurs Bookmakers 2025 : Top Sites de Paris Sportifs | GigaBonus"
         ogDescription="Comparateur des meilleurs bookmakers 2025 : cotes compétitives, bonus exclusifs, paris sportifs et casino. Guide complet !"
-        ogImage="https://gigabonus.fr/gigabonus-logo.webp"
+        ogImage="https://gigabonus.win/gigabonus-logo.webp"
         twitterTitle="Meilleurs Bookmakers 2025 : Top Sites de Paris Sportifs | GigaBonus"
         twitterDescription="Comparateur des meilleurs bookmakers 2025 : cotes compétitives, bonus exclusifs, paris sportifs et casino. Guide complet !"
         schema={schemaData}

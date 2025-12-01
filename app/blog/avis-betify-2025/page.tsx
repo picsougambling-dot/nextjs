@@ -27,7 +27,7 @@ export default function AvisBetifyPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Betify 2025",
-        "image": "https://gigabonus.fr/images/betify.webp"
+        "image": "https://gigabonus.win/images/betify.webp"
       },
       "author": {
         "@type": "Person",
@@ -51,7 +51,7 @@ export default function AvisBetifyPage() {
       "@type": "Article",
       "headline": "🎰 Avis Betify 2025 : Bonus 100% + Wager x35 Casino + Sport | GigaBonus",
       "description": "⭐ Avis complet Betify 2025 : bonus 100% wager x35, casino + sport, weekend boost. Plateforme complète et généreuse ! Test par nos experts.",
-      "image": "https://gigabonus.fr/images/betify.webp",
+      "image": "https://gigabonus.win/images/betify.webp",
       "datePublished": "2025-10-20T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.299Z",
       "author": {
@@ -63,7 +63,7 @@ export default function AvisBetifyPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -76,10 +76,10 @@ export default function AvisBetifyPage() {
         title="🎰 Avis Betify 2025 : Bonus 100% + Wager x35 Casino + Sport | GigaBonus"
         description="⭐ Avis complet Betify 2025 : bonus 100% wager x35, casino + sport, weekend boost. Plateforme complète et généreuse ! Test par nos experts."
         keywords="avis betify, betify casino, bonus betify, betify 2025, betify sport, betify fiable, wager x35"
-        canonical="https://gigabonus.fr/blog/avis-betify-2025"
+        canonical="https://gigabonus.win/blog/avis-betify-2025"
         ogTitle="🎰 Avis Betify 2025 : Bonus 100% + Wager x35"
         ogDescription="⭐ Test complet Betify : bonus 100%, wager x35 compétitif, casino + sport. Plateforme polyvalente ! Avis d'experts."
-        ogImage="https://gigabonus.fr/images/betify.webp"
+        ogImage="https://gigabonus.win/images/betify.webp"
         twitterTitle="🎰 Avis Betify 2025 : Bonus 100% + Wager x35"
         twitterDescription="⭐ Test complet Betify : bonus 100%, wager x35 compétitif, casino + sport. Plateforme polyvalente ! Avis d'experts."
         schema={schemaData}

@@ -61,7 +61,7 @@ export default function DepotCryptoPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Crypto 2025 : Bitcoin, Ethereum | GigaBonus",
       "description": "Découvrez les casinos crypto acceptant Bitcoin, Ethereum, USDT. Transactions rapides, anonymes et sécurisées !",
-      "image": "https://gigabonus.fr/images/methods/crypto.webp",
+      "image": "https://gigabonus.win/images/methods/crypto.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.110Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotCryptoPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotCryptoPage() {
         title="Casinos Acceptant Crypto 2025 : Bitcoin, Ethereum | GigaBonus"
         description="Découvrez les casinos crypto acceptant Bitcoin, Ethereum, USDT. Transactions rapides, anonymes et sécurisées !"
         keywords="casino bitcoin, casino crypto, casino ethereum, casino USDT, dépôt crypto casino, casino cryptomonnaie 2025"
-        canonical="https://gigabonus.fr/depot/crypto"
+        canonical="https://gigabonus.win/depot/crypto"
         ogTitle="Casinos Acceptant Crypto 2025 : Bitcoin, Ethereum | GigaBonus"
         ogDescription="Découvrez les casinos crypto acceptant Bitcoin, Ethereum, USDT. Transactions rapides, anonymes et sécurisées !"
-        ogImage="https://gigabonus.fr/images/methods/crypto.webp"
+        ogImage="https://gigabonus.win/images/methods/crypto.webp"
         twitterTitle="Casinos Acceptant Crypto 2025 : Bitcoin, Ethereum | GigaBonus"
         twitterDescription="Découvrez les casinos crypto acceptant Bitcoin, Ethereum, USDT. Transactions rapides, anonymes et sécurisées !"
         schema={schemaData}

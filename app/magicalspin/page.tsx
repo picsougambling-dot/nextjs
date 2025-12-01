@@ -140,7 +140,7 @@ export default function MagicalSpinPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Magical Spin Casino",
-          "image": "https://gigabonus.fr/images/magicalspin.webp"
+          "image": "https://gigabonus.win/images/magicalspin.webp"
         },
         "author": {
           "@type": "Person",
@@ -175,7 +175,7 @@ export default function MagicalSpinPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -201,10 +201,10 @@ export default function MagicalSpinPage() {
         title="Magical Spin Casino : Avis 2025, Bonus 150% jusqu'à 500€ + 100 FS | GigaBonus"
         description="Avis Magical Spin Casino 2025 : bonus 150% jusqu'à 500€ + 100 FS, promotions quotidiennes variées, wager x40. Test complet!"
         keywords="magical spin casino, avis magical spin, bonus magical spin, magical spin casino avis, bonus 150%, promotions quotidiennes"
-        canonical="https://gigabonus.fr/magicalspin"
+        canonical="https://gigabonus.win/magicalspin"
         ogTitle="Magical Spin Casino : Avis 2025, Bonus 150% jusqu'à 500€ + 100 FS"
         ogDescription="Avis Magical Spin Casino 2025 : bonus 150% jusqu'à 500€ + 100 FS, promotions quotidiennes variées."
-        ogImage="https://gigabonus.fr/images/magicalspin.webp"
+        ogImage="https://gigabonus.win/images/magicalspin.webp"
         twitterTitle="Magical Spin Casino : Avis 2025, Bonus 150% jusqu'à 500€ + 100 FS"
         twitterDescription="Avis Magical Spin Casino 2025 : bonus 150% jusqu'à 500€ + 100 FS, promotions quotidiennes."
         schema={schemaData}

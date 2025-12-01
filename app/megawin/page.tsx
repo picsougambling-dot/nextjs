@@ -53,10 +53,10 @@ export default function MegawinPage() {
         title="Megawin Casino : Avis 2025, Bonus 300% jusqu'à 3000€ + 100 FS Sans Wager | GigaBonus"
         description="Avis Megawin Casino 2025 : bonus 300% jusqu'à 3000€ + 100 FS sans wager, retraits crypto instantanés, solde Cash retirable. Test complet !"
         keywords="megawin casino, avis megawin, bonus megawin, megawin 300%, megawin sans wager, casino megawin 2025, megawin bonus"
-        canonical="https://gigabonus.fr/megawin"
+        canonical="https://gigabonus.win/megawin"
         ogTitle="Megawin Casino : Avis 2025, Bonus 300% jusqu'à 3000€ + 100 FS Sans Wager"
         ogDescription="Avis Megawin Casino : bonus 300% sans wager, retraits crypto instantanés, solde Cash retirable à tout moment."
-        ogImage="https://gigabonus.fr/images/megawin.webp"
+        ogImage="https://gigabonus.win/images/megawin.webp"
         twitterTitle="Megawin Casino : Avis 2025, Bonus 300% jusqu'à 3000€ + 100 FS Sans Wager"
         twitterDescription="Avis Megawin Casino : bonus 300% sans wager, retraits crypto instantanés, solde Cash retirable à tout moment."
         schema={{
@@ -67,7 +67,7 @@ export default function MegawinPage() {
               "itemReviewed": {
                 "@type": "Product",
                 "name": "Megawin Casino : Avis 2025, Bonus 300% jusqu'à 3000€ + 100 FS Sans Wager",
-                "image": "https://gigabonus.fr/images/megawin.webp"
+                "image": "https://gigabonus.win/images/megawin.webp"
               },
               "author": {
                 "@type": "Person",

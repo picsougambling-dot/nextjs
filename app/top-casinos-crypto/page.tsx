@@ -61,7 +61,7 @@ export default function TopCasinosCryptoPage() {
         "@type": "Article",
         "headline": "Top Casinos Crypto 2025 : Bitcoin, Ethereum & Cryptomonnaies",
         "description": "Découvrez le top des casinos crypto acceptant Bitcoin, Ethereum, USDT. Retraits instantanés, anonymat total, bonus exclusifs !",
-        "image": "https://gigabonus.fr/images/methods/crypto.webp",
+        "image": "https://gigabonus.win/images/methods/crypto.webp",
         "datePublished": "2025-01-15T10:00:00+01:00",
         "dateModified": new Date().toISOString(),
         "author": {
@@ -73,7 +73,7 @@ export default function TopCasinosCryptoPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -106,10 +106,10 @@ export default function TopCasinosCryptoPage() {
         title="Top Casinos Crypto 2025 : Bitcoin, Ethereum & Cryptomonnaies | GigaBonus"
         description="Découvrez le top des casinos crypto acceptant Bitcoin, Ethereum, USDT. Retraits instantanés, anonymat total, bonus exclusifs et transactions sécurisées !"
         keywords="casinos crypto, casino bitcoin, casino ethereum, casino USDT, casinos cryptomonnaies, retraits crypto instantanés, casino anonyme crypto 2025"
-        canonical="https://gigabonus.fr/top-casinos-crypto"
+        canonical="https://gigabonus.win/top-casinos-crypto"
         ogTitle="Top Casinos Crypto 2025 : Bitcoin, Ethereum & Cryptomonnaies"
         ogDescription="Découvrez le top des casinos crypto acceptant Bitcoin, Ethereum, USDT. Retraits instantanés, anonymat total !"
-        ogImage="https://gigabonus.fr/images/methods/crypto.webp"
+        ogImage="https://gigabonus.win/images/methods/crypto.webp"
         twitterTitle="Top Casinos Crypto 2025 : Bitcoin, Ethereum & Cryptomonnaies"
         twitterDescription="Découvrez le top des casinos crypto acceptant Bitcoin, Ethereum, USDT."
         schema={schemaData}

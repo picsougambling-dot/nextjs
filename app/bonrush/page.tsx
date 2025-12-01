@@ -58,7 +58,7 @@ export default function BonRushPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "BonRush Casino",
-          "image": "https://gigabonus.fr/images/bonrush.webp"
+          "image": "https://gigabonus.win/images/bonrush.webp"
         },
         "author": {
           "@type": "Person",
@@ -93,7 +93,7 @@ export default function BonRushPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -119,10 +119,10 @@ export default function BonRushPage() {
         title="BonRush Casino : Avis 2025, Bonus jusqu'à 4500€ + 450 FS | GigaBonus"
         description="Avis BonRush Casino 2025 : bonus progressif explosif jusqu'à 400%, triple dépôt, 450 free spins. Test complet et détaillé!"
         keywords="bonrush casino, avis bonrush, bonus bonrush, bonrush casino avis, bonus 400%, bonus progressif, casino bonrush"
-        canonical="https://gigabonus.fr/bonrush"
+        canonical="https://gigabonus.win/bonrush"
         ogTitle="BonRush Casino : Avis 2025, Bonus jusqu'à 4500€ + 450 FS"
         ogDescription="Avis BonRush Casino 2025 : bonus progressif explosif jusqu'à 400%, triple dépôt, 450 free spins."
-        ogImage="https://gigabonus.fr/images/bonrush.webp"
+        ogImage="https://gigabonus.win/images/bonrush.webp"
         twitterTitle="BonRush Casino : Avis 2025, Bonus jusqu'à 4500€ + 450 FS"
         twitterDescription="Avis BonRush Casino 2025 : bonus progressif explosif jusqu'à 400%."
         schema={schemaData}

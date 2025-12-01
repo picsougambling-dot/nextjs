@@ -23,7 +23,7 @@ export default function AvisRoiBetsPage() {
         "itemReviewed": {
           "@type": "OnlineBusiness",
           "name": "RoiBets Casino",
-          "image": "https://gigabonus.fr/images/roibets.webp"
+          "image": "https://gigabonus.win/images/roibets.webp"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -40,7 +40,7 @@ export default function AvisRoiBetsPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr"
+          "url": "https://gigabonus.win"
         },
         "datePublished": "2025-01-18",
         "dateModified": "2025-11-21",
@@ -57,15 +57,15 @@ export default function AvisRoiBetsPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr",
+          "url": "https://gigabonus.win",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2025-01-18",
         "dateModified": "2025-11-21",
-        "image": "https://gigabonus.fr/images/roibets.webp"
+        "image": "https://gigabonus.win/images/roibets.webp"
       },
       {
         "@type": "FAQPage",
@@ -97,10 +97,10 @@ export default function AvisRoiBetsPage() {
         title="👑 Avis RoiBets 2025 : Le Roi des Paris | 200% + Bookmaker"
         description="🏆 RoiBets : Bonus 200% jusqu'à 1500€ | Bookmaker complet | Wager x40 | 5 paiements | Note 4.0/5 | Test roi des paris sportifs 2025 ⚡"
         keywords="avis roibets, roibets casino, bonus 200%, bookmaker, roi paris sportifs, roibets test, wager x40, casino 2025"
-        canonical="https://gigabonus.fr/blog/avis-roibets-2025"
+        canonical="https://gigabonus.win/blog/avis-roibets-2025"
         ogTitle="👑 Avis RoiBets 2025 : Le Roi des Paris | 200% + Bookmaker"
         ogDescription="🏆 RoiBets : Bonus 200% jusqu'à 1500€ | Bookmaker complet | Wager x40 ⚡"
-        ogImage="https://gigabonus.fr/images/roibets.webp"
+        ogImage="https://gigabonus.win/images/roibets.webp"
         twitterTitle="👑 Avis RoiBets 2025 : Le Roi des Paris | 200% + Bookmaker"
         twitterDescription="🏆 RoiBets : Bonus 200% jusqu'à 1500€ | Bookmaker complet ⚡"
         schema={schemaData}

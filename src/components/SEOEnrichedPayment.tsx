@@ -185,7 +185,7 @@ const SEOEnrichedPayment: React.FC<SEOEnrichedPaymentProps> = ({
               casinos parmi les 100+ que nous suivons acceptent {paymentName}, soit environ 60-80% selon le type de plateforme. 
               Les casinos sous licence Curaçao et MGA sont les plus enclins à proposer {paymentName}. Les casinos 100% crypto peuvent 
               ne pas l'accepter, privilégiant uniquement Bitcoin, Ethereum, etc. Pour vérifier si un casino supporte {paymentName}: 
-              consultez la section "Moyens de Paiement" sur leur site, ou utilisez notre filtre de recherche sur gigabonus.fr pour 
+              consultez la section "Moyens de Paiement" sur leur site, ou utilisez notre filtre de recherche sur gigabonus.win pour 
               afficher uniquement les casinos compatibles {paymentName}. Alternative: si votre casino favori ne propose pas {paymentName}, 
               vérifiez s'il accepte d'autres e-wallets similaires (Skrill, Neteller, MiFinity) qui offrent des fonctionnalités comparables.
             </div>

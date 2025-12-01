@@ -69,7 +69,7 @@ export default function SpinDinastyPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "Spin Dynasty Casino",
-          "image": "https://gigabonus.fr/images/spindinasty.webp"
+          "image": "https://gigabonus.win/images/spindinasty.webp"
         },
         "author": {
           "@type": "Person",
@@ -98,12 +98,12 @@ export default function SpinDinastyPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2024-08-05T10:00:00Z",
         "dateModified": new Date().toISOString(),
-        "image": "https://gigabonus.fr/images/spindinasty.webp"
+        "image": "https://gigabonus.win/images/spindinasty.webp"
       },
       {
         "@type": "FAQPage",
@@ -135,10 +135,10 @@ export default function SpinDinastyPage() {
         title="Avis Spin Dynasty Casino 2025 : Bonus Sans Wager 200% jusqu'à 500€ | Notre Test Complet"
         description="Notre avis complet sur Spin Dynasty Casino 2025 : bonus sans wager 200% jusqu'à 500€, retraits 24-48h, transparence totale. Test détaillé !"
         keywords="spin dynasty casino, avis spin dynasty, bonus sans wager, spin dynasty avis, bonus 200%, plinko, casino sans wager"
-        canonical="https://gigabonus.fr/spindinasty"
+        canonical="https://gigabonus.win/spindinasty"
         ogTitle="Avis Spin Dynasty Casino 2025 : Bonus Sans Wager 200% jusqu'à 500€"
         ogDescription="Notre avis complet sur Spin Dynasty Casino : bonus sans wager révolutionnaire, retraits rapides, transparence totale."
-        ogImage="https://gigabonus.fr/images/spindinasty.webp"
+        ogImage="https://gigabonus.win/images/spindinasty.webp"
         twitterTitle="Avis Spin Dynasty Casino 2025 : Bonus Sans Wager 200% jusqu'à 500€"
         twitterDescription="Notre avis complet sur Spin Dynasty Casino : bonus sans wager révolutionnaire."
         schema={schemaData}

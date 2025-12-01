@@ -61,7 +61,7 @@ export default function DepotVirementPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Virement Bancaire 2025 : Transfert Direct | GigaBonus",
       "description": "Découvrez les casinos acceptant virement bancaire. Dépôts sécurisés par transfert direct, bonus exclusifs !",
-      "image": "https://gigabonus.fr/images/methods/virement-bancaire.webp",
+      "image": "https://gigabonus.win/images/methods/virement-bancaire.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.121Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotVirementPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotVirementPage() {
         title="Casinos Acceptant Virement Bancaire 2025 : Transfert Direct | GigaBonus"
         description="Découvrez les casinos acceptant virement bancaire. Dépôts sécurisés par transfert direct, bonus exclusifs !"
         keywords="casino virement bancaire, dépôt virement casino, transfert bancaire casino, virement casino 2025"
-        canonical="https://gigabonus.fr/depot/virement"
+        canonical="https://gigabonus.win/depot/virement"
         ogTitle="Casinos Acceptant Virement Bancaire 2025 : Transfert Direct | GigaBonus"
         ogDescription="Découvrez les casinos acceptant virement bancaire. Dépôts sécurisés par transfert direct, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/images/methods/virement-bancaire.webp"
+        ogImage="https://gigabonus.win/images/methods/virement-bancaire.webp"
         twitterTitle="Casinos Acceptant Virement Bancaire 2025 : Transfert Direct | GigaBonus"
         twitterDescription="Découvrez les casinos acceptant virement bancaire. Dépôts sécurisés par transfert direct, bonus exclusifs !"
         schema={schemaData}

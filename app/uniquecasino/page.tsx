@@ -102,7 +102,7 @@ export default function WinUniquePage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "Unique Casino",
-          "image": "https://gigabonus.fr/images/uniquecasino.webp"
+          "image": "https://gigabonus.win/images/uniquecasino.webp"
         },
         "author": {
           "@type": "Person",
@@ -130,10 +130,10 @@ export default function WinUniquePage() {
         title="Avis Unique Casino 2025 : Triple Bonus jusqu'à 2500€ + 100 FS + Cashback Quotidien | GigaBonus"
         description="Notre avis complet sur Unique Casino 2025 : triple bonus progressif jusqu'à 2500€ + 100 FS, système VIP unique, cashback quotidien jusqu'à 100€. Test détaillé !"
         keywords="unique casino, avis unique casino, bonus unique casino, unique casino 2500€, unique casino vip, unique casino cashback, casino unique 2025"
-        canonical="https://gigabonus.fr/uniquecasino"
+        canonical="https://gigabonus.win/uniquecasino"
         ogTitle="Avis Unique Casino 2025 : Triple Bonus jusqu'à 2500€ + 100 FS"
         ogDescription="Notre avis complet sur Unique Casino : triple bonus progressif, système VIP unique, cashback quotidien jusqu'à 100€."
-        ogImage="https://gigabonus.fr/images/uniquecasino.webp"
+        ogImage="https://gigabonus.win/images/uniquecasino.webp"
         twitterTitle="Avis Unique Casino 2025 : Triple Bonus jusqu'à 2500€ + 100 FS"
         twitterDescription="Notre avis complet sur Unique Casino : triple bonus progressif, système VIP unique, cashback quotidien jusqu'à 100€."
         schema={schemaData}

@@ -27,7 +27,7 @@ export default function AvisLuckyTreasurePage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Lucky Treasure 2025",
-        "image": "https://gigabonus.fr/images/luckytreasure.webp"
+        "image": "https://gigabonus.win/images/luckytreasure.webp"
       },
       "author": {
         "@type": "Person",
@@ -51,7 +51,7 @@ export default function AvisLuckyTreasurePage() {
       "@type": "Article",
       "headline": "🎰 Avis Lucky Treasure 2025 : Bonus 200% Sans Wager Strict + No Deposit | GigaBonus",
       "description": "⭐ Avis complet Lucky Treasure 2025 : bonus 200% sans wager strict + no deposit + cashback quotidien. Le trésor des joueurs ! Test par nos experts.",
-      "image": "https://gigabonus.fr/images/luckytreasure.webp",
+      "image": "https://gigabonus.win/images/luckytreasure.webp",
       "datePublished": "2025-10-18T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.316Z",
       "author": {
@@ -63,7 +63,7 @@ export default function AvisLuckyTreasurePage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -76,10 +76,10 @@ export default function AvisLuckyTreasurePage() {
         title="🎰 Avis Lucky Treasure 2025 : Bonus 200% Sans Wager Strict + No Deposit | GigaBonus"
         description="⭐ Avis complet Lucky Treasure 2025 : bonus 200% sans wager strict + no deposit + cashback quotidien. Le trésor des joueurs ! Test par nos experts."
         keywords="avis lucky treasure, lucky treasure casino, bonus lucky treasure, lucky treasure 2025, no deposit lucky treasure, lucky treasure fiable"
-        canonical="https://gigabonus.fr/blog/avis-luckytreasure-2025"
+        canonical="https://gigabonus.win/blog/avis-luckytreasure-2025"
         ogTitle="🎰 Avis Lucky Treasure 2025 : Bonus 200% Sans Wager Strict"
         ogDescription="⭐ Test complet Lucky Treasure : bonus 200% sans wager strict, no deposit, cashback quotidien. Avis d'experts."
-        ogImage="https://gigabonus.fr/images/luckytreasure.webp"
+        ogImage="https://gigabonus.win/images/luckytreasure.webp"
         twitterTitle="🎰 Avis Lucky Treasure 2025 : Bonus 200% Sans Wager Strict"
         twitterDescription="⭐ Test complet Lucky Treasure : bonus 200% sans wager strict, no deposit, cashback quotidien. Avis d'experts."
         schema={schemaData}

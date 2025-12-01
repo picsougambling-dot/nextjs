@@ -375,13 +375,13 @@ export default function BlogPage() {
     "@type": "Blog",
     "name": "Blog GigaBonus - Avis Casinos et Guides",
     "description": "Blog expert sur les casinos en ligne : avis détaillés, guides pratiques, conseils et actualités du secteur.",
-    "url": "https://gigabonus.fr/blog",
+    "url": "https://gigabonus.win/blog",
     "publisher": {
       "@type": "Organization",
       "name": "GigaBonus",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://gigabonus.fr/gigabonus-logo.webp"
+        "url": "https://gigabonus.win/gigabonus-logo.webp"
       }
     }
   };
@@ -392,10 +392,10 @@ export default function BlogPage() {
         title="Blog Casino 2025 : Avis, Guides et Conseils | GigaBonus"
         description="Découvrez nos avis détaillés sur les meilleurs casinos en ligne 2025, guides pratiques, conseils d'experts et actualités du secteur. Tests complets et transparents."
         keywords="blog casino, avis casino en ligne, guide casino, conseils casino, test casino, actualités casino, avis expert casino"
-        canonical="https://gigabonus.fr/blog"
+        canonical="https://gigabonus.win/blog"
         ogTitle="Blog Casino 2025 : Avis, Guides et Conseils"
         ogDescription="Découvrez nos avis détaillés sur les meilleurs casinos en ligne 2025, guides pratiques et conseils d'experts."
-        ogImage="https://gigabonus.fr/gigabonus-logo.webp"
+        ogImage="https://gigabonus.win/gigabonus-logo.webp"
         twitterTitle="Blog Casino 2025 : Avis, Guides et Conseils"
         twitterDescription="Découvrez nos avis détaillés sur les meilleurs casinos en ligne 2025."
         schema={schemaData}

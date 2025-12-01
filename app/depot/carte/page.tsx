@@ -60,7 +60,7 @@ export default function DepotCartePage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Carte Bancaire 2025 : CB, Visa, Mastercard | GigaBonus",
       "description": "Découvrez les casinos en ligne acceptant Carte Bancaire, Visa et Mastercard. Dépôts instantanés et sécurisés, bonus exclusifs !",
-      "image": "https://gigabonus.fr/images/methods/carte-bancaire.webp",
+      "image": "https://gigabonus.win/images/methods/carte-bancaire.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.108Z",
       "author": {
@@ -72,7 +72,7 @@ export default function DepotCartePage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -103,10 +103,10 @@ export default function DepotCartePage() {
         title="Casinos Acceptant Carte Bancaire 2025 : CB, Visa, Mastercard | GigaBonus"
         description="Découvrez les casinos en ligne acceptant Carte Bancaire, Visa et Mastercard. Dépôts instantanés et sécurisés, bonus exclusifs !"
         keywords="casino carte bancaire, dépôt CB casino, casino visa mastercard, paiement carte casino, casino CB 2025"
-        canonical="https://gigabonus.fr/depot/carte"
+        canonical="https://gigabonus.win/depot/carte"
         ogTitle="Casinos Acceptant Carte Bancaire 2025 : CB, Visa, Mastercard | GigaBonus"
         ogDescription="Découvrez les casinos en ligne acceptant Carte Bancaire, Visa et Mastercard. Dépôts instantanés et sécurisés, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/images/methods/carte-bancaire.webp"
+        ogImage="https://gigabonus.win/images/methods/carte-bancaire.webp"
         twitterTitle="Casinos Acceptant Carte Bancaire 2025 : CB, Visa, Mastercard | GigaBonus"
         twitterDescription="Découvrez les casinos en ligne acceptant Carte Bancaire, Visa et Mastercard. Dépôts instantanés et sécurisés, bonus exclusifs !"
         schema={schemaData}

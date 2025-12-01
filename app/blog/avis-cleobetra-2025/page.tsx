@@ -24,7 +24,7 @@ export default function AvisCleobetraPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Cleobetra 2025",
-        "image": "https://gigabonus.fr/images/cleobetra.webp"
+        "image": "https://gigabonus.win/images/cleobetra.webp"
       },
       "author": {
         "@type": "Person",
@@ -48,7 +48,7 @@ export default function AvisCleobetraPage() {
       "@type": "Article",
       "headline": "🎰 Avis Cleobetra 2025 : Test Complet + Bonus 100% jusqu'à 500€ + 200 FS | GigaBonus",
       "description": "⭐ Avis complet Cleobetra 2025 : bonus 100% + 200 FS, programme hebdomadaire avec 7 promotions, casino + sport. Test détaillé par nos experts.",
-      "image": "https://gigabonus.fr/images/cleobetra.webp",
+      "image": "https://gigabonus.win/images/cleobetra.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.346Z",
       "author": {
@@ -60,7 +60,7 @@ export default function AvisCleobetraPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -73,10 +73,10 @@ export default function AvisCleobetraPage() {
         title="🎰 Avis Cleobetra 2025 : Test Complet + Bonus 100% jusqu'à 500€ + 200 FS | GigaBonus"
         description="⭐ Avis complet Cleobetra 2025 : bonus 100% + 200 FS, programme hebdomadaire avec 7 promotions, casino + sport. Test détaillé par nos experts."
         keywords="avis cleobetra, cleobetra casino, bonus cleobetra, cleobetra 2025, test cleobetra, cleobetra fiable, avis casino cleobetra, promotions hebdomadaires"
-        canonical="https://gigabonus.fr/blog/avis-cleobetra-2025"
+        canonical="https://gigabonus.win/blog/avis-cleobetra-2025"
         ogTitle="🎰 Avis Cleobetra 2025 : Test Complet + Bonus 100% + 200 FS"
         ogDescription="⭐ Notre test détaillé de Cleobetra : bonus 100% + 200 FS, programme hebdomadaire exceptionnel. Avis d'experts avec avantages et inconvénients."
-        ogImage="https://gigabonus.fr/images/cleobetra.webp"
+        ogImage="https://gigabonus.win/images/cleobetra.webp"
         twitterTitle="🎰 Avis Cleobetra 2025 : Test Complet + Bonus 100% + 200 FS"
         twitterDescription="⭐ Notre test détaillé de Cleobetra : bonus 100% + 200 FS, programme hebdomadaire exceptionnel. Avis d'experts avec avantages et inconvénients."
         schema={schemaData}

@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://gigabonus.fr';
+  const baseUrl = 'https://gigabonus.win';
   const now = new Date();
   
   // Routes principales avec priorités élevées

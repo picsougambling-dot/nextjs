@@ -27,7 +27,7 @@ export default function AvisKingsChancePage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Kings Chance 2025",
-        "image": "https://gigabonus.fr/images/kingschance.webp"
+        "image": "https://gigabonus.win/images/kingschance.webp"
       },
       "author": {
         "@type": "Person",
@@ -51,7 +51,7 @@ export default function AvisKingsChancePage() {
       "@type": "Article",
       "headline": "🎰 Avis Kings Chance 2025 : Test + Bonus 150% jusqu'à 500€ + 40 FS | GigaBonus",
       "description": "⭐ Avis Kings Chance 2025 : bonus 150% + 40 FS, cashback hebdomadaire, pas de wager strict. Test détaillé par nos experts.",
-      "image": "https://gigabonus.fr/images/kingschance.webp",
+      "image": "https://gigabonus.win/images/kingschance.webp",
       "datePublished": "2025-09-25T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.345Z",
       "author": {
@@ -63,7 +63,7 @@ export default function AvisKingsChancePage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -76,10 +76,10 @@ export default function AvisKingsChancePage() {
         title="🎰 Avis Kings Chance 2025 : Test + Bonus 150% jusqu'à 500€ + 40 FS | GigaBonus"
         description="⭐ Avis Kings Chance 2025 : bonus 150% + 40 FS, cashback hebdomadaire, pas de wager strict. Test détaillé par nos experts."
         keywords="avis kings chance, kings chance casino, bonus kings chance, kings chance 2025, test kings chance, kings chance fiable"
-        canonical="https://gigabonus.fr/blog/avis-kingschance-2025"
+        canonical="https://gigabonus.win/blog/avis-kingschance-2025"
         ogTitle="🎰 Avis Kings Chance 2025 : Test + Bonus 150%"
         ogDescription="⭐ Test Kings Chance : bonus 150% + 40 FS, cashback hebdomadaire. Notre avis d'experts."
-        ogImage="https://gigabonus.fr/images/kingschance.webp"
+        ogImage="https://gigabonus.win/images/kingschance.webp"
         twitterTitle="🎰 Avis Kings Chance 2025 : Test + Bonus 150%"
         twitterDescription="⭐ Test Kings Chance : bonus 150% + 40 FS, cashback hebdomadaire. Notre avis d'experts."
         schema={schemaData}

@@ -61,7 +61,7 @@ export default function DepotJetonBankPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Jeton Bank 2025 : E-Wallet Crypto-Friendly | GigaBonus",
       "description": "Guide des casinos acceptant Jeton Bank. Dépôts et retraits instantanés avec e-wallet crypto-friendly, bonus exclusifs !",
-      "image": "https://gigabonus.fr/images/methods/jetonbank.webp",
+      "image": "https://gigabonus.win/images/methods/jetonbank.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.119Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotJetonBankPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotJetonBankPage() {
         title="Casinos Acceptant Jeton Bank 2025 : E-Wallet Crypto-Friendly | GigaBonus"
         description="Guide des casinos acceptant Jeton Bank. Dépôts et retraits instantanés avec e-wallet crypto-friendly, bonus exclusifs !"
         keywords="casino jeton bank, dépôt jeton bank, e-wallet jeton bank casino, jeton bank casino 2025, paiement jeton bank"
-        canonical="https://gigabonus.fr/depot/jetonbank"
+        canonical="https://gigabonus.win/depot/jetonbank"
         ogTitle="Casinos Acceptant Jeton Bank 2025 : E-Wallet Crypto-Friendly | GigaBonus"
         ogDescription="Guide des casinos acceptant Jeton Bank. Dépôts et retraits instantanés avec e-wallet crypto-friendly, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/images/methods/jetonbank.webp"
+        ogImage="https://gigabonus.win/images/methods/jetonbank.webp"
         twitterTitle="Casinos Acceptant Jeton Bank 2025 : E-Wallet Crypto-Friendly | GigaBonus"
         twitterDescription="Guide des casinos acceptant Jeton Bank. Dépôts et retraits instantanés avec e-wallet crypto-friendly, bonus exclusifs !"
         schema={schemaData}

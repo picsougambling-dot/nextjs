@@ -162,7 +162,7 @@ export default function SpinAuraPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "SpinAura Casino",
-          "image": "https://gigabonus.fr/images/spinaura.webp"
+          "image": "https://gigabonus.win/images/spinaura.webp"
         },
         "author": {
           "@type": "Person",
@@ -197,7 +197,7 @@ export default function SpinAuraPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -231,10 +231,10 @@ export default function SpinAuraPage() {
         title="🌟 SpinAura Casino : Bonus RECORD 450% + 15 000€ | High-Rollers 2025"
         description="💰 SpinAura : Bonus MASSIF 450% jusqu'à 15 000€ | 3000+ jeux | 7 méthodes paiement | Crypto accepté | Wager x40 | Retraits 24-48h ⚡"
         keywords="spinaura casino, bonus 450%, casino high roller, bonus 15000 euros, casino crypto, 3000 jeux, wager x40, meilleur bonus 2025"
-        canonical="https://gigabonus.fr/spinaura"
+        canonical="https://gigabonus.win/spinaura"
         ogTitle="SpinAura Casino : Bonus RECORD 450% + 15 000€"
         ogDescription="💰 Bonus MASSIF 450% + 15 000€ | 3000+ jeux | Crypto ⚡"
-        ogImage="https://gigabonus.fr/images/spinaura.webp"
+        ogImage="https://gigabonus.win/images/spinaura.webp"
         twitterTitle="SpinAura Casino : Bonus RECORD 450% + 15 000€"
         twitterDescription="💰 Bonus MASSIF 450% + 15 000€ | 3000+ jeux | Crypto ⚡"
         schema={schemaData}

@@ -64,10 +64,10 @@ export default function BonusCashbackPage() {
         title="Bonus Cashback Casino 2025 : Meilleurs Cashbacks Hebdomadaires | GigaBonus"
         description="Découvrez les meilleurs bonus cashback des casinos 2025. Récupérez vos pertes chaque semaine! Comparatif complet des cashbacks quotidiens, hebdomadaires et VIP."
         keywords="bonus cashback casino, cashback hebdomadaire casino, cashback sans wager, casino cashback quotidien, bonus cashback VIP, meilleur cashback casino 2025"
-        canonical="https://gigabonus.fr/bonus-cashback"
+        canonical="https://gigabonus.win/bonus-cashback"
         ogTitle="Bonus Cashback Casino 2025 : Meilleurs Cashbacks Hebdomadaires"
         ogDescription="Découvrez les meilleurs bonus cashback des casinos 2025. Récupérez vos pertes chaque semaine!"
-        ogImage="https://gigabonus.fr/og-image.png"
+        ogImage="https://gigabonus.win/og-image.png"
         twitterTitle="Bonus Cashback Casino 2025 : Meilleurs Cashbacks Hebdomadaires"
         twitterDescription="Découvrez les meilleurs bonus cashback des casinos 2025. Récupérez vos pertes chaque semaine!"
         schema={{
@@ -112,7 +112,7 @@ export default function BonusCashbackPage() {
                 "name": "GigaBonus",
                 "logo": {
                   "@type": "ImageObject",
-                  "url": "https://gigabonus.fr/gigabonus-logo.webp"
+                  "url": "https://gigabonus.win/gigabonus-logo.webp"
                 }
               },
               "description": "Découvrez les meilleurs bonus cashback des casinos 2025. Récupérez vos pertes chaque semaine! Comparatif complet des cashbacks quotidiens, hebdomadaires et VIP."

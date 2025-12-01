@@ -68,7 +68,7 @@ export default function AtlantisSlotsPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Atlantis Slots Casino",
-          "image": "https://gigabonus.fr/images/atlantisslots.webp"
+          "image": "https://gigabonus.win/images/atlantisslots.webp"
         },
         "author": {
           "@type": "Person",
@@ -103,7 +103,7 @@ export default function AtlantisSlotsPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -129,10 +129,10 @@ export default function AtlantisSlotsPage() {
         title="Avis Atlantis Slots Casino 2025 : Bonus jusqu'à 4500€ + 60 FS | Notre Test Complet"
         description="Notre avis sur Atlantis Slots 2025 : bonus jusqu'à 4500€ + 60 FS, roue hebdomadaire, retraits 24-48h, jeux live et cryptos."
         keywords="atlantis slots casino, avis atlantis slots, bonus atlantis slots, atlantis slots avis, bonus progressif, roue bonus"
-        canonical="https://gigabonus.fr/atlantisslots"
+        canonical="https://gigabonus.win/atlantisslots"
         ogTitle="Avis Atlantis Slots 2025 : Bonus jusqu'à 4500€ + 60 FS"
         ogDescription="Test complet d'Atlantis Slots : pack progressif, roue bonus, retraits rapides, jeux live et cryptos acceptées."
-        ogImage="https://gigabonus.fr/images/atlantisslots.webp"
+        ogImage="https://gigabonus.win/images/atlantisslots.webp"
         twitterTitle="Avis Atlantis Slots 2025 : Bonus jusqu'à 4500€ + 60 FS"
         twitterDescription="Test complet d'Atlantis Slots : pack progressif, roue bonus, retraits rapides."
         schema={schemaData}

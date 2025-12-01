@@ -61,7 +61,7 @@ export default function DepotMiFinityPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant MiFinity 2025 : E-Wallet Moderne | GigaBonus",
       "description": "Découvrez les casinos acceptant MiFinity. Dépôts et retraits rapides avec e-wallet moderne, bonus exclusifs !",
-      "image": "https://gigabonus.fr/images/methods/mifinity.webp",
+      "image": "https://gigabonus.win/images/methods/mifinity.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.118Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotMiFinityPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotMiFinityPage() {
         title="Casinos Acceptant MiFinity 2025 : E-Wallet Moderne | GigaBonus"
         description="Découvrez les casinos acceptant MiFinity. Dépôts et retraits rapides avec e-wallet moderne, bonus exclusifs !"
         keywords="casino mifinity, dépôt mifinity, e-wallet mifinity casino, mifinity casino 2025, paiement mifinity"
-        canonical="https://gigabonus.fr/depot/mifinity"
+        canonical="https://gigabonus.win/depot/mifinity"
         ogTitle="Casinos Acceptant MiFinity 2025 : E-Wallet Moderne | GigaBonus"
         ogDescription="Découvrez les casinos acceptant MiFinity. Dépôts et retraits rapides avec e-wallet moderne, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/images/methods/mifinity.webp"
+        ogImage="https://gigabonus.win/images/methods/mifinity.webp"
         twitterTitle="Casinos Acceptant MiFinity 2025 : E-Wallet Moderne | GigaBonus"
         twitterDescription="Découvrez les casinos acceptant MiFinity. Dépôts et retraits rapides avec e-wallet moderne, bonus exclusifs !"
         schema={schemaData}

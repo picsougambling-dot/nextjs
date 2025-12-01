@@ -64,10 +64,10 @@ export default function InstallPage() {
         title="Installer l'App GigaBonus | Progressive Web App | GigaBonus"
         description="Installez l'application GigaBonus sur votre appareil pour une expérience optimale. Accès instantané, mode hors ligne, notifications push et bien plus encore."
         keywords="installer gigabonus, app gigabonus, pwa gigabonus, application casino, installer app casino, progressive web app casino"
-        canonical="https://gigabonus.fr/install"
+        canonical="https://gigabonus.win/install"
         ogTitle="Installer l'App GigaBonus | Progressive Web App"
         ogDescription="Installez l'application GigaBonus sur votre appareil pour une expérience optimale. Accès instantané, mode hors ligne, notifications."
-        ogImage="https://gigabonus.fr/og-image.png"
+        ogImage="https://gigabonus.win/og-image.png"
         twitterTitle="Installer l'App GigaBonus | Progressive Web App"
         twitterDescription="Installez l'application GigaBonus sur votre appareil pour une expérience optimale."
         schema={schemaData}
@@ -188,7 +188,7 @@ export default function InstallPage() {
                   📱 Android (Chrome)
                 </h3>
                 <ol className="space-y-2 text-muted-foreground">
-                  <li>1. Ouvrez gigabonus.fr dans Chrome</li>
+                  <li>1. Ouvrez gigabonus.win dans Chrome</li>
                   <li>2. Appuyez sur le menu ⋮ (trois points en haut à droite)</li>
                   <li>3. Sélectionnez "Installer l'application" ou "Ajouter à l'écran d'accueil"</li>
                   <li>4. Confirmez l'installation</li>
@@ -202,7 +202,7 @@ export default function InstallPage() {
                   🍎 iPhone/iPad (Safari)
                 </h3>
                 <ol className="space-y-2 text-muted-foreground">
-                  <li>1. Ouvrez gigabonus.fr dans Safari</li>
+                  <li>1. Ouvrez gigabonus.win dans Safari</li>
                   <li>2. Appuyez sur le bouton Partager 📤 (en bas de l'écran)</li>
                   <li>3. Faites défiler et sélectionnez "Sur l'écran d'accueil"</li>
                   <li>4. Donnez un nom (ex: "GigaBonus") et confirmez</li>
@@ -216,7 +216,7 @@ export default function InstallPage() {
                   💻 Ordinateur (Chrome/Edge)
                 </h3>
                 <ol className="space-y-2 text-muted-foreground">
-                  <li>1. Ouvrez gigabonus.fr dans Chrome ou Edge</li>
+                  <li>1. Ouvrez gigabonus.win dans Chrome ou Edge</li>
                   <li>2. Cliquez sur l'icône ➕ dans la barre d'adresse (à droite)</li>
                   <li>3. Ou allez dans Menu {'>'} "Installer GigaBonus"</li>
                   <li>4. Confirmez l'installation</li>

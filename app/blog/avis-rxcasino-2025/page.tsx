@@ -19,20 +19,20 @@ export default function AvisRXCasinoPage() {
   "@type": "Article",
   "headline": "⚠️ RX Casino SCAM 2025 : Alerte Arnaque - Témoignages de Victimes | GigaBonus",
   "description": "🚨 ALERTE ARNAQUE : RX Casino refuse les retraits, bloque les comptes, conditions impossibles. Témoignages de victimes et alternatives fiables recommandées.",
-  "image": "https://gigabonus.fr/images/rxcasino.webp",
+  "image": "https://gigabonus.win/images/rxcasino.webp",
   "datePublished": "2025-10-04T10:00:00+01:00",
   "dateModified": "2025-11-28T00:45:35.348Z",
   "author": {
     "@type": "Person",
     "name": "Équipe GigaBonus",
-    "url": "https://gigabonus.fr/about"
+    "url": "https://gigabonus.win/about"
   },
   "publisher": {
     "@type": "Organization",
     "name": "GigaBonus",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://gigabonus.fr/gigabonus-logo.webp"
+      "url": "https://gigabonus.win/gigabonus-logo.webp"
     }
   },
   "reviewRating": {
@@ -49,10 +49,10 @@ export default function AvisRXCasinoPage() {
         title="⚠️ RX Casino SCAM 2025 : Alerte Arnaque - Témoignages de Victimes | GigaBonus"
         description="🚨 ALERTE ARNAQUE : RX Casino refuse les retraits, bloque les comptes, conditions impossibles. Témoignages de victimes et alternatives fiables recommandées."
         keywords="rxcasino scam, rxcasino arnaque, rx casino non paiement, rxcasino refus retrait, rxcasino avis négatifs, rxcasino dangereux, casino fiable alternative"
-        canonical="https://gigabonus.fr/blog/avis-rxcasino-2025"
+        canonical="https://gigabonus.win/blog/avis-rxcasino-2025"
         ogTitle="⚠️ RX Casino SCAM : Alerte Arnaque - Ne Jouez PAS Ici"
         ogDescription="🚨 Notre enquête révèle les pratiques douteuses de RX Casino : refus de paiement, blocage de comptes, conditions abusives. Témoignages de victimes."
-        ogImage="https://gigabonus.fr/images/rxcasino.webp"
+        ogImage="https://gigabonus.win/images/rxcasino.webp"
         twitterTitle="⚠️ RX Casino SCAM : Alerte Arnaque - Ne Jouez PAS Ici"
         twitterDescription="🚨 Notre enquête révèle les pratiques douteuses de RX Casino : refus de paiement, blocage de comptes, conditions abusives. Témoignages de victimes."
         schema={schemaData}

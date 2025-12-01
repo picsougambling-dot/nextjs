@@ -70,7 +70,7 @@ export default function EuropeFortunePage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Europe Fortune Casino",
-          "image": "https://gigabonus.fr/images/europefortune.webp"
+          "image": "https://gigabonus.win/images/europefortune.webp"
         },
         "author": {
           "@type": "Person",
@@ -105,7 +105,7 @@ export default function EuropeFortunePage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -139,10 +139,10 @@ export default function EuropeFortunePage() {
         title="Europe Fortune Casino : Avis 2025, Bonus 200% + 100% Sport | GigaBonus"
         description="Avis Europe Fortune Casino 2025 : double bonus casino et sport, retraits rapides, 4000+ jeux. Test complet!"
         keywords="europe fortune casino, avis europe fortune, bonus 200%, bonus sport, casino bookmaker, europe fortune avis"
-        canonical="https://gigabonus.fr/europefortune"
+        canonical="https://gigabonus.win/europefortune"
         ogTitle="Europe Fortune Casino : Avis 2025, Bonus 200% + 100% Sport"
         ogDescription="Avis Europe Fortune Casino 2025 : double bonus casino et sport, retraits rapides, 4000+ jeux."
-        ogImage="https://gigabonus.fr/images/europefortune.webp"
+        ogImage="https://gigabonus.win/images/europefortune.webp"
         twitterTitle="Europe Fortune Casino : Avis 2025, Bonus 200% + 100% Sport"
         twitterDescription="Avis Europe Fortune Casino 2025 : double bonus casino et sport, retraits rapides."
         schema={schemaData}

@@ -56,10 +56,10 @@ export default function CasinoIntensePage() {
         title="Avis Casino Intense 2025 : Bonus jusqu'à 7500€ + 100 FS - Notre Test Complet | GigaBonus"
         description="Notre avis sur Casino Intense 2025 : bonus progressif jusqu'à 7500€ + 100 FS, retraits 24-48h, jeux live et cryptos."
         keywords="casino intense, avis casino intense, bonus casino intense, casino intense 7500€, casino intense bonus, avis casino intense 2025"
-        canonical="https://gigabonus.fr/casinointense"
+        canonical="https://gigabonus.win/casinointense"
         ogTitle="Avis Casino Intense 2025 : Bonus jusqu'à 7500€ + 100 FS"
         ogDescription="Test complet de Casino Intense : pack progressif intense, retraits rapides, jeux live et cryptos acceptées."
-        ogImage="https://gigabonus.fr/images/casinointense.webp"
+        ogImage="https://gigabonus.win/images/casinointense.webp"
         twitterTitle="Avis Casino Intense 2025 : Bonus jusqu'à 7500€ + 100 FS"
         twitterDescription="Test complet de Casino Intense : pack progressif intense, retraits rapides, jeux live et cryptos acceptées."
         schema={{
@@ -70,7 +70,7 @@ export default function CasinoIntensePage() {
               "itemReviewed": {
                 "@type": "Product",
                 "name": "Avis Casino Intense 2025 : Bonus jusqu'à 7500€ + 100 FS",
-                "image": "https://gigabonus.fr/images/casinointense.webp"
+                "image": "https://gigabonus.win/images/casinointense.webp"
               },
               "author": {
                 "@type": "Person",

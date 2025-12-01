@@ -61,7 +61,7 @@ export default function DepotNetellerPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Neteller 2025 : E-Wallet Premium | GigaBonus",
       "description": "Guide des casinos acceptant Neteller. Dépôts et retraits instantanés avec e-wallet premium, bonus exclusifs !",
-      "image": "https://gigabonus.fr/images/methods/neteller.webp",
+      "image": "https://gigabonus.win/images/methods/neteller.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.117Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotNetellerPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotNetellerPage() {
         title="Casinos Acceptant Neteller 2025 : E-Wallet Premium | GigaBonus"
         description="Guide des casinos acceptant Neteller. Dépôts et retraits instantanés avec e-wallet premium, bonus exclusifs !"
         keywords="casino neteller, dépôt neteller, e-wallet neteller casino, neteller casino 2025, paiement neteller"
-        canonical="https://gigabonus.fr/depot/neteller"
+        canonical="https://gigabonus.win/depot/neteller"
         ogTitle="Casinos Acceptant Neteller 2025 : E-Wallet Premium | GigaBonus"
         ogDescription="Guide des casinos acceptant Neteller. Dépôts et retraits instantanés avec e-wallet premium, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/images/methods/neteller.webp"
+        ogImage="https://gigabonus.win/images/methods/neteller.webp"
         twitterTitle="Casinos Acceptant Neteller 2025 : E-Wallet Premium | GigaBonus"
         twitterDescription="Guide des casinos acceptant Neteller. Dépôts et retraits instantanés avec e-wallet premium, bonus exclusifs !"
         schema={schemaData}

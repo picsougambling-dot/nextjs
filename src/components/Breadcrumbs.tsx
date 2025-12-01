@@ -94,10 +94,10 @@ const Breadcrumbs = () => {
         "@type": "ListItem",
         "position": 1,
         "name": "Accueil",
-        "item": "https://gigabonus.fr/"
+        "item": "https://gigabonus.win/"
       },
       ...pathnames.map((path, index) => {
-        const url = `https://gigabonus.fr/${pathnames.slice(0, index + 1).join("/")}`;
+        const url = `https://gigabonus.win/${pathnames.slice(0, index + 1).join("/")}`;
         return {
           "@type": "ListItem",
           "position": index + 2,

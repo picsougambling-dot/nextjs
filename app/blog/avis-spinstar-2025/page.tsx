@@ -21,7 +21,7 @@ export default function AvisSpinStarPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "SpinStar Casino",
-          "image": "https://gigabonus.fr/images/spinstar.webp"
+          "image": "https://gigabonus.win/images/spinstar.webp"
         },
         "author": {
           "@type": "Person",
@@ -42,7 +42,7 @@ export default function AvisSpinStarPage() {
         "@type": "Article",
         "headline": "Avis SpinStar Casino 2025 : Test Complet du N°1 en France",
         "description": "Découvrez notre avis détaillé sur SpinStar Casino avec un bonus de 700% jusqu'à 10 000€ + 725 Free Spins.",
-        "image": "https://gigabonus.fr/images/spinstar.webp",
+        "image": "https://gigabonus.win/images/spinstar.webp",
         "datePublished": "2024-06-15T10:00:00Z",
         "dateModified": new Date().toISOString(),
         "author": {
@@ -54,7 +54,7 @@ export default function AvisSpinStarPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -88,10 +88,10 @@ export default function AvisSpinStarPage() {
         title="⭐ Avis SpinStar Casino 2025 : Test N°1 France | 700% + 10K€ + 725 FS"
         description="🏆 SpinStar N°1 : Bonus 700% + 10 000€ + 725 FS | Wager x35 | Bookmaker | Crypto | Note 4.9/5 | Test complet par nos experts ⚡"
         keywords="avis spinstar, spinstar casino test, bonus 700%, casino numero 1, meilleur casino france, spinstar fiable, bookmaker spinstar, note 4.9"
-        canonical="https://gigabonus.fr/blog/avis-spinstar-2025"
+        canonical="https://gigabonus.win/blog/avis-spinstar-2025"
         ogTitle="⭐ Avis SpinStar N°1 France : 700% + 10K€ + 725 FS"
         ogDescription="🏆 Test complet N°1 | Bonus 700% | Bookmaker | Note 4.9/5 ⚡"
-        ogImage="https://gigabonus.fr/images/spinstar.webp"
+        ogImage="https://gigabonus.win/images/spinstar.webp"
         twitterTitle="⭐ Avis SpinStar N°1 France : 700% + 10K€ + 725 FS"
         twitterDescription="🏆 Test complet N°1 | Bonus 700% | Bookmaker | Note 4.9/5 ⚡"
         schema={schemaData}

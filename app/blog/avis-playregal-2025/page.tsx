@@ -46,10 +46,10 @@ export default function AvisPlayRegal() {
         title="Avis Play Regal 2025 : Test Complet & Bonus | GigaBonus"
         description="Découvrez notre avis détaillé sur Play Regal Casino en 2025. Test complet : bonus 100% jusqu'à 1000€, wager x30, retraits rapides."
         keywords="avis play regal, play regal casino, bonus play regal, avis play regal 2025, casino play regal"
-        canonical="https://gigabonus.fr/blog/avis-playregal-2025"
+        canonical="https://gigabonus.win/blog/avis-playregal-2025"
         ogTitle="Avis Play Regal 2025 : Test Complet & Bonus"
         ogDescription="Découvrez notre avis détaillé sur Play Regal Casino en 2025. Test complet : bonus 100% jusqu'à 1000€."
-        ogImage="https://gigabonus.fr/images/playregal.webp"
+        ogImage="https://gigabonus.win/images/playregal.webp"
         twitterTitle="Avis Play Regal 2025 : Test Complet & Bonus"
         twitterDescription="Découvrez notre avis détaillé sur Play Regal Casino en 2025. Test complet : bonus 100% jusqu'à 1000€."
         schema={jsonLd}

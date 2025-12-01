@@ -91,7 +91,7 @@ export default function CazinoStarsPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Cazino Stars Casino",
-          "image": "https://gigabonus.fr/images/cazinostars.webp"
+          "image": "https://gigabonus.win/images/cazinostars.webp"
         },
         "author": {
           "@type": "Person",
@@ -126,7 +126,7 @@ export default function CazinoStarsPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -152,10 +152,10 @@ export default function CazinoStarsPage() {
         title="Avis Cazino Stars Casino 2025 : Bonus 350% jusqu'à 5000€ + 180 FS | Notre Test Complet"
         description="Notre avis complet sur Cazino Stars Casino 2025 : bonus progressif 350% jusqu'à 5000€ + 180 FS, roue bonus hebdomadaire, retraits 24-48h. Test détaillé !"
         keywords="cazino stars casino, avis cazino stars, bonus cazino stars, cazino stars avis, bonus 350%, bonus progressif, roue bonus"
-        canonical="https://gigabonus.fr/cazinostars"
+        canonical="https://gigabonus.win/cazinostars"
         ogTitle="Avis Cazino Stars Casino 2025 : Bonus 350% jusqu'à 5000€ + 180 FS"
         ogDescription="Notre avis complet sur Cazino Stars : bonus progressif stellaire, roue de la fortune hebdomadaire, ludothèque premium."
-        ogImage="https://gigabonus.fr/images/cazinostars.webp"
+        ogImage="https://gigabonus.win/images/cazinostars.webp"
         twitterTitle="Avis Cazino Stars Casino 2025 : Bonus 350% jusqu'à 5000€ + 180 FS"
         twitterDescription="Notre avis complet sur Cazino Stars : bonus progressif stellaire, roue de la fortune."
         schema={schemaData}

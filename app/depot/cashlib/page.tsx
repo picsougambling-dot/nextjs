@@ -61,7 +61,7 @@ export default function DepotCashlibPage() {
       "@type": "Article",
       "headline": "Casinos Acceptant Cashlib 2025 : Dépôt par Code Prépayé | GigaBonus",
       "description": "Découvrez les casinos acceptant Cashlib. Dépôts anonymes avec codes prépayés français, bonus et retraits rapides !",
-      "image": "https://gigabonus.fr/images/methods/cashlib.webp",
+      "image": "https://gigabonus.win/images/methods/cashlib.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.112Z",
       "author": {
@@ -73,7 +73,7 @@ export default function DepotCashlibPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -104,10 +104,10 @@ export default function DepotCashlibPage() {
         title="Casinos Acceptant Cashlib 2025 : Dépôt par Code Prépayé | GigaBonus"
         description="Découvrez les casinos acceptant Cashlib. Dépôts anonymes avec codes prépayés français, bonus et retraits rapides !"
         keywords="casino cashlib, dépôt cashlib, code cashlib casino, casino prépayé cashlib, cashlib 2025"
-        canonical="https://gigabonus.fr/depot/cashlib"
+        canonical="https://gigabonus.win/depot/cashlib"
         ogTitle="Casinos Acceptant Cashlib 2025 : Dépôt par Code Prépayé | GigaBonus"
         ogDescription="Découvrez les casinos acceptant Cashlib. Dépôts anonymes avec codes prépayés français, bonus et retraits rapides !"
-        ogImage="https://gigabonus.fr/images/methods/cashlib.webp"
+        ogImage="https://gigabonus.win/images/methods/cashlib.webp"
         twitterTitle="Casinos Acceptant Cashlib 2025 : Dépôt par Code Prépayé | GigaBonus"
         twitterDescription="Découvrez les casinos acceptant Cashlib. Dépôts anonymes avec codes prépayés français, bonus et retraits rapides !"
         schema={schemaData}

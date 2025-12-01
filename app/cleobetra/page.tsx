@@ -160,7 +160,7 @@ export default function CleobetraPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Cleobetra Casino",
-          "image": "https://gigabonus.fr/images/cleobetra.webp"
+          "image": "https://gigabonus.win/images/cleobetra.webp"
         },
         "author": {
           "@type": "Person",
@@ -195,7 +195,7 @@ export default function CleobetraPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -229,10 +229,10 @@ export default function CleobetraPage() {
         title="Cleobetra Casino : Avis 2025, Bonus 150% + 200 FS | GigaBonus"
         description="Avis Cleobetra Casino 2025 : bonus 150% jusqu'à 500€ + 200 FS, casino et paris sportifs, cashback 10% sans wager. Test complet!"
         keywords="cleobetra casino, avis cleobetra, bonus cleobetra, cleobetra casino avis, bonus 150%, cashback 10%, casino bookmaker"
-        canonical="https://gigabonus.fr/cleobetra"
+        canonical="https://gigabonus.win/cleobetra"
         ogTitle="Cleobetra Casino : Avis 2025, Bonus 150% + 200 FS"
         ogDescription="Avis Cleobetra Casino 2025 : bonus 150% jusqu'à 500€ + 200 FS, casino et paris sportifs."
-        ogImage="https://gigabonus.fr/images/cleobetra.webp"
+        ogImage="https://gigabonus.win/images/cleobetra.webp"
         twitterTitle="Cleobetra Casino : Avis 2025, Bonus 150% + 200 FS"
         twitterDescription="Avis Cleobetra Casino 2025 : bonus 150% jusqu'à 500€ + 200 FS."
         schema={schemaData}

@@ -23,7 +23,7 @@ export default function AvisSlotRushPage() {
         "itemReviewed": {
           "@type": "OnlineBusiness",
           "name": "SlotRush Casino",
-          "image": "https://gigabonus.fr/images/slotrush.webp"
+          "image": "https://gigabonus.win/images/slotrush.webp"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -40,7 +40,7 @@ export default function AvisSlotRushPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr"
+          "url": "https://gigabonus.win"
         },
         "datePublished": "2025-01-20",
         "dateModified": "2025-11-21",
@@ -57,15 +57,15 @@ export default function AvisSlotRushPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr",
+          "url": "https://gigabonus.win",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2025-01-20",
         "dateModified": "2025-11-21",
-        "image": "https://gigabonus.fr/images/slotrush.webp"
+        "image": "https://gigabonus.win/images/slotrush.webp"
       },
       {
         "@type": "FAQPage",
@@ -97,10 +97,10 @@ export default function AvisSlotRushPage() {
         title="🎰 Avis SlotRush 2025 : Casino + Bookmaker | 350% + 200 FS"
         description="🏆 SlotRush : Bonus 350% + 200 FS | Bookmaker intégré | Wager x40 | Paris sportifs | Note 4.0/5 | Test casino + sport 2025 ⚡"
         keywords="avis slotrush, slotrush casino, bonus 350%, bookmaker casino, 200 free spins, slotrush test, paris sportifs, wager x40"
-        canonical="https://gigabonus.fr/blog/avis-slotrush-2025"
+        canonical="https://gigabonus.win/blog/avis-slotrush-2025"
         ogTitle="🎰 Avis SlotRush 2025 : Casino + Bookmaker | 350% + 200 FS"
         ogDescription="🏆 SlotRush : Bonus 350% + 200 FS | Bookmaker intégré | Wager x40 ⚡"
-        ogImage="https://gigabonus.fr/images/slotrush.webp"
+        ogImage="https://gigabonus.win/images/slotrush.webp"
         twitterTitle="🎰 Avis SlotRush 2025 : Casino + Bookmaker | 350% + 200 FS"
         twitterDescription="🏆 SlotRush : Bonus 350% + 200 FS | Bookmaker intégré ⚡"
         schema={schemaData}

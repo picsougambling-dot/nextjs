@@ -20,7 +20,7 @@ export default function AstuceCasinoPage() {
   "@type": "Article",
   "headline": "Astuces Casino 2025 : Stratégies Gagnantes & Conseils d'Expert | GigaBonus",
   "description": "Guide complet des astuces casino 2025 : stratégies blackjack, roulette, slots. Conseils d'experts pour maximiser vos gains !",
-  "image": "https://gigabonus.fr/gigabonus-logo.webp",
+  "image": "https://gigabonus.win/gigabonus-logo.webp",
   "datePublished": "2025-01-15T10:00:00+01:00",
   "dateModified": "2025-11-28T00:51:35.123Z",
   "author": {
@@ -32,7 +32,7 @@ export default function AstuceCasinoPage() {
     "name": "GigaBonus",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://gigabonus.fr/gigabonus-logo.webp"
+      "url": "https://gigabonus.win/gigabonus-logo.webp"
     }
   }
 };
@@ -43,10 +43,10 @@ export default function AstuceCasinoPage() {
         title="Astuces Casino 2025 : Stratégies Gagnantes & Conseils d'Expert | GigaBonus"
         description="Guide complet des astuces casino 2025 : stratégies blackjack, roulette, slots. Conseils d'experts pour maximiser vos gains !"
         keywords="astuces casino, stratégies casino, conseils casino, astuces blackjack, stratégies roulette, astuces slots 2025"
-        canonical="https://gigabonus.fr/astuces-casino"
+        canonical="https://gigabonus.win/astuces-casino"
         ogTitle="Astuces Casino 2025 : Stratégies Gagnantes & Conseils d'Expert | GigaBonus"
         ogDescription="Guide complet des astuces casino 2025 : stratégies blackjack, roulette, slots. Conseils d'experts pour maximiser vos gains !"
-        ogImage="https://gigabonus.fr/gigabonus-logo.webp"
+        ogImage="https://gigabonus.win/gigabonus-logo.webp"
         twitterTitle="Astuces Casino 2025 : Stratégies Gagnantes & Conseils d'Expert | GigaBonus"
         twitterDescription="Guide complet des astuces casino 2025 : stratégies blackjack, roulette, slots. Conseils d'experts pour maximiser vos gains !"
         schema={schemaData}

@@ -65,7 +65,7 @@ export default function CasinosSansKYCPage() {
       "@type": "Article",
       "headline": "Casinos Sans KYC 2025 : Jouez Sans Vérification d'Identité | GigaBonus",
       "description": "Découvrez les meilleurs casinos sans KYC en 2025. Jouez anonymement sans vérification d'identité, bonus exclusifs !",
-      "image": "https://gigabonus.fr/gigabonus-logo.webp",
+      "image": "https://gigabonus.win/gigabonus-logo.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.126Z",
       "author": {
@@ -77,7 +77,7 @@ export default function CasinosSansKYCPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     },
@@ -108,10 +108,10 @@ export default function CasinosSansKYCPage() {
         title="Casinos Sans KYC 2025 : Jouez Sans Vérification d'Identité | GigaBonus"
         description="Découvrez les meilleurs casinos sans KYC en 2025. Jouez anonymement sans vérification d'identité, bonus exclusifs !"
         keywords="casino sans kyc, casino anonyme, casino sans vérification, casino sans pièce identité, casino kyc free 2025"
-        canonical="https://gigabonus.fr/casinos-sans-kyc"
+        canonical="https://gigabonus.win/casinos-sans-kyc"
         ogTitle="Casinos Sans KYC 2025 : Jouez Sans Vérification d'Identité | GigaBonus"
         ogDescription="Découvrez les meilleurs casinos sans KYC en 2025. Jouez anonymement sans vérification d'identité, bonus exclusifs !"
-        ogImage="https://gigabonus.fr/gigabonus-logo.webp"
+        ogImage="https://gigabonus.win/gigabonus-logo.webp"
         twitterTitle="Casinos Sans KYC 2025 : Jouez Sans Vérification d'Identité | GigaBonus"
         twitterDescription="Découvrez les meilleurs casinos sans KYC en 2025. Jouez anonymement sans vérification d'identité, bonus exclusifs !"
         schema={schemaData}

@@ -46,10 +46,10 @@ export default function AvisMaChance() {
         title="Avis MaChance Casino 2025 : Test Complet & Bonus | GigaBonus"
         description="Découvrez notre avis détaillé sur MaChance Casino en 2025. Test complet : bonus 150% jusqu'à 500€ + 100 free spins, wager x40, retraits rapides."
         keywords="avis machance, machance casino, bonus machance, avis machance 2025, casino machance"
-        canonical="https://gigabonus.fr/blog/avis-machance-2025"
+        canonical="https://gigabonus.win/blog/avis-machance-2025"
         ogTitle="Avis MaChance Casino 2025 : Test Complet & Bonus"
         ogDescription="Découvrez notre avis détaillé sur MaChance Casino en 2025. Test complet : bonus 150% jusqu'à 500€ + 100 free spins."
-        ogImage="https://gigabonus.fr/images/machance.webp"
+        ogImage="https://gigabonus.win/images/machance.webp"
         twitterTitle="Avis MaChance Casino 2025 : Test Complet & Bonus"
         twitterDescription="Découvrez notre avis détaillé sur MaChance Casino en 2025. Test complet : bonus 150% jusqu'à 500€ + 100 free spins."
         schema={jsonLd}

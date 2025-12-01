@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Casinos Dépôt Neteller Instantané | GigaBonus 2025",
   description: "Casinos en ligne acceptant Neteller. E-wallet fiable avec dépôts instantanés et retraits rapides en 24h.",
   alternates: {
-    canonical: "https://gigabonus.fr/depot/neteller",
+    canonical: `${siteConfig.url}/depot/neteller`,
   },
 };
 

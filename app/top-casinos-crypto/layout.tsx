@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Meilleurs Casinos Crypto Bitcoin France | GigaBonus 2025",
   description: "Top des casinos crypto acceptant Bitcoin, Ethereum et USDT. Bonus exclusifs, retraits rapides et anonymat garanti.",
   alternates: {
-    canonical: "https://gigabonus.fr/top-casinos-crypto",
+    canonical: `${siteConfig.url}/top-casinos-crypto`,
   },
 };
 

@@ -52,7 +52,7 @@ export default function HunnyPlayPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "HunnyPlay Casino",
-          "image": "https://gigabonus.fr/images/hunnyplay.webp"
+          "image": "https://gigabonus.win/images/hunnyplay.webp"
         },
         "author": {
           "@type": "Person",
@@ -81,12 +81,12 @@ export default function HunnyPlayPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2024-07-10T10:00:00Z",
         "dateModified": new Date().toISOString(),
-        "image": "https://gigabonus.fr/images/hunnyplay.webp"
+        "image": "https://gigabonus.win/images/hunnyplay.webp"
       },
       {
         "@type": "FAQPage",
@@ -118,10 +118,10 @@ export default function HunnyPlayPage() {
         title="Avis HunnyPlay Casino 2025 : Bonus 200% Crypto + Retraits Express | Notre Test Complet"
         description="Notre avis complet sur HunnyPlay Casino 2025 : bonus 200% crypto-friendly, Bitcoin/Ethereum/USDT acceptés, retraits express 2h. Test détaillé !"
         keywords="hunnyplay casino, avis hunnyplay, bonus crypto, casino crypto, bitcoin casino, retraits express, hunnyplay avis"
-        canonical="https://gigabonus.fr/hunnyplay"
+        canonical="https://gigabonus.win/hunnyplay"
         ogTitle="Avis HunnyPlay Casino 2025 : Bonus 200% + Crypto Express"
         ogDescription="Notre avis complet sur HunnyPlay Casino : bonus crypto 200%, retraits express, interface moderne."
-        ogImage="https://gigabonus.fr/images/hunnyplay.webp"
+        ogImage="https://gigabonus.win/images/hunnyplay.webp"
         twitterTitle="Avis HunnyPlay Casino 2025 : Bonus 200% + Crypto Express"
         twitterDescription="Notre avis complet sur HunnyPlay Casino : bonus crypto 200%, retraits express."
         schema={schemaData}

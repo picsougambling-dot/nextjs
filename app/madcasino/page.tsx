@@ -49,7 +49,7 @@ export default function MadCasinoPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "MadCasino",
-          "image": "https://gigabonus.fr/images/madcasino.webp"
+          "image": "https://gigabonus.win/images/madcasino.webp"
         },
         "author": {
           "@type": "Person",
@@ -73,10 +73,10 @@ export default function MadCasinoPage() {
         title={`Avis MadCasino 2025 : Bonus ${casino.bonusText} | Notre Test Complet`}
         description={`Notre avis complet sur MadCasino 2025 : bonus ${casino.bonusText}, ${casino.wager === null ? 'sans wager' : `wager x${casino.wager}`}, bookmaker intégré, retraits rapides. Test détaillé !`}
         keywords="casino en ligne, bonus casino, jeux casino, bookmaker, paris sportifs, casino fiable, retraits rapides"
-        canonical="https://gigabonus.fr/madcasino"
+        canonical="https://gigabonus.win/madcasino"
         ogTitle={`Avis MadCasino 2025 : Bonus ${casino.bonusText}`}
         ogDescription={`Notre avis complet sur MadCasino : bonus ${casino.bonusText}, bookmaker, retraits rapides.`}
-        ogImage="https://gigabonus.fr/images/madcasino.webp"
+        ogImage="https://gigabonus.win/images/madcasino.webp"
         twitterTitle={`Avis MadCasino 2025 : Bonus ${casino.bonusText}`}
         twitterDescription={`Notre avis complet sur MadCasino : bonus ${casino.bonusText}, bookmaker, retraits rapides.`}
         schema={schemaData}

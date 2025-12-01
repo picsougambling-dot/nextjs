@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import Head from "next/head";
 import SchemaOrg from "./SchemaOrg";
 import { pageTitles } from "@/data/pageTitles";
+import { siteConfig } from "@/config/site";
 
 interface SEOHeadProps {
   title: string;
@@ -33,11 +34,16 @@ export default function SEOHead({
   const robotsContent =
     "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 
+  const canonicalUrl = (() => {
+    if (!canonical) return siteConfig.url;
+    if (canonical.startsWith("http")) return canonical;
+    if (canonical.startsWith("/")) return `${siteConfig.url}${canonical}`;
+    return `${siteConfig.url}/${canonical}`;
+  })();
+
   const canonicalPath = (() => {
     try {
-      const url = canonical
-        ? new URL(canonical, canonical.startsWith("http") ? undefined : "https://gigabonus.fr")
-        : new URL("https://gigabonus.fr/");
+      const url = new URL(canonicalUrl);
       let path = url.pathname || "/";
       if (path.length > 1 && path.endsWith("/")) {
         path = path.slice(0, -1);
@@ -53,6 +59,15 @@ export default function SEOHead({
   const finalOgTitle = ogTitle || finalTitle;
   const finalTwitterTitle = twitterTitle || finalTitle;
 
+  const resolveAssetUrl = (value?: string) => {
+    if (!value) return undefined;
+    if (value.startsWith("http")) return value;
+    if (value.startsWith("/")) return `${siteConfig.url}${value}`;
+    return `${siteConfig.url}/${value}`;
+  };
+
+  const finalOgImage = resolveAssetUrl(ogImage);
+
   // Update document.title client-side for App Router compatibility
   useEffect(() => {
     document.title = finalTitle;
@@ -67,16 +82,16 @@ export default function SEOHead({
 
       <meta property="og:title" content={finalOgTitle} />
       <meta property="og:description" content={ogDescription || description} />
-      <meta property="og:url" content={canonical} />
+      <meta property="og:url" content={canonicalUrl} />
       <meta property="og:type" content="website" />
-      {ogImage && <meta property="og:image" content={ogImage} />}
+      {finalOgImage && <meta property="og:image" content={finalOgImage} />}
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={finalTwitterTitle} />
       <meta name="twitter:description" content={twitterDescription || description} />
-      {ogImage && <meta name="twitter:image" content={ogImage} />}
+      {finalOgImage && <meta name="twitter:image" content={finalOgImage} />}
 
-      <link rel="canonical" href={canonical} />
+      <link rel="canonical" href={canonicalUrl} />
 
       {schema && <SchemaOrg schema={schema} />}
     </Head>

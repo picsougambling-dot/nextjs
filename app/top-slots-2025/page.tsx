@@ -158,7 +158,7 @@ export default function TopSlots2025Page() {
       "@type": "Article",
       "headline": "Top Slots 2025 : Meilleures Machines à Sous avec Meilleur RTP | GigaBonus",
       "description": "Découvrez le top des slots 2025 : meilleures machines à sous avec RTP élevé, jackpots progressifs, free spins. Guide complet !",
-      "image": "https://gigabonus.fr/gigabonus-logo.webp",
+      "image": "https://gigabonus.win/gigabonus-logo.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:51:35.129Z",
       "author": {
@@ -170,7 +170,7 @@ export default function TopSlots2025Page() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -183,10 +183,10 @@ export default function TopSlots2025Page() {
         title="Top Slots 2025 : Meilleures Machines à Sous avec Meilleur RTP | GigaBonus"
         description="Découvrez le top des slots 2025 : meilleures machines à sous avec RTP élevé, jackpots progressifs, free spins. Guide complet !"
         keywords="top slots 2025, meilleures machines à sous, slots RTP élevé, meilleurs slots, machines à sous 2025"
-        canonical="https://gigabonus.fr/top-slots-2025"
+        canonical="https://gigabonus.win/top-slots-2025"
         ogTitle="Top Slots 2025 : Meilleures Machines à Sous avec Meilleur RTP | GigaBonus"
         ogDescription="Découvrez le top des slots 2025 : meilleures machines à sous avec RTP élevé, jackpots progressifs, free spins. Guide complet !"
-        ogImage="https://gigabonus.fr/gigabonus-logo.webp"
+        ogImage="https://gigabonus.win/gigabonus-logo.webp"
         twitterTitle="Top Slots 2025 : Meilleures Machines à Sous avec Meilleur RTP | GigaBonus"
         twitterDescription="Découvrez le top des slots 2025 : meilleures machines à sous avec RTP élevé, jackpots progressifs, free spins. Guide complet !"
         schema={schemaData}

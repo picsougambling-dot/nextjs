@@ -64,10 +64,10 @@ export default function KingsChancePage() {
         title="Avis Kings Chance Casino 2025 : Bonus Sans Wager 150% jusqu'à 500€ + Cashback 15% | GigaBonus"
         description="Notre avis complet sur Kings Chance Casino 2025 : bonus sans wager 150% jusqu'à 500€, cashback royal 15% cash, retraits rapides. Test détaillé !"
         keywords="kings chance casino, avis kings chance, bonus kings chance, kings chance sans wager, kings chance cashback, casino kings chance 2025"
-        canonical="https://gigabonus.fr/kingschance"
+        canonical="https://gigabonus.win/kingschance"
         ogTitle="Avis Kings Chance Casino 2025 : Bonus Sans Wager 150% + Cashback 15%"
         ogDescription="Notre avis complet sur Kings Chance Casino : bonus sans wager révolutionnaire, cashback royal 15% en cash, transparence totale."
-        ogImage="https://gigabonus.fr/images/kingschance.webp"
+        ogImage="https://gigabonus.win/images/kingschance.webp"
         twitterTitle="Avis Kings Chance Casino 2025 : Bonus Sans Wager 150% + Cashback 15%"
         twitterDescription="Notre avis complet sur Kings Chance Casino : bonus sans wager révolutionnaire, cashback royal 15% en cash, transparence totale."
         schema={{
@@ -78,7 +78,7 @@ export default function KingsChancePage() {
               "itemReviewed": {
                 "@type": "Product",
                 "name": "Avis Kings Chance Casino 2025 : Bonus Sans Wager 150% + Cashback 15%",
-                "image": "https://gigabonus.fr/images/kingschance.webp"
+                "image": "https://gigabonus.win/images/kingschance.webp"
               },
               "author": {
                 "@type": "Person",

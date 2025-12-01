@@ -43,7 +43,7 @@ export default function AvisMagicalSpinPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Magical Spin 2025",
-        "image": "https://gigabonus.fr/images/magicalspin.webp"
+        "image": "https://gigabonus.win/images/magicalspin.webp"
       },
       "author": {
         "@type": "Person",
@@ -67,7 +67,7 @@ export default function AvisMagicalSpinPage() {
       "@type": "Article",
       "headline": "✨ Avis Magical Spin 2025 : Test Complet + Bonus 150% jusqu'à 500€ + 100 FS | GigaBonus",
       "description": "⭐ Avis complet Magical Spin 2025 : bonus 150% + 100 FS, promotions quotidiennes, e-wallets rapides. Test détaillé par nos experts casino.",
-      "image": "https://gigabonus.fr/images/magicalspin.webp",
+      "image": "https://gigabonus.win/images/magicalspin.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.335Z",
       "author": {
@@ -79,7 +79,7 @@ export default function AvisMagicalSpinPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -92,10 +92,10 @@ export default function AvisMagicalSpinPage() {
         title="✨ Avis Magical Spin 2025 : Test Complet + Bonus 150% jusqu'à 500€ + 100 FS | GigaBonus"
         description="⭐ Avis complet Magical Spin 2025 : bonus 150% + 100 FS, promotions quotidiennes, e-wallets rapides. Test détaillé par nos experts casino."
         keywords="avis magical spin, magical spin casino, bonus magical spin, magical spin 2025, test magical spin, magical spin fiable"
-        canonical="https://gigabonus.fr/blog/avis-magicalspin-2025"
+        canonical="https://gigabonus.win/blog/avis-magicalspin-2025"
         ogTitle="✨ Avis Magical Spin 2025 : Test Complet + Bonus 150%"
         ogDescription="⭐ Notre test détaillé de Magical Spin : bonus 150% + 100 FS, promotions quotidiennes. Avis d'experts."
-        ogImage="https://gigabonus.fr/images/magicalspin.webp"
+        ogImage="https://gigabonus.win/images/magicalspin.webp"
         twitterTitle="✨ Avis Magical Spin 2025 : Test Complet + Bonus 150%"
         twitterDescription="⭐ Notre test détaillé de Magical Spin : bonus 150% + 100 FS, promotions quotidiennes. Avis d'experts."
         schema={schemaData}

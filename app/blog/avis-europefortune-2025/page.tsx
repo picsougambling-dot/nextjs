@@ -43,7 +43,7 @@ export default function AvisEuropeFortunePage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Europe Fortune 2025",
-        "image": "https://gigabonus.fr/images/europefortune.webp"
+        "image": "https://gigabonus.win/images/europefortune.webp"
       },
       "author": {
         "@type": "Person",
@@ -67,7 +67,7 @@ export default function AvisEuropeFortunePage() {
       "@type": "Article",
       "headline": "🏆 Avis Europe Fortune 2025 : Test Complet + Bonus 150% jusqu'à 1000€ + 50 FS | GigaBonus",
       "description": "⭐ Avis complet Europe Fortune 2025 : bonus 150% + 50 FS, casino + paris sportifs, méthodes variées. Test détaillé par nos experts casino.",
-      "image": "https://gigabonus.fr/images/europefortune.webp",
+      "image": "https://gigabonus.win/images/europefortune.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.339Z",
       "author": {
@@ -79,7 +79,7 @@ export default function AvisEuropeFortunePage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -92,10 +92,10 @@ export default function AvisEuropeFortunePage() {
         title="🏆 Avis Europe Fortune 2025 : Test Complet + Bonus 150% jusqu'à 1000€ + 50 FS | GigaBonus"
         description="⭐ Avis complet Europe Fortune 2025 : bonus 150% + 50 FS, casino + paris sportifs, méthodes variées. Test détaillé par nos experts casino."
         keywords="avis europe fortune, europe fortune casino, bonus europe fortune, europe fortune 2025, test europe fortune, europe fortune fiable, avis casino europe fortune"
-        canonical="https://gigabonus.fr/blog/avis-europefortune-2025"
+        canonical="https://gigabonus.win/blog/avis-europefortune-2025"
         ogTitle="🏆 Avis Europe Fortune 2025 : Test Complet + Bonus 150%"
         ogDescription="⭐ Notre test détaillé de Europe Fortune : bonus 150% + 50 FS, casino + sport. Avis d'experts avec avantages et inconvénients."
-        ogImage="https://gigabonus.fr/images/europefortune.webp"
+        ogImage="https://gigabonus.win/images/europefortune.webp"
         twitterTitle="🏆 Avis Europe Fortune 2025 : Test Complet + Bonus 150%"
         twitterDescription="⭐ Notre test détaillé de Europe Fortune : bonus 150% + 50 FS, casino + sport. Avis d'experts avec avantages et inconvénients."
         schema={schemaData}

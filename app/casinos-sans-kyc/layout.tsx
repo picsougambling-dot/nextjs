@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Casinos Sans KYC Inscription Rapide | GigaBonus 2025",
   description: "Casinos en ligne sans vérification d'identité KYC. Inscription rapide, dépôts anonymes et retraits express.",
   alternates: {
-    canonical: "https://gigabonus.fr/casinos-sans-kyc",
+    canonical: `${siteConfig.url}/casinos-sans-kyc`,
   },
 };
 

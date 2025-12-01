@@ -4,7 +4,7 @@
 
 GigaBonus est un comparateur de bonus de casinos en ligne français, construit avec Next.js 14. Le site permet aux utilisateurs de comparer les meilleurs casinos en ligne, leurs bonus, conditions de wager, méthodes de paiement et fournisseurs de jeux.
 
-**URL de production**: https://gigabonus.fr
+**URL de production**: https://gigabonus.win
 **Framework**: Next.js 14.2.0 (App Router)
 **Langage**: TypeScript
 **Styling**: Tailwind CSS + shadcn/ui
@@ -173,7 +173,7 @@ Génération automatique avec priorités :
 Configuration pour :
 - Googlebot, Bingbot
 - Disallow : /api/, /admin/, /_next/, /private/
-- Sitemap : https://gigabonus.fr/sitemap.xml
+- Sitemap : https://gigabonus.win/sitemap.xml
 
 ## Thème et UI
 

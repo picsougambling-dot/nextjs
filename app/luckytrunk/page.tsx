@@ -154,7 +154,7 @@ export default function LuckyTrunkPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Lucky Trunk Casino",
-          "image": "https://gigabonus.fr/images/luckytrunk.webp"
+          "image": "https://gigabonus.win/images/luckytrunk.webp"
         },
         "author": {
           "@type": "Person",
@@ -189,7 +189,7 @@ export default function LuckyTrunkPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -223,10 +223,10 @@ export default function LuckyTrunkPage() {
         title="🎁 Lucky Trunk Casino : Bonus 300% SANS WAGER + Bookmaker 2025"
         description="💎 Lucky Trunk : Bonus 300% Sans Wager jusqu'à 1200€ | Retraits LIBRES | Bookmaker intégré | 6 méthodes paiement | Dépôt 20€ ⚡"
         keywords="lucky trunk casino, bonus sans wager, casino sans conditions, bookmaker casino, bonus 300%, retraits libres, casino 2025, paris sportifs"
-        canonical="https://gigabonus.fr/luckytrunk"
+        canonical="https://gigabonus.win/luckytrunk"
         ogTitle="Lucky Trunk : Bonus 300% SANS WAGER + Bookmaker"
         ogDescription="💎 Bonus 300% Sans Wager | Retraits LIBRES | Bookmaker ⚡"
-        ogImage="https://gigabonus.fr/images/luckytrunk.webp"
+        ogImage="https://gigabonus.win/images/luckytrunk.webp"
         twitterTitle="Lucky Trunk : Bonus 300% SANS WAGER + Bookmaker"
         twitterDescription="💎 Bonus 300% Sans Wager | Retraits LIBRES | Bookmaker ⚡"
         schema={schemaData}

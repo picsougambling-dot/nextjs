@@ -21,7 +21,7 @@ export default function AvisHunnyPlayPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "HunnyPlay Casino",
-          "image": "https://gigabonus.fr/images/hunnyplay.webp"
+          "image": "https://gigabonus.win/images/hunnyplay.webp"
         },
         "author": {
           "@type": "Person",
@@ -45,7 +45,7 @@ export default function AvisHunnyPlayPage() {
         "@type": "Article",
         "headline": "Avis HunnyPlay Casino 2025 : Test Complet",
         "description": "Découvrez notre avis détaillé sur HunnyPlay Casino avec un bonus de 200% jusqu'à 200€.",
-        "image": "https://gigabonus.fr/images/hunnyplay.webp",
+        "image": "https://gigabonus.win/images/hunnyplay.webp",
         "datePublished": "2025-01-15T10:00:00+01:00",
         "dateModified": "2025-11-21T10:00:00+01:00",
         "author": {
@@ -57,7 +57,7 @@ export default function AvisHunnyPlayPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -83,10 +83,10 @@ export default function AvisHunnyPlayPage() {
         title="🍯 Avis HunnyPlay 2025 : Casino Crypto Expert | Bitcoin & Retraits 2h"
         description="🚀 HunnyPlay Crypto : Bonus 200% | Wager x30 | Bitcoin, ETH, USDT | Retraits 2h | Interface moderne | Note 4.3/5 | Test expert ⚡"
         keywords="avis hunnyplay, hunnyplay crypto, casino bitcoin, retraits rapides crypto, bonus 200%, hunnyplay test, ethereum casino, wager x30"
-        canonical="https://gigabonus.fr/blog/avis-hunnyplay-2025"
+        canonical="https://gigabonus.win/blog/avis-hunnyplay-2025"
         ogTitle="🍯 Avis HunnyPlay : Casino Crypto + Retraits 2h"
         ogDescription="🚀 Test Crypto | Bonus 200% | Bitcoin, ETH | Note 4.3/5 ⚡"
-        ogImage="https://gigabonus.fr/images/hunnyplay.webp"
+        ogImage="https://gigabonus.win/images/hunnyplay.webp"
         twitterTitle="🍯 Avis HunnyPlay : Casino Crypto + Retraits 2h"
         twitterDescription="🚀 Test Crypto | Bonus 200% | Bitcoin, ETH | Note 4.3/5 ⚡"
         schema={schemaData}

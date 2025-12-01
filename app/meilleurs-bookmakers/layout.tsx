@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
   title: "Classement Meilleurs Bookmakers 2025 | GigaBonus",
   description: "Top des meilleurs bookmakers et sites de paris sportifs 2025. Bonus exclusifs, cotes compétitives et paris en direct.",
   alternates: {
-    canonical: "https://gigabonus.fr/meilleurs-bookmakers",
+    canonical: `${siteConfig.url}/meilleurs-bookmakers`,
   },
 };
 

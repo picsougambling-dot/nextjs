@@ -21,7 +21,7 @@ export default function AvisLuckyTrunkPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Lucky Trunk Casino",
-          "image": "https://gigabonus.fr/images/luckytrunk.webp"
+          "image": "https://gigabonus.win/images/luckytrunk.webp"
         },
         "author": {
           "@type": "Person",
@@ -44,7 +44,7 @@ export default function AvisLuckyTrunkPage() {
       {
         "@type": "Article",
         "headline": "Avis Lucky Trunk Casino 2025 : Test Complet Bonus Sans Wager",
-        "image": "https://gigabonus.fr/images/luckytrunk.webp",
+        "image": "https://gigabonus.win/images/luckytrunk.webp",
         "author": {
           "@type": "Person",
           "name": "Alexandre Martin"
@@ -54,7 +54,7 @@ export default function AvisLuckyTrunkPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2025-01-15",
@@ -82,10 +82,10 @@ export default function AvisLuckyTrunkPage() {
         title="💎 Avis Lucky Trunk 2025 : Bonus 300% SANS WAGER | Retraits Libres"
         description="🎁 Lucky Trunk : 300% Sans Wager | Bookmaker | Retraits LIBRES | 6 paiements | Note 4.5/5 | Test complet sans conditions de mise ⚡"
         keywords="avis lucky trunk, bonus sans wager, lucky trunk test, casino sans conditions, bookmaker casino, retraits libres, note 4.5"
-        canonical="https://gigabonus.fr/blog/avis-luckytrunk-2025"
+        canonical="https://gigabonus.win/blog/avis-luckytrunk-2025"
         ogTitle="Avis Lucky Trunk 2025 : Bonus 300% SANS WAGER"
         ogDescription="Test complet Lucky Trunk Casino : bonus 300% sans wager, retraits libres, bookmaker intégré. Note 4.5/5"
-        ogImage="https://gigabonus.fr/images/luckytrunk.webp"
+        ogImage="https://gigabonus.win/images/luckytrunk.webp"
         twitterTitle="Avis Lucky Trunk 2025 : Bonus 300% SANS WAGER"
         twitterDescription="Test complet Lucky Trunk Casino : bonus 300% sans wager."
         schema={schemaData}

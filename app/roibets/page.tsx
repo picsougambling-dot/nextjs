@@ -54,7 +54,7 @@ export default function RoiBetsPage() {
           "@type": "Product",
           "name": "RoiBets Casino - Bonus 200% jusqu'à 1500€",
           "description": "Bonus royal de bienvenue jusqu'à 1500€ sur RoiBets Casino - Casino + Paris Sportifs - Ludothèque premium 2800 jeux - Wager x40",
-          "image": "https://gigabonus.fr/images/roibets.webp",
+          "image": "https://gigabonus.win/images/roibets.webp",
           "brand": {
             "@type": "Brand",
             "name": "RoiBets"
@@ -94,7 +94,7 @@ export default function RoiBetsPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -120,10 +120,10 @@ export default function RoiBetsPage() {
         title="Avis RoiBets Casino 2025 : Bonus 200% jusqu'à 1500€ | Notre Test Complet"
         description="Notre avis complet sur RoiBets Casino 2025 : bonus 200% jusqu'à 1500€, ludothèque premium, retraits rapides. Test détaillé !"
         keywords="roibets casino, avis roibets, bonus roibets, roibets casino avis, bonus 200%, casino bookmaker, paris sportifs"
-        canonical="https://gigabonus.fr/roibets"
+        canonical="https://gigabonus.win/roibets"
         ogTitle="Avis RoiBets Casino 2025 : Bonus 200% jusqu'à 1500€"
         ogDescription="Notre avis complet sur RoiBets Casino : bonus royal 200% jusqu'à 1500€, jeux premium, support 24/7."
-        ogImage="https://gigabonus.fr/images/roibets.webp"
+        ogImage="https://gigabonus.win/images/roibets.webp"
         twitterTitle="Avis RoiBets Casino 2025 : Bonus 200% jusqu'à 1500€"
         twitterDescription="Notre avis complet sur RoiBets Casino : bonus royal 200% jusqu'à 1500€."
         schema={schemaData}

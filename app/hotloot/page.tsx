@@ -51,10 +51,10 @@ export default function HotLootPage() {
         title="Avis HotLoot Casino 2025 : Bonus 300% jusqu'à 1200€ - Notre Test Complet | GigaBonus"
         description="Notre avis complet sur HotLoot Casino 2025 : bonus 300% jusqu'à 1200€, wager x30 favorable, retraits rapides. Test détaillé !"
         keywords="hotloot casino, avis hotloot, bonus hotloot, hotloot 300%, hotloot casino avis, hotloot bonus, casino hotloot 2025"
-        canonical="https://gigabonus.fr/hotloot"
+        canonical="https://gigabonus.win/hotloot"
         ogTitle="Avis HotLoot Casino 2025 : Bonus 300% jusqu'à 1200€"
         ogDescription="Notre avis complet sur HotLoot Casino : bonus 300% jusqu'à 1200€, conditions favorables x30, support premium."
-        ogImage="https://gigabonus.fr/images/hotloot.webp"
+        ogImage="https://gigabonus.win/images/hotloot.webp"
         twitterTitle="Avis HotLoot Casino 2025 : Bonus 300% jusqu'à 1200€"
         twitterDescription="Notre avis complet sur HotLoot Casino : bonus 300% jusqu'à 1200€, conditions favorables x30, support premium."
         schema={{
@@ -65,7 +65,7 @@ export default function HotLootPage() {
               "itemReviewed": {
                 "@type": "Product",
                 "name": "Avis HotLoot Casino 2025 : Bonus 300% jusqu'à 1200€",
-                "image": "https://gigabonus.fr/images/hotloot.webp"
+                "image": "https://gigabonus.win/images/hotloot.webp"
               },
               "author": {
                 "@type": "Person",

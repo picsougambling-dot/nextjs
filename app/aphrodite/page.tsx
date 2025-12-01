@@ -49,7 +49,7 @@ export default function AphroditePage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "Aphrodite Casino",
-          "image": "https://gigabonus.fr/images/aphrodite.webp"
+          "image": "https://gigabonus.win/images/aphrodite.webp"
         },
         "author": {
           "@type": "Person",
@@ -73,10 +73,10 @@ export default function AphroditePage() {
         title={`Avis Aphrodite Casino 2025 : Bonus ${casino.bonusText} | Notre Test Complet`}
         description={`Notre avis complet sur Aphrodite Casino 2025 : bonus ${casino.bonusText}, ${casino.wager === null ? 'sans wager' : `wager x${casino.wager}`}, bookmaker intégré, retraits rapides. Test détaillé !`}
         keywords="casino en ligne, bonus casino, jeux casino, bookmaker, paris sportifs, casino fiable, retraits rapides"
-        canonical="https://gigabonus.fr/aphrodite"
+        canonical="https://gigabonus.win/aphrodite"
         ogTitle={`Avis Aphrodite Casino 2025 : Bonus ${casino.bonusText}`}
         ogDescription={`Notre avis complet sur Aphrodite Casino : bonus ${casino.bonusText}, bookmaker, retraits rapides.`}
-        ogImage="https://gigabonus.fr/images/aphrodite.webp"
+        ogImage="https://gigabonus.win/images/aphrodite.webp"
         twitterTitle={`Avis Aphrodite Casino 2025 : Bonus ${casino.bonusText}`}
         twitterDescription={`Notre avis complet sur Aphrodite Casino : bonus ${casino.bonusText}, bookmaker, retraits rapides.`}
         schema={schemaData}

@@ -97,7 +97,7 @@ export default function LuckyTreasurePage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "Lucky Treasure Casino",
-          "image": "https://gigabonus.fr/images/luckytreasure.webp"
+          "image": "https://gigabonus.win/images/luckytreasure.webp"
         },
         "author": {
           "@type": "Person",
@@ -132,7 +132,7 @@ export default function LuckyTreasurePage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -166,10 +166,10 @@ export default function LuckyTreasurePage() {
         title="Avis Lucky Treasure Casino 2025 : Bonus 200% + 50 FS Sans Dépôt | Notre Test Complet"
         description="Notre avis sur Lucky Treasure 2025 : bonus sans wager 200% + 50 FS sans dépôt, cashback 50%, retraits 24-48h."
         keywords="lucky treasure casino, avis lucky treasure, bonus sans wager, free spins sans dépôt, cashback 50%, lucky treasure avis"
-        canonical="https://gigabonus.fr/luckytreasure"
+        canonical="https://gigabonus.win/luckytreasure"
         ogTitle="Avis Lucky Treasure 2025 : Bonus 200% + 50 FS Sans Dépôt"
         ogDescription="Test complet de Lucky Treasure : bonus sans wager, 50 FS sans dépôt, cashback 50%, retraits rapides."
-        ogImage="https://gigabonus.fr/images/luckytreasure.webp"
+        ogImage="https://gigabonus.win/images/luckytreasure.webp"
         twitterTitle="Avis Lucky Treasure 2025 : Bonus 200% + 50 FS Sans Dépôt"
         twitterDescription="Test complet de Lucky Treasure : bonus sans wager, 50 FS sans dépôt."
         schema={schemaData}

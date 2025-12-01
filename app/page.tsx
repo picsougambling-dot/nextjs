@@ -122,7 +122,7 @@ export default function IndexPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr"
+          "url": "https://gigabonus.win"
         },
         "datePublished": "2025-11-20",
         "dateModified": "2025-11-20"
@@ -149,10 +149,10 @@ export default function IndexPage() {
         title="Comparateur de Bonus de Casinos en Ligne 2025 | GigaBonus"
         description="🎰 Comparateur #1 des bonus casino 2025 : trouvez les meilleurs bonus jusqu'à 400%, filtrez par wager, méthodes de paiement. 23+ casinos fiables comparés. Guide complet gratuit !"
         keywords="comparateur bonus casino, meilleurs bonus casino 2025, bonus casino en ligne, casino fiable, bonus 400%, bonus sans wager, casino crypto, cashback casino, free spins, wager casino, depot casino"
-        canonical="https://gigabonus.fr/"
+        canonical="https://gigabonus.win/"
         ogTitle="Comparateur de Bonus de Casinos en Ligne 2025 | GigaBonus"
         ogDescription="🎰 Comparateur #1 des bonus casino : trouvez les meilleurs bonus jusqu'à 400%. 23+ casinos fiables comparés avec filtres avancés."
-        ogImage="https://gigabonus.fr/og-image.png"
+        ogImage="https://gigabonus.win/og-image.png"
         twitterTitle="Comparateur de Bonus de Casinos en Ligne 2025 | GigaBonus"
         twitterDescription="🎰 Comparateur #1 des bonus casino : trouvez les meilleurs bonus jusqu'à 400%. Filtres avancés par wager et méthodes de paiement."
         schema={schemaData}

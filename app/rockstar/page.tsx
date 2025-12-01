@@ -167,7 +167,7 @@ export default function RockstarPage() {
           "@type": "Product",
           "name": "Rockstar Casino - Bonus Rock 100% jusqu'à 5000€ + 400 FS",
           "description": "Pack rock progressif 100% jusqu'à 5000€ + 400 Free Spins sur Rockstar Casino - Cashback 5% hebdomadaire - Promotions lundi/mercredi/vendredi - Wager x40 équitable",
-          "image": "https://gigabonus.fr/images/rockstar.webp",
+          "image": "https://gigabonus.win/images/rockstar.webp",
           "brand": {
             "@type": "Brand",
             "name": "Rockstar Casino"
@@ -207,7 +207,7 @@ export default function RockstarPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -241,10 +241,10 @@ export default function RockstarPage() {
         title="Rockstar Casino : Avis 2025, Bonus 100% jusqu'à 5000€ + 400 FS | GigaBonus"
         description="Avis Rockstar Casino 2025 : bonus rock jusqu'à 5000€, cashback 5%, promotions hebdomadaires. Test complet du casino!"
         keywords="rockstar casino, avis rockstar, bonus rockstar, rockstar casino avis, bonus 100%, cashback 5%, casino rockstar"
-        canonical="https://gigabonus.fr/rockstar"
+        canonical="https://gigabonus.win/rockstar"
         ogTitle="Rockstar Casino : Avis 2025, Bonus Rock jusqu'à 5000€"
         ogDescription="Avis Rockstar Casino 2025 : bonus rock jusqu'à 5000€, cashback 5%, promotions hebdomadaires."
-        ogImage="https://gigabonus.fr/images/rockstar.webp"
+        ogImage="https://gigabonus.win/images/rockstar.webp"
         twitterTitle="Rockstar Casino : Avis 2025, Bonus Rock jusqu'à 5000€"
         twitterDescription="Avis Rockstar Casino 2025 : bonus rock jusqu'à 5000€, cashback 5%, promotions hebdomadaires."
         schema={schemaData}

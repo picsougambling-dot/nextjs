@@ -24,7 +24,7 @@ export default function AvisCasinoIntensePage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Casino Intense 2025",
-        "image": "https://gigabonus.fr/images/casinointense.webp"
+        "image": "https://gigabonus.win/images/casinointense.webp"
       },
       "author": {
         "@type": "Person",
@@ -48,7 +48,7 @@ export default function AvisCasinoIntensePage() {
       "@type": "Article",
       "headline": "🎰 Avis Casino Intense 2025 : Test Complet + Bonus 150% jusqu'à 1000€ | GigaBonus",
       "description": "⭐ Avis complet Casino Intense 2025 : bonus 150% jusqu'à 1000€ + 100 FS, interface moderne, promotions régulières. Test détaillé par nos experts casino.",
-      "image": "https://gigabonus.fr/images/casinointense.webp",
+      "image": "https://gigabonus.win/images/casinointense.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.319Z",
       "author": {
@@ -60,7 +60,7 @@ export default function AvisCasinoIntensePage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -73,10 +73,10 @@ export default function AvisCasinoIntensePage() {
         title="🎰 Avis Casino Intense 2025 : Test Complet + Bonus 150% jusqu'à 1000€ | GigaBonus"
         description="⭐ Avis complet Casino Intense 2025 : bonus 150% jusqu'à 1000€ + 100 FS, interface moderne, promotions régulières. Test détaillé par nos experts casino."
         keywords="avis casino intense, casino intense, bonus casino intense, casino intense 2025, test casino intense, casino intense fiable"
-        canonical="https://gigabonus.fr/blog/avis-casinointense-2025"
+        canonical="https://gigabonus.win/blog/avis-casinointense-2025"
         ogTitle="🎰 Avis Casino Intense 2025 : Test Complet + Bonus 150%"
         ogDescription="⭐ Notre test détaillé de Casino Intense : bonus 150%, interface moderne, promotions hebdomadaires. Avis d'experts."
-        ogImage="https://gigabonus.fr/images/casinointense.webp"
+        ogImage="https://gigabonus.win/images/casinointense.webp"
         twitterTitle="🎰 Avis Casino Intense 2025 : Test Complet + Bonus 150%"
         twitterDescription="⭐ Notre test détaillé de Casino Intense : bonus 150%, interface moderne, promotions hebdomadaires. Avis d'experts."
         schema={schemaData}

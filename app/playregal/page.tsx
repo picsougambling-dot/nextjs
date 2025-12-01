@@ -103,7 +103,7 @@ export default function PlayRegalPage() {
           "@type": "Product",
           "name": "Play Regal Casino - Bonus 300% jusqu'à 6000€ + 60 FS",
           "description": "Bonus royal progressif 300% jusqu'à 6000€ + 60 Free Spins sur Play Regal Casino - VIP quotidien jusqu'à 750€ - Cashback 100€ sans wager - Roue bonus - Wager x30",
-          "image": "https://gigabonus.fr/images/playregal.webp",
+          "image": "https://gigabonus.win/images/playregal.webp",
           "brand": {
             "@type": "Brand",
             "name": "Play Regal Casino"
@@ -143,7 +143,7 @@ export default function PlayRegalPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -177,10 +177,10 @@ export default function PlayRegalPage() {
         title="Avis Play Regal Casino 2025 : Bonus 300% jusqu'à 6000€ + 60 FS | Notre Test Complet"
         description="Notre avis complet sur Play Regal Casino 2025 : bonus 300% jusqu'à 6000€ + 60 FS, VIP quotidien 750€, cashback 100€, roue bonus, retraits 24-48h. Test détaillé !"
         keywords="play regal casino, avis play regal, bonus play regal, play regal casino avis, bonus 300%, vip quotidien, cashback royal"
-        canonical="https://gigabonus.fr/playregal"
+        canonical="https://gigabonus.win/playregal"
         ogTitle="Avis Play Regal Casino 2025 : Bonus 300% jusqu'à 6000€ + 60 FS"
         ogDescription="Notre avis complet sur Play Regal Casino : bonus royal progressif, programme VIP exceptionnel, cashback quotidien."
-        ogImage="https://gigabonus.fr/images/playregal.webp"
+        ogImage="https://gigabonus.win/images/playregal.webp"
         twitterTitle="Avis Play Regal Casino 2025 : Bonus 300% jusqu'à 6000€ + 60 FS"
         twitterDescription="Notre avis complet sur Play Regal Casino : bonus royal progressif, programme VIP exceptionnel."
         schema={schemaData}

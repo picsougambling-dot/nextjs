@@ -24,7 +24,7 @@ export default function AvisAtlantisSlotsPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Atlantis Slots 2025",
-        "image": "https://gigabonus.fr/images/atlantisslots.webp"
+        "image": "https://gigabonus.win/images/atlantisslots.webp"
       },
       "author": {
         "@type": "Person",
@@ -48,7 +48,7 @@ export default function AvisAtlantisSlotsPage() {
       "@type": "Article",
       "headline": "🎰 Avis Atlantis Slots 2025 : Test Complet + Bonus 250% jusqu'à 1000€ | GigaBonus",
       "description": "⭐ Avis complet Atlantis Slots 2025 : bonus 250% jusqu'à 1000€ + 50 FS, roue mystérieuse, thème aquatique immersif. Test détaillé par nos experts casino.",
-      "image": "https://gigabonus.fr/images/atlantisslots.webp",
+      "image": "https://gigabonus.win/images/atlantisslots.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.321Z",
       "author": {
@@ -60,7 +60,7 @@ export default function AvisAtlantisSlotsPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -73,10 +73,10 @@ export default function AvisAtlantisSlotsPage() {
         title="🎰 Avis Atlantis Slots 2025 : Test Complet + Bonus 250% jusqu'à 1000€ | GigaBonus"
         description="⭐ Avis complet Atlantis Slots 2025 : bonus 250% jusqu'à 1000€ + 50 FS, roue mystérieuse, thème aquatique immersif. Test détaillé par nos experts casino."
         keywords="avis atlantis slots, atlantis slots casino, bonus atlantis slots, atlantis slots 2025, test atlantis slots, atlantis slots fiable, avis casino atlantis slots"
-        canonical="https://gigabonus.fr/blog/avis-atlantisslots-2025"
+        canonical="https://gigabonus.win/blog/avis-atlantisslots-2025"
         ogTitle="🎰 Avis Atlantis Slots 2025 : Test Complet + Bonus 250%"
         ogDescription="⭐ Notre test détaillé d'Atlantis Slots : bonus 250%, roue mystérieuse, thème aquatique. Avis d'experts avec avantages et inconvénients."
-        ogImage="https://gigabonus.fr/images/atlantisslots.webp"
+        ogImage="https://gigabonus.win/images/atlantisslots.webp"
         twitterTitle="🎰 Avis Atlantis Slots 2025 : Test Complet + Bonus 250%"
         twitterDescription="⭐ Notre test détaillé d'Atlantis Slots : bonus 250%, roue mystérieuse, thème aquatique. Avis d'experts avec avantages et inconvénients."
         schema={schemaData}

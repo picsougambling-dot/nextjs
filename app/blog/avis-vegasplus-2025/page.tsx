@@ -97,10 +97,10 @@ export default function AvisVegasPlus() {
         title="Avis Vegas Plus 2025 : Test Complet & Bonus | GigaBonus"
         description="Découvrez notre avis détaillé sur Vegas Plus Casino en 2025. Test complet : bonus 125% jusqu'à 750€ + 100 free spins, wager x50, retraits rapides."
         keywords="avis vegas plus, vegas plus casino, bonus vegas plus, avis vegas plus 2025, casino vegas plus"
-        canonical="https://gigabonus.fr/blog/avis-vegasplus-2025"
+        canonical="https://gigabonus.win/blog/avis-vegasplus-2025"
         ogTitle="Avis Vegas Plus 2025 : Test Complet & Bonus"
         ogDescription="Découvrez notre avis détaillé sur Vegas Plus Casino en 2025. Test complet : bonus 125% jusqu'à 750€ + 100 free spins."
-        ogImage="https://gigabonus.fr/images/vegasplus.webp"
+        ogImage="https://gigabonus.win/images/vegasplus.webp"
         twitterTitle="Avis Vegas Plus 2025 : Test Complet & Bonus"
         twitterDescription="Découvrez notre avis détaillé sur Vegas Plus Casino en 2025. Test complet : bonus 125% jusqu'à 750€ + 100 free spins."
         schema={jsonLd}

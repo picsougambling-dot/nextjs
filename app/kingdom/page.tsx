@@ -49,7 +49,7 @@ export default function KingdomPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "Kingdom Casino",
-          "image": "https://gigabonus.fr/images/kingdom.webp"
+          "image": "https://gigabonus.win/images/kingdom.webp"
         },
         "author": {
           "@type": "Person",
@@ -73,10 +73,10 @@ export default function KingdomPage() {
         title={`Avis Kingdom Casino 2025 : Bonus ${casino.bonusText} | Notre Test Complet`}
         description={`Notre avis complet sur Kingdom Casino 2025 : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides. Test détaillé !`}
         keywords="casino en ligne, bonus casino, jeux casino, casino fiable, retraits rapides, bonus généreux"
-        canonical="https://gigabonus.fr/kingdom"
+        canonical="https://gigabonus.win/kingdom"
         ogTitle={`Avis Kingdom Casino 2025 : Bonus ${casino.bonusText}`}
         ogDescription={`Notre avis complet sur Kingdom Casino : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides.`}
-        ogImage="https://gigabonus.fr/images/kingdom.webp"
+        ogImage="https://gigabonus.win/images/kingdom.webp"
         twitterTitle={`Avis Kingdom Casino 2025 : Bonus ${casino.bonusText}`}
         twitterDescription={`Notre avis complet sur Kingdom Casino : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides.`}
         schema={schemaData}

@@ -24,7 +24,7 @@ export default function AvisBonRushPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis BonRush 2025",
-        "image": "https://gigabonus.fr/images/bonrush.webp"
+        "image": "https://gigabonus.win/images/bonrush.webp"
       },
       "author": {
         "@type": "Person",
@@ -48,7 +48,7 @@ export default function AvisBonRushPage() {
       "@type": "Article",
       "headline": "🎰 Avis BonRush 2025 : Bonus Exceptionnel 400% jusqu'à 2000€ | GigaBonus",
       "description": "⭐ Avis complet BonRush 2025 : bonus colossal 400% jusqu'à 2000€ + 100 FS ! L'un des taux les plus élevés du marché. Test par nos experts casino.",
-      "image": "https://gigabonus.fr/images/bonrush.webp",
+      "image": "https://gigabonus.win/images/bonrush.webp",
       "datePublished": "2025-01-15T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.313Z",
       "author": {
@@ -60,7 +60,7 @@ export default function AvisBonRushPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -73,10 +73,10 @@ export default function AvisBonRushPage() {
         title="🎰 Avis BonRush 2025 : Bonus Exceptionnel 400% jusqu'à 2000€ | GigaBonus"
         description="⭐ Avis complet BonRush 2025 : bonus colossal 400% jusqu'à 2000€ + 100 FS ! L'un des taux les plus élevés du marché. Test par nos experts casino."
         keywords="avis bonrush, bonrush casino, bonus bonrush 400%, bonrush 2025, test bonrush, bonrush fiable"
-        canonical="https://gigabonus.fr/blog/avis-bonrush-2025"
+        canonical="https://gigabonus.win/blog/avis-bonrush-2025"
         ogTitle="🎰 Avis BonRush 2025 : Bonus Exceptionnel 400%"
         ogDescription="⭐ Test complet BonRush : bonus colossal 400% jusqu'à 2000€. L'un des meilleurs taux du marché ! Avis d'experts."
-        ogImage="https://gigabonus.fr/images/bonrush.webp"
+        ogImage="https://gigabonus.win/images/bonrush.webp"
         twitterTitle="🎰 Avis BonRush 2025 : Bonus Exceptionnel 400%"
         twitterDescription="⭐ Test complet BonRush : bonus colossal 400% jusqu'à 2000€. L'un des meilleurs taux du marché ! Avis d'experts."
         schema={schemaData}

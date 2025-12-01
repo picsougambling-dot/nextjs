@@ -23,7 +23,7 @@ export default function AvisHotLootPage() {
         "itemReviewed": {
           "@type": "OnlineBusiness",
           "name": "HotLoot Casino",
-          "image": "https://gigabonus.fr/images/hotloot.webp"
+          "image": "https://gigabonus.win/images/hotloot.webp"
         },
         "reviewRating": {
           "@type": "Rating",
@@ -40,7 +40,7 @@ export default function AvisHotLootPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr"
+          "url": "https://gigabonus.win"
         },
         "datePublished": "2025-01-15",
         "dateModified": "2025-11-21",
@@ -57,15 +57,15 @@ export default function AvisHotLootPage() {
         "publisher": {
           "@type": "Organization",
           "name": "GigaBonus",
-          "url": "https://gigabonus.fr",
+          "url": "https://gigabonus.win",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2025-01-15",
         "dateModified": "2025-11-21",
-        "image": "https://gigabonus.fr/images/hotloot.webp"
+        "image": "https://gigabonus.win/images/hotloot.webp"
       },
       {
         "@type": "FAQPage",
@@ -97,10 +97,10 @@ export default function AvisHotLootPage() {
         title="🔥 Avis HotLoot 2025 : Casino + Bookmaker | 300% Wager x30"
         description="🏆 HotLoot : Bonus 300% jusqu'à 1200€ | Bookmaker complet | Wager x30 favorable | 5 paiements | Note 4.1/5 | Test casino + paris sportifs 2025 ⚡"
         keywords="avis hotloot, hotloot casino, bonus 300%, bookmaker, wager x30, hotloot test, paris sportifs, casino 2025"
-        canonical="https://gigabonus.fr/blog/avis-hotloot-2025"
+        canonical="https://gigabonus.win/blog/avis-hotloot-2025"
         ogTitle="🔥 Avis HotLoot 2025 : Casino + Bookmaker | 300% Wager x30"
         ogDescription="🏆 HotLoot : Bonus 300% jusqu'à 1200€ | Bookmaker complet | Wager x30 favorable ⚡"
-        ogImage="https://gigabonus.fr/images/hotloot.webp"
+        ogImage="https://gigabonus.win/images/hotloot.webp"
         twitterTitle="🔥 Avis HotLoot 2025 : Casino + Bookmaker | 300% Wager x30"
         twitterDescription="🏆 HotLoot : Bonus 300% jusqu'à 1200€ | Bookmaker complet ⚡"
         schema={schemaData}

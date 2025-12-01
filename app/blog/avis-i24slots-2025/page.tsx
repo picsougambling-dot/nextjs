@@ -50,7 +50,7 @@ export default function AvisI24SlotsPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis I24Slots 2025",
-        "image": "https://gigabonus.fr/images/i24slots.webp"
+        "image": "https://gigabonus.win/images/i24slots.webp"
       },
       "author": {
         "@type": "Person",
@@ -74,7 +74,7 @@ export default function AvisI24SlotsPage() {
       "@type": "Article",
       "headline": "Avis I24Slots 2025 : Bonus VIP et Programme de Fidélité | GigaBonus",
       "description": "Avis complet sur I24Slots : bonus 100% + 150 FS, programme VIP exclusif, retraits rapides. Découvrez notre test détaillé et notre analyse experte 2025.",
-      "image": "https://gigabonus.fr/images/i24slots.webp",
+      "image": "https://gigabonus.win/images/i24slots.webp",
       "datePublished": "2025-11-21T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.341Z",
       "author": {
@@ -86,7 +86,7 @@ export default function AvisI24SlotsPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -99,10 +99,10 @@ export default function AvisI24SlotsPage() {
         title="Avis I24Slots 2025 : Bonus VIP et Programme de Fidélité | GigaBonus"
         description="Avis complet sur I24Slots : bonus 100% + 150 FS, programme VIP exclusif, retraits rapides. Découvrez notre test détaillé et notre analyse experte 2025."
         keywords="avis i24slots, i24slots bonus, i24slots vip, casino programme fidélité, i24slots retrait, i24slots 2025"
-        canonical="https://gigabonus.fr/blog/avis-i24slots-2025"
+        canonical="https://gigabonus.win/blog/avis-i24slots-2025"
         ogTitle="Avis I24Slots 2025 : Bonus VIP et Programme de Fidélité"
         ogDescription="Test complet I24Slots : bonus 100% + 150 FS, programme VIP, retraits rapides. Avis expert 2025."
-        ogImage="https://gigabonus.fr/images/i24slots.webp"
+        ogImage="https://gigabonus.win/images/i24slots.webp"
         twitterTitle="Avis I24Slots 2025 : Bonus VIP et Programme de Fidélité"
         twitterDescription="Test complet I24Slots : bonus 100% + 150 FS, programme VIP, retraits rapides. Avis expert 2025."
         schema={schemaData}

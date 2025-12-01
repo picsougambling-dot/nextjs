@@ -49,7 +49,7 @@ export default function MaChancePage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "WinMaChance Casino",
-          "image": "https://gigabonus.fr/images/machance.webp"
+          "image": "https://gigabonus.win/images/machance.webp"
         },
         "author": {
           "@type": "Person",
@@ -73,10 +73,10 @@ export default function MaChancePage() {
         title={`Avis WinMaChance Casino 2025 : Bonus ${casino.bonusText} | Notre Test Complet`}
         description={`Notre avis complet sur WinMaChance Casino 2025 : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides. Test détaillé !`}
         keywords="casino en ligne, bonus casino, jeux casino, casino fiable, retraits rapides, bonus généreux, free spins"
-        canonical="https://gigabonus.fr/machance"
+        canonical="https://gigabonus.win/machance"
         ogTitle={`Avis WinMaChance Casino 2025 : Bonus ${casino.bonusText}`}
         ogDescription={`Notre avis complet sur WinMaChance Casino : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides.`}
-        ogImage="https://gigabonus.fr/images/machance.webp"
+        ogImage="https://gigabonus.win/images/machance.webp"
         twitterTitle={`Avis WinMaChance Casino 2025 : Bonus ${casino.bonusText}`}
         twitterDescription={`Notre avis complet sur WinMaChance Casino : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides.`}
         schema={schemaData}

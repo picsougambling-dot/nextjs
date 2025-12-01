@@ -46,10 +46,10 @@ export default function AvisUniqueCasino() {
         title="Avis Unique Casino 2025 : Test Complet & Bonus | GigaBonus"
         description="Découvrez notre avis détaillé sur Unique Casino en 2025. Test complet : bonus 200% jusqu'à 500€ + 100 free spins, wager x50, retraits rapides."
         keywords="avis unique casino, unique casino, bonus unique casino, avis unique casino 2025, casino unique"
-        canonical="https://gigabonus.fr/blog/avis-uniquecasino-2025"
+        canonical="https://gigabonus.win/blog/avis-uniquecasino-2025"
         ogTitle="Avis Unique Casino 2025 : Test Complet & Bonus"
         ogDescription="Découvrez notre avis détaillé sur Unique Casino en 2025. Test complet : bonus 200% jusqu'à 500€ + 100 free spins."
-        ogImage="https://gigabonus.fr/images/uniquecasino.webp"
+        ogImage="https://gigabonus.win/images/uniquecasino.webp"
         twitterTitle="Avis Unique Casino 2025 : Test Complet & Bonus"
         twitterDescription="Découvrez notre avis détaillé sur Unique Casino en 2025. Test complet : bonus 200% jusqu'à 500€ + 100 free spins."
         schema={jsonLd}

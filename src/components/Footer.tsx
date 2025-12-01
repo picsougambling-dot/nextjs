@@ -95,7 +95,7 @@ const Footer = () => {
           {/* Social & Trust badges */}
           <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 mb-3">
             <a 
-              href="https://fr.trustpilot.com/review/gigabonus.fr" 
+              href="https://fr.trustpilot.com/review/gigabonus.win" 
               target="_blank" 
               rel="noopener noreferrer"
               className="flex items-center gap-1 text-xs text-muted-foreground hover:text-primary transition-colors duration-200 touch-manipulation active:opacity-70"

@@ -71,10 +71,10 @@ export default function CalculateurRoulettePage() {
         title="Calculateur Roulette Européenne : Probabilités et Gains | GigaBonus"
         description="Calculez les probabilités et gains potentiels pour tous les types de paris à la roulette européenne (37 numéros). Outil gratuit et précis."
         keywords="calculateur roulette, probabilités roulette, gains roulette, roulette européenne, calculateur paris roulette, odds roulette"
-        canonical="https://gigabonus.fr/calculateur-roulette"
+        canonical="https://gigabonus.win/calculateur-roulette"
         ogTitle="Calculateur Roulette Européenne : Probabilités et Gains"
         ogDescription="Calculez les probabilités et gains potentiels pour tous les types de paris à la roulette européenne. Outil gratuit et précis."
-        ogImage="https://gigabonus.fr/og-image.png"
+        ogImage="https://gigabonus.win/og-image.png"
         twitterTitle="Calculateur Roulette Européenne : Probabilités et Gains"
         twitterDescription="Calculez les probabilités et gains potentiels pour tous les types de paris à la roulette européenne."
         schema={schemaData}

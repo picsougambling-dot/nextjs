@@ -46,7 +46,7 @@ export default function AvisSpinDinastyPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Spin Dinasty 2025",
-        "image": "https://gigabonus.fr/images/spindinasty.webp"
+        "image": "https://gigabonus.win/images/spindinasty.webp"
       },
       "author": {
         "@type": "Person",
@@ -70,7 +70,7 @@ export default function AvisSpinDinastyPage() {
       "@type": "Article",
       "headline": "🎰 Avis Spin Dinasty 2025 : Test Complet + Bonus 200% jusqu'à 500€ + 50 FS | GigaBonus",
       "description": "⭐ Avis complet Spin Dinasty 2025 : bonus 200% + 50 FS sans wager strict, retraits rapides, cryptos acceptées. Test détaillé par nos experts.",
-      "image": "https://gigabonus.fr/images/spindinasty.webp",
+      "image": "https://gigabonus.win/images/spindinasty.webp",
       "datePublished": "2025-10-09T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.337Z",
       "author": {
@@ -82,7 +82,7 @@ export default function AvisSpinDinastyPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -95,10 +95,10 @@ export default function AvisSpinDinastyPage() {
         title="🎰 Avis Spin Dinasty 2025 : Test Complet + Bonus 200% jusqu'à 500€ + 50 FS | GigaBonus"
         description="⭐ Avis complet Spin Dinasty 2025 : bonus 200% + 50 FS sans wager strict, retraits rapides, cryptos acceptées. Test détaillé par nos experts."
         keywords="avis spin dinasty, spin dinasty casino, bonus spin dinasty, spin dinasty 2025, test spin dinasty, spin dinasty fiable"
-        canonical="https://gigabonus.fr/blog/avis-spindinasty-2025"
+        canonical="https://gigabonus.win/blog/avis-spindinasty-2025"
         ogTitle="🎰 Avis Spin Dinasty 2025 : Test Complet + Bonus 200%"
         ogDescription="⭐ Notre test détaillé de Spin Dinasty : bonus 200% + 50 FS sans wager strict. Avis d'experts."
-        ogImage="https://gigabonus.fr/images/spindinasty.webp"
+        ogImage="https://gigabonus.win/images/spindinasty.webp"
         twitterTitle="🎰 Avis Spin Dinasty 2025 : Test Complet + Bonus 200%"
         twitterDescription="⭐ Notre test détaillé de Spin Dinasty : bonus 200% + 50 FS sans wager strict. Avis d'experts."
         schema={schemaData}

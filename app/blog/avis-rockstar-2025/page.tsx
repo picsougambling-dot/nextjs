@@ -27,7 +27,7 @@ export default function AvisRockstarPage() {
       "itemReviewed": {
         "@type": "Casino",
         "name": "Avis Rockstar Casino 2025",
-        "image": "https://gigabonus.fr/images/rockstar.webp"
+        "image": "https://gigabonus.win/images/rockstar.webp"
       },
       "author": {
         "@type": "Person",
@@ -51,7 +51,7 @@ export default function AvisRockstarPage() {
       "@type": "Article",
       "headline": "🎰 Avis Rockstar Casino 2025 : Test Complet + Bonus 100% jusqu'à 1000€ | GigaBonus",
       "description": "⭐ Avis complet Rockstar Casino 2025 : bonus 100% + 100 FS, promotions quotidiennes, retraits rapides. Test détaillé par nos experts.",
-      "image": "https://gigabonus.fr/images/rockstar.webp",
+      "image": "https://gigabonus.win/images/rockstar.webp",
       "datePublished": "2025-09-30T10:00:00+01:00",
       "dateModified": "2025-11-28T00:45:35.343Z",
       "author": {
@@ -63,7 +63,7 @@ export default function AvisRockstarPage() {
         "name": "GigaBonus",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://gigabonus.fr/gigabonus-logo.webp"
+          "url": "https://gigabonus.win/gigabonus-logo.webp"
         }
       }
     }
@@ -76,10 +76,10 @@ export default function AvisRockstarPage() {
         title="🎰 Avis Rockstar Casino 2025 : Test Complet + Bonus 100% jusqu'à 1000€ | GigaBonus"
         description="⭐ Avis complet Rockstar Casino 2025 : bonus 100% + 100 FS, promotions quotidiennes, retraits rapides. Test détaillé par nos experts."
         keywords="avis rockstar casino, rockstar casino, bonus rockstar, rockstar 2025, test rockstar casino, rockstar fiable, promotions quotidiennes"
-        canonical="https://gigabonus.fr/blog/avis-rockstar-2025"
+        canonical="https://gigabonus.win/blog/avis-rockstar-2025"
         ogTitle="🎰 Avis Rockstar Casino 2025 : Test Complet + Bonus 100%"
         ogDescription="⭐ Notre test détaillé de Rockstar Casino : bonus 100% + 100 FS, promotions quotidiennes. Avis d'experts."
-        ogImage="https://gigabonus.fr/images/rockstar.webp"
+        ogImage="https://gigabonus.win/images/rockstar.webp"
         twitterTitle="🎰 Avis Rockstar Casino 2025 : Test Complet + Bonus 100%"
         twitterDescription="⭐ Notre test détaillé de Rockstar Casino : bonus 100% + 100 FS, promotions quotidiennes. Avis d'experts."
         schema={schemaData}

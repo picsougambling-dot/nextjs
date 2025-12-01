@@ -52,7 +52,7 @@ export default function SpinStarPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "SpinStar Casino",
-          "image": "https://gigabonus.fr/images/spinstar.webp"
+          "image": "https://gigabonus.win/images/spinstar.webp"
         },
         "author": {
           "@type": "Person",
@@ -81,12 +81,12 @@ export default function SpinStarPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2024-06-15T10:00:00Z",
         "dateModified": new Date().toISOString(),
-        "image": "https://gigabonus.fr/images/spinstar.webp"
+        "image": "https://gigabonus.win/images/spinstar.webp"
       },
       {
         "@type": "FAQPage",
@@ -126,10 +126,10 @@ export default function SpinStarPage() {
         title="Avis SpinStar Casino 2025 : Bonus 700% jusqu'à 10 000€ + 725 FS | Notre Test Complet N°1"
         description="Notre avis complet sur SpinStar Casino 2025 : bonus massif 700% jusqu'à 10 000€ + 725 FS, bookmaker intégré, retraits 24h. Test détaillé !"
         keywords="spinstar casino, avis spinstar, bonus spinstar, spinstar 700%, spinstar casino avis, spinstar bonus, casino spinstar 2025"
-        canonical="https://gigabonus.fr/spinstar"
+        canonical="https://gigabonus.win/spinstar"
         ogTitle="Avis SpinStar Casino 2025 : Bonus 700% + 10 000€ + 725 FS"
         ogDescription="Notre avis complet sur SpinStar Casino : bonus exceptionnel 700%, bookmaker, crypto, retraits rapides."
-        ogImage="https://gigabonus.fr/images/spinstar.webp"
+        ogImage="https://gigabonus.win/images/spinstar.webp"
         twitterTitle="Avis SpinStar Casino 2025 : Bonus 700% + 10 000€ + 725 FS"
         twitterDescription="Notre avis complet sur SpinStar Casino : bonus exceptionnel 700%, bookmaker, crypto, retraits rapides."
         schema={schemaData}

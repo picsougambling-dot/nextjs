@@ -54,7 +54,7 @@ export default function SlotRushPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "SlotRush Casino",
-          "image": "https://gigabonus.fr/images/slotrush.webp"
+          "image": "https://gigabonus.win/images/slotrush.webp"
         },
         "author": {
           "@type": "Person",
@@ -83,12 +83,12 @@ export default function SlotRushPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2024-09-12T10:00:00Z",
         "dateModified": new Date().toISOString(),
-        "image": "https://gigabonus.fr/images/slotrush.webp"
+        "image": "https://gigabonus.win/images/slotrush.webp"
       },
       {
         "@type": "FAQPage",
@@ -112,10 +112,10 @@ export default function SlotRushPage() {
         title="Avis SlotRush Casino 2025 : Bonus 350% jusqu'à 4000€ + 200 FS | Notre Test Complet"
         description="Notre avis complet sur SlotRush Casino 2025 : bonus 350% jusqu'à 4000€ + 200 Free Spins, paris sportifs disponibles, retraits rapides. Test détaillé !"
         keywords="slotrush casino, avis slotrush, bonus slotrush, slotrush casino avis, bonus 350%, bookmaker casino, paris sportifs"
-        canonical="https://gigabonus.fr/slotrush"
+        canonical="https://gigabonus.win/slotrush"
         ogTitle="Avis SlotRush Casino 2025 : Bonus 350% jusqu'à 4000€ + 200 FS"
         ogDescription="Notre avis complet sur SlotRush Casino après plusieurs mois de test : bonus 350% jusqu'à 4000€, paris sportifs, retraits rapides."
-        ogImage="https://gigabonus.fr/images/slotrush.webp"
+        ogImage="https://gigabonus.win/images/slotrush.webp"
         twitterTitle="Avis SlotRush Casino 2025 : Bonus 350% jusqu'à 4000€ + 200 FS"
         twitterDescription="Notre avis complet sur SlotRush Casino : bonus 350% jusqu'à 4000€, paris sportifs, retraits rapides."
         schema={schemaData}

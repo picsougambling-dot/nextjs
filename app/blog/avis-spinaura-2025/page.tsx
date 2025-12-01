@@ -21,7 +21,7 @@ export default function AvisSpinAuraPage() {
         "itemReviewed": {
           "@type": "Casino",
           "name": "SpinAura Casino",
-          "image": "https://gigabonus.fr/images/spinaura.webp"
+          "image": "https://gigabonus.win/images/spinaura.webp"
         },
         "author": {
           "@type": "Person",
@@ -44,7 +44,7 @@ export default function AvisSpinAuraPage() {
       {
         "@type": "Article",
         "headline": "Avis SpinAura Casino 2025 : Test Complet Bonus High-Roller",
-        "image": "https://gigabonus.fr/images/spinaura.webp",
+        "image": "https://gigabonus.win/images/spinaura.webp",
         "author": {
           "@type": "Person",
           "name": "Alexandre Martin"
@@ -54,7 +54,7 @@ export default function AvisSpinAuraPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         },
         "datePublished": "2025-01-15",
@@ -82,10 +82,10 @@ export default function AvisSpinAuraPage() {
         title="🌟 Avis SpinAura 2025 : Bonus RECORD 450% + 15K€ | High-Rollers"
         description="💰 SpinAura : Bonus MASSIF 450% + 15 000€ | 5000+ jeux | 7 paiements | Crypto | Note 4.2/5 | Test high-roller ⚡"
         keywords="avis spinaura, spinaura casino, bonus 450%, casino high roller, bonus 15000€, spinaura test, 5000 jeux, note 4.2"
-        canonical="https://gigabonus.fr/blog/avis-spinaura-2025"
+        canonical="https://gigabonus.win/blog/avis-spinaura-2025"
         ogTitle="Avis SpinAura 2025 : Bonus RECORD 450% + 15K€"
         ogDescription="Test complet SpinAura Casino : bonus massif 450% jusqu'à 15000€, 5000+ jeux, high-rollers. Note 4.2/5"
-        ogImage="https://gigabonus.fr/images/spinaura.webp"
+        ogImage="https://gigabonus.win/images/spinaura.webp"
         twitterTitle="Avis SpinAura 2025 : Bonus RECORD 450% + 15K€"
         twitterDescription="Test complet SpinAura Casino : bonus massif 450%."
         schema={schemaData}

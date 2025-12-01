@@ -102,7 +102,7 @@ export default function BetifyPage() {
         "itemReviewed": {
           "@type": "Product",
           "name": "Betify Casino",
-          "image": "https://gigabonus.fr/images/betify.webp"
+          "image": "https://gigabonus.win/images/betify.webp"
         },
         "author": {
           "@type": "Person",
@@ -137,7 +137,7 @@ export default function BetifyPage() {
           "name": "GigaBonus",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://gigabonus.fr/gigabonus-logo.webp"
+            "url": "https://gigabonus.win/gigabonus-logo.webp"
           }
         }
       },
@@ -163,10 +163,10 @@ export default function BetifyPage() {
         title="Betify Casino : Avis 2025, Bonus Sport et Casino | GigaBonus"
         description="Avis Betify Casino 2025 : bonus innovants sans wager, casino et paris sportifs, 3000+ jeux. Test complet!"
         keywords="betify casino, avis betify, bonus betify, betify casino avis, free spins sans wager, casino bookmaker"
-        canonical="https://gigabonus.fr/betify"
+        canonical="https://gigabonus.win/betify"
         ogTitle="Betify Casino : Avis 2025, Bonus Sport et Casino"
         ogDescription="Avis Betify Casino 2025 : bonus innovants sans wager, casino et paris sportifs, 3000+ jeux."
-        ogImage="https://gigabonus.fr/images/betify.webp"
+        ogImage="https://gigabonus.win/images/betify.webp"
         twitterTitle="Betify Casino : Avis 2025, Bonus Sport et Casino"
         twitterDescription="Avis Betify Casino 2025 : bonus innovants sans wager, casino et paris sportifs."
         schema={schemaData}
