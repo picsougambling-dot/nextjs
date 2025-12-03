@@ -16,6 +16,7 @@ export interface Casino {
   rank: number;
   score: number;
   rating: number;
+  availableCountries?: string[]; // Codes pays ISO 2 lettres (ex: ['FR', 'BE', 'CH'])
 }
 
 // Fonction de calcul automatique du score
