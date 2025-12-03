@@ -386,7 +386,7 @@ export const casinos: Casino[] = [
     rank: 17,
     score: 133.3,
     rating: 8.5,
-    availableCountries: ['FR']
+    availableCountries: ['DE', 'AT', 'CH', 'NL', 'BE', 'ES', 'IT', 'PT', 'FR', 'FI', 'UK', 'IE', 'CA', 'AU', 'NZ', 'BR']
   },
   {
     id: 3,
