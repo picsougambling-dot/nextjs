@@ -190,7 +190,7 @@ export const casinos: Casino[] = [
     rank: 14,
     score: 141.3,
     rating: 8.5,
-    availableCountries: ['FR']
+    availableCountries: ['FR', 'UK', 'NL', 'DE', 'BE', 'AT', 'CH', 'AU', 'NZ', 'CA', 'LV', 'BR']
   },
   {
     id: 35,
@@ -326,7 +326,7 @@ export const casinos: Casino[] = [
     rank: 14,
     score: 136.5,
     rating: 9.0,
-    availableCountries: ['FR']
+    availableCountries: ['CH', 'NL', 'DE', 'AT', 'FR', 'CA']
   },
   {
     id: 33,
@@ -444,7 +444,7 @@ export const casinos: Casino[] = [
     rank: 20,
     score: 127.6,
     rating: 8.5,
-    availableCountries: ['FR']
+    availableCountries: ['CA', 'AU', 'FR', 'IT', 'ES', 'UK', 'CH', 'NL']
   },
   {
     id: 26,
@@ -502,7 +502,7 @@ export const casinos: Casino[] = [
     rank: 23,
     score: 125.0,
     rating: 7.5,
-    availableCountries: ['FR']
+    availableCountries: ['CA', 'FR', 'IT', 'ES', 'UK', 'BE', 'PT']
   },
   {
     id: 39,
@@ -580,7 +580,7 @@ export const casinos: Casino[] = [
     rank: 27,
     score: 122.4,
     rating: 7.5,
-    availableCountries: ['FR']
+    availableCountries: ['IT', 'ES', 'FR', 'UK', 'NL', 'DE', 'BE', 'AT', 'CH', 'AU', 'NZ']
   },
   {
     id: 21,
@@ -637,7 +637,7 @@ export const casinos: Casino[] = [
     rank: 30,
     score: 121.5,
     rating: 7.5,
-    availableCountries: ['FR']
+    availableCountries: ['CA', 'AU', 'FR', 'IT', 'ES', 'UK', 'CH', 'NL']
   },
   {
     id: 32,
@@ -676,7 +676,7 @@ export const casinos: Casino[] = [
     rank: 32,
     score: 116.9,
     rating: 7.5,
-    availableCountries: ['FR']
+    availableCountries: ['CA', 'AU', 'FR', 'IT', 'ES', 'UK', 'CH', 'NL']
   },
   {
     id: 10,

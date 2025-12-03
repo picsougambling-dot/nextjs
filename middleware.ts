@@ -5,6 +5,7 @@ import { siteConfig } from './src/config/site';
 // Mapping pays -> locale
 const countryToLocale: Record<string, string> = {
   'FR': 'fr',
+  'BE': 'fr', // Belgique redirigée vers français
   'US': 'en',
   'GB': 'en',
   'CA': 'en',
