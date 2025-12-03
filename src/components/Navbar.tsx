@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { casinos } from "@/data/casinos";
 import {
   NavigationMenu,
@@ -33,6 +33,7 @@ import {
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
 import { siteConfig } from "@/config/site";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 const Navbar = () => {
   const pathname = usePathname(); // Pathname complet avec locale (ex: "/de/madcasino")
@@ -41,6 +42,28 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [showHeavy, setShowHeavy] = useState(false);
   const menuRef = useRef<HTMLDivElement | null>(null);
+  
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
+  
+  // Filtrer les casinos par pays
+  const filteredCasinos = useMemo(() => {
+    return casinos.filter((casino) => {
+      if (!casino.name) return false;
+      
+      // Country filter - Afficher le casino si :
+      // - Pas de pays détecté (affichage de tous les casinos)
+      // - Le casino n'a pas de restriction de pays (availableCountries non défini ou vide)
+      // - Le casino est disponible dans le pays de l'utilisateur
+      const matchesCountry =
+        !userCountry ||
+        !casino.availableCountries ||
+        casino.availableCountries.length === 0 ||
+        casino.availableCountries.includes(userCountry);
+      
+      return matchesCountry;
+    });
+  }, [userCountry]);
   
   // Extraire la locale depuis l'URL (plus fiable que useLocale() qui peut être en retard)
   const pathSegments = pathname.split('/').filter(Boolean);
@@ -126,7 +149,7 @@ const Navbar = () => {
                         {t('allCasinos')}
                       </CollapsibleTrigger>
                       <CollapsibleContent className="grid grid-cols-3 gap-3 mt-2 p-2">
-                        {casinos.filter(casino => {
+                        {filteredCasinos.filter(casino => {
                           if (!casino.name) return false;
                           // Liste des casinos qui ont des pages dédiées (basée sur le sitemap)
                           const casinosWithPages = [
@@ -263,7 +286,7 @@ const Navbar = () => {
                   <NavigationMenuTrigger onMouseEnter={handleTriggerEnter}>{t('allCasinos')}</NavigationMenuTrigger>
                   <NavigationMenuContent>
                     <ul className="grid w-[700px] gap-3 p-4 md:grid-cols-4 bg-background">
-                      {casinos.filter(casino => casino.name).map((casino) => (
+                      {filteredCasinos.map((casino) => (
                         <LogoListItem 
                           key={casino.id}
                           href={getLocalizedHref(`/${casino.name.toLowerCase().replace(/\s+/g, '')}`)} 
