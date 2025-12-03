@@ -1,0 +1,368 @@
+# GigaBonus - Documentation pour LLM (Version Multigéographique)
+
+## Vue d'ensemble du projet
+
+GigaBonus est un comparateur de bonus de casinos en ligne multilingue et multigéographique, construit avec Next.js 15 et next-intl. Le site permet aux utilisateurs de comparer les meilleurs casinos en ligne, leurs bonus, conditions de wager, méthodes de paiement et fournisseurs de jeux dans 5 langues.
+
+**URL de production**: https://gigabonus.win
+**Framework**: Next.js 15.5.6 (App Router)
+**Internationalisation**: next-intl
+**Langues supportées**: Français (fr), Anglais (en), Allemand (de), Espagnol (es), Russe (ru)
+**Langage**: TypeScript
+**Styling**: Tailwind CSS + shadcn/ui
+**Thème**: Dark/Light mode avec next-themes
+
+## Structure du projet
+
+### Architecture Next.js (App Router) avec Internationalisation
+
+```
+app/
+├── [locale]/                  # Routes localisées (fr, en, de, es, ru)
+│   ├── layout.tsx            # Layout principal avec i18n
+│   ├── page.tsx              # Page d'accueil (comparateur principal)
+│   ├── about/                # Page à propos
+│   ├── blog/                 # Pages blog et avis casinos
+│   │   ├── page.tsx         # Liste des articles
+│   │   └── avis-*-2025/     # Pages d'avis individuels
+│   ├── depot/                # Pages méthodes de dépôt
+│   │   ├── carte/
+│   │   ├── crypto/
+│   │   ├── neosurf/
+│   │   └── ...
+│   ├── [casino-name]/        # Pages individuelles pour chaque casino
+│   └── [guide-name]/         # Pages guides (top-casinos-crypto, etc.)
+├── layout.tsx                # Layout racine
+├── robots.ts                 # Configuration robots.txt multigéographique
+├── sitemap.ts                # Génération dynamique du sitemap multilingue
+└── not-found.tsx             # Page 404
+
+messages/                     # Fichiers de traduction JSON
+├── fr.json                   # Traductions françaises
+├── en.json                   # Traductions anglaises
+├── de.json                   # Traductions allemandes
+├── es.json                   # Traductions espagnoles
+└── ru.json                   # Traductions russes
+
+src/
+├── components/               # Composants React réutilisables
+│   ├── CasinoCard.tsx       # Carte casino avec traductions
+│   ├── CasinoTable.tsx      # Tableau comparatif traduit
+│   ├── CasinoDialog.tsx     # Dialog détails casino traduit
+│   ├── FilterBar.tsx        # Barre de filtres traduite
+│   ├── Navbar.tsx           # Navigation principale traduite
+│   ├── Footer.tsx           # Pied de page traduit
+│   ├── SEOEnrichedGuide.tsx # Guide SEO enrichi traduit
+│   ├── PromoPopup.tsx       # Popup promotionnelle traduite
+│   ├── SEOHead.tsx          # Gestion SEO dynamique multilingue
+│   └── ui/                  # Composants shadcn/ui
+├── data/
+│   ├── casinos.ts           # Base de données des casinos (45+ casinos)
+│   └── providers.ts         # Liste normalisée des fournisseurs de jeux
+└── config/
+    └── site.ts              # Configuration du site (locales, URL)
+```
+
+## Internationalisation (i18n)
+
+### Configuration next-intl
+
+- **Locales supportées**: fr, en, de, es, ru
+- **Locale par défaut**: fr
+- **Structure**: `/app/[locale]/` pour toutes les routes
+- **Fichiers de traduction**: `/messages/{locale}.json`
+- **Namespaces**: Organisation par composant (HomePage, CasinoCard, Footer, etc.)
+
+### Structure des traductions
+
+Chaque fichier JSON contient des namespaces organisés :
+- `HomePage`: Contenu de la page d'accueil
+- `CasinoCard`: Textes des cartes de casino
+- `CasinoDialog`: Dialog de détails
+- `CasinoTable`: Tableau comparatif
+- `FilterBar`: Filtres de recherche
+- `Footer`: Pied de page
+- `Navigation`: Navigation principale
+- `seoGuide`: Guide SEO enrichi
+- `PromoPopup`: Popup promotionnelle
+- `SEO`: Métadonnées SEO
+- `buttons`: Boutons communs
+- `common`: Textes communs
+
+### Formatage des bonus
+
+Les textes de bonus sont formatés dynamiquement depuis le format français "100% jusqu'à 500€" vers la langue cible via la fonction `formatBonusText()` qui utilise les clés de traduction `CasinoCard.bonusText.withFreeSpins` et `CasinoCard.bonusText.withoutFreeSpins`.
+
+## Données principales
+
+### Structure Casino (src/data/casinos.ts)
+
+```typescript
+interface Casino {
+  id: number;
+  name: string;
+  bonusPercent: number;        // Pourcentage du bonus (ex: 100, 200, 300)
+  bonusText: string;           // Texte descriptif du bonus (format français)
+  playUrl: string;             // URL d'affiliation
+  wager: number | null;        // Conditions de wager (null = sans wager)
+  methods: string[];           // Méthodes de paiement normalisées
+  minDeposit: string;          // Dépôt minimum
+  video?: string;              // Vidéo de présentation (/videos/*.mp4)
+  backgroundImage?: string;   // Image de fond (/images/*B.webp)
+  logo: string;                // Logo (/images/*.webp)
+  isBookmaker?: boolean;       // Présence d'une section bookmaker
+  providers: string[];         // Fournisseurs de jeux normalisés
+  affiliationType: 'CPA' | 'RS'; // Type d'affiliation
+  rank: number;                // Classement (1 = meilleur)
+  score: number;               // Score calculé automatiquement
+  rating: number;              // Note sur 10
+}
+```
+
+### Calcul du score
+
+Le score est calculé automatiquement via `calculateScore()` :
+- Bonus (20%) : max 700% = 14 points
+- Wager (20%) : null = 20 points, sinon 20 - (wager/2)
+- Méthodes de paiement (8%) : max 8 méthodes = 8 points
+- Bookmaker (8%) : +8 si présent
+- Rating (16%) : note/10 * 16
+- Providers (8%) : max 80 providers = 8 points
+
+### Méthodes de paiement normalisées
+
+- CB (Carte bancaire)
+- crypto (Cryptomonnaies)
+- virement (Virement bancaire)
+- paypal
+- neosurf
+- paysafecard
+- skrill
+- neteller
+- cashlib
+- jetonbank
+- mifinity
+
+### Fournisseurs de jeux
+
+Liste complète dans `src/data/providers.ts` avec normalisation (ex: "Pragmatic Play" → "pragmatic", "NetEnt" → "netent").
+
+## Fonctionnalités principales
+
+### 1. Comparateur de casinos (page d'accueil)
+
+- Affichage en grille ou tableau
+- Filtres : recherche, wager, méthodes de paiement, bookmaker, providers
+- Tri par score, bonus, wager, rating
+- Cartes interactives avec vidéo/background
+- Tooltips sur mobile (tap to open/close)
+- Mode sombre/clair persistant
+- **Toutes les interfaces traduites dans 5 langues**
+
+### 2. Pages individuelles de casinos
+
+Chaque casino a sa propre page (`/[locale]/casino-name/page.tsx`) avec :
+- Présentation détaillée traduite
+- Informations bonus complètes formatées selon la locale
+- Liste des fournisseurs
+- Méthodes de paiement traduites
+- Bouton CTA vers le casino
+- SEO optimisé multilingue
+
+### 3. Pages blog/avis
+
+Structure `/[locale]/blog/avis-[casino]-2025/page.tsx` :
+- Avis détaillés des casinos
+- SEOHead pour métadonnées dynamiques multilingues
+- Breadcrumbs traduits
+- Schema.org JSON-LD
+- Contenu riche optimisé SEO
+
+### 4. Guides et outils
+
+Toutes les pages guides sont traduites :
+- `/[locale]/top-casinos-crypto` : Top casinos crypto
+- `/[locale]/casinos-sans-kyc` : Casinos sans vérification
+- `/[locale]/bonus-cashback` : Guide cashback
+- `/[locale]/bonus-sans-wager` : Bonus sans conditions
+- `/[locale]/top-slots-2025` : Meilleures machines à sous
+- `/[locale]/astuces-casino` : Astuces et conseils
+- `/[locale]/meilleurs-bookmakers` : Comparateur bookmakers
+- `/[locale]/calculateur-roulette` : Calculateur de probabilités
+- `/[locale]/calculateur-cotes-sportives` : Calculateur de cotes (API The Odds API)
+
+### 5. Pages méthodes de dépôt
+
+Structure `/[locale]/depot/[method]/page.tsx` pour chaque méthode :
+- Carte, crypto, neosurf, paysafecard, skrill, neteller, cashlib, jetonbank, mifinity, virement
+- **Toutes traduites dans 5 langues**
+
+## SEO et métadonnées multilingues
+
+### SEOHead Component
+
+Composant réutilisable pour gérer le SEO dynamique multilingue :
+- Title, description, keywords traduits
+- Canonical URLs avec hreflang
+- Open Graph multilingue
+- Twitter Cards multilingues
+- Schema.org JSON-LD
+- Gestion des balises meta multiples
+- Support des alternates hreflang
+
+### Sitemap dynamique multilingue (app/sitemap.ts)
+
+Génération automatique avec priorités et alternates :
+- Routes principales : priority 1.0, daily
+- Guides : priority 0.9, weekly
+- Casinos : priority 0.85, weekly
+- Blog : priority 0.9, weekly
+- Dépôts : priority 0.75, monthly
+- **Chaque URL générée pour les 5 locales (fr, en, de, es, ru)**
+- **Alternates hreflang pour toutes les langues**
+
+### Robots.txt multigéographique (app/robots.ts)
+
+Configuration pour :
+- Googlebot, Bingbot
+- Disallow : /api/, /admin/, /_next/, /private/
+- Sitemaps multiples : sitemap.xml principal + sitemap-{locale}.xml pour chaque langue
+
+## Thème et UI
+
+### ThemeProvider (next-themes)
+
+- Mode sombre/clair
+- Persistance via localStorage (key: "gigabonus-theme")
+- enableSystem: false (pas de détection système)
+- Support complet dans tous les composants
+
+### Composants UI
+
+- shadcn/ui pour tous les composants de base
+- Tailwind CSS pour le styling
+- Animations avec tailwindcss-animate
+- Responsive design mobile-first
+- **Tous les textes traduits via next-intl**
+
+## Gestion des erreurs
+
+### Loader initial
+
+Script robuste dans `app/layout.tsx` pour :
+- Afficher le loader au chargement
+- Le masquer une fois la page chargée
+- Gestion d'erreurs avec try-catch
+- Flags pour éviter les exécutions multiples
+- Support refresh/reload
+
+### Hydration
+
+Composants décoratifs (Diamonds, PlayingCards, CasinoChips) :
+- Utilisation de `mounted` state avec useEffect
+- Génération de valeurs aléatoires uniquement côté client
+- Évite les erreurs d'hydratation SSR/CSR
+
+## Casinos actuellement en base
+
+45+ casinos avec classement TOP :
+1. AmonBet (rank: 1)
+2. SlotLair (rank: 2)
+3. Aphrodite (rank: 3)
+4. MadCasino (rank: 4)
+5. SlotMonkey (rank: 5)
+6. LuckyWave (rank: 6)
+7. WildDice (rank: 7)
+... et 38+ autres casinos
+
+## Points techniques importants
+
+### Variables d'environnement
+
+- `NEXT_PUBLIC_THE_ODDS_API_KEY` : Clé API pour calculateur de cotes sportives
+- Format Next.js : `process.env.NEXT_PUBLIC_*` (pas `import.meta.env`)
+
+### Routing multilingue
+
+- Next.js App Router avec next-intl
+- Structure : `/app/[locale]/` pour toutes les routes
+- Redirection automatique vers la locale appropriée
+- Support des URLs propres : `/fr/`, `/en/`, `/de/`, `/es/`, `/ru/`
+- Génération statique pour toutes les locales
+
+### Images et médias
+
+- Format WebP pour les images
+- MP4 pour les vidéos de présentation
+- Structure : `/public/images/` et `/public/videos/`
+- Next.js Image component pour optimisation
+
+### Performance
+
+- Lazy loading des composants below-the-fold
+- Code splitting automatique Next.js
+- Optimisation des images
+- SSR pour SEO multilingue
+- Génération statique pour toutes les locales
+
+## Commandes de développement
+
+```bash
+npm run dev      # Développement local
+npm run build    # Build de production (génère toutes les locales)
+npm run start    # Serveur de production
+npm run lint     # Linting ESLint
+```
+
+## Notes importantes
+
+1. **Multilingue complet** : Toutes les interfaces sont traduites dans 5 langues (fr, en, de, es, ru)
+2. **Wager null = sans wager** : Valeur spéciale pour les bonus sans conditions
+3. **Normalisation des données** : Tous les providers et méthodes sont normalisés en lowercase
+4. **SEO-first multilingue** : Chaque page a son propre SEOHead avec métadonnées complètes et hreflang
+5. **Mobile-first** : Tous les composants sont optimisés pour mobile et desktop
+6. **Formatage dynamique** : Les bonus sont formatés depuis le français vers la langue cible
+7. **Sitemap multilingue** : Génération automatique avec alternates hreflang pour toutes les langues
+8. **Robots.txt multigéographique** : Support de plusieurs sitemaps par locale
+
+## Structure des traductions
+
+### Namespaces principaux
+
+- `HomePage`: Hero, stats, sections principales, témoignages, FAQ
+- `CasinoCard`: Boutons, tooltips, méthodes de paiement, formatage bonus
+- `CasinoDialog`: Dialog de détails complet
+- `CasinoTable`: En-têtes de tableau
+- `FilterBar`: Labels de filtres
+- `Footer`: Sections du footer, liens
+- `Navigation`: Menu de navigation
+- `seoGuide`: Guide SEO enrichi complet
+- `PromoPopup`: Popup promotionnelle
+- `SEO`: Métadonnées SEO par page
+- `buttons`: Boutons communs réutilisables
+- `common`: Textes communs
+
+### Formatage des bonus
+
+Les bonus sont stockés en français dans `casinos.ts` et formatés dynamiquement via `formatBonusText()` qui :
+1. Parse le format français "X% jusqu'à Y€ + Z FS"
+2. Extrait les valeurs (percent, amount, freeSpins)
+3. Utilise les clés de traduction `CasinoCard.bonusText.withFreeSpins` ou `CasinoCard.bonusText.withoutFreeSpins`
+4. Retourne le texte formaté dans la langue cible
+
+## URLs multilingues
+
+Toutes les pages sont accessibles via :
+- `/fr/` : Version française (locale par défaut)
+- `/en/` : Version anglaise
+- `/de/` : Version allemande
+- `/es/` : Version espagnole
+- `/ru/` : Version russe
+
+Exemples :
+- `/fr/top-casinos-crypto` : Guide crypto en français
+- `/en/top-casinos-crypto` : Guide crypto en anglais
+- `/de/spinstar` : Page casino SpinStar en allemand
+- `/es/blog/avis-spinstar-2025` : Avis SpinStar en espagnol
+
+Le projet est maintenant 100% multilingue et multigéographique avec Next.js App Router et next-intl.

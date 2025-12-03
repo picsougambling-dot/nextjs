@@ -1,0 +1,14 @@
+{
+  "buildCommand": "npm run pages:build",
+  "outputDirectory": ".vercel/output/static",
+  "rootDirectory": "/",
+  "installCommand": "npm install --legacy-peer-deps",
+  "nodeVersion": "18",
+  "skipSubmoduleUpdate": true
+}
+
+
+
+
+
+

@@ -1,0 +1,723 @@
+{
+  "CasinoCard": {
+    "noWager": "Sans wager",
+    "bookmaker": "Sportsbook",
+    "providers": "Providers",
+    "gameProviders": "Fournisseurs de Jeux ({count})",
+    "play": "Jouer",
+    "details": "Détails",
+    "bonusText": {
+      "withFreeSpins": "{percent}% jusqu'à {amount}€ + {freeSpins} FS",
+      "withoutFreeSpins": "{percent}% jusqu'à {amount}€"
+    },
+    "tooltips": {
+      "bookmaker": {
+        "title": "Paris Sportifs Disponibles",
+        "description": "Ce casino propose des paris sportifs : football, tennis, basketball, eSports et plus. Profitez de cotes compétitives et de paris en direct."
+      },
+      "bonus": {
+        "title": "Calcul du Bonus",
+        "description": "Bonus de {percent}% sur votre dépôt. Exemple : déposez 100€, recevez {percent}€ de bonus !"
+      },
+      "wager": {
+        "title": "Conditions de mise",
+        "noWager": "✓ Aucune condition de mise !",
+        "noWagerDescription": "Retirez vos gains immédiatement sans contrainte.",
+        "hasWager": "Vous devez miser {wager}x le montant du bonus.",
+        "example": "Exemple: Bonus de 100€ = {amount}€ à miser"
+      },
+      "providers": {
+        "premium": "Inclut des fournisseurs premium reconnus"
+      }
+    },
+    "paymentMethods": {
+      "cb": "Carte Bancaire",
+      "crypto": "Crypto",
+      "neosurf": "Neosurf",
+      "paysafe": "PaysafeCard",
+      "cashlib": "Cashlib",
+      "virement": "Virement",
+      "skrill": "Skrill",
+      "neteler": "Neteler",
+      "jetonbank": "JetonBank",
+      "myfinity": "MiFinity"
+    },
+    "paymentDetails": {
+      "labels": {
+        "limits": "Limites",
+        "delay": "Délai",
+        "fees": "Frais"
+      },
+      "cb": {
+        "min": "10€",
+        "max": "5 000€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "crypto": {
+        "min": "10€",
+        "max": "Illimité",
+        "delay": "5-30 min",
+        "fees": "Frais réseau uniquement"
+      },
+      "neosurf": {
+        "min": "10€",
+        "max": "250€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "paysafe": {
+        "min": "10€",
+        "max": "1 000€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "cashlib": {
+        "min": "10€",
+        "max": "250€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "virement": {
+        "min": "20€",
+        "max": "10 000€",
+        "delay": "1-3 jours",
+        "fees": "Gratuit"
+      },
+      "skrill": {
+        "min": "10€",
+        "max": "10 000€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "neteler": {
+        "min": "10€",
+        "max": "10 000€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "jetonbank": {
+        "min": "10€",
+        "max": "5 000€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      },
+      "myfinity": {
+        "min": "10€",
+        "max": "5 000€",
+        "delay": "Instantané",
+        "fees": "Gratuit"
+      }
+    }
+  },
+  "FilterBar": {
+    "casinosFound": "{count, plural, =1 {casino trouvé} other {casinos trouvés}}",
+    "searchPlaceholder": "Rechercher un casino...",
+    "bonusFilter": "Filtre bonus",
+    "allBonuses": "Tous les bonus",
+    "wagerFilter": "Filtre wager",
+    "allWagers": "Tous les wagers",
+    "noWager": "Sans wager",
+    "paymentMethod": "Méthode de paiement",
+    "allMethods": "Toutes les méthodes",
+    "transfer": "Virement",
+    "casinoType": "Type de casino",
+    "allCasinos": "Tous les casinos",
+    "casinoBookmaker": "Casino + Bookmaker",
+    "casinoOnly": "Casino uniquement",
+    "provider": "Fournisseur",
+    "searchProvider": "Rechercher...",
+    "noProviderFound": "Aucun fournisseur trouvé.",
+    "allProviders": "Tous les fournisseurs",
+    "resetFilters": "Réinitialiser les filtres",
+    "reset": "Réinitialiser"
+  },
+  "CasinoTable": {
+    "noWager": "Sans wager ✓",
+    "play": "Jouer",
+    "headers": {
+      "casino": "Casino",
+      "bonus": "Bonus",
+      "minDeposit": "Dépôt min",
+      "conditions": "Conditions",
+      "action": "Action"
+    }
+  },
+  "CasinoDialog": {
+    "noWager": "Sans wager",
+    "description": "Découvrez tous les détails de cette offre exceptionnelle : bonus de {percent}%, conditions de mise, dépôt minimum et moyens de paiement acceptés.",
+    "bonusTitle": "Bonus d'inscription",
+    "bonusText": {
+      "withFreeSpins": "{percent}% jusqu'à {amount}€ + {freeSpins} FS",
+      "withoutFreeSpins": "{percent}% jusqu'à {amount}€"
+    },
+    "wagerTitle": "Conditions de mise",
+    "wagerNoCondition": "Aucune condition de mise requise !",
+    "wagerCondition": "Il faut miser {wager} fois le montant du bonus",
+    "minDepositTitle": "Dépôt minimum",
+    "minDepositDescription": "Montant minimum pour profiter de l'offre",
+    "paymentMethodsTitle": "Paiements acceptés",
+    "paymentMethods": {
+      "cb": "Carte Bancaire",
+      "crypto": "Cryptomonnaie",
+      "neosurf": "Neosurf",
+      "paysafe": "PaysafeCard",
+      "cashlib": "Cashlib",
+      "virement": "Virement Bancaire",
+      "skrill": "Skrill",
+      "neteler": "Neteller",
+      "jetonbank": "JetonBank",
+      "myfinity": "MiFinity"
+    },
+    "importantInfoTitle": "À savoir",
+    "importantInfo": {
+      "newPlayers": "Offre réservée aux nouveaux joueurs",
+      "termsApply": "Conditions générales applicables",
+      "responsibleGaming": "Jouez de manière responsable - 18+ uniquement",
+      "freeSpinsConditions": "Les gains issus des tours gratuits peuvent être soumis à des conditions"
+    },
+    "ctaPlay": "Profiter de cette offre",
+    "ctaPlayAriaLabel": "Profiter de l'offre de {name}",
+    "ctaOtherOffers": "Voir les autres offres"
+  },
+  "PromoPopup": {
+    "availableOn": "Disponible sur",
+    "chooseBonus": "Choisissez votre bonus exclusif :",
+    "copy": "Copier",
+    "copied": "Copié",
+    "copiedExclamation": "Copié !",
+    "onSlot": "sur {slot}",
+    "maxWin": "Max.win - {amount}",
+    "wager": "Wager - {amount}",
+    "promoCode": "Code Promo :",
+    "ctaButton": "Récupérer Mon Bonus sur {casinoName}",
+    "exclusiveOffer": "Offre exclusive réservée aux membres GigaBonus",
+    "toast": {
+      "copied": "Code copié !",
+      "description": "Le code {code} pour {casinoName} a été copié dans votre presse-papier."
+    }
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "allCasinos": "Tous nos casinos",
+    "topCryptoCasinos": "Top Casinos Crypto",
+    "casinosNoKYC": "Casinos Sans KYC",
+    "byDeposit": "Par dépôt",
+    "bonus": "Bonus",
+    "bonusSportsBetting": "Bonus Paris Sportifs",
+    "cashback": "Cashback",
+    "bonusNoWager": "Bonus Sans Wager",
+    "toolsTips": "Outils & Astuces",
+    "rouletteCalculator": "Calculateur Roulette",
+    "oddsCalculator": "Calculateur Cotes Sportives",
+    "topSlots2025": "Top Slots 2025",
+    "casinoTips": "Astuces Casino",
+    "installApp": "Installer l'App",
+    "blog": "Blog",
+    "menu": "Menu",
+    "paymentMethods": {
+      "bankCard": "Carte Bancaire",
+      "crypto": "Crypto-monnaies",
+      "neosurf": "Neosurf",
+      "cashlib": "Cashlib",
+      "paysafecard": "Paysafecard",
+      "bankTransfer": "Virement Bancaire",
+      "skrill": "Skrill",
+      "neteller": "Neteller",
+      "jetonbank": "Jeton Bank",
+      "mifinity": "MiFinity"
+    }
+  },
+  "SEO": {
+    "home": {
+      "title": "Comparateur de Bonus de Casinos en Ligne 2025 | GigaBonus",
+      "description": "🎰 Comparateur #1 des bonus casino 2025 : trouvez les meilleurs bonus jusqu'à 400%, filtrez par wager, méthodes de paiement. 23+ casinos fiables comparés. Guide complet gratuit !",
+      "keywords": "comparateur bonus casino, meilleurs bonus casino 2025, bonus casino en ligne, casino fiable, bonus 400%, bonus sans wager, casino crypto, cashback casino, free spins, wager casino, depot casino",
+      "ogTitle": "Comparateur de Bonus de Casinos en Ligne 2025 | GigaBonus",
+      "ogDescription": "🎰 Comparateur #1 des bonus casino : trouvez les meilleurs bonus jusqu'à 400%. 23+ casinos fiables comparés avec filtres avancés.",
+      "twitterTitle": "Comparateur de Bonus de Casinos en Ligne 2025 | GigaBonus",
+      "twitterDescription": "🎰 Comparateur #1 des bonus casino : trouvez les meilleurs bonus jusqu'à 400%. Filtres avancés par wager et méthodes de paiement."
+    }
+  },
+  "HomePage": {
+    "hero": {
+      "title": "Comparateur de Bonus de Casinos en Ligne",
+      "stats": {
+        "casinos": "Casinos",
+        "bonus": "en Bonus",
+        "players": "Joueurs"
+      }
+    },
+    "intro": {
+      "description": "Comparez instantanément les meilleures offres de casinos fiables. Filtrez par bonus, conditions de mise et méthodes de paiement pour trouver l'offre idéale.",
+      "features": {
+        "instant": "Comparaison instantanée",
+        "verified": "Casinos vérifiés",
+        "advanced": "Filtres avancés"
+      }
+    },
+    "bestBonus": {
+      "title": "Les Meilleurs Bonus de Casinos en 2025",
+      "intro1": "Bienvenue sur GigaBonus, votre comparateur expert des meilleurs bonus de casinos en ligne. Notre plateforme vous permet de comparer en temps réel des casinos fiables et leurs offres exclusives de bienvenue.",
+      "intro2": "Que vous recherchiez un bonus de 100%, 200%, 300% ou même 400%, des conditions de mise favorables, ou des casinos acceptant vos méthodes de paiement préférées (Carte Bancaire, Crypto, Cashlib, Neosurf, Paysafecard), notre système de filtres avancés vous aide à trouver l'offre idéale en quelques clics.",
+      "brand": "GigaBonus",
+      "comparator": "comparateur expert",
+      "casinos": "casinos fiables",
+      "offers": "offres exclusives",
+      "bonusRange": "bonus de 100%, 200%, 300% ou même 400%",
+      "conditions": "conditions de mise favorables",
+      "methods": "méthodes de paiement préférées",
+      "filters": "filtres avancés",
+      "topBonus": {
+        "title": "🎰 Les Meilleurs Bonus du Moment",
+        "description": "Découvrez notre sélection des offres les plus généreuses du marché. Du bonus classique 100% jusqu'aux offres exceptionnelles de 400%, nous avons analysé chaque promotion pour vous garantir les meilleures conditions de jeu et de retrait.",
+        "offers": "offres les plus généreuses",
+        "classic": "bonus classique 100%",
+        "exceptional": "offres exceptionnelles de 400%",
+        "conditions": "meilleures conditions de jeu et de retrait"
+      },
+      "smartFilters": {
+        "title": "⚡ Filtres Intelligents et Comparaison Rapide",
+        "description": "Utilisez nos filtres pour affiner votre recherche selon vos préférences : pourcentage de bonus, conditions de mise (wager), méthodes de paiement acceptées. Comparez facilement les offres en vue cartes ou tableau pour prendre la meilleure décision.",
+        "bonusPercent": "pourcentage de bonus",
+        "wager": "conditions de mise (wager)",
+        "methods": "méthodes de paiement acceptées",
+        "views": "vue cartes ou tableau"
+      }
+    },
+    "tabs": {
+      "cards": "Vue Cartes",
+      "table": "Vue Tableau"
+    },
+    "buttons": {
+      "loadMore": "Voir plus de casinos 🎰",
+      "remaining": "restants"
+    },
+    "guide": {
+      "title": "Guide Complet : Comment Choisir le Meilleur Bonus de Casino ?",
+      "understandBonus": {
+        "title": "💰 Comprendre les Bonus de Casino",
+        "p1": "Les bonus de bienvenue sont des <offers>offres promotionnelles</offers> proposées par les casinos en ligne pour attirer de nouveaux joueurs. Ils peuvent aller de <range>100% à 400% de votre premier dépôt</range>, souvent accompagnés de <freeSpins>tours gratuits (free spins)</freeSpins>.",
+        "p2": "Par exemple, un <exampleBonus>bonus de 200%</exampleBonus> jusqu'à 500€ signifie que si vous déposez 250€, vous recevrez 500€ de bonus, portant votre <totalBalance>solde total à 750€</totalBalance> pour jouer."
+      },
+      "wageringConditions": {
+        "title": "🎲 Les Conditions de Mise (Wager)",
+        "p1": "Le wager représente le <times>nombre de fois</times> que vous devez miser le montant du bonus avant de pouvoir <withdraw>retirer vos gains</withdraw>. Par exemple, un <exampleWager>wager de x35</exampleWager> sur un bonus de 100€ signifie que vous devrez miser <totalAmount>3500€ au total</totalAmount>. Certains casinos proposent même des <noWagerBonus>bonus sans wager</noWagerBonus>, ce qui est idéal pour les joueurs.",
+        "p2": "<advice>Conseil :</advice> Privilégiez les <recommendedWager>wagers entre x30 et x40</recommendedWager> pour des conditions plus accessibles. Les bonus sans wager sont rares mais offrent la <bestValue>meilleure valeur</bestValue>."
+      },
+      "paymentMethods": {
+        "title": "💳 Méthodes de Paiement Disponibles",
+        "p1": "Notre comparateur vous permet de filtrer les casinos selon vos <preferredMethods>méthodes de paiement préférées</preferredMethods>. Découvrez notre guide complet pour <depositByCard>déposer par carte bancaire</depositByCard>, utiliser les <cryptocurrencies>cryptomonnaies</cryptocurrencies> (Bitcoin, Ethereum), <cashlib>Cashlib</cashlib>, <neosurf>Neosurf</neosurf>, ou <paysafecard>Paysafecard</paysafecard>. Tous les casinos listés acceptent un <minDeposit>dépôt minimum accessible</minDeposit> à partir de 20€.",
+        "p2": "Les <cryptoCasinos>casinos crypto</cryptoCasinos> offrent des <fastAnonymousTransactions>transactions rapides et anonymes</fastAnonymousTransactions>, tandis que les <prepaidCards>cartes prépayées</prepaidCards> permettent de mieux contrôler votre budget."
+      },
+      "securityReliability": {
+        "title": "🔒 Sécurité et Fiabilité",
+        "p1": "Tous les casinos présents sur <brand>GigaBonus</brand> sont sélectionnés pour leur <reliabilityReputation>fiabilité et leur réputation</reliabilityReputation>. Ils proposent des <fairGames>jeux équitables</fairGames>, des <secureTransactions>transactions sécurisées</secureTransactions> et un <responsiveSupport>service client réactif</responsiveSupport>. N'oubliez pas de toujours <playResponsibly>jouer de manière responsable</playResponsibly>."
+      },
+      "bonusTypes": {
+        "title": "📊 Types de Bonus Expliqués",
+        "welcomeBonus": "<welcomeBonusTitle>Bonus de bienvenue</welcomeBonusTitle> : Accordé lors de votre premier dépôt, c'est le plus généreux.",
+        "freeSpins": "<freeSpinsTitle>Free Spins</freeSpinsTitle> : Tours gratuits sur les machines à sous, souvent inclus avec le bonus.",
+        "noDepositBonus": "<noDepositBonusTitle>Bonus sans dépôt</noDepositBonusTitle> : Rare, permet de jouer sans investir son propre argent.",
+        "reloadBonus": "<reloadBonusTitle>Bonus de rechargement</reloadBonusTitle> : Pour vos dépôts suivants, généralement moins élevé que le bonus de bienvenue."
+      },
+      "faq": {
+        "title": "❓ Questions Fréquentes (FAQ)",
+        "q1": {
+          "question": "Quel est le meilleur bonus de casino en 2025 ?",
+          "answer": "Les bonus de 300% à 400% offrent le plus de fonds de jeu, mais vérifiez toujours les <wageringConditions>conditions de mise</wageringConditions>."
+        },
+        "q2": {
+          "question": "Puis-je retirer directement mon bonus ?",
+          "answer": "Non, vous devez remplir les <wageringConditions>conditions de wager</wageringConditions> avant de pouvoir retirer vos gains issus du bonus."
+        },
+        "q3": {
+          "question": "Les casinos crypto sont-ils fiables ?",
+          "answer": "Oui, les <cryptoCasinos>casinos acceptant les cryptomonnaies</cryptoCasinos> listés sur GigaBonus sont <verifiedSecure>vérifiés et sécurisés</verifiedSecure>."
+        },
+        "q4": {
+          "question": "Quel est le dépôt minimum requis ?",
+          "answer": "La plupart des casinos de notre comparateur acceptent des <minDeposit>dépôts</minDeposit> à partir de 20€."
+        }
+      },
+      "latestReviews": "Derniers avis :"
+    },
+    "securitySection": {
+      "title": "🔐 Sécurité et Fiabilité de Nos Casinos Partenaires",
+      "intro": "Tous les casinos listés sur <brand>GigaBonus</brand> sont rigoureusement sélectionnés et vérifiés par notre équipe. Nous nous assurons que chaque plateforme respecte les <securityStandards>standards de sécurité</securityStandards> les plus élevés.",
+      "ssl": {
+        "title": "Cryptage SSL",
+        "description": "Toutes les transactions sont protégées par un cryptage SSL 256-bit pour garantir la sécurité de vos données personnelles et bancaires."
+      },
+      "licenses": {
+        "title": "Licences Vérifiées",
+        "description": "Chaque casino possède une licence de jeu valide délivrée par des autorités reconnues (Curaçao, Malta Gaming Authority, UK Gambling Commission)."
+      },
+      "fairGames": {
+        "title": "Jeux Équitables",
+        "description": "Tous les jeux sont certifiés RNG (Random Number Generator) et audités par des organismes indépendants comme eCOGRA et iTech Labs."
+      }
+    },
+    "howToUseSection": {
+      "title": "🎯 Comment Utiliser Notre Comparateur ?",
+      "step1": {
+        "title": "Utilisez les Filtres",
+        "description": "Affinez votre recherche selon vos préférences : <bonusPercent>pourcentage de bonus</bonusPercent> (100%, 200%, 300%), <wageringConditions>conditions de mise</wageringConditions> (wager x30, x40, sans wager), et <paymentMethods>méthodes de paiement</paymentMethods> (CB, Crypto, Neosurf, Paysafecard)."
+      },
+      "step2": {
+        "title": "Comparez les Offres",
+        "description": "Visualisez rapidement les bonus en <cardsView>vue cartes</cardsView> ou analysez en détail avec la <tableView>vue tableau</tableView>. Comparez le montant du bonus, le wager, les free spins et les méthodes de paiement disponibles."
+      },
+      "step3": {
+        "title": "Choisissez et Jouez",
+        "description": "Une fois votre casino sélectionné, cliquez sur <playButton>Jouer Maintenant</playButton> pour être redirigé vers la plateforme. Inscrivez-vous, effectuez votre dépôt et profitez de votre <welcomeBonus>bonus de bienvenue</welcomeBonus> !"
+      }
+    },
+    "gameTypesSection": {
+      "title": "🎰 Découvrez les Meilleurs Jeux de Casino en Ligne",
+      "slots": {
+        "title": "Machines à Sous",
+        "description": "4000+ slots dont les dernières sorties Pragmatic Play, Play'n GO, NetEnt"
+      },
+      "liveCasino": {
+        "title": "Casino Live",
+        "description": "Tables Evolution Gaming avec croupiers francophones"
+      },
+      "tableGames": {
+        "title": "Jeux de Table",
+        "description": "Blackjack, Roulette, Baccarat, Poker en versions multiples"
+      },
+      "jackpots": {
+        "title": "Jackpots",
+        "description": "Mega Moolah, Divine Fortune et autres jackpots progressifs"
+      },
+      "miniGames": {
+        "title": "Mini-Jeux",
+        "description": "Crash games, Plinko, Dice et autres jeux instantanés"
+      },
+      "sportsBetting": {
+        "title": "Paris Sportifs",
+        "description": "Section sport avec cotes compétitives"
+      }
+    },
+    "whyPlayOnline": {
+      "title": "✨ Pourquoi Jouer sur un Casino en Ligne ?",
+      "comfort": {
+        "title": "Confort et Accessibilité",
+        "description": "Jouez 24h/24 depuis votre canapé, sur ordinateur, tablette ou smartphone. Plus besoin de vous déplacer dans un casino physique !"
+      },
+      "bonuses": {
+        "title": "Bonus Généreux",
+        "description": "Les casinos en ligne offrent des bonus de bienvenue allant jusqu'à 400%, des free spins quotidiens et des programmes VIP lucratifs."
+      },
+      "variety": {
+        "title": "Variété de Jeux",
+        "description": "Accédez à des milliers de jeux de fournisseurs renommés comme Pragmatic Play, Evolution, NetEnt et bien d'autres."
+      },
+      "payments": {
+        "title": "Options de Paiement Flexibles",
+        "description": "Utilisez votre méthode préférée : carte bancaire, crypto, e-wallets, cartes prépayées. Dépôts instantanés et retraits rapides."
+      },
+      "security": {
+        "title": "Sécurité Renforcée",
+        "description": "Cryptage SSL, licences officielles et audits réguliers garantissent la sécurité de vos fonds et données personnelles."
+      },
+      "mobile": {
+        "title": "Jeu Mobile Optimisé",
+        "description": "Tous les casinos modernes proposent une version mobile responsive ou une application dédiée pour jouer en déplacement."
+      }
+    },
+    "trends2025": {
+      "title": "🚀 Tendances des Casinos en Ligne 2025",
+      "intro": "L'industrie des casinos en ligne évolue rapidement. Découvrez les innovations majeures de 2025 qui transforment l'expérience de jeu.",
+      "crypto": {
+        "title": "💎 Casinos Crypto et Web3",
+        "description": "Les casinos crypto gagnent en popularité avec des transactions instantanées, des frais réduits et une anonymat total. Bitcoin, Ethereum, USDT et autres cryptomonnaies sont largement acceptés."
+      },
+      "noWager": {
+        "title": "🎯 Bonus Sans Wager",
+        "description": "Les bonus sans conditions de mise deviennent plus courants. Vos gains sont immédiatement retirables, sans exigences de mise compliquées."
+      },
+      "noKYC": {
+        "title": "🔐 Casinos Sans KYC",
+        "description": "Les casinos sans vérification d'identité permettent de jouer anonymement avec des inscriptions instantanées. Parfait pour ceux qui valorisent leur vie privée."
+      },
+      "gamification": {
+        "title": "🎮 Gamification Avancée",
+        "description": "Les casinos intègrent des systèmes de missions, tournois quotidiens, programmes de fidélité et classements compétitifs pour une expérience plus engageante."
+      },
+      "cashback": {
+        "title": "💸 Cashback et Rakeback",
+        "description": "Les programmes de cashback vous remboursent un pourcentage de vos pertes, souvent sans conditions. Une excellente façon de réduire les risques."
+      }
+    },
+    "expertTips": {
+      "title": "💡 Conseils d'Experts pour Maximiser Vos Gains",
+      "readTerms": {
+        "title": "📖 Lisez Toujours les Conditions",
+        "description": "Avant d'accepter un bonus, vérifiez le wager, les jeux éligibles, le montant maximum de retrait et la durée de validité. Les détails font la différence !"
+      },
+      "chooseGames": {
+        "title": "🎰 Choisissez les Bons Jeux",
+        "description": "Pour remplir le wager rapidement, privilégiez les slots à haute volatilité et vérifiez la contribution des jeux (généralement 100% pour les slots, moins pour les jeux de table)."
+      },
+      "manageBankroll": {
+        "title": "💰 Gérez Votre Bankroll",
+        "description": "Définissez un budget clair, ne misez jamais plus que vous ne pouvez perdre et utilisez les limites de dépôt disponibles sur les plateformes responsables."
+      },
+      "usePromotions": {
+        "title": "🎁 Profitez des Promotions Récurrentes",
+        "description": "Au-delà du bonus de bienvenue, surveillez les recharges hebdomadaires, les free spins du lundi et les tournoirs mensuels. Plus de valeur ajoutée !"
+      }
+    },
+    "whyChooseUs": {
+      "title": "⭐ Pourquoi Choisir GigaBonus ?",
+      "intro": "GigaBonus est votre allié pour trouver les meilleures offres de casinos en ligne. Notre mission : vous faire gagner du temps et de l'argent.",
+      "exhaustive": {
+        "title": "🔍 Comparaison Exhaustive",
+        "description": "Nous analysons tous les bonus du marché et mettons à jour notre base de données quotidiennement pour vous offrir les informations les plus récentes."
+      },
+      "objective": {
+        "title": "✅ Avis Objectifs",
+        "description": "Nos revues sont impartiales et détaillées. Nous testons personnellement chaque casino pour évaluer la qualité du service, les délais de retrait et le support client."
+      },
+      "filters": {
+        "title": "🎯 Filtres Puissants",
+        "description": "Trouvez exactement ce que vous cherchez grâce à nos filtres intelligents : bonus, wager, méthodes de paiement, tout est personnalisable."
+      }
+    },
+    "testimonials": {
+      "title": "💬 Avis de Nos Utilisateurs",
+      "intro": "Des milliers de joueurs font confiance à GigaBonus pour trouver les meilleurs bonus. Découvrez ce qu'ils en pensent !",
+      "user1": {
+        "quote": "Grâce à GigaBonus, j'ai trouvé un casino avec un bonus de 300% sans wager. Le comparateur est ultra-intuitif et les filtres sont très pratiques !",
+        "author": "Marc D., Paris"
+      },
+      "user2": {
+        "quote": "J'adore pouvoir filtrer par méthodes de paiement crypto. En 2 minutes j'ai trouvé le casino parfait pour moi. Site indispensable !",
+        "author": "Sophie L., Lyon"
+      },
+      "user3": {
+        "quote": "Comparateur très complet avec des avis objectifs. J'ai pu comparer facilement tous les wagers et choisir le meilleur casino.",
+        "author": "Thomas R., Marseille"
+      }
+    },
+    "stats": {
+      "title": "📊 GigaBonus en Chiffres",
+      "casinos": {
+        "value": "23+",
+        "label": "Casinos Comparés"
+      },
+      "bonus": {
+        "value": "400%",
+        "label": "Bonus Maximum"
+      },
+      "players": {
+        "value": "50K+",
+        "label": "Joueurs Satisfaits"
+      },
+      "updates": {
+        "value": "24/7",
+        "label": "Mises à Jour"
+      }
+    },
+    "responsibleGaming": {
+      "title": "🛡️ Engagement pour le Jeu Responsable",
+      "intro": "Chez GigaBonus, nous promouvons activement le jeu responsable et la prévention de l'addiction au jeu. Tous nos casinos partenaires respectent les normes strictes de protection des joueurs.",
+      "healthyTips": {
+        "title": "🎯 Conseils pour un Jeu Sain",
+        "tip1": "Fixez des limites de dépôt avant de commencer",
+        "tip2": "Ne jouez jamais pour récupérer vos pertes",
+        "tip3": "Prenez des pauses régulières",
+        "tip4": "Ne considérez jamais le jeu comme une source de revenus",
+        "tip5": "Jouez uniquement avec de l'argent que vous pouvez vous permettre de perdre"
+      },
+      "resources": {
+        "title": "🆘 Ressources d'Aide",
+        "intro": "Si vous pensez avoir un problème avec le jeu, contactez ces organismes :",
+        "resource1": "Joueurs Info Service : 09 74 75 13 13",
+        "resource2": "ADICTEL : Centre de référence",
+        "resource3": "GamCare : Support international",
+        "resource4": "Auto-exclusion ARJEL disponible"
+      },
+      "warning": "⚠️ Interdit aux mineurs (-18 ans) - Le jeu peut être addictif - Jouez de manière responsable"
+    },
+    "faqCasino": {
+      "title": "❓ Questions Fréquentes sur les Bonus de Casino",
+      "q1": {
+        "question": "Comment fonctionne un bonus de casino en ligne ?",
+        "answer": "Un bonus de casino est une offre promotionnelle qui augmente votre dépôt initial. Par exemple, avec un bonus de 200%, si vous déposez 100€, vous recevrez 200€ supplémentaires, soit 300€ au total pour jouer. Le bonus est soumis à des conditions de mise (wager) que vous devez remplir avant de retirer vos gains."
+      },
+      "q2": {
+        "question": "Quel est le meilleur pourcentage de bonus en 2025 ?",
+        "answer": "Les meilleurs bonus vont de 300% à 400% de votre dépôt. Cependant, vérifiez toujours les conditions de wager. Un bonus de 150% avec un wager de x30 peut être plus avantageux qu'un bonus de 400% avec un wager de x60. Notre comparateur vous aide à identifier les meilleures offres réelles."
+      },
+      "q3": {
+        "question": "Qu'est-ce qu'un bonus sans wager ?",
+        "answer": "Un bonus sans wager (ou sans condition de mise) signifie que vous pouvez retirer vos gains immédiatement sans avoir à miser un certain montant. C'est le type de bonus le plus transparent et avantageux. Le bonus initial est généralement déduit lors du retrait, mais tous vos gains restent à vous."
+      },
+      "q4": {
+        "question": "Quelles méthodes de paiement sont acceptées sur les casinos en ligne ?",
+        "answer": "Les casinos modernes acceptent : cartes bancaires (Visa, Mastercard), virements bancaires, cryptomonnaies (Bitcoin, Ethereum, USDT), e-wallets (Skrill, Neteller, MiFinity), et cartes prépayées (Paysafecard, Neosurf, Cashlib). Les dépôts sont instantanés, les retraits prennent généralement entre 24h et 72h."
+      },
+      "q5": {
+        "question": "Les casinos en ligne sont-ils sûrs et légaux ?",
+        "answer": "Oui, tous les casinos listés sur GigaBonus possèdent des licences officielles (Curaçao, MGA, UKGC) et utilisent un cryptage SSL 256-bit. Les jeux sont certifiés RNG (Random Number Generator) et audités par des organismes indépendants (eCOGRA, iTech Labs). Vos fonds et données personnelles sont 100% protégés."
+      },
+      "q6": {
+        "question": "Combien de temps pour recevoir mes gains ?",
+        "answer": "Les délais varient selon la méthode : cryptomonnaies (instantané à 12h), cartes bancaires (24-48h), virements (2-5 jours). Après votre première vérification KYC, les retraits suivants sont généralement traités sous 24h. Les casinos crypto offrent les retraits les plus rapides."
+      }
+    },
+    "partnerCasinos": {
+      "title": "Nos Casinos Partenaires de Confiance",
+      "securePayments": {
+        "title": "Paiements Sécurisés",
+        "subtitle": "SSL & Cryptage"
+      },
+      "fastWithdrawals": {
+        "title": "Retraits Rapides",
+        "subtitle": "24h-48h"
+      },
+      "manyGames": {
+        "title": "+1000 Jeux",
+        "subtitle": "Slots & Live"
+      },
+      "support": {
+        "title": "Support 24/7",
+        "subtitle": "Chat en direct"
+      }
+    },
+    "popularGuides": {
+      "title": "📚 Guides et Pages Populaires",
+      "noWagerBonus": {
+        "title": "Bonus Sans Wager 2025",
+        "description": "Découvrez les rares bonus sans conditions de mise avec retraits immédiats"
+      },
+      "cashbackBonus": {
+        "title": "Bonus Cashback Casino",
+        "description": "Récupérez jusqu'à 20% de vos pertes chaque semaine automatiquement"
+      },
+      "noKycCasinos": {
+        "title": "Casinos Sans KYC",
+        "description": "Jouez anonymement sans vérification d'identité sur ces casinos crypto"
+      },
+      "cryptoCasinos": {
+        "title": "Top Casinos Crypto 2025",
+        "description": "Meilleurs casinos Bitcoin, Ethereum et cryptos avec retraits instantanés"
+      },
+      "topSlots": {
+        "title": "Top 10 Slots 2025",
+        "description": "Classement des machines à sous les plus lucratives avec RTP élevé"
+      },
+      "casinoTips": {
+        "title": "Astuces Casino 2025",
+        "description": "Stratégies gagnantes pour blackjack, roulette et slots testées par nos experts"
+      }
+    }
+  },
+  "common": {
+    "readMore": "Lire plus",
+    "deposit": "Dépôt",
+    "withdraw": "Retrait",
+    "play": "Jouer",
+    "bonus": "Bonus",
+    "wager": "Wager",
+    "methods": "Méthodes"
+  },
+  "seoGuide": {
+    "guideName": "Comparateur Bonus Casino 2025",
+    "description": "Comparateur #1 des bonus casino en ligne avec filtres avancés par wager, pourcentage et méthodes de paiement.",
+    "expert": {
+      "initials": "AM",
+      "name": "Alexandre Martin",
+      "title": "Expert Casino Senior",
+      "experience": "15 ans d'expérience",
+      "specialist": "Spécialiste",
+      "updated": "Guide mis à jour le",
+      "basedOn": "Basé sur l'analyse de 50+ plateformes"
+    },
+    "table": {
+      "title": "Tableau Comparatif",
+      "casino": "Casino",
+      "bonus": "Bonus",
+      "rating": "Note",
+      "action": "Action",
+      "viewOffer": "Voir l'offre"
+    },
+    "analysis": {
+      "title": "Analyse Détaillée",
+      "p1": "Notre équipe a passé plus de 100 heures à comparer les différentes plateformes disponibles sur le marché français et international pour vous présenter une sélection rigoureuse des meilleures options. Chaque casino listé a été testé personnellement avec des dépôts réels, des vérifications de paiements, et une évaluation complète de l'expérience utilisateur sur desktop et mobile.",
+      "p2": "Les critères d'évaluation incluent: la fiabilité de la licence (Curaçao, MGA, UKGC), la qualité et diversité du catalogue de jeux (5000+ titres minimum), la générosité des bonus (ratio bonus/wager optimal), les délais de retrait effectifs (tests sur 50+ transactions), la réactivité du support client (tests 24/7 en français), la sécurité des transactions (cryptage SSL, vérifications KYC), et la satisfaction globale des utilisateurs (analyse de 10,000+ avis vérifiés sur Trustpilot, AskGamblers, et forums spécialisés)."
+    },
+    "recommendations": {
+      "title": "Nos Recommandations d'Experts",
+      "bestOverall": {
+        "title": "Meilleur Choix Général",
+        "description": "domine cette catégorie grâce à son excellent équilibre entre bonus généreux ({bonus}), catalogue de jeux exhaustif (5000+ titres), et délais de retrait ultra-rapides (24-48h). Idéal pour les joueurs recherchant une expérience complète sans compromis. Note: {rating}/10 basée sur 4000+ avis vérifiés."
+      },
+      "bestBonus": {
+        "title": "Meilleur Bonus",
+        "description": "propose le package de bienvenue le plus compétitif avec {bonus}. Le wager reste raisonnable et les conditions sont transparentes sans clauses cachées. Parfait pour maximiser votre capital initial et explorer la plateforme avec un budget confortable. Programme VIP généreux avec cashback jusqu'à 20%."
+      },
+      "fastestWithdrawals": {
+        "title": "Retraits Les Plus Rapides",
+        "description": "excelle dans les paiements avec des retraits crypto (Bitcoin, Ethereum) traités en moins de 18h et e-wallets (Skrill, Neteller) en 24h maximum. Vérification KYC simplifiée avec documents validés en 12h. Limites de retrait élevées (10,000€/semaine) et processus 100% automatisé une fois le compte vérifié."
+      }
+    },
+    "faq": {
+      "title": "Questions Fréquentes",
+      "q1": {
+        "question": "Comment choisir le meilleur casino pour {guideName} ?",
+        "answer": "Le choix optimal dépend de vos priorités personnelles. Si vous privilégiez les bonus: comparez les packages de bienvenue en calculant le ratio bonus/wager (plus il est faible, mieux c'est). Pour les retraits rapides: privilégiez les casinos acceptant crypto ou e-wallets avec des délais moins de 24h. Pour la sécurité: vérifiez la présence d'une licence valide (Curaçao, MGA), d'audits indépendants (eCOGRA, iTech Labs), et de protocoles de cryptage SSL 256 bits. Pour la diversité de jeux: assurez-vous d'un catalogue 3000+ titres avec vos fournisseurs favoris (Pragmatic, NetEnt, Evolution). Notre tableau comparatif synthétise ces critères pour faciliter votre décision. Testez toujours avec un petit dépôt initial (20-50€) avant d'engager des montants importants."
+      },
+      "q2": {
+        "question": "Les bonus {guideName} ont-ils des conditions cachées ?",
+        "answer": "Les casinos sérieux affichent toutes les conditions dans leurs termes et conditions accessibles depuis la page bonus. Attention aux pièges courants: wager excessif (supérieur à 50x), limite de mise maximale durant le wager (souvent 5€/spin), jeux exclus ou à contribution réduite (les jackpots progressifs contribuent généralement à 0-10%), durée de validité courte (< 14 jours), et plafond de gain maximum après conversion du bonus (ex: 10x le bonus). Tous les casinos de notre sélection ont été vérifiés: pas de conditions abusives, termes clairs en français, et support client transparent. Notre conseil: lisez TOUJOURS les T&C avant de réclamer un bonus, et n'hésitez pas à contacter le support en cas de doute."
+      },
+      "q3": {
+        "question": "Peut-on jouer de manière responsable sur ces casinos ?",
+        "answer": "Absolument, et c'est même une priorité. Tous les casinos recommandés proposent des outils de jeu responsable: limites de dépôt journalières/hebdomadaires/mensuelles personnalisables, limites de temps de jeu avec alertes automatiques, auto-exclusion temporaire (24h à 6 mois) ou permanente, test d'auto-évaluation pour détecter les comportements à risque, et liens vers des organismes d'aide (Joueurs Info Service 09 74 75 13 13, Adictel). Les casinos sous licence Curaçao sont tenus de respecter ces standards sous peine de suspension de licence. Notre recommandation: fixez-vous TOUJOURS un budget mensuel à ne pas dépasser (max 5% de vos revenus), ne jouez JAMAIS avec de l'argent emprunté, considérez les dépôts comme un divertissement (pas un investissement), et prenez des pauses régulières (arrêt 15min toutes les heures)."
+      },
+      "q4": {
+        "question": "Combien peut-on gagner sur ces casinos ?",
+        "answer": "Les gains potentiels varient énormément selon le type de jeu: les slots à jackpot progressif peuvent atteindre plusieurs millions d'euros (Mega Moolah: records supérieurs à 15M€), les slots classiques offrent généralement x1000 à x50,000 la mise (Dead or Alive 2: max x100,000), et le casino live propose des gains plus modérés mais plus fréquents (roulette: max x35 sur numéro plein, blackjack: paiement 3:2 sur 21 naturel). Le RTP (Return to Player) moyen des casinos listés est de 96-97%, ce qui signifie qu'en moyenne, le casino reverse 96-97% des mises en gains. Attention: ceci est statistique sur des millions de tours, pas une garantie individuelle. Les plus gros gains vérifiés de nos lecteurs sur ces casinos: 45,000€ sur Gates of Olympus, 18,500€ sur Crazy Time, 12,300€ sur Lightning Roulette, et 8,900€ sur Sweet Bonanza. Clé du succès: gestion stricte du bankroll, choix de jeux à RTP élevé (>96.5%), et patience (ne pas chasser les pertes)."
+      }
+    },
+    "complementaryLinks": {
+      "title": "Guides Complémentaires",
+      "bonusSection": {
+        "title": "Bonus & Promotions",
+        "link1": "Meilleurs Cashback 2025",
+        "link2": "Bonus Sans Conditions",
+        "link3": "Stratégies Bonus"
+      },
+      "paymentSection": {
+        "title": "Méthodes Paiement",
+        "link1": "Dépôt Crypto (BTC/ETH)",
+        "link2": "Casinos Skrill",
+        "link3": "Casinos Paysafecard"
+      },
+      "topCasinos": {
+        "title": "Nos Top Casinos"
+      }
+    },
+    "cta": {
+      "title": "Trouvez Votre Casino Idéal",
+      "description": "Comparez les {count} meilleurs casinos {guideName} et choisissez celui qui vous correspond"
+    }
+  },
+  "Footer": {
+    "description": "Comparateur de bonus casinos 2025",
+    "sections": {
+      "casinos": "Casinos",
+      "guides": "Guides",
+      "tools": "Outils",
+      "payments": "Paiements",
+      "more": "Plus",
+      "recentReviews": "Avis Récents"
+    },
+    "about": "À propos",
+    "responsibleGaming": "Jouez responsable 18+"
+  }
+}

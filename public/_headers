@@ -1,0 +1,21 @@
+# Headers pour Cloudflare Pages
+# Ces headers seront appliqués à tous les fichiers
+
+# Cache statique pour les assets
+/_next/static/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache pour les images
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Cache pour les vidéos
+/videos/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Headers de sécurité
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+
