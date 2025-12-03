@@ -8,10 +8,14 @@ const countryToLocale: Record<string, string> = {
   'BE': 'fr', // Belgique redirigée vers français
   'US': 'en',
   'GB': 'en',
+  'UK': 'en', // Royaume-Uni (alias de GB)
   'CA': 'en',
   'AU': 'en',
   'NZ': 'en',
   'IE': 'en',
+  'NL': 'en', // Pays-Bas redirigé vers anglais
+  'FI': 'en', // Finlande redirigée vers anglais
+  'LV': 'en', // Lettonie redirigée vers anglais
   'DE': 'de',
   'AT': 'de',
   'CH': 'de',
