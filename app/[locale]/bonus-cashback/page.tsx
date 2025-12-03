@@ -15,6 +15,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 import SEOEnrichedGuide from "@/components/SEOEnrichedGuide";
 import SEOHead from "@/components/SEOHead";
 import { TrendingDown } from "lucide-react";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 export default function BonusCashbackPage() {
   const locale = useLocale();
@@ -23,6 +24,8 @@ export default function BonusCashbackPage() {
   const [wagerFilter, setWagerFilter] = useState("all");
   const [methodFilter, setMethodFilter] = useState("all");
 
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
 
   const cashbackCasinos = useMemo(() => {
     const cashbackCasinoNames = [
@@ -56,9 +59,16 @@ export default function BonusCashbackPage() {
         methodFilter === "all" ||
         casino.methods.some((method) => method.toLowerCase() === methodFilter.toLowerCase());
 
-      return matchesSearch && matchesBonus && matchesWager && matchesMethod;
+      // Country filter
+      const matchesCountry =
+        !userCountry ||
+        !casino.availableCountries ||
+        casino.availableCountries.length === 0 ||
+        casino.availableCountries.includes(userCountry);
+
+      return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesCountry;
     });
-  }, [cashbackCasinos, searchTerm, bonusFilter, wagerFilter, methodFilter]);
+  }, [cashbackCasinos, searchTerm, bonusFilter, wagerFilter, methodFilter, userCountry]);
 
   return (
     <>

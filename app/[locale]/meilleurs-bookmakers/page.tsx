@@ -14,6 +14,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import SEOEnrichedGuide from "@/components/SEOEnrichedGuide";
 import SEOHead from "@/components/SEOHead";
 import { Defer } from "@/components/Defer";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 // Lazy load below-the-fold components
 const Footer = lazy(() => import("@/components/Footer"));
@@ -25,6 +26,9 @@ export default function MeilleursBookmakersPage() {
   const [bonusFilter, setBonusFilter] = useState("all");
   const [wagerFilter, setWagerFilter] = useState("all");
   const [methodFilter, setMethodFilter] = useState("all");
+
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
 
   // Filtrer uniquement les bookmakers
   const bookmakerCasinos = useMemo(() => {
@@ -61,9 +65,16 @@ export default function MeilleursBookmakersPage() {
       const matchesMethod =
         methodFilter === "all" || casino.methods.includes(methodFilter);
 
-      return matchesSearch && matchesBonus && matchesWager && matchesMethod;
+      // Country filter
+      const matchesCountry =
+        !userCountry ||
+        !casino.availableCountries ||
+        casino.availableCountries.length === 0 ||
+        casino.availableCountries.includes(userCountry);
+
+      return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesCountry;
     });
-  }, [searchTerm, bonusFilter, wagerFilter, methodFilter, bookmakerCasinos]);
+  }, [searchTerm, bonusFilter, wagerFilter, methodFilter, bookmakerCasinos, userCountry]);
 
   const displayedCasinos = useMemo(() => {
     return filteredCasinos.slice(0, displayedCount);

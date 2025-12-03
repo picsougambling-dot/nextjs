@@ -15,6 +15,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 import SEOEnrichedGuide from "@/components/SEOEnrichedGuide";
 import SEOHead from "@/components/SEOHead";
 import { Bitcoin, Shield, Zap, Lock } from "lucide-react";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 export default function TopCasinosCryptoPage() {
   const locale = useLocale();
@@ -23,6 +24,8 @@ export default function TopCasinosCryptoPage() {
   const [wagerFilter, setWagerFilter] = useState("all");
   const [displayedCount, setDisplayedCount] = useState(9);
 
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
 
   // Filter out Magical Spin and show all other casinos
   const allCasinos = useMemo(() => {
@@ -38,9 +41,16 @@ export default function TopCasinosCryptoPage() {
         (wagerFilter === "none" && casino.wager === null) ||
         (wagerFilter !== "none" && casino.wager === parseInt(wagerFilter));
 
-      return matchesSearch && matchesBonus && matchesWager;
+      // Country filter
+      const matchesCountry =
+        !userCountry ||
+        !casino.availableCountries ||
+        casino.availableCountries.length === 0 ||
+        casino.availableCountries.includes(userCountry);
+
+      return matchesSearch && matchesBonus && matchesWager && matchesCountry;
     });
-  }, [allCasinos, searchTerm, bonusFilter, wagerFilter]);
+  }, [allCasinos, searchTerm, bonusFilter, wagerFilter, userCountry]);
 
   const displayedCasinos = useMemo(() => {
     return filteredCasinos.slice(0, displayedCount);

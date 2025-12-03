@@ -15,6 +15,7 @@ import RelatedLinks from "@/components/RelatedLinks";
 import SEOEnrichedGuide from "@/components/SEOEnrichedGuide";
 import SEOHead from "@/components/SEOHead";
 import { BadgeCheck } from "lucide-react";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 export default function BonusSansWagerPage() {
   const locale = useLocale();
@@ -23,6 +24,8 @@ export default function BonusSansWagerPage() {
   const [wagerFilter, setWagerFilter] = useState("all");
   const [methodFilter, setMethodFilter] = useState("all");
 
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
 
   const sansWagerCasinos = useMemo(() => {
     const sansWagerCasinoNames = [
@@ -52,9 +55,16 @@ export default function BonusSansWagerPage() {
         methodFilter === "all" ||
         casino.methods.some((method) => method.toLowerCase() === methodFilter.toLowerCase());
 
-      return matchesSearch && matchesBonus && matchesWager && matchesMethod;
+      // Country filter
+      const matchesCountry =
+        !userCountry ||
+        !casino.availableCountries ||
+        casino.availableCountries.length === 0 ||
+        casino.availableCountries.includes(userCountry);
+
+      return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesCountry;
     });
-  }, [sansWagerCasinos, searchTerm, bonusFilter, wagerFilter, methodFilter]);
+  }, [sansWagerCasinos, searchTerm, bonusFilter, wagerFilter, methodFilter, userCountry]);
 
   return (
     <>

@@ -16,6 +16,7 @@ import { PromoPopup } from "@/components/PromoPopup";
 import SEOEnrichedGuide from "@/components/SEOEnrichedGuide";
 import { CounterAnimation } from "@/components/CounterAnimation";
 import SEOHead from "@/components/SEOHead";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 // Lazy load below-the-fold components
 const Footer = lazy(() => import("@/components/Footer"));
@@ -48,6 +49,9 @@ export default function IndexPage() {
 
   const [displayedCount, setDisplayedCount] = useState(getInitialCount());
 
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
+
   const filteredCasinos = useMemo(() => {
     return casinos
       .filter((casino) => {
@@ -78,10 +82,20 @@ export default function IndexPage() {
         const matchesProvider =
           providerFilter === "all" || casino.providers?.includes(providerFilter);
 
-        return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesBookmaker && matchesProvider;
+        // Country filter - Afficher le casino si :
+        // - Pas de pays détecté (affichage de tous les casinos)
+        // - Le casino n'a pas de restriction de pays (availableCountries non défini ou vide)
+        // - Le casino est disponible dans le pays de l'utilisateur
+        const matchesCountry =
+          !userCountry ||
+          !casino.availableCountries ||
+          casino.availableCountries.length === 0 ||
+          casino.availableCountries.includes(userCountry);
+
+        return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesBookmaker && matchesProvider && matchesCountry;
       })
       .sort((a, b) => a.rank - b.rank); // Tri par rang
-  }, [searchTerm, bonusFilter, wagerFilter, methodFilter, bookmakerFilter, providerFilter]);
+  }, [searchTerm, bonusFilter, wagerFilter, methodFilter, bookmakerFilter, providerFilter, userCountry]);
 
   const displayedCasinos = useMemo(() => {
     return filteredCasinos.slice(0, displayedCount);

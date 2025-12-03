@@ -68,7 +68,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 3,
     score: 150.7,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 36,
@@ -87,7 +88,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 4,
     score: 150.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 37,
@@ -106,7 +108,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 8,
     score: 147.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 42,
@@ -125,7 +128,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 9,
     score: 140.2,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 40,
@@ -144,7 +148,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 12,
     score: 137.7,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 38,
@@ -163,7 +168,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 13,
     score: 140.2,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 9,
@@ -182,7 +188,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 14,
     score: 141.3,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 35,
@@ -201,7 +208,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 8,
     score: 140.1,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 34,
@@ -220,7 +228,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 9,
     score: 139.8,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 2,
@@ -238,7 +247,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 10,
     score: 139.7,
-    rating: 9.0
+    rating: 9.0,
+    availableCountries: ['FR']
   },
   {
     id: 6,
@@ -256,7 +266,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 11,
     score: 138.2,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 8,
@@ -274,7 +285,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 12,
     score: 138.2,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 7,
@@ -292,7 +304,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 13,
     score: 137.4,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 5,
@@ -311,7 +324,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 14,
     score: 136.5,
-    rating: 9.0
+    rating: 9.0,
+    availableCountries: ['FR']
   },
   {
     id: 33,
@@ -330,7 +344,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 6,
     score: 134.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 4,
@@ -349,7 +364,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 16,
     score: 133.8,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 27,
@@ -368,7 +384,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 17,
     score: 133.3,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 3,
@@ -386,7 +403,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 18,
     score: 128.8,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 29,
@@ -405,7 +423,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 19,
     score: 127.8,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 15,
@@ -423,7 +442,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 20,
     score: 127.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 26,
@@ -441,7 +461,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 21,
     score: 126.0,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 14,
@@ -460,7 +481,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 22,
     score: 125.1,
-    rating: 8.0
+    rating: 8.0,
+    availableCountries: ['FR']
   },
   {
     id: 24,
@@ -478,7 +500,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 23,
     score: 125.0,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 39,
@@ -497,7 +520,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 7,
     score: 124.4,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 30,
@@ -515,7 +539,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 25,
     score: 124.2,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 28,
@@ -533,7 +558,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 26,
     score: 122.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 11,
@@ -552,7 +578,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 27,
     score: 122.4,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 21,
@@ -570,7 +597,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 28,
     score: 121.7,
-    rating: 8.0
+    rating: 8.0,
+    availableCountries: ['FR']
   },
   {
     id: 16,
@@ -588,7 +616,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 29,
     score: 121.5,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 12,
@@ -606,7 +635,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 30,
     score: 121.5,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 32,
@@ -625,7 +655,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 31,
     score: 120.0,
-    rating: 8.0
+    rating: 8.0,
+    availableCountries: ['FR']
   },
   {
     id: 13,
@@ -643,7 +674,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 32,
     score: 116.9,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 10,
@@ -661,7 +693,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 33,
     score: 112.8,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 31,
@@ -679,7 +712,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 34,
     score: 112.7,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 1,
@@ -698,7 +732,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 35,
     score: 51.4,
-    rating: 9.5
+    rating: 9.5,
+    availableCountries: ['FR']
   },
   {
     id: 25,
@@ -717,7 +752,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 36,
     score: 37.4,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 20,
@@ -735,7 +771,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 37,
     score: 36.4,
-    rating: 8.0
+    rating: 8.0,
+    availableCountries: ['FR']
   },
   {
     id: 17,
@@ -753,7 +790,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 38,
     score: 35.8,
-    rating: 8.0
+    rating: 8.0,
+    availableCountries: ['FR']
   },
   {
     id: 19,
@@ -771,7 +809,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 39,
     score: 33.5,
-    rating: 7.5
+    rating: 7.5,
+    availableCountries: ['FR']
   },
   {
     id: 22,
@@ -789,7 +828,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 40,
     score: 29.6,
-    rating: 7.0
+    rating: 7.0,
+    availableCountries: ['FR']
   },
   {
     id: 23,
@@ -807,7 +847,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 41,
     score: 29.6,
-    rating: 7.0
+    rating: 7.0,
+    availableCountries: ['FR']
   },
   {
     id: 18,
@@ -825,7 +866,8 @@ export const casinos: Casino[] = [
     affiliationType: 'RS',
     rank: 42,
     score: 29.1,
-    rating: 7.0
+    rating: 7.0,
+    availableCountries: ['FR']
   },
   {
     id: 43,
@@ -844,7 +886,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 1,
     score: 134.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 44,
@@ -863,7 +906,8 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 2,
     score: 134.6,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   },
   {
     id: 45,
@@ -882,6 +926,7 @@ export const casinos: Casino[] = [
     affiliationType: 'CPA',
     rank: 5,
     score: 127.1,
-    rating: 8.5
+    rating: 8.5,
+    availableCountries: ['FR']
   }
 ];

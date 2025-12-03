@@ -12,6 +12,7 @@ import Footer from "@/components/Footer";
 import SEOEnrichedPayment from "@/components/SEOEnrichedPayment";
 import SEOHead from "@/components/SEOHead";
 import { CreditCard } from "lucide-react";
+import { useUserCountry } from "@/hooks/useUserCountry";
 
 export default function DepotCartePage() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -19,7 +20,8 @@ export default function DepotCartePage() {
   const [wagerFilter, setWagerFilter] = useState("all");
   const [displayedCount, setDisplayedCount] = useState(9);
 
-  
+  // Récupérer le pays de l'utilisateur pour filtrer les casinos
+  const { countryCode: userCountry } = useUserCountry();
 
   const carteCasinos = useMemo(() => {
     return casinos.filter((casino) => casino.methods.includes("CB")).sort((a, b) => a.rank - b.rank);
@@ -34,9 +36,16 @@ export default function DepotCartePage() {
         (wagerFilter === "none" && casino.wager === null) ||
         (wagerFilter !== "none" && casino.wager === parseInt(wagerFilter));
 
-      return matchesSearch && matchesBonus && matchesWager;
+      // Country filter
+      const matchesCountry =
+        !userCountry ||
+        !casino.availableCountries ||
+        casino.availableCountries.length === 0 ||
+        casino.availableCountries.includes(userCountry);
+
+      return matchesSearch && matchesBonus && matchesWager && matchesCountry;
     });
-  }, [carteCasinos, searchTerm, bonusFilter, wagerFilter]);
+  }, [carteCasinos, searchTerm, bonusFilter, wagerFilter, userCountry]);
 
   const displayedCasinos = useMemo(() => {
     return filteredCasinos.slice(0, displayedCount);
