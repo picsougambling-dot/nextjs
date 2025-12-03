@@ -85,34 +85,20 @@ export function useUserCountry(): UseUserCountryResult {
   }, []);
 
   useEffect(() => {
-    fetchUserCountry(false);
+    // Au chargement de la page, vider le cache pour forcer une nouvelle détection
+    // Cela garantit que les changements de VPN sont détectés immédiatement
+    const pageLoadTime = Date.now();
+    const lastLoadTime = sessionStorage.getItem('last_page_load_time');
     
-    // Détecter les événements de focus pour re-vérifier (quand l'utilisateur revient sur l'onglet)
-    const handleFocus = () => {
-      const cachedTimestamp = sessionStorage.getItem(CACHE_TIMESTAMP_KEY);
-      if (cachedTimestamp) {
-        const cacheAge = Date.now() - parseInt(cachedTimestamp, 10);
-        // Si le cache a plus de 5 minutes, re-vérifier
-        if (cacheAge > 300000) {
-          fetchUserCountry(true);
-        }
-      }
-    };
-
-    // Détecter le changement de visibilité (quand l'utilisateur revient sur l'onglet)
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === 'visible') {
-        handleFocus();
-      }
-    };
-
-    window.addEventListener('focus', handleFocus);
-    document.addEventListener('visibilitychange', handleVisibilityChange);
-
-    return () => {
-      window.removeEventListener('focus', handleFocus);
-      document.removeEventListener('visibilitychange', handleVisibilityChange);
-    };
+    // Si c'est un nouveau chargement de page (pas juste un re-render), vider le cache
+    if (!lastLoadTime || (pageLoadTime - parseInt(lastLoadTime, 10)) > 1000) {
+      sessionStorage.removeItem(CACHE_KEY);
+      sessionStorage.removeItem(CACHE_TIMESTAMP_KEY);
+      sessionStorage.setItem('last_page_load_time', pageLoadTime.toString());
+      fetchUserCountry(true);
+    } else {
+      fetchUserCountry(false);
+    }
   }, [fetchUserCountry]);
 
   return { countryCode, loading };
