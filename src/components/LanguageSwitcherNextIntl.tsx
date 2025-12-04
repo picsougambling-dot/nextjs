@@ -29,6 +29,9 @@ const languages: Language[] = [
   { code: "it", name: "Italiano", flagImage: "https://flagcdn.com/w40/it.webp" },
   { code: "br", name: "Português (BR)", flagImage: "https://flagcdn.com/w40/br.webp" },
   { code: "pt", name: "Português (PT)", flagImage: "https://flagcdn.com/w40/pt.webp" },
+  { code: "nl", name: "Nederlands", flagImage: "https://flagcdn.com/w40/nl.webp" },
+  { code: "lv", name: "Latviešu", flagImage: "https://flagcdn.com/w40/lv.webp" },
+  { code: "fi", name: "Suomi", flagImage: "https://flagcdn.com/w40/fi.webp" },
 ];
 
 export const LanguageSwitcherNextIntl = () => {

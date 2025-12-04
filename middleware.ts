@@ -13,9 +13,9 @@ const countryToLocale: Record<string, string> = {
   'AU': 'en',
   'NZ': 'en',
   'IE': 'en',
-  'NL': 'en', // Pays-Bas redirigé vers anglais
-  'FI': 'en', // Finlande redirigée vers anglais
-  'LV': 'en', // Lettonie redirigée vers anglais
+  'NL': 'nl', // Pays-Bas
+  'FI': 'fi', // Finlande
+  'LV': 'lv', // Lettonie
   'DE': 'de',
   'AT': 'de',
   'CH': 'de',
@@ -107,9 +107,55 @@ const intlMiddleware = createMiddleware({
   localeDetection: true,
 });
 
+// Redirection 301 permanente de gigabonus.fr vers gigabonus.win
+function handleDomainRedirect(request: NextRequest): NextResponse | null {
+  const hostname = request.headers.get('host') || '';
+  
+  // Normaliser le hostname (enlever le port si présent et convertir en minuscule)
+  const normalizedHost = hostname.split(':')[0].toLowerCase();
+  
+  // Liste des domaines source à rediriger vers gigabonus.win
+  const sourceDomains = [
+    'gigabonus.fr',
+    'www.gigabonus.fr',
+  ];
+  
+  // Vérifier si le domaine actuel est dans la liste des domaines à rediriger
+  const shouldRedirect = sourceDomains.some(domain => {
+    return normalizedHost === domain.toLowerCase();
+  });
+  
+  if (!shouldRedirect) {
+    return null;
+  }
+  
+  // Domaine de destination (forcer HTTPS)
+  const destinationDomain = 'gigabonus.win';
+  
+  // Construire la nouvelle URL avec le domaine de destination
+  // Conserver le chemin complet (pathname) et les paramètres de requête (searchParams)
+  const url = request.nextUrl.clone();
+  url.hostname = destinationDomain;
+  url.protocol = 'https:';
+  url.port = ''; // Supprimer le port pour utiliser le port par défaut (443 pour HTTPS)
+  
+  const redirectUrl = url.toString();
+  
+  console.log(`[Domain Redirect] 301: ${hostname}${request.nextUrl.pathname}${request.nextUrl.search} → ${redirectUrl}`);
+  
+  // Redirection 301 permanente
+  return NextResponse.redirect(redirectUrl, 301);
+}
+
 // Middleware personnalisé qui combine détection IP + Accept-Language
-// PRIORITÉ : IP (pour filtrer les casinos par pays) > Accept-Language
+// PRIORITÉ : Redirection domaine > IP (pour filtrer les casinos par pays) > Accept-Language
 export default async function middleware(request: NextRequest) {
+  // ÉTAPE 1: Vérifier et gérer la redirection de domaine (priorité absolue)
+  const domainRedirect = handleDomainRedirect(request);
+  if (domainRedirect) {
+    return domainRedirect;
+  }
+  
   const { pathname } = request.nextUrl;
   
   // Si la route a déjà une locale, passer au middleware next-intl
