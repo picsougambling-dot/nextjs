@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "include": ["/*"],
+  "exclude": ["/static/*",
+             "/_next/static/*",
+             "/_next/image*",
+             "/api/*",
+             "/favicon.ico",
+             "/sitemap.xml",
+             "/robots.txt"
+            ]
+}

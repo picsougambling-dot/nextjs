@@ -1,0 +1,1390 @@
+{
+  "generatedAt": "2025-12-08T13:16:06.067Z",
+  "totalPages": 13,
+  "totalLocales": 11,
+  "pages": {
+    "home": {
+      "path": "/",
+      "translationNamespace": "SEO.home",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "about": {
+      "path": "/about",
+      "translationNamespace": "SEO.about",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "depot": {
+      "path": "/depot",
+      "translationNamespace": "DepotPages.main",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "astucesCasino": {
+      "path": "/astuces-casino",
+      "translationNamespace": "GuidePages.astucesCasino",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "topCasinosCrypto": {
+      "path": "/top-casinos-crypto",
+      "translationNamespace": "GuidePages.topCasinosCrypto",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "casinosSansKyc": {
+      "path": "/casinos-sans-kyc",
+      "translationNamespace": "GuidePages.casinosSansKyc",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "topSlots2025": {
+      "path": "/top-slots-2025",
+      "translationNamespace": "GuidePages.topSlots2025",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "meilleursBookmakers": {
+      "path": "/meilleurs-bookmakers",
+      "translationNamespace": "GuidePages.meilleursBookmakers",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "calculateurRoulette": {
+      "path": "/calculateur-roulette",
+      "translationNamespace": "GuidePages.calculateurRoulette",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "calculateurCotesSportives": {
+      "path": "/calculateur-cotes-sportives",
+      "translationNamespace": "GuidePages.calculateurCotesSportives",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "install": {
+      "path": "/install",
+      "translationNamespace": "GuidePages.install",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "bonusCashback": {
+      "path": "/bonus-cashback",
+      "translationNamespace": "GuidePages.bonusCashback",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    },
+    "bonusSansWager": {
+      "path": "/bonus-sans-wager",
+      "translationNamespace": "GuidePages.bonusSansWager",
+      "locales": {
+        "en": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fr": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "de": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "es": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "ru": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "it": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "br": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "pt": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "nl": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "lv": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        },
+        "fi": {
+          "valid": false,
+          "issues": [
+            {
+              "field": "translations",
+              "issue": "file_not_found"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "summary": {
+    "totalIssues": 0,
+    "pagesWithIssues": 0,
+    "localesWithIssues": {
+      "en": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 39065 (line 780 column 7)",
+      "fr": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 135832 (line 2164 column 7)",
+      "de": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 137914 (line 2165 column 7)",
+      "es": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 134737 (line 2165 column 7)",
+      "ru": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 132872 (line 2165 column 7)",
+      "it": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 134216 (line 2165 column 7)",
+      "br": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 133049 (line 2165 column 7)",
+      "pt": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 132812 (line 2165 column 7)",
+      "nl": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 133227 (line 2165 column 7)",
+      "lv": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 130825 (line 2165 column 7)",
+      "fi": "Erreur de chargement: Expected ',' or '}' after property value in JSON at position 133075 (line 2164 column 7)"
+    },
+    "issuesByType": {}
+  }
+}
