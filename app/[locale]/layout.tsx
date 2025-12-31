@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import Image from "next/image";
+import { Analytics } from '@vercel/analytics/next';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { siteConfig } from '@/config/site';
@@ -291,6 +292,7 @@ export default async function LocaleLayout({
             <ScrollToTop />
           </Providers>
         </NextIntlClientProvider>
+        <Analytics />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -398,4 +400,3 @@ export default async function LocaleLayout({
     </html>
   );
 }
-
