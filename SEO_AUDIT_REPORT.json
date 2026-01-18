@@ -1,0 +1,32 @@
+{
+  "base_url": "https://gigabonus.win",
+  "timestamp": "2026-01-02 02:45:36",
+  "summary": {
+    "erreurs_500": 0,
+    "redirections_cassees": 0,
+    "meta_desc_courtes": 0,
+    "meta_desc_longues": 0,
+    "meta_desc_manquantes": 0,
+    "titles_longs": 0,
+    "titles_courts": 0,
+    "titles_manquants": 0,
+    "canonicals_incorrects": 0,
+    "canonicals_manquants": 0,
+    "sitemap_5xx": 0,
+    "sitemap_non_canonical": 0
+  },
+  "details": {
+    "500_errors": [],
+    "broken_redirects": [],
+    "meta_desc_short": [],
+    "meta_desc_long": [],
+    "meta_desc_missing": [],
+    "title_long": [],
+    "title_short": [],
+    "title_missing": [],
+    "canonical_mismatch": [],
+    "canonical_missing": [],
+    "sitemap_5xx": [],
+    "sitemap_non_canonical": []
+  }
+}

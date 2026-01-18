@@ -1,0 +1,181 @@
+import { MetadataRoute } from 'next';
+import { siteConfig, type Locale } from '@/config/site';
+import { getTranslatedPathname } from '@/i18n/pathnames';
+
+// Empêcher l'injection de scripts HTML/JS dans le sitemap XML
+// Force le rendu statique pour éviter que Cloudflare/Vercel injecte des scripts
+export const dynamic = 'force-static';
+
+export default function sitemap(): MetadataRoute.Sitemap {
+  const baseUrl = siteConfig.url;
+  const locales = siteConfig.locales;
+  // Date actuelle pour lastModified
+  const now = new Date();
+  
+  // Routes principales avec priorités élevées
+  const mainRoutes = [
+    { path: '', priority: 1.0, changeFreq: 'daily' as const },
+    { path: '/blog', priority: 0.9, changeFreq: 'daily' as const },
+    { path: '/about', priority: 0.8, changeFreq: 'monthly' as const },
+  ];
+
+  // Pages guides et outils (priorité haute)
+  const guideRoutes = [
+    { path: '/top-casinos-crypto', priority: 0.9, changeFreq: 'weekly' as const },
+    { path: '/casinos-sans-kyc', priority: 0.9, changeFreq: 'weekly' as const },
+    { path: '/bonus-cashback', priority: 0.9, changeFreq: 'weekly' as const },
+    { path: '/bonus-sans-wager', priority: 0.9, changeFreq: 'weekly' as const },
+    { path: '/top-slots-2026', priority: 0.9, changeFreq: 'weekly' as const },
+    { path: '/astuces-casino', priority: 0.85, changeFreq: 'monthly' as const },
+    { path: '/meilleurs-bookmakers', priority: 0.85, changeFreq: 'weekly' as const },
+    { path: '/depot', priority: 0.85, changeFreq: 'monthly' as const },
+    { path: '/calculateur-roulette', priority: 0.8, changeFreq: 'monthly' as const },
+    { path: '/calculateur-cotes-sportives', priority: 0.8, changeFreq: 'monthly' as const },
+    { path: '/install', priority: 0.7, changeFreq: 'monthly' as const },
+  ];
+
+  // Pages casinos (priorité haute)
+  const casinoRoutes = [
+    '/spinstar',
+    '/kingschance',
+    '/hunnyplay',
+    '/luckytrunk',
+    '/megawin',
+    '/europefortune',
+    '/cleobetra',
+    '/spindinasty',
+    '/i24slots',
+    '/magicalspin',
+    '/playregal',
+    '/vegasplus',
+    '/winmachance',
+    '/uniquecasino',
+    '/cazinostars',
+    '/atlantisslots',
+    '/casinointense',
+    '/luckytreasure',
+    '/bonrush',
+    '/betify',
+    '/rockstar',
+    '/slotrush',
+    '/spinaura',
+    '/hotloot',
+    '/roibets',
+    '/aphrodite',
+    '/madcasino',
+    '/kingdom',
+    '/hispin',
+    '/machance',
+    '/slotsandcasino',
+    '/31bets',
+    '/orionsbet',
+    '/jumbabet',
+    '/bigdollar',
+    '/slotsofvegas',
+    '/7kcasino',
+    '/spinnycasino',
+    '/lunarspins',
+    '/freespinza',
+    '/onlyspins',
+    '/librabet',
+  ];
+
+  // Pages méthodes de dépôt (priorité moyenne)
+  const depositRoutes = [
+    '/depot/carte',
+    '/depot/crypto',
+    '/depot/neosurf',
+    '/depot/cashlib',
+    '/depot/paysafecard',
+    '/depot/virement',
+    '/depot/skrill',
+    '/depot/neteller',
+    '/depot/jetonbank',
+    '/depot/mifinity',
+  ];
+
+  // Pages blog avis (priorité haute)
+  const blogRoutes = [
+    '/blog/avis-spinstar-2026',
+    '/blog/avis-hunnyplay-2026',
+    '/blog/avis-luckytrunk-2026',
+    '/blog/avis-spinaura-2026',
+    '/blog/avis-slotrush-2026',
+    '/blog/avis-hotloot-2026',
+    '/blog/avis-roibets-2026',
+    '/blog/avis-megawin-2026',
+    '/blog/avis-rxcasino-2026',
+    '/blog/avis-cleobetra-2026',
+    '/blog/avis-rockstar-2026',
+    '/blog/avis-kingschance-2026',
+    '/blog/avis-i24slots-2026',
+    '/blog/avis-europefortune-2026',
+    '/blog/avis-spindinasty-2026',
+    '/blog/avis-magicalspin-2026',
+    '/blog/avis-playregal-2026',
+    '/blog/avis-vegasplus-2026',
+    '/blog/avis-machance-2026',
+    '/blog/avis-uniquecasino-2026',
+    '/blog/avis-cazinostars-2026',
+    '/blog/avis-atlantisslots-2026',
+    '/blog/avis-casinointense-2026',
+    '/blog/avis-luckytreasure-2026',
+    '/blog/avis-bonrush-2026',
+    '/blog/avis-betify-2026',
+  ];
+
+  // Fonction helper pour créer une entrée sitemap multilingue
+  // Note: Les balises hreflang sont déjà présentes dans les pages HTML,
+  // donc on ne les inclut pas dans le sitemap pour éviter les problèmes avec Google Search Console
+  const createSitemapEntry = (
+    path: string,
+    priority: number = 0.8,
+    changeFreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never' = 'weekly',
+    translatePath: boolean = true // Par défaut, traduire les paths (sauf pour les casinos individuels)
+  ) => {
+    // Créer une entrée pour chaque locale (sans alternates hreflang dans le sitemap)
+    return locales.map((locale) => {
+      // Traduire le path selon la locale (sauf pour les casinos individuels et blog)
+      const translatedPath = translatePath 
+        ? getTranslatedPathname(path, locale as Locale)
+        : path;
+      
+      const url = `${baseUrl}/${locale}${translatedPath}`;
+
+      return {
+        url,
+        lastModified: now,
+        changeFrequency: changeFreq,
+        priority: priority, // S'assurer que c'est un nombre
+        // Pas d'alternates dans le sitemap - les hreflang sont déjà dans les pages HTML
+      } as MetadataRoute.Sitemap[0];
+    });
+  };
+
+  // Combiner toutes les routes
+  const allRoutes: MetadataRoute.Sitemap = [];
+  
+  mainRoutes.forEach(route => {
+    allRoutes.push(...createSitemapEntry(route.path, route.priority, route.changeFreq));
+  });
+  
+  guideRoutes.forEach(route => {
+    allRoutes.push(...createSitemapEntry(route.path, route.priority, route.changeFreq));
+  });
+  
+  // Pages casinos individuelles : ne PAS traduire les paths (ils restent identiques dans toutes les langues)
+  casinoRoutes.forEach(path => {
+    allRoutes.push(...createSitemapEntry(path, 0.85, 'weekly', false));
+  });
+  
+  depositRoutes.forEach(path => {
+    allRoutes.push(...createSitemapEntry(path, 0.75, 'monthly'));
+  });
+  
+  blogRoutes.forEach(path => {
+    allRoutes.push(...createSitemapEntry(path, 0.9, 'weekly'));
+  });
+
+  return allRoutes;
+}
+

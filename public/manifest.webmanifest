@@ -1,0 +1,27 @@
+{
+  "name": "GigaBonus - Comparateur de Bonus Casino",
+  "short_name": "GigaBonus",
+  "description": "Meilleurs bonus de casinos en ligne - Comparez et trouvez les meilleures offres",
+  "theme_color": "#e91e63",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "start_url": "/",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+
+
+
