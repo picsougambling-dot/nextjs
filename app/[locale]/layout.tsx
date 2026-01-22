@@ -10,6 +10,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import DisclaimerModal from "@/components/DisclaimerModal";
 import "../globals.css";
 import { sanitizeSEOFields } from '@/lib/seo-utils';
+import { isBot } from '@/lib/bot-detection';
 
 type Props = {
   children: React.ReactNode;les 
@@ -138,6 +139,9 @@ export default async function LocaleLayout({
   // Obtenir les traductions pour les Schema.org
   const validLocale = locales.includes(locale as any) ? locale : siteConfig.defaultLocale;
   const t = await getTranslations({ locale: validLocale, namespace: 'SEO.home' });
+
+  // Détecter si c'est un bot/crawler (ne pas afficher le disclaimer)
+  const botDetected = isBot();
 
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -328,7 +332,7 @@ export default async function LocaleLayout({
         </div>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <DisclaimerProvider>
-            <DisclaimerModal language={locale as any} />
+            {!botDetected && <DisclaimerModal language={locale as any} />}
             <Providers>
               <DecorativeShapes />
               {children}
