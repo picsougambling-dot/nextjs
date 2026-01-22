@@ -171,10 +171,10 @@ const nextConfig = {
   // Production source maps désactivés pour améliorer les performances
   productionBrowserSourceMaps: false,
   // Optimisations supplémentaires pour la performance
-  // Note: optimizeCss nécessite critters, désactivé pour éviter les erreurs de build
-  // experimental: {
-  //   optimizeCss: true, // Optimisation CSS automatique (nécessite critters)
-  // },
+  // Note: optimizeCss nécessite critters, testons l'activation pour réduire le CSS render-blocking
+  experimental: {
+    optimizeCss: true, // Optimisation CSS automatique - inline CSS critique pour réduire render-blocking
+  },
   // Headers de sécurité et performance
   async headers() {
     return [
