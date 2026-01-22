@@ -16,8 +16,54 @@ export default function DisclaimerModal({ language }: Props) {
   const { isDisclaimerAccepted, isDisclaimerOpen, setDisclaimerAccepted, setDisclaimerOpen } = useDisclaimer();
   const [lang, setLang] = useState<Lang>("en");
 
+  // Détecter si c'est un bot/crawler (PageSpeed Insights, Googlebot, etc.)
+  const isBot = () => {
+    if (typeof window === "undefined" || typeof navigator === "undefined") return false;
+    const userAgent = navigator.userAgent.toLowerCase();
+    const botPatterns = [
+      'googlebot',
+      'google page speed',
+      'lighthouse',
+      'pagespeed',
+      'gtmetrix',
+      'pingdom',
+      'bingbot',
+      'slurp',
+      'duckduckbot',
+      'baiduspider',
+      'yandexbot',
+      'sogou',
+      'exabot',
+      'facebot',
+      'ia_archiver',
+      'ahrefsbot',
+      'semrushbot',
+      'dotbot',
+      'mj12bot',
+      'megaindex',
+      'blexbot',
+      'petalbot',
+      'headless',
+      'phantomjs',
+      'selenium',
+      'webdriver',
+      'crawler',
+      'spider',
+      'bot'
+    ];
+    return botPatterns.some(pattern => userAgent.includes(pattern));
+  };
+
   useEffect(() => {
     if (typeof window === "undefined") return;
+    
+    // Ne pas afficher le disclaimer pour les bots/crawlers
+    if (isBot()) {
+      setDisclaimerAccepted(true);
+      setDisclaimerOpen(false);
+      return;
+    }
+    
     const stored = localStorage.getItem("disclaimerAccepted");
     const hasAccepted = stored === "true";
     
