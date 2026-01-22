@@ -141,7 +141,7 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale: validLocale, namespace: 'SEO.home' });
 
   // Détecter si c'est un bot/crawler (ne pas afficher le disclaimer)
-  const botDetected = isBot();
+  const botDetected = await isBot();
 
   return (
     <html lang={locale} suppressHydrationWarning>

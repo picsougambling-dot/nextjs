@@ -3,10 +3,11 @@ import { headers } from 'next/headers';
 /**
  * Détecte si la requête provient d'un bot/crawler
  * Utilisé pour désactiver le disclaimer pour PageSpeed Insights, Googlebot, etc.
+ * Note: Dans Next.js 15, headers() retourne une Promise
  */
-export function isBot(): boolean {
+export async function isBot(): Promise<boolean> {
   try {
-    const headersList = headers();
+    const headersList = await headers();
     const userAgent = headersList.get('user-agent')?.toLowerCase() || '';
     
     const botPatterns = [
