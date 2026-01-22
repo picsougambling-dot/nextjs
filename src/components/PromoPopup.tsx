@@ -77,10 +77,14 @@ export const PromoPopup = () => {
         
         <div className="relative">
           <div className="relative overflow-hidden">
-            <img
-              src={activePromo.bannerGif}
-              alt={`${activePromo.casinoName} Bonus Exclusif`}
+            <video
+              src={activePromo.bannerVideo}
               className="w-full h-auto"
+              autoPlay
+              loop
+              muted
+              playsInline
+              aria-label={`${activePromo.casinoName} Bonus Exclusif`}
             />
           </div>
           

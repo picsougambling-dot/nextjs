@@ -11,7 +11,7 @@ export interface PromoData {
   casinoName: string;
   casinoLogo: string;
   playUrl: string;
-  bannerGif: string;
+  bannerVideo: string;
   title: string;
   codes: PromoCode[];
 }
@@ -22,7 +22,7 @@ export const promos: PromoData[] = [
     casinoName: "King's Chance",
     casinoLogo: "/images/kingschance.webp",
     playUrl: "https://www.kingschanceclick.com/click/43/113/2136/1",
-    bannerGif: new URL("../assets/popup-kingschance.gif", import.meta.url).href,
+    bannerVideo: new URL("../assets/popup-kingschance.mp4", import.meta.url).href,
     title: "🎁 Bonus Exclusifs GigaBonus",
     codes: [
       {
@@ -47,7 +47,7 @@ export const promos: PromoData[] = [
     casinoName: "Lucky Treasure",
     casinoLogo: "/images/luckytreasure.webp",
     playUrl: "https://www.luckytreasurelinks.com/click/85/337/2140/1",
-    bannerGif: new URL("../assets/popup-luckytreasure.gif", import.meta.url).href,
+    bannerVideo: new URL("../assets/popup-luckytreasure.mp4", import.meta.url).href,
     title: "🎁 Bonus Exclusifs GigaBonus",
     codes: [
       {
@@ -72,7 +72,7 @@ export const promos: PromoData[] = [
     casinoName: "Spin Dinasty",
     casinoLogo: "/images/spindinasty.webp",
     playUrl: "https://www.spindynastylinks.com/click/93/423/2140/1",
-    bannerGif: new URL("../assets/popup-spindinasty.gif", import.meta.url).href,
+    bannerVideo: new URL("../assets/popup-spindinasty.mp4", import.meta.url).href,
     title: "🎁 Bonus Exclusifs GigaBonus",
     codes: [
       {
@@ -97,7 +97,7 @@ export const promos: PromoData[] = [
     casinoName: "Hunnyplay",
     casinoLogo: new URL("../assets/hunnyplay-logo.webp", import.meta.url).href,
     playUrl: "https://hunnyplay.games/dgxnb9eok",
-    bannerGif: new URL("../assets/popup-bonus.gif", import.meta.url).href,
+    bannerVideo: new URL("../assets/popup-bonus.mp4", import.meta.url).href,
     title: "🎁 Bonus Exclusif GigaBonus",
     codes: [
       {
@@ -112,7 +112,7 @@ export const promos: PromoData[] = [
     casinoName: "SpinAura",
     casinoLogo: "/images/spinaura.webp",
     playUrl: "https://famecpa.trk2afse.com/click?pid=1674&offer_id=933&sub1={clickid}&l=1761925532",
-    bannerGif: new URL("../assets/popup-spinaura.gif", import.meta.url).href,
+    bannerVideo: new URL("../assets/popup-spinaura.mp4", import.meta.url).href,
     title: "🎁 Bonus Exclusif GigaBonus",
     codes: [
       {

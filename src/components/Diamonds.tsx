@@ -1,6 +1,8 @@
 'use client';
 
 import { useMemo, useState, useEffect } from 'react';
+import Image from 'next/image';
+import diamondWebp from '@/assets/diamond.webp';
 
 const Diamonds = () => {
   const [mounted, setMounted] = useState(false);
@@ -36,9 +38,11 @@ const Diamonds = () => {
             transform: 'translateY(-100px)',
           }}
         >
-          <img 
-            src="/diamond.png" 
+          <Image 
+            src={diamondWebp}
             alt="" 
+            width={128}
+            height={128}
             className="w-16 h-16 object-contain"
             style={{
               opacity: '0.05',
@@ -47,10 +51,8 @@ const Diamonds = () => {
                 : 'brightness(0)',
             }}
             loading="lazy"
-            onError={(e) => {
-              // Cacher l'image si elle ne charge pas plutôt que de causer une erreur
-              e.currentTarget.style.display = 'none';
-            }}
+            quality={75}
+            sizes="64px"
           />
         </div>
       ))}
