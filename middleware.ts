@@ -26,12 +26,6 @@ function detectLocaleFromAcceptLanguage(header: string | null): string {
 
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
-  const hostname = (request.headers.get('host') || '').split(':')[0].toLowerCase();
-
-  // 301 gigabonus.fr → bonuscasinoelite.com (migration vers le nouveau site)
-  if (hostname === 'gigabonus.fr' || hostname === 'www.gigabonus.fr') {
-    return NextResponse.redirect('https://bonuscasinoelite.com', 301);
-  }
 
   // URL already has a locale prefix → pass through
   const hasLocale = LOCALES.some(l => pathname === `/${l}` || pathname.startsWith(`/${l}/`));

@@ -209,6 +209,16 @@ export default function MigrationRedirect({ language }: Props) {
           0%, 100% { transform: scale(1); }
           50% { transform: scale(1.03); }
         }
+        @keyframes migration-logo-glow {
+          0%, 100% {
+            filter: drop-shadow(0 0 24px rgba(233, 30, 99, 0.45)) drop-shadow(0 0 48px rgba(180, 60, 255, 0.25));
+            transform: scale(1);
+          }
+          50% {
+            filter: drop-shadow(0 0 32px rgba(233, 30, 99, 0.65)) drop-shadow(0 0 64px rgba(180, 60, 255, 0.4));
+            transform: scale(1.04);
+          }
+        }
         .migration-progress-bar {
           height: 4px;
           background: rgba(255, 255, 255, 0.1);
@@ -230,6 +240,23 @@ export default function MigrationRedirect({ language }: Props) {
       `}</style>
 
       <div style={{ maxWidth: 560, width: "100%" }}>
+        <img
+          src="/bonuscasinoelite-logo.webp"
+          alt="BonusCasinoElite"
+          width={280}
+          height={186}
+          style={{
+            width: "min(280px, 60vw)",
+            height: "auto",
+            margin: "0 auto 24px",
+            display: "block",
+            animation: "migration-logo-glow 2.4s ease-in-out infinite",
+          }}
+          onError={(e) => {
+            (e.currentTarget as HTMLImageElement).style.display = "none";
+          }}
+        />
+
         <div
           style={{
             fontSize: "clamp(14px, 2.4vw, 16px)",
