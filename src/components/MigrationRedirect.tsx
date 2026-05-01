@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from "react";
 
 const NEW_SITE_URL = "https://bonuscasinoelite.com";
-const COUNTDOWN_SECONDS = 5;
+const COUNTDOWN_SECONDS = 3;
 
 type Lang =
   | "en"
