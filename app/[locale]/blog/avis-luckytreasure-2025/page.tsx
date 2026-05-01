@@ -118,10 +118,10 @@ const schemaData = {
         keywords={tBlog('seoKeywords') || "avis lucky treasure, lucky treasure casino, bonus lucky treasure, lucky treasure 2026, no deposit lucky treasure, lucky treasure fiable"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-luckytreasure-2026`}
         ogTitle={tBlog('seoTitle')}
-        ogDescription={tBlog('seoDescription')}experts."
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/luckytreasure.webp"
         twitterTitle={tBlog('seoTitle')}
-        twitterDescription={tBlog('seoDescription')}experts."
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

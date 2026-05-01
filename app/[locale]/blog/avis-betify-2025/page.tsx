@@ -119,10 +119,10 @@ const schemaData = {
         keywords={tBlog('seoKeywords') || "avis betify, betify casino, bonus betify, betify 2026, betify sport, betify fiable, wager x35"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-betify-2026`}
         ogTitle={tBlog('seoTitle')}
-        ogDescription={tBlog('seoDescription')}experts."
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/betify.webp"
         twitterTitle={tBlog('seoTitle')}
-        twitterDescription={tBlog('seoDescription')}experts."
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />
