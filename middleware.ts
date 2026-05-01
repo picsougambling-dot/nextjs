@@ -28,13 +28,9 @@ export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
   const hostname = (request.headers.get('host') || '').split(':')[0].toLowerCase();
 
-  // 301 gigabonus.fr → gigabonus.win
+  // 301 gigabonus.fr → bonuscasinoelite.com (migration vers le nouveau site)
   if (hostname === 'gigabonus.fr' || hostname === 'www.gigabonus.fr') {
-    const url = request.nextUrl.clone();
-    url.hostname = 'gigabonus.win';
-    url.protocol = 'https:';
-    url.port = '';
-    return NextResponse.redirect(url, 301);
+    return NextResponse.redirect('https://bonuscasinoelite.com', 301);
   }
 
   // URL already has a locale prefix → pass through
