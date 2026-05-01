@@ -8,6 +8,7 @@ import { DisclaimerProvider } from "@/contexts/DisclaimerContext";
 import DecorativeShapes from "@/components/DecorativeShapes";
 import ScrollToTop from "@/components/ScrollToTop";
 import DisclaimerModal from "@/components/DisclaimerModal";
+import MigrationRedirect from "@/components/MigrationRedirect";
 import "../globals.css";
 import { sanitizeSEOFields } from '@/lib/seo-utils';
 import { isBot } from '@/lib/bot-detection';
@@ -330,6 +331,7 @@ export default async function LocaleLayout({
         </div>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <DisclaimerProvider>
+            {!botDetected && <MigrationRedirect language={locale} />}
             {!botDetected && <DisclaimerModal language={locale as any} />}
             <Providers>
               <DecorativeShapes />

@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Bitcoin, Star } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function HunnyPlayPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.hunnyplay');
   const casino = casinos.find(c => c.name === "HunnyPlay")!;
 
 
@@ -115,15 +119,15 @@ export default function HunnyPlayPage() {
   return (
     <>
       <SEOHead
-        title="Avis HunnyPlay Casino 2026 : Bonus 200% Crypto + Retraits Express | Notre Test Complet"
-        description="Notre avis complet sur HunnyPlay Casino 2026 : bonus 200% crypto-friendly, Bitcoin/Ethereum/USDT acceptés, retraits express 2h. Test détaillé !"
-        keywords="hunnyplay casino, avis hunnyplay, bonus crypto, casino crypto, bitcoin casino, retraits express, hunnyplay avis"
-        canonical="https://gigabonus.win/hunnyplay"
-        ogTitle="Avis HunnyPlay Casino 2026 : Bonus 200% + Crypto Express"
-        ogDescription="Notre avis complet sur HunnyPlay Casino : bonus crypto 200%, retraits express, interface moderne."
+        title={t('seo.title')}
+        description={t('seo.description')}
+        keywords={t('seo.keywords')}
+        canonical={`https://gigabonus.win/${locale}/hunnyplay`}
+        ogTitle={t('seo.ogTitle')}
+        ogDescription={t('seo.ogDescription')}
         ogImage="https://gigabonus.win/images/hunnyplay.webp"
-        twitterTitle="Avis HunnyPlay Casino 2026 : Bonus 200% + Crypto Express"
-        twitterDescription="Notre avis complet sur HunnyPlay Casino : bonus crypto 200%, retraits express."
+        twitterTitle={t('seo.twitterTitle')}
+        twitterDescription={t('seo.twitterDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -166,7 +170,7 @@ export default function HunnyPlayPage() {
             <div className="p-8 md:p-12">
               {/* H1 SEO Optimisé */}
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis HunnyPlay Casino 2026 : Bonus 200% jusqu'à 200€ - Le Casino Crypto par Excellence - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
@@ -211,7 +215,7 @@ export default function HunnyPlayPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -241,7 +245,7 @@ export default function HunnyPlayPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -273,7 +277,7 @@ export default function HunnyPlayPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions HunnyPlay
+              🎁 {tCommon('sections.offersAndPromotions')} HunnyPlay
             </h2>
             
             <div className="grid grid-cols-1 max-w-3xl mx-auto">
@@ -300,7 +304,7 @@ export default function HunnyPlayPage() {
                       >
                         <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-5 h-5 mr-2" />
-                          Jouer Maintenant
+                          {tCommon('playNow')}
                         </a>
                       </Button>
                     </div>
@@ -310,9 +314,9 @@ export default function HunnyPlayPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur HunnyPlay Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur HunnyPlay Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur HunnyPlay</strong> est simple et rapide, optimisée pour les utilisateurs de cryptomonnaies.

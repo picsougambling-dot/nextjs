@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function CazinoStarsPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.cazinostars');
   const casino = casinos.find(c => c.name === "Cazino Stars")!;
 
 
@@ -264,7 +268,7 @@ export default function CazinoStarsPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -294,7 +298,7 @@ export default function CazinoStarsPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -343,7 +347,7 @@ export default function CazinoStarsPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Cazino Stars
+              🎁 {tCommon('sections.offersAndPromotions')} Cazino Stars
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
@@ -386,9 +390,9 @@ export default function CazinoStarsPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Cazino Stars Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Cazino Stars Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Cazino Stars</strong> est rapide, simple et sécurisée. 
@@ -467,7 +471,7 @@ export default function CazinoStarsPage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Cazino Stars</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Cazino Stars</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Cazino Stars propose <strong className="text-primary">plusieurs méthodes de retrait rapides et sécurisées</strong> adaptées à tous les profils de joueurs. 
@@ -574,7 +578,7 @@ export default function CazinoStarsPage() {
 
           {/* Section Jeux Disponibles */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Cazino Stars</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Cazino Stars</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Cazino Stars dispose d'une <strong className="text-primary">ludothèque premium de plus de 2200 jeux</strong> soigneusement sélectionnés 
@@ -635,7 +639,7 @@ export default function CazinoStarsPage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes sur Cazino Stars</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')} sur Cazino Stars</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment récupérer le bonus de bienvenue Cazino Stars ?</h3>
@@ -690,7 +694,7 @@ export default function CazinoStarsPage() {
 
           {/* Sections SEO Supplémentaires */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Cazino Stars</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Cazino Stars</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Pour optimiser vos chances de succès sur <strong className="text-primary">Cazino Stars Casino</strong>, notre équipe d'experts vous recommande 
@@ -728,7 +732,7 @@ export default function CazinoStarsPage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de Cazino Stars Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de Cazino Stars Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 <strong className="text-primary">Cazino Stars Casino</strong> opère avec une <strong className="text-primary">licence Curaçao eGaming 
@@ -830,7 +834,7 @@ export default function CazinoStarsPage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur Cazino Stars</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur Cazino Stars</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Découvrez les retours d'expérience <strong className="text-primary">authentiques et vérifiés</strong> de notre équipe de testeurs après plusieurs mois 
@@ -959,9 +963,9 @@ export default function CazinoStarsPage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients de Cazino Stars</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')} de Cazino Stars</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-green-500 mb-4">✅ Avantages</h3>

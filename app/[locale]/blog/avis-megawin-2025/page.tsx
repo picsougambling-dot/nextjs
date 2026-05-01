@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -18,6 +18,9 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisMegawinPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-megawin-2025');
+  const tCommon = useTranslations('Common');
+  const t = useTranslations('Blog.notFound');
     const { countryCode: userCountry } = useUserCountry();
   
 const casino = casinos.find(c => c.id === 12);
@@ -83,7 +86,7 @@ const schemaData = {
   };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -94,10 +97,10 @@ const schemaData = {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -184,7 +187,7 @@ const schemaData = {
             </p>
           </article>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="glass-card rounded-2xl p-6">
               <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">

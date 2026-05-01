@@ -15,6 +15,7 @@ import { casinos } from "@/data/casinos";
 
 export default function KingsChancePage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
   const locale = useLocale();
   const t = useTranslations('CasinoPages.kingschance');
   const casino = casinos.find(c => c.name === "Kings Chance")!;
@@ -144,7 +145,7 @@ export default function KingsChancePage() {
             <div className="p-8 md:p-12">
               {/* H1 SEO Optimisé */}
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis Kings Chance Casino 2026 : Bonus Sans Wager 150% jusqu'à 500€ + Cashback Royal 15% - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
@@ -193,7 +194,7 @@ export default function KingsChancePage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -223,7 +224,7 @@ export default function KingsChancePage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -269,7 +270,7 @@ export default function KingsChancePage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Kings Chance
+              🎁 {tCommon('sections.offersAndPromotions')} Kings Chance
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -312,9 +313,9 @@ export default function KingsChancePage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Kings Chance Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Kings Chance Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Kings Chance</strong> est rapide et intuitive.
@@ -383,7 +384,7 @@ export default function KingsChancePage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Kings Chance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Kings Chance</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Kings Chance propose <strong className="text-primary">plusieurs méthodes de retrait royales rapides et sécurisées</strong>.
@@ -461,9 +462,9 @@ export default function KingsChancePage() {
             </div>
           </section>
 
-          {/* Catalogue de Jeux */}
+          {/* {tCommon('sections.gamesCatalog')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Royal sur Kings Chance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Royal sur Kings Chance</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Kings Chance propose une <strong className="text-primary">ludothèque royale premium</strong> avec des milliers de jeux
@@ -618,7 +619,7 @@ export default function KingsChancePage() {
 
           {/* Stratégies */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Kings Chance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Kings Chance</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Voici nos <strong className="text-primary">stratégies royales</strong> pour optimiser vos sessions de jeu et profiter au maximum 
@@ -699,9 +700,9 @@ export default function KingsChancePage() {
             </div>
           </section>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔒 Sécurité et Légalité de Kings Chance Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔒 {tCommon('sections.security')} de Kings Chance Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 La <strong className="text-primary">sécurité royale</strong> et la <strong className="text-primary">conformité légale</strong> 
@@ -888,9 +889,9 @@ export default function KingsChancePage() {
             </div>
           </section>
 
-          {/* Avis de Nos Testeurs */}
+          {/* {tCommon('sections.testimonials')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs VIP GigaBonus</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} VIP GigaBonus</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div className="glass-card rounded-xl p-6">
                 <div className="flex items-start gap-4 mb-4">
@@ -967,9 +968,9 @@ export default function KingsChancePage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">⚖️ Avantages et Inconvénients de Kings Chance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">⚖️ {tCommon('sections.prosAndCons')} de Kings Chance</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
               <div className="glass-card rounded-xl p-6 border-2 border-green-500/30">
                 <h3 className="text-2xl font-bold text-green-500 mb-6 flex items-center gap-2">

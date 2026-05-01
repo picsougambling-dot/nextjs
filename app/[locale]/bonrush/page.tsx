@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Star, ThumbsUp, ThumbsDown } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function BonRushPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.bonrush');
   const casino = casinos.find(c => c.name === "BonRush")!;
 
 
@@ -202,7 +206,7 @@ export default function BonRushPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -231,7 +235,7 @@ export default function BonRushPage() {
               </div>
 
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -280,7 +284,7 @@ export default function BonRushPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions BonRush
+              🎁 {tCommon('sections.offersAndPromotions')} BonRush
             </h2>
             
             <div className="grid grid-cols-1 gap-6 max-w-3xl mx-auto">
@@ -324,9 +328,9 @@ export default function BonRushPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur BonRush Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur BonRush Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur BonRush</strong> est simple et rapide, ne prenant que quelques minutes. 
@@ -477,7 +481,7 @@ export default function BonRushPage() {
 
           {/* Section Jeux Disponibles */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux BonRush</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} BonRush</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">Machines à Sous</h3>
@@ -498,7 +502,7 @@ export default function BonRushPage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment fonctionnent les bonus progressifs de BonRush ?</h3>
@@ -526,7 +530,7 @@ export default function BonRushPage() {
 
           {/* Sections SEO Supplémentaires */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur BonRush</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur BonRush</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Pour optimiser vos chances de succès sur <strong className="text-primary">BonRush Casino</strong>, notre équipe d'experts vous recommande 
@@ -554,7 +558,7 @@ export default function BonRushPage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de BonRush Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de BonRush Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 <strong className="text-primary">BonRush Casino</strong> opère avec une <strong className="text-primary">licence de jeu reconnue Curaçao eGaming</strong>, 
@@ -605,7 +609,7 @@ export default function BonRushPage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur BonRush</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur BonRush</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Découvrez les retours d'expérience <strong className="text-primary">authentiques</strong> de notre équipe de testeurs après plusieurs mois de jeu sur BonRush.
@@ -670,9 +674,9 @@ export default function BonRushPage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-green-500 mb-4">✅ Avantages</h3>

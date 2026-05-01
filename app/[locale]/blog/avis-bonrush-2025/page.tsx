@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisBonRushPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-bonrush-2025');
+  const tCommon = useTranslations('Common');
   
 
   
@@ -328,7 +330,7 @@ const schemaData = {
           <article className="glass-card rounded-2xl p-8 mb-8">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Shield className="h-8 w-8" />
-              Sécurité et Légalité
+              {tCommon('sections.security')}
             </h2>
             <p className="text-foreground mb-4">
               BonRush opère sous licence Curaçao avec cryptage SSL pour protéger toutes les données.

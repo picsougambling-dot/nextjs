@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Star } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function MegawinPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.megawin');
   const casino = casinos.find(c => c.name === "Megawin")!;
 
 
@@ -176,7 +180,7 @@ export default function MegawinPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -206,7 +210,7 @@ export default function MegawinPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -252,7 +256,7 @@ export default function MegawinPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions MegaWin
+              🎁 {tCommon('sections.offersAndPromotions')} MegaWin
             </h2>
             
             <div className="max-w-2xl mx-auto">
@@ -295,9 +299,9 @@ export default function MegawinPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Megawin Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Megawin Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Megawin</strong> est ultra-rapide et ne nécessite aucune vérification KYC. 
@@ -367,7 +371,7 @@ export default function MegawinPage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Megawin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Megawin</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Megawin propose des <strong className="text-primary">retraits ultra-rapides</strong> grâce aux cryptomonnaies et à son système sans KYC. 
@@ -447,9 +451,9 @@ export default function MegawinPage() {
             </div>
           </section>
 
-          {/* Catalogue de Jeux */}
+          {/* {tCommon('sections.gamesCatalog')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Megawin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Megawin</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Megawin Casino propose une <strong className="text-primary">ludothèque massive de plus de 2500 jeux</strong> des meilleurs éditeurs mondiaux. 
@@ -494,7 +498,7 @@ export default function MegawinPage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Qu'est-ce qu'un casino sans KYC ?</h3>
@@ -548,9 +552,9 @@ export default function MegawinPage() {
             </div>
           </section>
 
-          {/* Stratégies pour Maximiser Vos Gains */}
+          {/* {tCommon('sections.strategies')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Megawin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Megawin</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Découvrez nos <strong className="text-primary">stratégies éprouvées</strong> pour optimiser vos gains sur Megawin Casino.
@@ -585,9 +589,9 @@ export default function MegawinPage() {
             </div>
           </section>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de Megawin Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de Megawin Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Megawin Casino met la <strong className="text-primary">sécurité et l'anonymat des joueurs</strong> au premier plan avec des technologies 
@@ -826,9 +830,9 @@ export default function MegawinPage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-green-500/10 rounded-lg p-6 border-2 border-green-500/20">
                 <h3 className="text-2xl font-semibold text-green-600 mb-4 flex items-center gap-2">

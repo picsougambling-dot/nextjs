@@ -1,6 +1,7 @@
 'use client';
 
 import { useRef } from "react";
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Trophy, Star } from "lucide-react";
@@ -13,6 +14,9 @@ import { casinos } from "@/data/casinos";
 
 export default function MadCasinoPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.madcasino');
   const casino = casinos.find(c => c.name === "MadCasino")!;
 
   const handleMouseEnter = () => {
@@ -70,15 +74,15 @@ export default function MadCasinoPage() {
   return (
     <>
       <SEOHead
-        title={`Avis MadCasino 2026 : Bonus ${casino.bonusText} | Notre Test Complet`}
-        description={`Notre avis complet sur MadCasino 2026 : bonus ${casino.bonusText}, ${casino.wager === null ? 'sans wager' : `wager x${casino.wager}`}, bookmaker intégré, retraits rapides. Test détaillé !`}
-        keywords="casino en ligne, bonus casino, jeux casino, bookmaker, paris sportifs, casino fiable, retraits rapides"
-        canonical="https://gigabonus.win/madcasino"
-        ogTitle={`Avis MadCasino 2026 : Bonus ${casino.bonusText}`}
-        ogDescription={`Notre avis complet sur MadCasino : bonus ${casino.bonusText}, bookmaker, retraits rapides.`}
+        title={t('seo.title')}
+        description={t('seo.description')}
+        keywords={t('seo.keywords')}
+        canonical={`https://gigabonus.win/${locale}/madcasino`}
+        ogTitle={t('seo.ogTitle')}
+        ogDescription={t('seo.ogDescription')}
         ogImage="https://gigabonus.win/images/madcasino.webp"
-        twitterTitle={`Avis MadCasino 2026 : Bonus ${casino.bonusText}`}
-        twitterDescription={`Notre avis complet sur MadCasino : bonus ${casino.bonusText}, bookmaker, retraits rapides.`}
+        twitterTitle={t('seo.twitterTitle')}
+        twitterDescription={t('seo.twitterDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -120,29 +124,15 @@ export default function MadCasinoPage() {
 
             <div className="p-8 md:p-12">
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis {casino.name} 2026 : Bonus {casino.bonusText} - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-primary mb-6">À Propos de {casino.name}</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6">{t('hero.aboutTitle')}</h2>
                 <div className="space-y-4 text-foreground max-w-4xl mx-auto">
-                  <p>
-                    <strong className="text-primary">{casino.name}</strong> se distingue par son 
-                    <strong className="text-primary"> bonus de {casino.bonusText}</strong> {casino.wager === null ? 'sans conditions de mise' : `avec un wager de x${casino.wager}`}. 
-                    Cette plateforme combine un <strong className="text-primary">casino en ligne complet</strong> avec une 
-                    <strong className="text-primary"> section bookmaker intégrée</strong> pour les amateurs de paris sportifs.
-                  </p>
-                  <p>
-                    Avec un <strong className="text-primary">dépôt minimum de {casino.minDeposit}</strong>, 
-                    {casino.name} offre une accessibilité remarquable. Le casino propose un 
-                    <strong className="text-primary"> catalogue de jeux varié</strong> avec les meilleurs éditeurs du marché. 
-                    Les méthodes de paiement incluent <strong className="text-primary">cartes bancaires, cryptomonnaies et virements</strong>.
-                  </p>
-                  <p>
-                    La <strong className="text-primary">sécurité maximale</strong> est garantie par un cryptage SSL 256-bit. 
-                    {casino.name} opère sous licence Curaçao et respecte toutes les normes de jeu responsable. 
-                    Le casino accepte de nombreuses méthodes de paiement pour des transactions sécurisées.
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description1') }} />
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description2') }} />
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description3') }} />
                 </div>
                 <Button
                   asChild
@@ -151,7 +141,7 @@ export default function MadCasinoPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -183,7 +173,7 @@ export default function MadCasinoPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -215,7 +205,7 @@ export default function MadCasinoPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions {casino.name}
+              🎁 {tCommon('sections.offersAndPromotions')} {casino.name}
             </h2>
             
             <div className="grid grid-cols-1 max-w-3xl mx-auto">
@@ -242,7 +232,7 @@ export default function MadCasinoPage() {
                       >
                         <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-5 h-5 mr-2" />
-                          Jouer Maintenant
+                          {tCommon('playNow')}
                         </a>
                       </Button>
                     </div>
@@ -326,7 +316,7 @@ export default function MadCasinoPage() {
             >
               <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="w-6 h-6 mr-2" />
-                Jouer sur {casino.name} Maintenant
+                {tCommon('playNow')}
               </a>
             </Button>
           </section>

@@ -65,6 +65,48 @@
       }
     }
   },
+  "Blog": {
+    "notFound": {
+      "title": "Casino not found",
+      "unavailable": "Casino unavailable",
+      "unavailableDescription": "This casino is not available in your country.",
+      "backToBlog": "Back to blog"
+    },
+    "page": {
+      "whyFollow": {
+        "title": "Why follow the GigaBonus Blog?",
+        "p1": "The <strong>GigaBonus blog</strong> is the reference for any player wishing to learn about <strong>online casinos in 2026</strong>. Our team of independent experts tests each casino for several weeks before publishing a complete and transparent review.",
+        "p2": "Unlike classic affiliate sites, we analyze in depth every aspect: <strong>real bonuses vs marketing</strong>, <strong>actual withdrawal times</strong>, <strong>hidden wagering conditions</strong>, <strong>customer support quality</strong>, and <strong>verified gaming licenses</strong>.",
+        "p3": "Our strategic guides are written by professional players with over 10 years of experience. You'll find <strong>tested methods</strong> for blackjack, <strong>optimized betting systems</strong> for roulette, and <strong>detailed RTP analyses</strong> for the most profitable slot machines in 2026."
+      },
+      "categories": {
+        "title": "Our article categories",
+        "reviews": {
+          "title": "Detailed Casino Reviews",
+          "description": "Complete and impartial tests of online casinos: bonuses, games, withdrawals, support. We test each casino for 2-4 weeks with real money to give you a 100% reliable review."
+        },
+        "guides": {
+          "title": "Strategic Guides",
+          "description": "Winning strategies for blackjack, roulette, poker and slots. Bankroll management methods, professional tips and advice to maximize your winning chances."
+        },
+        "bonus": {
+          "title": "Bonus Analysis",
+          "description": "Decoding casino bonuses: no wager bonuses, weekly cashback, free spins without conditions. We explain the truly interesting bonuses vs marketing traps to avoid."
+        },
+        "security": {
+          "title": "Security & Privacy",
+          "description": "Guides on crypto casinos, no KYC casinos, anonymous payment methods and data protection. Play safely and privately in 2026."
+        }
+      },
+      "popular": {
+        "title": "📌 Most Popular Articles"
+      }
+    },
+    "faq": {
+      "welcomeBonus": "What is the welcome bonus of {casino}?",
+      "isBookmaker": "Is {casino} a bookmaker?"
+    }
+  },
   "BlogPages": {
     "avis-i24slots-2026": {
       "seoTitle": "i24Slots Casino Review 2026 Crypto & Slots | GigaBonus",
@@ -85,6 +127,90 @@
     "avis-kingschance-2026": {
       "seoTitle": "Kings Chance Casino Review 2026 No Wager | GigaBonus",
       "seoDescription": "Complete Kings Chance Casino 2026 review. No-wager bonuses, fast withdrawals and premium games."
+    },
+    "avis-vegasplus-2026": {
+      "seoTitle": "VegasPlus Casino Review 2026 Jackpots | GigaBonus",
+      "seoDescription": "Detailed VegasPlus Casino 2026 review. Progressive jackpots and VIP program."
+    },
+    "avis-uniquecasino-2026": {
+      "seoTitle": "Unique Casino Review 2026 Daily Bonuses | GigaBonus",
+      "seoDescription": "Detailed Unique Casino 2026 review. Daily bonuses, jackpots and VIP program."
+    },
+    "avis-spinstar-2026": {
+      "seoTitle": "SpinStar Casino Review 2026 & 700% Bonus | GigaBonus",
+      "seoDescription": "Detailed SpinStar Casino 2026 review. 700% bonus up to €10,000 + 725 Free Spins analyzed by our experts."
+    },
+    "avis-spindinasty-2026": {
+      "seoTitle": "SpinDinasty Casino Review 2026 Free Spins | GigaBonus",
+      "seoDescription": "Detailed SpinDinasty Casino 2026 review. Generous free spins and VIP program."
+    },
+    "avis-spinaura-2026": {
+      "seoTitle": "SpinAura Casino Review 2026 200% Bonus | GigaBonus",
+      "seoDescription": "Detailed SpinAura Casino 2026 review. 200% bonus, crypto jackpots and Bitcoin withdrawals."
+    },
+    "avis-slotrush-2026": {
+      "seoTitle": "SlotRush Casino Review 2026 Express Withdrawals | GigaBonus",
+      "seoDescription": "Detailed SlotRush Casino 2026 review. Express withdrawals, premium slots and turbo bonus."
+    },
+    "avis-rxcasino-2026": {
+      "seoTitle": "RXCasino Review 2026 24h Withdrawals | GigaBonus",
+      "seoDescription": "Detailed RXCasino 2026 review. 24h withdrawals, generous bonuses and modern interface."
+    },
+    "avis-roibets-2026": {
+      "seoTitle": "RoiBets Casino Review 2026 Crypto Bonus | GigaBonus",
+      "seoDescription": "Detailed RoiBets Casino 2026 review. Crypto casino with 200% bonus and Bitcoin withdrawals."
+    },
+    "avis-rockstar-2026": {
+      "seoTitle": "Rockstar Casino Review 2026 VIP Bonus | GigaBonus",
+      "seoDescription": "Detailed Rockstar Casino 2026 review. 300% welcome bonus, rock VIP program and fast withdrawals."
+    },
+    "avis-playregal-2026": {
+      "seoTitle": "PlayRegal Casino Review 2026 Royal Bonus | GigaBonus",
+      "seoDescription": "Detailed PlayRegal Casino 2026 review. Royal bonus, cashback and fast withdrawals."
+    },
+    "avis-megawin-2026": {
+      "seoTitle": "MegaWin Casino Review 2026 Highroller Bonus | GigaBonus",
+      "seoDescription": "Detailed MegaWin Casino 2026 review. Highroller bonus, big wins and VIP program."
+    },
+    "avis-magicalspin-2026": {
+      "seoTitle": "MagicalSpin Casino Review 2026 VIP Bonus | GigaBonus",
+      "seoDescription": "Detailed MagicalSpin Casino 2026 review. Magical VIP program, generous bonuses and premium games."
+    },
+    "avis-machance-2026": {
+      "seoTitle": "MaChance Casino Review 2026 VIP Rewards | GigaBonus",
+      "seoDescription": "Detailed MaChance Casino 2026 review. VIP rewards program, jackpots and exclusive bonuses."
+    },
+    "avis-luckytrunk-2026": {
+      "seoTitle": "LuckyTrunk Casino Review 2026 300% Bonus | GigaBonus",
+      "seoDescription": "Detailed LuckyTrunk Casino 2026 review. 300% bonus + Free Spins, modern interface and fast withdrawals."
+    },
+    "avis-luckytreasure-2026": {
+      "seoTitle": "Lucky Treasure Casino Review 2026 200% Bonus | GigaBonus",
+      "seoDescription": "Detailed Lucky Treasure Casino 2026 review. 200% welcome bonus, quality games and secure withdrawals."
+    },
+    "avis-hotloot-2026": {
+      "seoTitle": "HotLoot Casino Review 2026 Cash Drops Bonus | GigaBonus",
+      "seoDescription": "Detailed HotLoot Casino 2026 review. Daily cash drops, hot bonuses and fast withdrawals."
+    },
+    "avis-europefortune-2026": {
+      "seoTitle": "EuropeFortune Casino Review 2026 Premium | GigaBonus",
+      "seoDescription": "Detailed EuropeFortune Casino 2026 review. Premium European casino with generous bonuses."
+    },
+    "avis-cleobetra-2026": {
+      "seoTitle": "CléoBetra Casino Review 2026 Elite Bonus | GigaBonus",
+      "seoDescription": "Detailed CléoBetra Casino 2026 review. Elite bonus, Egyptian theme and fast withdrawals."
+    },
+    "avis-casinointense-2026": {
+      "seoTitle": "CasinoIntense Review 2026 300% Bonus | GigaBonus",
+      "seoDescription": "Detailed CasinoIntense 2026 review. Intense 300% bonus, premium games and express withdrawals."
+    },
+    "avis-bonrush-2026": {
+      "seoTitle": "BonRush Casino Review 2026 1h Withdrawals | GigaBonus",
+      "seoDescription": "Detailed BonRush Casino 2026 review. Ultra-fast withdrawals in 1h, generous bonuses and modern interface."
+    },
+    "avis-betify-2026": {
+      "seoTitle": "Betify Casino Review 2026 | GigaBonus",
+      "seoDescription": "Detailed Betify Casino 2026 review. Generous bonuses, premium games and fast withdrawals."
     }
   },
   "CasinoPages": {
@@ -455,6 +581,154 @@
         "exclusiveGames": {
           "title": "Exclusive Crystal Games",
           "description": "Exclusive mini-games with crystal themes, precious treasures and spectacular animations."
+        }
+      }
+    },
+    "magicalspin": {
+      "seo": {
+        "title": "✨ MagicalSpin Casino 2026: 400% No Wager Bonus up to €4000 + 1500 FS | GigaBonus",
+        "description": "💎 MagicalSpin: 400% No Wager Bonus up to €4000 | FREE Withdrawals | Exclusive magical program | 30 payment methods | €25 deposit ⚡",
+        "keywords": "magicalspin casino, no wager bonus, no conditions casino, magical program casino, 400% bonus, free withdrawals, casino 2026, magical games",
+        "ogTitle": "✨ MagicalSpin Casino: 400% No Wager Bonus + Exclusive Magic",
+        "ogDescription": "💎 MagicalSpin: 400% No Wager Bonus up to €4000 | FREE Withdrawals | Exclusive magical program | 30 payment methods | €25 deposit ⚡",
+        "twitterTitle": "✨ MagicalSpin Casino: 400% No Wager Bonus + Exclusive Magic",
+        "twitterDescription": "💎 MagicalSpin: 400% No Wager Bonus up to €4000 | FREE Withdrawals | Exclusive magical program | 30 payment methods | €25 deposit ⚡"
+      },
+      "hero": {
+        "title": "✨ MagicalSpin Casino 2026: 400% No Wager Bonus up to €4000 + Exclusive Magical Program - Our Complete Review",
+        "aboutTitle": "About MagicalSpin Casino",
+        "description1": "MagicalSpin Casino enchants the online gaming world with its exceptional magical program and revolutionary no wager bonus. Platform renowned for its magical atmosphere, it offers a welcome bonus of 400% up to €4000 NO WAGER - a unique magical experience! The exceptional feature: no wagering requirements to fulfill, your winnings are immediately withdrawable. Unlike traditional casinos that require x30, x40 or x50 times the bonus, MagicalSpin offers you complete freedom with magical advantages.",
+        "description2": "But that's not all! MagicalSpin also integrates a multi-level magical program with enchanted rewards, daily magical bonuses and exclusive events. The casino emphasizes transparency with 30 varied payment methods including cryptocurrencies, instant withdrawals and magical customer support available 24/7.",
+        "description3": "The platform stands out with its selection of over 5000 games, including cutting-edge magical slot machines, live table games with enchanted dealers, and exclusive magical mini-games. Whether you're a beginner or a gaming wizard, MagicalSpin has everything to please with its exceptional loyalty program and no wager bonuses."
+      },
+      "features": {
+        "title": "MagicalSpin Casino Strengths",
+        "noWager": {
+          "title": "400% NO WAGER Bonus",
+          "description": "The 400% welcome bonus up to €4000 has no wagering requirements. Withdraw your winnings immediately!"
+        },
+        "magicalProgram": {
+          "title": "Exclusive Magical Program",
+          "description": "Multi-level program with enchanted rewards, daily magical bonuses and exclusive events."
+        },
+        "instantWithdrawals": {
+          "title": "Magical Instant Withdrawals",
+          "description": "Your winnings are withdrawable instantly without delay, with 30 different payment methods."
+        },
+        "exclusiveGames": {
+          "title": "Exclusive Magical Games",
+          "description": "Exclusive magical mini-games, enchanted rounds and games with spectacular magical themes."
+        }
+      }
+    },
+    "madcasino": {
+      "seo": {
+        "title": "🎲 MadCasino 2026: 100% Bonus + 200 Free Spins up to €1000 | GigaBonus",
+        "description": "💎 MadCasino: 100% Bonus + 200 Free Spins up to €1000 | Modern interface | Fast withdrawals | 20 payment methods | €20 deposit ⚡",
+        "keywords": "madcasino, 100% bonus, free spins, modern casino, fast withdrawals, casino 2026, table games, slot machines",
+        "ogTitle": "🎲 MadCasino: 100% Bonus + 200 Free Spins",
+        "ogDescription": "💎 MadCasino: 100% Bonus + 200 Free Spins up to €1000 | Modern interface | Fast withdrawals | 20 payment methods | €20 deposit ⚡",
+        "twitterTitle": "🎲 MadCasino: 100% Bonus + 200 Free Spins",
+        "twitterDescription": "💎 MadCasino: 100% Bonus + 200 Free Spins up to €1000 | Modern interface | Fast withdrawals | 20 payment methods | €20 deposit ⚡"
+      },
+      "hero": {
+        "title": "🎲 MadCasino 2026: 100% Bonus + 200 Free Spins up to €1000 + Modern Interface - Our Complete Review",
+        "aboutTitle": "About MadCasino",
+        "description1": "MadCasino revolutionizes the online gaming world with its modern interface and exceptional welcome bonus. Innovative platform recognized for its sleek design, it offers a 100% bonus up to €1000 + 200 Free Spins - a generous offer for new players! The unique feature: an ultra-modern user interface with intuitive navigation and high-definition graphics, creating an immersive and effortless gaming experience.",
+        "description2": "But that's not all! MadCasino also integrates advanced features like HD live table games, daily tournaments and a progressive loyalty program. The casino emphasizes speed with 20 varied payment methods including cryptocurrencies, withdrawals processed in less than 24h and responsive customer support available 24/7.",
+        "description3": "The platform stands out with its selection of over 3000 games, including cutting-edge slot machines, table games with professional dealers and exclusive internally developed games. Whether you're a beginner or experienced player, MadCasino has everything to please with its modern interface and attractive bonuses."
+      },
+      "features": {
+        "title": "MadCasino Strengths",
+        "modernInterface": {
+          "title": "Ultra-Modern Interface",
+          "description": "Sleek design with intuitive navigation and high-definition graphics for an immersive experience."
+        },
+        "generousBonus": {
+          "title": "100% Bonus + 200 Free Spins",
+          "description": "Generous welcome offer with 100% up to €1000 + 200 Free Spins on popular games."
+        },
+        "fastWithdrawals": {
+          "title": "Fast Withdrawals",
+          "description": "Withdrawals processed in less than 24h with 20 different payment methods for your convenience."
+        },
+        "exclusiveGames": {
+          "title": "Exclusive Games",
+          "description": "Internally developed games and daily tournaments for a unique gaming experience."
+        }
+      }
+    },
+    "machance": {
+      "seo": {
+        "title": "🎰 MaChance Casino 2026: 350% No Wager Bonus up to €3500 + 1200 FS | GigaBonus",
+        "description": "💎 MaChance: 350% No Wager Bonus up to €3500 | FREE Withdrawals | Exclusive VIP program | 25 payment methods | €30 deposit ⚡",
+        "keywords": "machance casino, no wager bonus, no conditions casino, vip program casino, 350% bonus, free withdrawals, casino 2026, vip games",
+        "ogTitle": "🎰 MaChance Casino: 350% No Wager Bonus + Exclusive VIP",
+        "ogDescription": "💎 MaChance: 350% No Wager Bonus up to €3500 | FREE Withdrawals | Exclusive VIP program | 25 payment methods | €30 deposit ⚡",
+        "twitterTitle": "🎰 MaChance Casino: 350% No Wager Bonus + Exclusive VIP",
+        "twitterDescription": "💎 MaChance: 350% No Wager Bonus up to €3500 | FREE Withdrawals | Exclusive VIP program | 25 payment methods | €30 deposit ⚡"
+      },
+      "hero": {
+        "title": "🎰 MaChance Casino 2026: 350% No Wager Bonus up to €3500 + Exclusive VIP Program - Our Complete Review",
+        "aboutTitle": "About MaChance Casino",
+        "description1": "MaChance Casino dominates the online gaming world with its exceptional VIP program and revolutionary no wager bonus. Established platform recognized for its reliability, it offers a welcome bonus of 350% up to €3500 NO WAGER - a unique VIP opportunity! The exceptional feature: no wagering requirements to fulfill, your winnings are immediately withdrawable. Unlike traditional casinos that require x30, x40 or x50 times the bonus, MaChance offers you complete freedom with VIP advantages.",
+        "description2": "But that's not all! MaChance also integrates a multi-level VIP program with exclusive rewards, dedicated account managers and private VIP events. The casino emphasizes transparency with 25 varied payment methods including cryptocurrencies, instant withdrawals and VIP customer support available 24/7.",
+        "description3": "The platform stands out with its selection of over 4000 games, including cutting-edge slot machines, live table games with VIP dealers, and exclusive tournaments. Whether you're a beginner or VIP player, MaChance has everything to please with its exceptional loyalty program and no wager bonuses."
+      },
+      "features": {
+        "title": "MaChance Casino Strengths",
+        "noWager": {
+          "title": "350% NO WAGER Bonus",
+          "description": "The 350% welcome bonus up to €3500 has no wagering requirements. Withdraw your winnings immediately!"
+        },
+        "vipProgram": {
+          "title": "Exclusive VIP Program",
+          "description": "Multi-level program with exclusive rewards, dedicated manager and private events."
+        },
+        "instantWithdrawals": {
+          "title": "VIP Instant Withdrawals",
+          "description": "Your winnings are withdrawable instantly without delay, with 25 different payment methods."
+        },
+        "exclusiveGames": {
+          "title": "Exclusive VIP Games",
+          "description": "Exclusive tournaments, VIP tables with dedicated dealers and high-roller games."
+        }
+      }
+    },
+    "luckytreasure": {
+      "seo": {
+        "title": "🏆 Lucky Treasure Casino 2026: 200% Bonus up to €1500 + 250 Free Spins | GigaBonus",
+        "description": "💎 Lucky Treasure: 200% Bonus up to €1500 + 250 Free Spins | Exclusive treasure | 15 payment methods | €25 deposit ⚡",
+        "keywords": "luckytreasure, 200% bonus, free spins, exclusive treasure, lucky casino, casino 2026, slot machines, table games",
+        "ogTitle": "🏆 Lucky Treasure: 200% Bonus + Exclusive Treasure",
+        "ogDescription": "💎 Lucky Treasure: 200% Bonus up to €1500 + 250 Free Spins | Exclusive treasure | 15 payment methods | €25 deposit ⚡",
+        "twitterTitle": "🏆 Lucky Treasure: 200% Bonus + Exclusive Treasure",
+        "twitterDescription": "💎 Lucky Treasure: 200% Bonus up to €1500 + 250 Free Spins | Exclusive treasure | 15 payment methods | €25 deposit ⚡"
+      },
+      "hero": {
+        "title": "🏆 Lucky Treasure Casino 2026: 200% Bonus up to €1500 + 250 Free Spins + Exclusive Treasure - Our Complete Review",
+        "aboutTitle": "About Lucky Treasure",
+        "description1": "Lucky Treasure Casino unveils a world of hidden treasures with its exceptional bonus and exclusive treasure program. Lucky platform recognized for its generous rewards, it offers a welcome bonus of 200% up to €1500 + 250 Free Spins - a unique lucky offer! The exceptional feature: a multi-level treasure program with mystery chests, daily rewards and progressive lucky bonuses.",
+        "description2": "But that's not all! Lucky Treasure also integrates lucky features like exclusive treasure games, daily treasure hunts and a lucky loyalty program. The casino emphasizes luck with 15 varied payment methods including cryptocurrencies, fast withdrawals and lucky customer support available 24/7.",
+        "description3": "The platform stands out with its selection of over 3500 games, including latest-generation lucky slot machines, table games with lucky dealers and exclusive treasure mini-games. Whether you're a beginner or treasure hunter, Lucky Treasure has everything to please with its exceptional treasure program and lucky bonuses."
+      },
+      "features": {
+        "title": "Lucky Treasure Strengths",
+        "treasureProgram": {
+          "title": "Exclusive Treasure Program",
+          "description": "Multi-level program with mystery chests, daily rewards and progressive lucky bonuses."
+        },
+        "generousBonus": {
+          "title": "200% Bonus + 250 Free Spins",
+          "description": "Lucky offer with 200% up to €1500 + 250 Free Spins on popular games."
+        },
+        "fastWithdrawals": {
+          "title": "Lucky Fast Withdrawals",
+          "description": "Fast withdrawals with 15 different payment methods for your luck."
+        },
+        "exclusiveGames": {
+          "title": "Exclusive Treasure Games",
+          "description": "Exclusive treasure mini-games, daily treasure hunts and mystery chests."
         }
       }
     }
@@ -5602,6 +5876,34 @@
           }
         }
       }
+    }
+  },
+  "Common": {
+    "playNow": "Play Now",
+    "play": "Play",
+    "sections": {
+      "paymentMethods": "Accepted Payment Methods",
+      "howToRegister": "How to Register",
+      "faq": "FAQ - Frequently Asked Questions",
+      "prosAndCons": "Pros and Cons",
+      "offersAndPromotions": "Offers and Promotions Details",
+      "withdrawalMethods": "Withdrawal Methods and Delays",
+      "gamesCatalog": "Games Catalog",
+      "strategies": "Strategies to Maximize Your Winnings",
+      "security": "Security and Legality",
+      "verdict": "Our Review: The Verdict",
+      "testimonials": "Reviews from Our Testers",
+      "cta": "Ready to discover {casino} Casino?"
+    },
+    "labels": {
+      "minDeposit": "Minimum deposit",
+      "wager": "Wagering requirements",
+      "withdrawals": "Withdrawals",
+      "fair": "Fair",
+      "accessible": "Accessible",
+      "fast": "Fast",
+      "secure": "Secure",
+      "sslLicense": "SSL License"
     }
   }
 }

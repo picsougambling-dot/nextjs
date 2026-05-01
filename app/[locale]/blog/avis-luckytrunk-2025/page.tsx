@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisLuckyTrunkPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-luckytrunk-2025');
+  const tCommon = useTranslations('Common');
   
       const { countryCode: userCountry } = useUserCountry();
   const isAvailableInCountry = true; // Pas de données casino pour cette page
@@ -86,15 +88,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="💎 Avis Lucky Trunk 2026 : Bonus 300% SANS WAGER | Retraits Libres"
-        description="🎁 Lucky Trunk : 300% Sans Wager | Bookmaker | Retraits LIBRES | 6 paiements | Note 4.5/5 | Test complet sans conditions de mise ⚡"
-        keywords="avis lucky trunk, bonus sans wager, lucky trunk test, casino sans conditions, bookmaker casino, retraits libres, note 4.5"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis lucky trunk, bonus sans wager, lucky trunk test, casino sans conditions, bookmaker casino, retraits libres, note 4.5"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-luckytrunk-2026`}
-        ogTitle="Avis Lucky Trunk 2026 : Bonus 300% SANS WAGER"
-        ogDescription="Test complet Lucky Trunk Casino : bonus 300% sans wager, retraits libres, bookmaker intégré. Note 4.5/5"
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/luckytrunk.webp"
-        twitterTitle="Avis Lucky Trunk 2026 : Bonus 300% SANS WAGER"
-        twitterDescription="Test complet Lucky Trunk Casino : bonus 300% sans wager."
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

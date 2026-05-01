@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -17,7 +17,10 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisRockstarPage() {
   const locale = useLocale();
-    const { countryCode: userCountry } = useUserCountry();
+  const tBlog = useTranslations('BlogPages.avis-rockstar-2025');
+  const tCommon = useTranslations('Common');
+  const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.notFound');
   
 const casino = casinos.find(c => c.id === 10);
   
@@ -83,7 +86,7 @@ const schemaData = {
 };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -94,10 +97,10 @@ const schemaData = {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -286,7 +289,7 @@ const schemaData = {
           <section className="glass-card rounded-2xl p-8 mb-8">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Gamepad2 className="h-8 w-8" />
-              Catalogue de Jeux
+              {tCommon('sections.gamesCatalog')}
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
@@ -374,7 +377,7 @@ const schemaData = {
 
           <RelatedLinks 
             links={[
-              { href: "/blog", title: "Retour au Blog", description: "Tous nos avis casinos" },
+              { href: "/blog", title: t('backToBlog'), description: "Tous nos avis casinos" },
               { href: "/", title: "Tous les Casinos", description: "Comparez les meilleurs" },
               { href: "/bonus-cashback", title: "Cashback", description: "Récupérez vos pertes" }
             ]}

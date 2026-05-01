@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { useLocale, useTranslations } from 'next-intl';
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -13,6 +14,9 @@ import { casinos } from "@/data/casinos";
 
 export default function LibraBetPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.librabet');
   const casino = casinos.find(c => c.name === "LibraBet")!;
 
   const handleMouseEnter = () => {
@@ -216,7 +220,7 @@ export default function LibraBetPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -246,7 +250,7 @@ export default function LibraBetPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -284,7 +288,7 @@ export default function LibraBetPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions LibraBet
+              🎁 {tCommon('sections.offersAndPromotions')} LibraBet
             </h2>
             
             <div className="grid grid-cols-1 max-w-3xl mx-auto">
@@ -311,7 +315,7 @@ export default function LibraBetPage() {
                       >
                         <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-5 h-5 mr-2" />
-                          Jouer Maintenant
+                          {tCommon('playNow')}
                         </a>
                       </Button>
                     </div>
@@ -321,9 +325,9 @@ export default function LibraBetPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur LibraBet Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur LibraBet Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur LibraBet</strong> est simple et rapide. 

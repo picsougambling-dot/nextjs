@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
+import { useLocale, useTranslations } from 'next-intl';
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Trophy, Star } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -13,6 +14,9 @@ import { casinos } from "@/data/casinos";
 
 export default function KingdomPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.kingdom');
   const casino = casinos.find(c => c.name === "Kingdom")!;
 
   const handleMouseEnter = () => {
@@ -70,8 +74,8 @@ export default function KingdomPage() {
   return (
     <>
       <SEOHead
-        title={`Avis Kingdom Casino 2026 : Bonus ${casino.bonusText} | Notre Test Complet`}
-        description={`Notre avis complet sur Kingdom Casino 2026 : bonus ${casino.bonusText}, wager x${casino.wager}, retraits rapides. Test détaillé !`}
+        title={t('seo.title')}
+        description={t('seo.description')}
         keywords="casino en ligne, bonus casino, jeux casino, casino fiable, retraits rapides, bonus généreux"
         canonical="https://gigabonus.win/kingdom"
         ogTitle={`Avis Kingdom Casino 2026 : Bonus ${casino.bonusText}`}
@@ -150,7 +154,7 @@ export default function KingdomPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -180,7 +184,7 @@ export default function KingdomPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -212,7 +216,7 @@ export default function KingdomPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions {casino.name}
+              🎁 {tCommon('sections.offersAndPromotions')} {casino.name}
             </h2>
             
             <div className="grid grid-cols-1 max-w-3xl mx-auto">
@@ -239,7 +243,7 @@ export default function KingdomPage() {
                       >
                         <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-5 h-5 mr-2" />
-                          Jouer Maintenant
+                          {tCommon('playNow')}
                         </a>
                       </Button>
                     </div>
@@ -315,7 +319,7 @@ export default function KingdomPage() {
             >
               <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="w-6 h-6 mr-2" />
-                Jouer sur {casino.name} Maintenant
+                {tCommon('playNow')}
               </a>
             </Button>
           </section>

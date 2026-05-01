@@ -16,6 +16,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisAtlantisSlotsPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-atlantisslots-2025');
+  const tCommon = useTranslations('Common');
   const { countryCode: userCountry } = useUserCountry();
   
   // Pas de données casino pour cette page - toujours disponible
@@ -151,7 +153,7 @@ export default function AvisAtlantisSlotsPage() {
             </p>
           </article>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="glass-card rounded-2xl p-6">
               <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
@@ -384,11 +386,11 @@ export default function AvisAtlantisSlotsPage() {
             </div>
           </article>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <article className="glass-card rounded-2xl p-8 mb-8">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Shield className="h-8 w-8" />
-              Sécurité et Légalité
+              {tCommon('sections.security')}
             </h2>
             <p className="text-foreground mb-4">
               Atlantis Slots opère sous licence de Curaçao (8048/JAZ), garantissant un environnement de jeu régulé et sécurisé. Le casino utilise un cryptage SSL 256 bits pour protéger toutes les transactions financières et données personnelles.

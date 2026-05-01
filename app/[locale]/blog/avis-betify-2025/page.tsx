@@ -3,7 +3,7 @@
 
 import { useEffect } from "react";
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -17,7 +17,10 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisBetifyPage() {
   const locale = useLocale();
-    const { countryCode: userCountry } = useUserCountry();
+  const tBlog = useTranslations('BlogPages.avis-betify-2025');
+  const tCommon = useTranslations('Common');
+  const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.notFound');
   
 const casino = casinos.find(c => c.id === 25);
   
@@ -84,7 +87,7 @@ const schemaData = {
 };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -95,10 +98,10 @@ const schemaData = {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -111,15 +114,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="🎰 Avis Betify 2026 : Bonus 100% + Wager x35 Casino + Sport | GigaBonus"
-        description="⭐ Avis complet Betify 2026 : bonus 100% wager x35, casino + sport, weekend boost. Plateforme complète et généreuse ! Test par nos experts."
-        keywords="avis betify, betify casino, bonus betify, betify 2026, betify sport, betify fiable, wager x35"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis betify, betify casino, bonus betify, betify 2026, betify sport, betify fiable, wager x35"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-betify-2026`}
-        ogTitle="🎰 Avis Betify 2026 : Bonus 100% + Wager x35"
-        ogDescription="⭐ Test complet Betify : bonus 100%, wager x35 compétitif, casino + sport. Plateforme polyvalente ! Avis d'experts."
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}experts."
         ogImage="https://gigabonus.win/images/betify.webp"
-        twitterTitle="🎰 Avis Betify 2026 : Bonus 100% + Wager x35"
-        twitterDescription="⭐ Test complet Betify : bonus 100%, wager x35 compétitif, casino + sport. Plateforme polyvalente ! Avis d'experts."
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}experts."
         schema={schemaData}
       />
       <Navbar />
@@ -392,7 +395,7 @@ const schemaData = {
           <article className="glass-card rounded-2xl p-8 mb-8">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Shield className="h-8 w-8" />
-              Sécurité et Légalité
+              {tCommon('sections.security')}
             </h2>
             <p className="text-foreground mb-4">
               Betify opère sous licence Curaçao avec cryptage SSL pour sécuriser toutes les transactions.

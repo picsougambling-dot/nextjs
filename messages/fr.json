@@ -131,7 +131,7 @@
   },
   "FilterBar": {
     "casinosFound": "{count, plural, =1 {casino trouvé} other {casinos trouvés}}",
-    "searchPlaceholder": "Rechercher...",
+    "searchPlaceholder": "Rechercher",
     "bonusFilter": "Bonus",
     "allBonuses": "Tous les bonus",
     "wagerFilter": "Wager",
@@ -594,6 +594,48 @@
     "31bets": {
       "seoTitle": "Avis 31Bets Casino Bonus 1000$ + 100 FS | GigaBonus 2026",
       "seoDescription": "Avis complet 31Bets Casino 2026. Bonus jusqu'à 1000$ + 100 FS, bookmaker intégré et jeux premium."
+    }
+  },
+  "Blog": {
+    "notFound": {
+      "title": "Casino non trouvé",
+      "unavailable": "Casino non disponible",
+      "unavailableDescription": "Ce casino n'est pas disponible dans votre pays.",
+      "backToBlog": "Retour au blog"
+    },
+    "page": {
+      "whyFollow": {
+        "title": "Pourquoi suivre le Blog GigaBonus ?",
+        "p1": "Le <strong>blog GigaBonus</strong> est la référence francophone pour tout joueur souhaitant s'informer sur les <strong>casinos en ligne en 2026</strong>. Notre équipe d'experts indépendants teste chaque casino pendant plusieurs semaines avant de publier un avis complet et transparent.",
+        "p2": "Contrairement aux sites affiliés classiques, nous analysons en profondeur chaque aspect : <strong>bonus réels vs marketing</strong>, <strong>délais de retrait effectifs</strong>, <strong>conditions de wager cachées</strong>, <strong>qualité du support client</strong>, et <strong>licences de jeu vérifiées</strong>.",
+        "p3": "Nos guides stratégiques sont rédigés par des joueurs professionnels avec plus de 10 ans d'expérience. Vous y trouverez des <strong>méthodes testées</strong> pour le blackjack, des <strong>systèmes de mise optimisés</strong> pour la roulette, et des <strong>analyses RTP détaillées</strong> pour les machines à sous les plus lucratives de 2026."
+      },
+      "categories": {
+        "title": "Nos catégories d'articles",
+        "reviews": {
+          "title": "Avis Casinos Détaillés",
+          "description": "Tests complets et impartiaux des casinos en ligne : bonus, jeux, retraits, support. Nous testons chaque casino pendant 2-4 semaines avec de l'argent réel pour vous donner un avis 100% fiable."
+        },
+        "guides": {
+          "title": "Guides Stratégiques",
+          "description": "Stratégies gagnantes pour blackjack, roulette, poker et slots. Méthodes de gestion de bankroll, astuces de professionnels et conseils pour maximiser vos chances de gains."
+        },
+        "bonus": {
+          "title": "Analyses Bonus",
+          "description": "Décryptage des bonus casino : bonus sans wager, cashback hebdomadaire, free spins sans condition. On vous explique les vrais bonus intéressants vs les pièges marketing à éviter."
+        },
+        "security": {
+          "title": "Sécurité & Confidentialité",
+          "description": "Guides sur les casinos crypto, casinos sans KYC, méthodes de paiement anonymes et protections des données. Jouez en toute sécurité et confidentialité en 2026."
+        }
+      },
+      "popular": {
+        "title": "📌 Articles les Plus Populaires"
+      }
+    },
+    "faq": {
+      "welcomeBonus": "Quel est le bonus de bienvenue de {casino} ?",
+      "isBookmaker": "{casino} est-il un bookmaker ?"
     }
   },
   "BlogPages": {
@@ -6049,6 +6091,34 @@
           }
         }
       }
+    }
+  },
+  "Common": {
+    "playNow": "Jouer Maintenant",
+    "play": "Jouer",
+    "sections": {
+      "paymentMethods": "Méthodes de Paiement Acceptées",
+      "howToRegister": "Comment S'inscrire",
+      "faq": "FAQ - Questions Fréquentes",
+      "prosAndCons": "Avantages et Inconvénients",
+      "offersAndPromotions": "Détail des Offres et Promotions",
+      "withdrawalMethods": "Méthodes de Retrait et Délais",
+      "gamesCatalog": "Catalogue de Jeux",
+      "strategies": "Stratégies pour Maximiser Vos Gains",
+      "security": "Sécurité et Légalité",
+      "verdict": "Notre Avis : Le Verdict",
+      "testimonials": "Avis de Nos Testeurs",
+      "cta": "Prêt à découvrir {casino} Casino ?"
+    },
+    "labels": {
+      "minDeposit": "Dépôt minimum",
+      "wager": "Conditions de mise",
+      "withdrawals": "Retraits",
+      "fair": "Équitable",
+      "accessible": "Accessible",
+      "fast": "Rapide",
+      "secure": "Sécurisé",
+      "sslLicense": "Licence SSL"
     }
   }
 }

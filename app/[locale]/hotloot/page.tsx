@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function HotLootPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.hotloot');
   const casino = casinos.find(c => c.name === "HotLoot")!;
 
 
@@ -182,7 +186,7 @@ export default function HotLootPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -212,7 +216,7 @@ export default function HotLootPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -261,7 +265,7 @@ export default function HotLootPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions HotLoot
+              🎁 {tCommon('sections.offersAndPromotions')} HotLoot
             </h2>
             
             <div className="grid grid-cols-1 max-w-3xl mx-auto">
@@ -288,7 +292,7 @@ export default function HotLootPage() {
                       >
                         <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-5 h-5 mr-2" />
-                          Jouer Maintenant
+                          {tCommon('playNow')}
                         </a>
                       </Button>
                     </div>
@@ -298,9 +302,9 @@ export default function HotLootPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur HotLoot Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur HotLoot Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur HotLoot</strong> est rapide et intuitive.

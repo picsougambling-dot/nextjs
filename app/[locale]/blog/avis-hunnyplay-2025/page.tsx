@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisHunnyPlayPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-hunnyplay-2025');
+  const tCommon = useTranslations('Common');
   
       const { countryCode: userCountry } = useUserCountry();
   const isAvailableInCountry = true; // Pas de données casino pour cette page
@@ -87,15 +89,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="🍯 Avis HunnyPlay 2026 : Casino Crypto Expert | Bitcoin & Retraits 2h"
-        description="🚀 HunnyPlay Crypto : Bonus 200% | Wager x30 | Bitcoin, ETH, USDT | Retraits 2h | Interface moderne | Note 4.3/5 | Test expert ⚡"
-        keywords="avis hunnyplay, hunnyplay crypto, casino bitcoin, retraits rapides crypto, bonus 200%, hunnyplay test, ethereum casino, wager x30"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis hunnyplay, hunnyplay crypto, casino bitcoin, retraits rapides crypto, bonus 200%, hunnyplay test, ethereum casino, wager x30"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-hunnyplay-2026`}
-        ogTitle="🍯 Avis HunnyPlay : Casino Crypto + Retraits 2h"
-        ogDescription="🚀 Test Crypto | Bonus 200% | Bitcoin, ETH | Note 4.3/5 ⚡"
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/hunnyplay.webp"
-        twitterTitle="🍯 Avis HunnyPlay : Casino Crypto + Retraits 2h"
-        twitterDescription="🚀 Test Crypto | Bonus 200% | Bitcoin, ETH | Note 4.3/5 ⚡"
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

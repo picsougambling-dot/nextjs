@@ -16,6 +16,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisMagicalSpinPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-magicalspin-2025');
+  const tCommon = useTranslations('Common');
   
 
       const { countryCode: userCountry } = useUserCountry();
@@ -262,7 +264,7 @@ const relatedLinks = [
           <section className="glass-card rounded-2xl p-8 mb-16">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Gamepad2 className="h-8 w-8" />
-              Catalogue de Jeux Magical Spin
+              {tCommon('sections.gamesCatalog')} Magical Spin
             </h2>
             
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">

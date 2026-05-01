@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -15,7 +15,11 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisHotLootPage() {
   const locale = useLocale();
-    const { countryCode: userCountry } = useUserCountry();
+  const tBlog = useTranslations('BlogPages.avis-hotloot-2025');
+  const tCommon = useTranslations('Common');
+  const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.notFound');
+  const tFaq = useTranslations('Blog.faq');
   
 const casino = casinos.find(c => c.id === 9);
   
@@ -84,7 +88,7 @@ const schemaData = {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Quel est le bonus de bienvenue de HotLoot ?",
+            "name": tFaq('welcomeBonus', { casino: 'HotLoot' }),
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "HotLoot offre un bonus de 300% jusqu'à 1200€ avec un wager favorable de x30."
@@ -92,7 +96,7 @@ const schemaData = {
           },
           {
             "@type": "Question",
-            "name": "HotLoot est-il un bookmaker ?",
+            "name": tFaq('isBookmaker', { casino: 'HotLoot' }),
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Oui, HotLoot propose à la fois un casino et un bookmaker complet avec paris sportifs."
@@ -104,7 +108,7 @@ const schemaData = {
   };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -115,10 +119,10 @@ const schemaData = {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -131,15 +135,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="🔥 Avis HotLoot 2026 : Casino + Bookmaker | 300% Wager x30"
-        description="🏆 HotLoot : Bonus 300% jusqu'à 1200€ | Bookmaker complet | Wager x30 favorable | 5 paiements | Note 4.1/5 | Test casino + paris sportifs 2026 ⚡"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
         keywords="avis hotloot, hotloot casino, bonus 300%, bookmaker, wager x30, hotloot test, paris sportifs, casino 2026"
-        canonical={`https://gigabonus.win/${locale}/blog/avis-hotloot-2026`}
-        ogTitle="🔥 Avis HotLoot 2026 : Casino + Bookmaker | 300% Wager x30"
-        ogDescription="🏆 HotLoot : Bonus 300% jusqu'à 1200€ | Bookmaker complet | Wager x30 favorable ⚡"
+        canonical={`https://gigabonus.win/${locale}/blog/avis-hotloot-2025`}
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/hotloot.webp"
-        twitterTitle="🔥 Avis HotLoot 2026 : Casino + Bookmaker | 300% Wager x30"
-        twitterDescription="🏆 HotLoot : Bonus 300% jusqu'à 1200€ | Bookmaker complet ⚡"
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

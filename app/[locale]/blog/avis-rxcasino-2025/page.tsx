@@ -15,6 +15,8 @@ import SEOHead from "@/components/SEOHead";
 
 export default function AvisRXCasinoPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-rxcasino-2025');
+  const tCommon = useTranslations('Common');
   
   
       const { countryCode: userCountry } = useUserCountry();
@@ -53,15 +55,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="⚠️ RX Casino SCAM 2026 : Alerte Arnaque - Témoignages de Victimes | GigaBonus"
-        description="🚨 ALERTE ARNAQUE : RX Casino refuse les retraits, bloque les comptes, conditions impossibles. Témoignages de victimes et alternatives fiables recommandées."
-        keywords="rxcasino scam, rxcasino arnaque, rx casino non paiement, rxcasino refus retrait, rxcasino avis négatifs, rxcasino dangereux, casino fiable alternative"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "rxcasino scam, rxcasino arnaque, rx casino non paiement, rxcasino refus retrait, rxcasino avis négatifs, rxcasino dangereux, casino fiable alternative"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-rxcasino-2026`}
-        ogTitle="⚠️ RX Casino SCAM : Alerte Arnaque - Ne Jouez PAS Ici"
-        ogDescription="🚨 Notre enquête révèle les pratiques douteuses de RX Casino : refus de paiement, blocage de comptes, conditions abusives. Témoignages de victimes."
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/rxcasino.webp"
-        twitterTitle="⚠️ RX Casino SCAM : Alerte Arnaque - Ne Jouez PAS Ici"
-        twitterDescription="🚨 Notre enquête révèle les pratiques douteuses de RX Casino : refus de paiement, blocage de comptes, conditions abusives. Témoignages de victimes."
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

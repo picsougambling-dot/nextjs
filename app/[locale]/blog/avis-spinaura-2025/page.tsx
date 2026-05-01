@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisSpinAuraPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-spinaura-2025');
+  const tCommon = useTranslations('Common');
   
       const { countryCode: userCountry } = useUserCountry();
   const isAvailableInCountry = true; // Pas de données casino pour cette page
@@ -86,15 +88,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="🌟 Avis SpinAura 2026 : Bonus RECORD 450% + 15K€ | High-Rollers"
-        description="💰 SpinAura : Bonus MASSIF 450% + 15 000€ | 5000+ jeux | 7 paiements | Crypto | Note 4.2/5 | Test high-roller ⚡"
-        keywords="avis spinaura, spinaura casino, bonus 450%, casino high roller, bonus 15000€, spinaura test, 5000 jeux, note 4.2"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis spinaura, spinaura casino, bonus 450%, casino high roller, bonus 15000€, spinaura test, 5000 jeux, note 4.2"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-spinaura-2026`}
-        ogTitle="Avis SpinAura 2026 : Bonus RECORD 450% + 15K€"
-        ogDescription="Test complet SpinAura Casino : bonus massif 450% jusqu'à 15000€, 5000+ jeux, high-rollers. Note 4.2/5"
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}à 15000€, 5000+ jeux, high-rollers. Note 4.2/5"
         ogImage="https://gigabonus.win/images/spinaura.webp"
-        twitterTitle="Avis SpinAura 2026 : Bonus RECORD 450% + 15K€"
-        twitterDescription="Test complet SpinAura Casino : bonus massif 450%."
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

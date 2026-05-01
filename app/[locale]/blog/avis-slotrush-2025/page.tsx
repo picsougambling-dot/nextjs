@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -15,7 +15,11 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisSlotRushPage() {
   const locale = useLocale();
-    const { countryCode: userCountry } = useUserCountry();
+  const tBlog = useTranslations('BlogPages.avis-slotrush-2025');
+  const tCommon = useTranslations('Common');
+  const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.notFound');
+  const tFaq = useTranslations('Blog.faq');
   
 const casino = casinos.find(c => c.id === 4);
   
@@ -84,7 +88,7 @@ const schemaData = {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Quel est le bonus de bienvenue de SlotRush ?",
+            "name": tFaq('welcomeBonus', { casino: 'SlotRush' }),
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "SlotRush offre un bonus de 350% jusqu'à 4000€ + 200 FS avec wager x40 et bookmaker intégré."
@@ -92,7 +96,7 @@ const schemaData = {
           },
           {
             "@type": "Question",
-            "name": "SlotRush est-il un bookmaker ?",
+            "name": tFaq('isBookmaker', { casino: 'SlotRush' }),
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Oui, SlotRush propose un bookmaker complet avec paris sportifs en plus du casino."
@@ -104,7 +108,7 @@ const schemaData = {
   };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -115,10 +119,10 @@ const schemaData = {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -131,15 +135,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="🎰 Avis SlotRush 2026 : Casino + Bookmaker | 350% + 200 FS"
-        description="🏆 SlotRush : Bonus 350% + 200 FS | Bookmaker intégré | Wager x40 | Paris sportifs | Note 4.0/5 | Test casino + sport 2026 ⚡"
-        keywords="avis slotrush, slotrush casino, bonus 350%, bookmaker casino, 200 free spins, slotrush test, paris sportifs, wager x40"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis slotrush, slotrush casino, bonus 350%, bookmaker casino, 200 free spins, slotrush test, paris sportifs, wager x40"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-slotrush-2026`}
-        ogTitle="🎰 Avis SlotRush 2026 : Casino + Bookmaker | 350% + 200 FS"
-        ogDescription="🏆 SlotRush : Bonus 350% + 200 FS | Bookmaker intégré | Wager x40 ⚡"
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/slotrush.webp"
-        twitterTitle="🎰 Avis SlotRush 2026 : Casino + Bookmaker | 350% + 200 FS"
-        twitterDescription="🏆 SlotRush : Bonus 350% + 200 FS | Bookmaker intégré ⚡"
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

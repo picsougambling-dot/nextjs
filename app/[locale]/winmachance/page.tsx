@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function MaChancePage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.winmachance');
   const casino = casinos.find(c => c.name === "WinMaChance")!;
 
 
@@ -160,15 +164,15 @@ export default function MaChancePage() {
   return (
     <>
       <SEOHead
-        title="Ma Chance Casino : Avis 2026, Bonus 150% jusqu'à 2500€ + 100 FS | GigaBonus"
-        description="Avis Ma Chance Casino 2026 : triple bonus jusqu'à 2500€ + 100 FS, wager x30 favorable, ludothèque variée. Test complet!"
+        title={t('seoTitle')}
+        description={t('seoDescription')}
         keywords="ma chance casino, avis ma chance, bonus ma chance, ma chance casino avis, bonus 150%, wager x30, casino ma chance"
-        canonical="https://gigabonus.win/winmachance"
-        ogTitle="Ma Chance Casino : Avis 2026, Bonus 150% jusqu'à 2500€ + 100 FS"
-        ogDescription="Avis Ma Chance Casino 2026 : triple bonus jusqu'à 2500€ + 100 FS, wager x30 favorable."
+        canonical={`https://gigabonus.win/${locale}/winmachance`}
+        ogTitle={t('seoTitle')}
+        ogDescription={t('seoDescription')}
         ogImage="https://gigabonus.win/images/machance.webp"
-        twitterTitle="Ma Chance Casino : Avis 2026, Bonus 150% jusqu'à 2500€ + 100 FS"
-        twitterDescription="Avis Ma Chance Casino 2026 : triple bonus jusqu'à 2500€ + 100 FS."
+        twitterTitle={t('seoTitle')}
+        twitterDescription={t('seoDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -265,7 +269,7 @@ export default function MaChancePage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -295,7 +299,7 @@ export default function MaChancePage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -341,7 +345,7 @@ export default function MaChancePage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions WinMaChance
+              🎁 {tCommon('sections.offersAndPromotions')} WinMaChance
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -384,9 +388,9 @@ export default function MaChancePage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur WinMaChance Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur WinMaChance Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur WinMaChance</strong> est simple et rapide. 
@@ -456,7 +460,7 @@ export default function MaChancePage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur WinMaChance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur WinMaChance</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 WinMaChance propose <strong className="text-primary">plusieurs méthodes de retrait rapides</strong>. 
@@ -555,7 +559,7 @@ export default function MaChancePage() {
 
           {/* Section Jeux Disponibles */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux WinMaChance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} WinMaChance</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">Machines à Sous</h3>
@@ -587,7 +591,7 @@ export default function MaChancePage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment fonctionne le bonus progressif ?</h3>
@@ -641,7 +645,7 @@ export default function MaChancePage() {
 
           {/* Sections SEO Supplémentaires */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur WinMaChance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur WinMaChance</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Pour optimiser vos chances sur <strong className="text-primary">WinMaChance Casino</strong>, notre équipe recommande 
@@ -675,7 +679,7 @@ export default function MaChancePage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de WinMaChance Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de WinMaChance Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 <strong className="text-primary">WinMaChance Casino</strong> opère avec une <strong className="text-primary">licence Curaçao reconnue</strong>, 
@@ -740,7 +744,7 @@ export default function MaChancePage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur WinMaChance</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur WinMaChance</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Découvrez les retours d'expérience <strong className="text-primary">authentiques</strong> de notre équipe après plusieurs mois sur WinMaChance.
@@ -811,9 +815,9 @@ export default function MaChancePage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-green-500 mb-4">✅ Avantages</h3>

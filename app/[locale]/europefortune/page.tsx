@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Star } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function EuropeFortunePage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.europefortune');
   const casino = casinos.find(c => c.name === "Europe Fortune")!;
 
 
@@ -136,15 +140,15 @@ export default function EuropeFortunePage() {
   return (
     <>
       <SEOHead
-        title="Europe Fortune Casino : Avis 2026, Bonus 200% + 100% Sport | GigaBonus"
-        description="Avis Europe Fortune Casino 2026 : double bonus casino et sport, retraits rapides, 4000+ jeux. Test complet!"
-        keywords="europe fortune casino, avis europe fortune, bonus 200%, bonus sport, casino bookmaker, europe fortune avis"
-        canonical="https://gigabonus.win/europefortune"
-        ogTitle="Europe Fortune Casino : Avis 2026, Bonus 200% + 100% Sport"
-        ogDescription="Avis Europe Fortune Casino 2026 : double bonus casino et sport, retraits rapides, 4000+ jeux."
+        title={t('seo.title')}
+        description={t('seo.description')}
+        keywords={t('seo.keywords')}
+        canonical={`https://gigabonus.win/${locale}/europefortune`}
+        ogTitle={t('seo.ogTitle')}
+        ogDescription={t('seo.ogDescription')}
         ogImage="https://gigabonus.win/images/europefortune.webp"
-        twitterTitle="Europe Fortune Casino : Avis 2026, Bonus 200% + 100% Sport"
-        twitterDescription="Avis Europe Fortune Casino 2026 : double bonus casino et sport, retraits rapides."
+        twitterTitle={t('seo.twitterTitle')}
+        twitterDescription={t('seo.twitterDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -232,7 +236,7 @@ export default function EuropeFortunePage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -262,7 +266,7 @@ export default function EuropeFortunePage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -308,7 +312,7 @@ export default function EuropeFortunePage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Europe Fortune
+              🎁 {tCommon('sections.offersAndPromotions')} Europe Fortune
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -351,7 +355,7 @@ export default function EuropeFortunePage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
             <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S&apos;inscrire sur Europe Fortune Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
@@ -421,7 +425,7 @@ export default function EuropeFortunePage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Europe Fortune</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Europe Fortune</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Europe Fortune propose des <strong className="text-primary">méthodes de retrait variées</strong> adaptées aux joueurs européens avec des délais compétitifs. 
@@ -500,9 +504,9 @@ export default function EuropeFortunePage() {
             </div>
           </section>
 
-          {/* Catalogue de Jeux */}
+          {/* {tCommon('sections.gamesCatalog')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Europe Fortune</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Europe Fortune</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Europe Fortune propose une <strong className="text-primary">ludothèque massive de plus de 4000 jeux</strong> des meilleurs éditeurs européens et internationaux. 
@@ -548,7 +552,7 @@ export default function EuropeFortunePage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment fonctionne le système Cash/Bonus ?</h3>
@@ -594,7 +598,7 @@ export default function EuropeFortunePage() {
 
           {/* Stratégies */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Europe Fortune</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Europe Fortune</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Découvrez nos <strong className="text-primary">stratégies éprouvées</strong> pour optimiser vos gains sur Europe Fortune.
@@ -630,7 +634,7 @@ export default function EuropeFortunePage() {
 
           {/* Sécurité */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité d&apos;Europe Fortune Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} d&apos;Europe Fortune Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Europe Fortune met la <strong className="text-primary">sécurité des joueurs</strong> au premier plan avec des technologies de pointe.
@@ -857,9 +861,9 @@ export default function EuropeFortunePage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-green-500/10 rounded-lg p-6 border-2 border-green-500/20">
                 <h3 className="text-2xl font-semibold text-green-600 mb-4 flex items-center gap-2">

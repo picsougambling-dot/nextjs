@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function LuckyTreasurePage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.luckytreasure');
   const casino = casinos.find(c => c.name === "Lucky Treasure")!;
 
 
@@ -163,15 +167,15 @@ export default function LuckyTreasurePage() {
   return (
     <>
       <SEOHead
-        title="Avis Lucky Treasure Casino 2026 : Bonus 200% + 50 FS Sans Dépôt | Notre Test Complet"
-        description="Notre avis sur Lucky Treasure 2026 : bonus sans wager 200% + 50 FS sans dépôt, cashback 50%, retraits 24-48h."
-        keywords="lucky treasure casino, avis lucky treasure, bonus sans wager, free spins sans dépôt, cashback 50%, lucky treasure avis"
-        canonical="https://gigabonus.win/luckytreasure"
-        ogTitle="Avis Lucky Treasure 2026 : Bonus 200% + 50 FS Sans Dépôt"
-        ogDescription="Test complet de Lucky Treasure : bonus sans wager, 50 FS sans dépôt, cashback 50%, retraits rapides."
+        title={t('seo.title')}
+        description={t('seo.description')}
+        keywords={t('seo.keywords')}
+        canonical={`https://gigabonus.win/${locale}/luckytreasure`}
+        ogTitle={t('seo.ogTitle')}
+        ogDescription={t('seo.ogDescription')}
         ogImage="https://gigabonus.win/images/luckytreasure.webp"
-        twitterTitle="Avis Lucky Treasure 2026 : Bonus 200% + 50 FS Sans Dépôt"
-        twitterDescription="Test complet de Lucky Treasure : bonus sans wager, 50 FS sans dépôt."
+        twitterTitle={t('seo.twitterTitle')}
+        twitterDescription={t('seo.twitterDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -213,41 +217,15 @@ export default function LuckyTreasurePage() {
 
             <div className="p-8 md:p-12">
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis Lucky Treasure Casino 2026 : Bonus 200% + 50 FS Sans Dépôt - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-primary mb-6">À Propos de Lucky Treasure Casino</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6">{t('hero.aboutTitle')}</h2>
                 <div className="space-y-4 text-foreground max-w-4xl mx-auto">
-                  <p>
-                    <strong className="text-primary">Lucky Treasure Casino</strong> révolutionne l'approche des bonus avec son système 
-                    <strong className="text-primary"> sans wager unique</strong>. Le bonus de bienvenue de <strong className="text-primary">200% jusqu'à 500€</strong> 
-                    + <strong className="text-primary">100 tours gratuits</strong> est simplement déduit lors du retrait, éliminant toute contrainte de mise. 
-                    Cette transparence place Lucky Treasure parmi les casinos les plus équitables de 2026.
-                  </p>
-                  <p>
-                    L'offre exceptionnelle de Lucky Treasure comprend également un <strong className="text-primary">bonus sans dépôt de 50 tours gratuits</strong> 
-                    (code LUCKY50) pour débuter sans risque, un <strong className="text-primary">cashback de 50%</strong> sur tous les dépôts effectués dans les 24h 
-                    suivant l'inscription (jusqu'à 200€ avec wager x1), et des <strong className="text-primary">récompenses quotidiennes de 30 free spins</strong> 
-                    pour les dépôts de 30€ ou plus. Cette multiplication d'offres crée un écosystème unique.
-                  </p>
-                  <p>
-                    Lucky Treasure privilégie l'<strong className="text-primary">accessibilité</strong> avec un dépôt minimum de seulement 20€. 
-                    Les <strong className="text-primary">retraits sont traités en 24-48h</strong>, particulièrement rapides avec les cryptomonnaies. 
-                    Le <strong className="text-primary">support client 24/7</strong> en français répond efficacement via chat live. L'interface claire 
-                    facilite la gestion des multiples bonus disponibles.
-                  </p>
-                  <p>
-                    La <strong className="text-primary">ludothèque</strong> de Lucky Treasure compte plus de <strong className="text-primary">1500 jeux</strong> 
-                    sélectionnés pour leur qualité. Les <strong className="text-primary">machines à sous</strong> incluent des classiques comme Book of Dead, 
-                    Starburst, Gonzo's Quest et des nouveautés régulières. Le <strong className="text-primary">casino live</strong> propose blackjack, roulette, 
-                    baccarat avec croupiers professionnels pour une expérience authentique.
-                  </p>
-                  <p>
-                    Le système révolutionnaire de Lucky Treasure fonctionne ainsi : le bonus et vos gains peuvent être utilisés librement, mais seront déduits du solde 
-                    lors du retrait. Vous gardez 100% de vos gains réels issus de votre dépôt initial. Le <strong className="text-primary">cashback de 50%</strong> 
-                    avec wager x1 offre une excellente protection. Les codes bonus (BIENVENUE200, LUCKY50, TOURSGRATUITS) sont simples à activer.
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description1') }} />
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description2') }} />
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description3') }} />
                 </div>
                 <Button
                   asChild
@@ -256,7 +234,7 @@ export default function LuckyTreasurePage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -285,7 +263,7 @@ export default function LuckyTreasurePage() {
               </div>
 
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -319,7 +297,7 @@ export default function LuckyTreasurePage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Lucky Treasure
+              🎁 {tCommon('sections.offersAndPromotions')} Lucky Treasure
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -362,9 +340,9 @@ export default function LuckyTreasurePage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Lucky Treasure Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Lucky Treasure Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Lucky Treasure</strong> est simple et rapide, ne prenant que quelques minutes. 
@@ -434,7 +412,7 @@ export default function LuckyTreasurePage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Lucky Treasure</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Lucky Treasure</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Lucky Treasure propose <strong className="text-primary">plusieurs méthodes de retrait rapides</strong> adaptées à tous les profils de joueurs. 
@@ -532,7 +510,7 @@ export default function LuckyTreasurePage() {
 
           {/* Section Jeux Disponibles */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Lucky Treasure</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Lucky Treasure</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">Machines à Sous</h3>
@@ -553,7 +531,7 @@ export default function LuckyTreasurePage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment fonctionne le bonus sans wager ?</h3>
@@ -578,7 +556,7 @@ export default function LuckyTreasurePage() {
 
           {/* Sections SEO Supplémentaires */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Lucky Treasure</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Lucky Treasure</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Pour optimiser vos chances de succès sur <strong className="text-primary">Lucky Treasure</strong>, profitez d'abord du 
@@ -603,7 +581,7 @@ export default function LuckyTreasurePage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de Lucky Treasure Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de Lucky Treasure Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 <strong className="text-primary">Lucky Treasure Casino</strong> opère avec une <strong className="text-primary">licence de jeu reconnue 
@@ -660,7 +638,7 @@ export default function LuckyTreasurePage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur Lucky Treasure</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur Lucky Treasure</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Découvrez les retours d'expérience <strong className="text-primary">authentiques</strong> de notre équipe de testeurs après plusieurs mois de jeu sur Lucky Treasure.
@@ -725,9 +703,9 @@ export default function LuckyTreasurePage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-green-500 mb-4">✅ Avantages</h3>

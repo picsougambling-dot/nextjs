@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Star, Clock, Users, Trophy, Wallet } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function AtlantisSlotsPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.atlantisslots');
   const casino = casinos.find(c => c.name === "Atlantis Slots")!;
 
 
@@ -179,7 +183,7 @@ export default function AtlantisSlotsPage() {
 
             <div className="p-8 md:p-12">
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis Atlantis Slots Casino 2026 : Bonus jusqu'à 4500€ + 60 FS - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
@@ -222,7 +226,7 @@ export default function AtlantisSlotsPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -251,7 +255,7 @@ export default function AtlantisSlotsPage() {
               </div>
 
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -300,7 +304,7 @@ export default function AtlantisSlotsPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Atlantis Slots
+              🎁 {tCommon('sections.offersAndPromotions')} Atlantis Slots
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto">
@@ -343,9 +347,9 @@ export default function AtlantisSlotsPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Atlantis Slots Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Atlantis Slots Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Atlantis Slots</strong> est rapide et se fait en quelques minutes. Suivez ce
@@ -416,7 +420,7 @@ export default function AtlantisSlotsPage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Atlantis Slots</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Atlantis Slots</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Atlantis Slots propose <strong className="text-primary">plusieurs méthodes de retrait rapides</strong> adaptées à tous les profils.
@@ -499,7 +503,7 @@ export default function AtlantisSlotsPage() {
 
           {/* Section Jeux Disponibles */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Atlantis Slots</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Atlantis Slots</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">Machines à Sous</h3>
@@ -520,7 +524,7 @@ export default function AtlantisSlotsPage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment récupérer le bonus de bienvenue ?</h3>
@@ -545,7 +549,7 @@ export default function AtlantisSlotsPage() {
 
           {/* Sections SEO Supplémentaires */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Atlantis Slots</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Atlantis Slots</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Pour optimiser vos résultats sur <strong className="text-primary">Atlantis Slots</strong>, commencez par des <strong className="text-primary">machines à sous au RTP élevé</strong>
@@ -567,9 +571,9 @@ export default function AtlantisSlotsPage() {
             </div>
           </section>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité d'Atlantis Slots Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} d'Atlantis Slots Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 <strong className="text-primary">Atlantis Slots</strong> opère sous <strong className="text-primary">licence Curaçao</strong> et utilise un
@@ -621,9 +625,9 @@ export default function AtlantisSlotsPage() {
             </div>
           </section>
 
-          {/* Avis de Nos Testeurs */}
+          {/* {tCommon('sections.testimonials')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur Atlantis Slots</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur Atlantis Slots</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Retours d'expérience <strong className="text-primary">authentiques</strong> après plusieurs semaines de test.
@@ -679,9 +683,9 @@ export default function AtlantisSlotsPage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-green-500 mb-4">✅ Avantages</h3>

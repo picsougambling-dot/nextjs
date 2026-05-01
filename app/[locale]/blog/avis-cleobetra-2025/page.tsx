@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisCleobetraPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-cleobetra-2025');
+  const tCommon = useTranslations('Common');
   
   
   
@@ -158,7 +160,7 @@ const schemaData = {
             </div>
           </article>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             <div className="glass-card rounded-2xl p-6 bg-green-50 dark:bg-green-950 border-2 border-green-700/40 dark:border-green-400/40">
               <h3 className="text-2xl font-bold mb-4 text-green-700 dark:text-green-400 flex items-center gap-2">
@@ -291,7 +293,7 @@ const schemaData = {
           <section className="glass-card rounded-2xl p-8 mb-8">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Gamepad2 className="h-8 w-8" />
-              Catalogue de Jeux Cleobetra
+              {tCommon('sections.gamesCatalog')} Cleobetra
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">

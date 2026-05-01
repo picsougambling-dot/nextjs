@@ -15,6 +15,7 @@ import { casinos } from "@/data/casinos";
 
 export default function RockstarPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
   const locale = useLocale();
   const t = useTranslations('CasinoPages.rockstar');
   const casino = casinos.find(c => c.name === "Rockstar")!;
@@ -294,7 +295,7 @@ export default function RockstarPage() {
             <div className="p-8 md:p-12">
               {/* H1 SEO Optimisé */}
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Rockstar Casino : Avis 2026, Bonus Rock jusqu'à 5000€ + 400 FS
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
@@ -335,7 +336,7 @@ export default function RockstarPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -365,7 +366,7 @@ export default function RockstarPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -414,7 +415,7 @@ export default function RockstarPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Rockstar
+              🎁 {tCommon('sections.offersAndPromotions')} Rockstar
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -497,9 +498,9 @@ export default function RockstarPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Rockstar Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Rockstar Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Rockstar</strong> est simple et rapide, ne prenant que quelques minutes. 
@@ -568,7 +569,7 @@ export default function RockstarPage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Rockstar</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Rockstar</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Rockstar propose <strong className="text-primary">plusieurs méthodes de retrait rapides</strong> adaptées à tous les profils de joueurs. 
@@ -637,9 +638,9 @@ export default function RockstarPage() {
             </div>
           </section>
 
-          {/* Catalogue de Jeux */}
+          {/* {tCommon('sections.gamesCatalog')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Rockstar</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Rockstar</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Rockstar Casino propose une <strong className="text-primary">ludothèque rock de plus de 1800 jeux</strong> des meilleurs éditeurs mondiaux. 
@@ -674,7 +675,7 @@ export default function RockstarPage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Quel est le dépôt minimum sur Rockstar Casino ?</h3>
@@ -700,9 +701,9 @@ export default function RockstarPage() {
             </div>
           </section>
 
-          {/* Stratégies pour Maximiser Vos Gains */}
+          {/* {tCommon('sections.strategies')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Rockstar</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Rockstar</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Découvrez nos <strong className="text-primary">stratégies éprouvées</strong> pour optimiser vos chances de gains sur Rockstar Casino.
@@ -734,9 +735,9 @@ export default function RockstarPage() {
             </div>
           </section>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de Rockstar Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de Rockstar Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Rockstar Casino met la <strong className="text-primary">sécurité des joueurs</strong> au premier plan avec des technologies de pointe 
@@ -830,7 +831,7 @@ export default function RockstarPage() {
 
           {/* Avis des Joueurs */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur Rockstar</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur Rockstar</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Découvrez les retours d'expérience <strong className="text-primary">authentiques</strong> de notre équipe de testeurs après plusieurs mois de jeu sur Rockstar.
@@ -948,9 +949,9 @@ export default function RockstarPage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-green-500/10 rounded-lg p-6 border-2 border-green-500/20">
                 <h3 className="text-2xl font-semibold text-green-600 mb-4 flex items-center gap-2">
@@ -1034,7 +1035,7 @@ export default function RockstarPage() {
             >
               <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                 <ExternalLink className="w-6 h-6 mr-2" />
-                Jouer Maintenant sur Rockstar
+                {tCommon('playNow')} sur Rockstar
               </a>
             </Button>
           </section>

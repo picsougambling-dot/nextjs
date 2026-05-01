@@ -1,7 +1,7 @@
 'use client';
 
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -15,7 +15,10 @@ import RelatedLinks from "@/components/RelatedLinks";
 
 export default function AvisI24SlotsPage() {
   const locale = useLocale();
-    const { countryCode: userCountry } = useUserCountry();
+  const tBlog = useTranslations('BlogPages.avis-i24slots-2025');
+  const tCommon = useTranslations('Common');
+  const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.notFound');
   
 const casino = casinos.find(c => c.id === 15);
 
@@ -27,7 +30,7 @@ const casino = casinos.find(c => c.id === 15);
     casino.availableCountries.includes(userCountry)
   );
 if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   const relatedLinks = [
@@ -106,7 +109,7 @@ if (!casino) {
   };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -117,10 +120,10 @@ if (!casino) {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -133,15 +136,15 @@ if (!casino) {
     <>
       <SEOHead
         locale={locale}
-        title="Avis I24Slots 2026 : Bonus VIP et Programme de Fidélité | GigaBonus"
-        description="Avis complet sur I24Slots : bonus 100% + 150 FS, programme VIP exclusif, retraits rapides. Découvrez notre test détaillé et notre analyse experte 2026."
-        keywords="avis i24slots, i24slots bonus, i24slots vip, casino programme fidélité, i24slots retrait, i24slots 2026"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis i24slots, i24slots bonus, i24slots vip, casino programme fidélité, i24slots retrait, i24slots 2026"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-i24slots-2026`}
-        ogTitle="Avis I24Slots 2026 : Bonus VIP et Programme de Fidélité"
-        ogDescription="Test complet I24Slots : bonus 100% + 150 FS, programme VIP, retraits rapides. Avis expert 2026."
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/i24slots.webp"
-        twitterTitle="Avis I24Slots 2026 : Bonus VIP et Programme de Fidélité"
-        twitterDescription="Test complet I24Slots : bonus 100% + 150 FS, programme VIP, retraits rapides. Avis expert 2026."
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -207,7 +210,7 @@ if (!casino) {
             </p>
           </article>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             <div className="glass-card rounded-2xl p-6">
               <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
@@ -317,7 +320,7 @@ if (!casino) {
           <section className="glass-card rounded-2xl p-8 mb-16">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Trophy className="h-8 w-8" />
-              Catalogue de Jeux I24Slots
+              {tCommon('sections.gamesCatalog')} I24Slots
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">

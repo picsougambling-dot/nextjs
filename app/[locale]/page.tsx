@@ -18,6 +18,7 @@ import { CounterAnimation } from "@/components/CounterAnimation";
 import SEOHead from "@/components/SEOHead";
 import { getTranslatedCanonical } from '@/lib/get-translated-canonical';
 import { useUserCountry } from "@/hooks/useUserCountry";
+import { filterCasinosByCountry } from "@/lib/casino-filters";
 
 // Lazy load below-the-fold components
 const Footer = lazy(() => import("@/components/Footer"));
@@ -55,11 +56,15 @@ export default function IndexPage() {
   const { countryCode: userCountry } = useUserCountry();
 
   const filteredCasinos = useMemo(() => {
-    return casinos
-      .filter((casino) => {
-        // Hidden filter - Masquer les casinos temporairement cachés
-        if (casino.hidden) return false;
+    // D'abord filtrer par pays et masquer les casinos cachés
+    let availableCasinos = filterCasinosByCountry(
+      casinos.filter((casino) => !casino.hidden),
+      userCountry
+    );
 
+    // Ensuite appliquer les autres filtres
+    return availableCasinos
+      .filter((casino) => {
         // Search filter
         const matchesSearch = casino.name.toLowerCase().includes(searchTerm.toLowerCase());
 
@@ -92,19 +97,7 @@ export default function IndexPage() {
           withdrawalFilter === "all" ||
           (casino.withdrawalSpeed ? casino.withdrawalSpeed === withdrawalFilter : false);
 
-        // Country filter - Afficher le casino si :
-        // - Un pays est détecté
-        // - Le casino n'a pas de restriction de pays (availableCountries non défini ou vide)
-        // - Le casino est disponible dans le pays de l'utilisateur
-        const matchesCountry =
-          !!userCountry &&
-          (
-            !casino.availableCountries ||
-            casino.availableCountries.length === 0 ||
-            casino.availableCountries.includes(userCountry)
-          );
-
-        return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesBookmaker && matchesProvider && matchesWithdrawal && matchesCountry;
+        return matchesSearch && matchesBonus && matchesWager && matchesMethod && matchesBookmaker && matchesProvider && matchesWithdrawal;
       })
       .sort((a, b) => a.rank - b.rank); // Tri par rang
   }, [searchTerm, bonusFilter, wagerFilter, methodFilter, bookmakerFilter, providerFilter, withdrawalFilter, userCountry]);

@@ -16,6 +16,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisEuropeFortunePage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-europefortune-2025');
+  const tCommon = useTranslations('Common');
   
 
       const { countryCode: userCountry } = useUserCountry();
@@ -169,7 +171,7 @@ const relatedLinks = [
             </p>
           </article>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <div className="grid md:grid-cols-2 gap-6 mb-16">
             <div className="glass-card rounded-2xl p-6">
               <h3 className="text-2xl font-bold mb-4 text-primary flex items-center gap-2">
@@ -272,7 +274,7 @@ const relatedLinks = [
           <section className="glass-card rounded-2xl p-8 mb-16">
             <h2 className="text-3xl font-bold mb-6 text-primary flex items-center gap-3">
               <Gamepad2 className="h-8 w-8" />
-              Catalogue de Jeux Europe Fortune
+              {tCommon('sections.gamesCatalog')} Europe Fortune
             </h2>
             
             <div className="space-y-4 text-muted-foreground leading-relaxed mb-6">

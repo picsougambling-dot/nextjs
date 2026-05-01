@@ -15,6 +15,8 @@ import { Button } from "@/components/ui/button";
 
 export default function AvisSpinStarPage() {
   const locale = useLocale();
+  const tBlog = useTranslations('BlogPages.avis-spinstar-2025');
+  const tCommon = useTranslations('Common');
   
       const { countryCode: userCountry } = useUserCountry();
   const isAvailableInCountry = true; // Pas de données casino pour cette page
@@ -92,15 +94,15 @@ const schemaData = {
     <>
       <SEOHead
         locale={locale}
-        title="⭐ Avis SpinStar Casino 2026 : Test N°1 France | 700% + 10K€ + 725 FS"
-        description="🏆 SpinStar N°1 : Bonus 700% + 10 000€ + 725 FS | Wager x35 | Bookmaker | Crypto | Note 4.9/5 | Test complet par nos experts ⚡"
-        keywords="avis spinstar, spinstar casino test, bonus 700%, casino numero 1, meilleur casino france, spinstar fiable, bookmaker spinstar, note 4.9"
+        title={tBlog('seoTitle')}
+        description={tBlog('seoDescription')}
+        keywords={tBlog('seoKeywords') || "avis spinstar, spinstar casino test, bonus 700%, casino numero 1, meilleur casino france, spinstar fiable, bookmaker spinstar, note 4.9"}
         canonical={`https://gigabonus.win/${locale}/blog/avis-spinstar-2026`}
-        ogTitle="⭐ Avis SpinStar N°1 France : 700% + 10K€ + 725 FS"
-        ogDescription="🏆 Test complet N°1 | Bonus 700% | Bookmaker | Note 4.9/5 ⚡"
+        ogTitle={tBlog('seoTitle')}
+        ogDescription={tBlog('seoDescription')}
         ogImage="https://gigabonus.win/images/spinstar.webp"
-        twitterTitle="⭐ Avis SpinStar N°1 France : 700% + 10K€ + 725 FS"
-        twitterDescription="🏆 Test complet N°1 | Bonus 700% | Bookmaker | Note 4.9/5 ⚡"
+        twitterTitle={tBlog('seoTitle')}
+        twitterDescription={tBlog('seoDescription')}
         schema={schemaData}
       />
       <Navbar />

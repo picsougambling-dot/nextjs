@@ -2,7 +2,7 @@
 
 import { useEffect, useState, useMemo } from "react";
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import Navbar from "@/components/Navbar";
 import Breadcrumbs from "@/components/Breadcrumbs";
@@ -17,6 +17,7 @@ export default function BlogPage() {
   const [showAllReviews, setShowAllReviews] = useState(false);
   const locale = useLocale();
   const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.page');
   
   // Mapping article link -> casino id (pour les avis de casinos)
   const articleToCasinoId: Record<string, number> = {
@@ -657,67 +658,61 @@ export default function BlogPage() {
           {/* SEO Content Section */}
           <section className="mt-16 max-w-5xl mx-auto space-y-8">
             <div className="glass-card rounded-2xl p-8">
-              <h2 className="text-3xl font-bold mb-6 text-primary">Pourquoi suivre le Blog GigaBonus ?</h2>
+              <h2 className="text-3xl font-bold mb-6 text-primary">{t('whyFollow.title')}</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Le <strong className="text-foreground">blog GigaBonus</strong> est la référence francophone pour tout joueur souhaitant s'informer sur les <strong className="text-foreground">casinos en ligne en 2026</strong>. Notre équipe d'experts indépendants teste chaque casino pendant plusieurs semaines avant de publier un avis complet et transparent.
-                </p>
-                <p>
-                  Contrairement aux sites affiliés classiques, nous analysons en profondeur chaque aspect : <strong className="text-foreground">bonus réels vs marketing</strong>, <strong className="text-foreground">délais de retrait effectifs</strong>, <strong className="text-foreground">conditions de wager cachées</strong>, <strong className="text-foreground">qualité du support client</strong>, et <strong className="text-foreground">licences de jeu vérifiées</strong>.
-                </p>
-                <p>
-                  Nos guides stratégiques sont rédigés par des joueurs professionnels avec plus de 10 ans d'expérience. Vous y trouverez des <strong className="text-foreground">méthodes testées</strong> pour le blackjack, des <strong className="text-foreground">systèmes de mise optimisés</strong> pour la roulette, et des <strong className="text-foreground">analyses RTP détaillées</strong> pour les machines à sous les plus lucratives de 2026.
-                </p>
+                <p dangerouslySetInnerHTML={{ __html: t('whyFollow.p1') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('whyFollow.p2') }} />
+                <p dangerouslySetInnerHTML={{ __html: t('whyFollow.p3') }} />
               </div>
             </div>
 
             <div className="glass-card rounded-2xl p-8">
-              <h2 className="text-3xl font-bold mb-6 text-primary">Nos catégories d'articles</h2>
+              <h2 className="text-3xl font-bold mb-6 text-primary">{t('categories.title')}</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-5 bg-primary/5 rounded-lg border border-primary/20">
                   <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2">
                     <Trophy className="h-6 w-6 text-primary" />
-                    Avis Casinos Détaillés
+                    {t('categories.reviews.title')}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Tests complets et impartiaux des casinos en ligne : bonus, jeux, retraits, support. Nous testons chaque casino pendant 2-4 semaines avec de l'argent réel pour vous donner un avis 100% fiable.
+                    {t('categories.reviews.description')}
                   </p>
                 </div>
 
                 <div className="p-5 bg-primary/5 rounded-lg border border-primary/20">
                   <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2">
                     <TrendingUp className="h-6 w-6 text-primary" />
-                    Guides Stratégiques
+                    {t('categories.guides.title')}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Stratégies gagnantes pour blackjack, roulette, poker et slots. Méthodes de gestion de bankroll, astuces de professionnels et conseils pour maximiser vos chances de gains.
+                    {t('categories.guides.description')}
                   </p>
                 </div>
 
                 <div className="p-5 bg-primary/5 rounded-lg border border-primary/20">
                   <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2">
                     <Coins className="h-6 w-6 text-primary" />
-                    Analyses Bonus
+                    {t('categories.bonus.title')}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Décryptage des bonus casino : bonus sans wager, cashback hebdomadaire, free spins sans condition. On vous explique les vrais bonus intéressants vs les pièges marketing à éviter.
+                    {t('categories.bonus.description')}
                   </p>
                 </div>
 
                 <div className="p-5 bg-primary/5 rounded-lg border border-primary/20">
                   <h3 className="text-xl font-bold mb-3 text-foreground flex items-center gap-2">
                     <Shield className="h-6 w-6 text-primary" />
-                    Sécurité & Confidentialité
+                    {t('categories.security.title')}
                   </h3>
                   <p className="text-sm text-muted-foreground">
-                    Guides sur les casinos crypto, casinos sans KYC, méthodes de paiement anonymes et protections des données. Jouez en toute sécurité et confidentialité en 2026.
+                    {t('categories.security.description')}
                   </p>
                 </div>
               </div>
             </div>
 
             <div className="glass-card rounded-2xl p-8 bg-primary/5 border-2 border-primary/20">
-              <h2 className="text-3xl font-bold mb-6 text-primary text-center">📌 Articles les Plus Populaires</h2>
+              <h2 className="text-3xl font-bold mb-6 text-primary text-center">{t('popular.title')}</h2>
               <div className="grid md:grid-cols-3 gap-4">
                 <Link href="/blog/avis-spinaura-2026" className="p-4 bg-background/50 rounded-lg hover:bg-primary/10 transition-colors border border-border">
                   <div className="text-3xl mb-2">👑</div>

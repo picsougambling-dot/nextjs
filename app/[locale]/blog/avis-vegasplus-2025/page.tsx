@@ -1,7 +1,7 @@
 'use client';
 
 import { Link } from '@/i18n/navigation';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { useUserCountry } from '@/hooks/useUserCountry';
 import { Card } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -16,7 +16,11 @@ import { casinos } from '@/data/casinos';
 
 export default function AvisVegasPlus() {
   const locale = useLocale();
-    const { countryCode: userCountry } = useUserCountry();
+  const tBlog = useTranslations('BlogPages.avis-vegasplus-2025');
+  const tCommon = useTranslations('Common');
+  const { countryCode: userCountry } = useUserCountry();
+  const t = useTranslations('Blog.notFound');
+  const tFaq = useTranslations('Blog.faq');
   
 const casino = casinos.find(c => c.id === 11);
 
@@ -80,7 +84,7 @@ const jsonLd = {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Quel est le bonus de bienvenue de Vegas Plus ?",
+            "name": tFaq('welcomeBonus', { casino: 'Vegas Plus' }),
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Vegas Plus offre un bonus de 125% jusqu'à 750€ + 100 free spins sur le premier dépôt avec un wager de x50."
@@ -100,7 +104,7 @@ const jsonLd = {
   };
 
   if (!casino) {
-    return <div>Casino non trouvé</div>;
+    return <div>{t('title')}</div>;
   }
 
   // Si le casino n'est pas disponible dans le pays, ne pas afficher la page
@@ -111,10 +115,10 @@ const jsonLd = {
         <Breadcrumbs />
         <div className="min-h-screen pt-28 pb-12 px-4 sm:px-6 lg:px-8">
           <div className="max-w-5xl mx-auto text-center">
-            <h1 className="text-3xl font-bold mb-4">Casino non disponible</h1>
-            <p className="text-muted-foreground mb-8">Ce casino n'est pas disponible dans votre pays.</p>
+            <h1 className="text-3xl font-bold mb-4">{t('unavailable')}</h1>
+            <p className="text-muted-foreground mb-8">{t('unavailableDescription')}</p>
             <Link href={`/${locale}/blog`}>
-              <Button>Retour au blog</Button>
+              <Button>{t('backToBlog')}</Button>
             </Link>
           </div>
         </div>
@@ -145,7 +149,7 @@ const jsonLd = {
           
           <Link href={`/${locale}/blog`} className="inline-flex items-center gap-2 text-primary hover:underline mb-6">
             <ArrowLeft className="w-4 h-4" />
-            Retour au blog
+            {t('backToBlog')}
           </Link>
 
           <article>

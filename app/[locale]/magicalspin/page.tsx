@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function MagicalSpinPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.magicalspin');
   const casino = casinos.find(c => c.name === "Magical Spin")!;
 
 
@@ -198,15 +202,15 @@ export default function MagicalSpinPage() {
   return (
     <>
       <SEOHead
-        title="Magical Spin Casino : Avis 2026, Bonus 150% jusqu'à 500€ + 100 FS | GigaBonus"
-        description="Avis Magical Spin Casino 2026 : bonus 150% jusqu'à 500€ + 100 FS, promotions quotidiennes variées, wager x40. Test complet!"
-        keywords="magical spin casino, avis magical spin, bonus magical spin, magical spin casino avis, bonus 150%, promotions quotidiennes"
-        canonical="https://gigabonus.win/magicalspin"
-        ogTitle="Magical Spin Casino : Avis 2026, Bonus 150% jusqu'à 500€ + 100 FS"
-        ogDescription="Avis Magical Spin Casino 2026 : bonus 150% jusqu'à 500€ + 100 FS, promotions quotidiennes variées."
+        title={t('seo.title')}
+        description={t('seo.description')}
+        keywords={t('seo.keywords')}
+        canonical={`https://gigabonus.win/${locale}/magicalspin`}
+        ogTitle={t('seo.ogTitle')}
+        ogDescription={t('seo.ogDescription')}
         ogImage="https://gigabonus.win/images/magicalspin.webp"
-        twitterTitle="Magical Spin Casino : Avis 2026, Bonus 150% jusqu'à 500€ + 100 FS"
-        twitterDescription="Avis Magical Spin Casino 2026 : bonus 150% jusqu'à 500€ + 100 FS, promotions quotidiennes."
+        twitterTitle={t('seo.twitterTitle')}
+        twitterDescription={t('seo.twitterDescription')}
         schema={schemaData}
       />
       <Navbar />
@@ -249,48 +253,15 @@ export default function MagicalSpinPage() {
             <div className="p-8 md:p-12">
               {/* H1 SEO Optimisé */}
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis Magical Spin Casino 2026 : Bonus 150% jusqu'à 500€ + 100 FS - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
-                <h2 className="text-3xl font-bold text-primary mb-6">À Propos de Magical Spin Casino</h2>
+                <h2 className="text-3xl font-bold text-primary mb-6">{t('hero.aboutTitle')}</h2>
                 <div className="space-y-4 text-foreground max-w-4xl mx-auto">
-                  <p>
-                    <strong className="text-primary">Magical Spin Casino</strong> révolutionne la fidélisation avec son concept unique de 
-                    <strong className="text-primary"> promotions quotidiennes magiques</strong>. Chaque jour de la semaine propose une offre différente : 
-                    le Triple Chance du lundi (jusqu'à 600€), les bonus progressifs du mardi et mercredi, le 
-                    <strong className="text-primary"> bonus illimité de 35% du jeudi</strong>, le 50% du vendredi, les 
-                    <strong className="text-primary">200 Free Spins du samedi</strong>, et le double bonus du dimanche. Ce calendrier magique garantit 
-                    que chaque jour apporte son lot de surprises et récompenses !
-                  </p>
-                  <p>
-                    Le <strong className="text-primary">bonus de bienvenue exceptionnel de 150% jusqu'à 500€ + 100 Free Spins</strong> sur Book of Dead 
-                    n'est que le début de l'aventure. Avec un <strong className="text-primary">dépôt minimum de seulement 10€</strong>, le casino est 
-                    accessible à tous les budgets. Le système de bonus hebdomadaires crée une <strong className="text-primary">dynamique de jeu unique</strong> : 
-                    les joueurs réguliers peuvent planifier leurs dépôts selon le jour pour maximiser les récompenses. Par exemple, le jeudi offre un 
-                    bonus illimité de 35% sur chaque dépôt, idéal pour les longues sessions de jeu.
-                  </p>
-                  <p>
-                    La plateforme <strong className="text-primary">moderne avec interface féerique</strong> offre une navigation intuitive sur tous les appareils 
-                    (PC, tablettes, smartphones). Magical Spin garantit des <strong className="text-primary">retraits rapides en 24-48h</strong> après 
-                    validation KYC simplifiée. Les transactions sont <strong className="text-primary">ultra-sécurisées</strong> par cryptage SSL certifié. 
-                    Le <strong className="text-primary">service client disponible 24/7</strong> en français répond efficacement via chat live ou email. 
-                    Le casino accepte toutes les méthodes modernes : cartes bancaires, e-wallets (Skrill, Neteller, MiFinity), Cashlib et virements bancaires.
-                  </p>
-                  <p>
-                    La <strong className="text-primary">ludothèque magique</strong> compte plus de <strong className="text-primary">2000 jeux</strong> 
-                    des meilleurs éditeurs : Pragmatic Play (Sweet Bonanza, Gates of Olympus, Sugar Rush), NetEnt (Starburst, Gonzo's Quest, Dead or Alive), 
-                    Play'n GO (Book of Dead, Reactoonz, Rise of Olympus), Yggdrasil (Vikings Go Berzerk, Valley of the Gods). Les 
-                    <strong className="text-primary"> machines à sous</strong> incluent les derniers hits et des slots Megaways à volatilité élevée. 
-                    Le <strong className="text-primary">casino live</strong> propose roulette, blackjack, baccarat avec croupiers Evolution Gaming.
-                  </p>
-                  <p>
-                    Les <strong className="text-primary">conditions de mise standardisées à x40</strong> sur tous les bonus facilitent la comparaison. 
-                    Le système de <strong className="text-primary">codes bonus simples</strong> permet une activation rapide. Les Free Spins sont souvent 
-                    attribués sur Book of Dead et d'autres slots populaires. Magical Spin se distingue par sa 
-                    <strong className="text-primary"> générosité quotidienne</strong> : même les joueurs modérés peuvent profiter de multiples bonus 
-                    chaque semaine. C'est le casino parfait pour ceux qui aiment la variété et les surprises quotidiennes !
-                  </p>
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description1') }} />
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description2') }} />
+                  <p dangerouslySetInnerHTML={{ __html: t('hero.description3') }} />
                 </div>
                 <Button
                   asChild
@@ -299,7 +270,7 @@ export default function MagicalSpinPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -329,7 +300,7 @@ export default function MagicalSpinPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -375,7 +346,7 @@ export default function MagicalSpinPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions Magical Spin
+              🎁 {tCommon('sections.offersAndPromotions')} Magical Spin
             </h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -458,9 +429,9 @@ export default function MagicalSpinPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur Magical Spin Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur Magical Spin Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur Magical Spin</strong> est simple et rapide. 
@@ -529,7 +500,7 @@ export default function MagicalSpinPage() {
 
           {/* Méthodes de Retrait */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 Méthodes de Retrait et Délais sur Magical Spin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💳 {tCommon('sections.withdrawalMethods')} sur Magical Spin</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Magical Spin propose <strong className="text-primary">plusieurs méthodes de retrait rapides</strong> adaptées à tous les profils. 
@@ -627,7 +598,7 @@ export default function MagicalSpinPage() {
 
           {/* Section Jeux Disponibles */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 Catalogue de Jeux Magical Spin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎮 {tCommon('sections.gamesCatalog')} Magical Spin</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-primary mb-3">Machines à Sous</h3>
@@ -651,7 +622,7 @@ export default function MagicalSpinPage() {
 
           {/* FAQ Section */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ FAQ - Questions Fréquentes</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">❓ {tCommon('sections.faq')}</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-xl font-semibold text-primary mb-2">Comment fonctionnent les bonus quotidiens ?</h3>
@@ -680,7 +651,7 @@ export default function MagicalSpinPage() {
 
           {/* Sections SEO Supplémentaires */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 Stratégies pour Maximiser Vos Gains sur Magical Spin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🎯 {tCommon('sections.strategies')} sur Magical Spin</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 Pour optimiser vos chances sur <strong className="text-primary">Magical Spin Casino</strong>, notre équipe recommande 
@@ -708,7 +679,7 @@ export default function MagicalSpinPage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 Sécurité et Légalité de Magical Spin Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">🔐 {tCommon('sections.security')} de Magical Spin Casino</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 <strong className="text-primary">Magical Spin Casino</strong> opère avec une <strong className="text-primary">licence reconnue</strong>, 
@@ -772,7 +743,7 @@ export default function MagicalSpinPage() {
           </section>
 
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 Avis de Nos Testeurs sur Magical Spin</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">💬 {tCommon('sections.testimonials')} sur Magical Spin</h2>
             <div className="space-y-6 max-w-4xl mx-auto">
               <p className="text-center text-foreground mb-8">
                 Découvrez les retours d'expérience <strong className="text-primary">authentiques</strong> de notre équipe après plusieurs mois sur Magical Spin.
@@ -843,9 +814,9 @@ export default function MagicalSpinPage() {
             </div>
           </section>
 
-          {/* Avantages et Inconvénients */}
+          {/* {tCommon('sections.prosAndCons')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ Avantages et Inconvénients</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">⚖️ {tCommon('sections.prosAndCons')}</h2>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div>
                 <h3 className="text-2xl font-semibold text-green-500 mb-4">✅ Avantages</h3>

@@ -1810,6 +1810,48 @@
       "twitterDescription": "Entdecken Sie alle Einzahlungsmethoden in Online-Casinos: Bankkarte, Krypto, E-Wallets, Prepaid-Karten. Komplette Anleitung mit Vorteilen."
     }
   },
+  "Blog": {
+    "notFound": {
+      "title": "Casino nicht gefunden",
+      "unavailable": "Casino nicht verfügbar",
+      "unavailableDescription": "Dieses Casino ist in Ihrem Land nicht verfügbar.",
+      "backToBlog": "Zurück zum Blog"
+    },
+    "page": {
+      "whyFollow": {
+        "title": "Warum dem GigaBonus Blog folgen?",
+        "p1": "Der <strong>GigaBonus Blog</strong> ist die Referenz für jeden Spieler, der sich über <strong>Online-Casinos im Jahr 2026</strong> informieren möchte. Unser Team unabhängiger Experten testet jedes Casino mehrere Wochen lang, bevor wir eine vollständige und transparente Bewertung veröffentlichen.",
+        "p2": "Im Gegensatz zu klassischen Affiliate-Seiten analysieren wir jeden Aspekt gründlich: <strong>echte Boni vs. Marketing</strong>, <strong>tatsächliche Auszahlungszeiten</strong>, <strong>versteckte Wettbedingungen</strong>, <strong>Qualität des Kundensupports</strong> und <strong>verifizierte Spielerlizenzen</strong>.",
+        "p3": "Unsere strategischen Leitfäden werden von professionellen Spielern mit über 10 Jahren Erfahrung verfasst. Sie finden <strong>getestete Methoden</strong> für Blackjack, <strong>optimierte Wettsysteme</strong> für Roulette und <strong>detaillierte RTP-Analysen</strong> für die profitabelsten Spielautomaten im Jahr 2026."
+      },
+      "categories": {
+        "title": "Unsere Artikelkategorien",
+        "reviews": {
+          "title": "Detaillierte Casino-Bewertungen",
+          "description": "Vollständige und unparteiische Tests von Online-Casinos: Boni, Spiele, Auszahlungen, Support. Wir testen jedes Casino 2-4 Wochen lang mit echtem Geld, um Ihnen eine 100% zuverlässige Bewertung zu geben."
+        },
+        "guides": {
+          "title": "Strategische Leitfäden",
+          "description": "Gewinnstrategien für Blackjack, Roulette, Poker und Slots. Bankroll-Management-Methoden, Profi-Tipps und Ratschläge zur Maximierung Ihrer Gewinnchancen."
+        },
+        "bonus": {
+          "title": "Bonus-Analysen",
+          "description": "Entschlüsselung von Casino-Boni: Boni ohne Wager, wöchentliches Cashback, Free Spins ohne Bedingungen. Wir erklären die wirklich interessanten Boni vs. Marketing-Fallen, die es zu vermeiden gilt."
+        },
+        "security": {
+          "title": "Sicherheit & Datenschutz",
+          "description": "Leitfäden zu Krypto-Casinos, Casinos ohne KYC, anonyme Zahlungsmethoden und Datenschutz. Spielen Sie 2026 sicher und privat."
+        }
+      },
+      "popular": {
+        "title": "📌 Beliebteste Artikel"
+      }
+    },
+    "faq": {
+      "welcomeBonus": "Wie lautet der Willkommensbonus von {casino}?",
+      "isBookmaker": "Ist {casino} ein Buchmacher?"
+    }
+  },
   "BlogPages": {
     "avis-i24slots-2026": {
       "seoTitle": "i24Slots Casino Bewertung 2026 Crypto & Slots | GigaBonus",
@@ -1838,6 +1880,82 @@
     "avis-kingschance-2026": {
       "seoTitle": "Kings Chance Casino Bewertung 2026 Ohne Wager | GigaBonus",
       "seoDescription": "Ausführliche Kings Chance Casino 2026 Bewertung. Boni ohne Wager, schnelle Auszahlungen und Premium-Spiele."
+    },
+    "avis-vegasplus-2026": {
+      "seoTitle": "VegasPlus Casino Bewertung 2026 Jackpots | GigaBonus",
+      "seoDescription": "Detaillierte VegasPlus Casino 2026 Bewertung. Progressive Jackpots und VIP-Programm."
+    },
+    "avis-uniquecasino-2026": {
+      "seoTitle": "Unique Casino Bewertung 2026 Tägliche Boni | GigaBonus",
+      "seoDescription": "Detaillierte Unique Casino 2026 Bewertung. Tägliche Boni, Jackpots und VIP-Programm."
+    },
+    "avis-spinstar-2026": {
+      "seoTitle": "SpinStar Casino Bewertung 2026 & 700% Bonus | GigaBonus",
+      "seoDescription": "Detaillierte SpinStar Casino 2026 Bewertung. 700% Bonus bis zu 10.000€ + 725 Free Spins von unseren Experten analysiert."
+    },
+    "avis-spindinasty-2026": {
+      "seoTitle": "SpinDinasty Casino Bewertung 2026 Free Spins | GigaBonus",
+      "seoDescription": "Detaillierte SpinDinasty Casino 2026 Bewertung. Großzügige Free Spins und VIP-Programm."
+    },
+    "avis-spinaura-2026": {
+      "seoTitle": "SpinAura Casino Bewertung 2026 200% Bonus | GigaBonus",
+      "seoDescription": "Detaillierte SpinAura Casino 2026 Bewertung. 200% Bonus, Krypto-Jackpots und Bitcoin-Auszahlungen."
+    },
+    "avis-slotrush-2026": {
+      "seoTitle": "SlotRush Casino Bewertung 2026 Express-Auszahlungen | GigaBonus",
+      "seoDescription": "Detaillierte SlotRush Casino 2026 Bewertung. Express-Auszahlungen, Premium-Slots und Turbo-Bonus."
+    },
+    "avis-rxcasino-2026": {
+      "seoTitle": "RXCasino Bewertung 2026 24h Auszahlungen | GigaBonus",
+      "seoDescription": "Detaillierte RXCasino 2026 Bewertung. 24h Auszahlungen, großzügige Boni und moderne Oberfläche."
+    },
+    "avis-roibets-2026": {
+      "seoTitle": "RoiBets Casino Bewertung 2026 Krypto Bonus | GigaBonus",
+      "seoDescription": "Detaillierte RoiBets Casino 2026 Bewertung. Krypto-Casino mit 200% Bonus und Bitcoin-Auszahlungen."
+    },
+    "avis-rockstar-2026": {
+      "seoTitle": "Rockstar Casino Bewertung 2026 VIP Bonus | GigaBonus",
+      "seoDescription": "Detaillierte Rockstar Casino 2026 Bewertung. 300% Willkommensbonus, Rock-VIP-Programm und schnelle Auszahlungen."
+    },
+    "avis-playregal-2026": {
+      "seoTitle": "PlayRegal Casino Bewertung 2026 Royal Bonus | GigaBonus",
+      "seoDescription": "Detaillierte PlayRegal Casino 2026 Bewertung. Royal Bonus, Cashback und schnelle Auszahlungen."
+    },
+    "avis-megawin-2026": {
+      "seoTitle": "MegaWin Casino Bewertung 2026 Highroller Bonus | GigaBonus",
+      "seoDescription": "Detaillierte MegaWin Casino 2026 Bewertung. Highroller Bonus, große Gewinne und VIP-Programm."
+    },
+    "avis-magicalspin-2026": {
+      "seoTitle": "MagicalSpin Casino Bewertung 2026 VIP Bonus | GigaBonus",
+      "seoDescription": "Detaillierte MagicalSpin Casino 2026 Bewertung. Magisches VIP-Programm, großzügige Boni und Premium-Spiele."
+    },
+    "avis-machance-2026": {
+      "seoTitle": "MaChance Casino Bewertung 2026 VIP Belohnungen | GigaBonus",
+      "seoDescription": "Detaillierte MaChance Casino 2026 Bewertung. VIP-Belohnungsprogramm, Jackpots und exklusive Boni."
+    },
+    "avis-luckytrunk-2026": {
+      "seoTitle": "LuckyTrunk Casino Bewertung 2026 300% Bonus | GigaBonus",
+      "seoDescription": "Detaillierte LuckyTrunk Casino 2026 Bewertung. 300% Bonus + Free Spins, moderne Oberfläche und schnelle Auszahlungen."
+    },
+    "avis-luckytreasure-2026": {
+      "seoTitle": "Lucky Treasure Casino Bewertung 2026 200% Bonus | GigaBonus",
+      "seoDescription": "Detaillierte Lucky Treasure Casino 2026 Bewertung. 200% Willkommensbonus, qualitativ hochwertige Spiele und sichere Auszahlungen."
+    },
+    "avis-hotloot-2026": {
+      "seoTitle": "HotLoot Casino Bewertung 2026 Cash Drops Bonus | GigaBonus",
+      "seoDescription": "Detaillierte HotLoot Casino 2026 Bewertung. Tägliche Cash Drops, heiße Boni und schnelle Auszahlungen."
+    },
+    "avis-cleobetra-2026": {
+      "seoTitle": "CléoBetra Casino Bewertung 2026 Elite Bonus | GigaBonus",
+      "seoDescription": "Detaillierte CléoBetra Casino 2026 Bewertung. Elite Bonus, ägyptisches Thema und schnelle Auszahlungen."
+    },
+    "avis-casinointense-2026": {
+      "seoTitle": "CasinoIntense Bewertung 2026 300% Bonus | GigaBonus",
+      "seoDescription": "Detaillierte CasinoIntense 2026 Bewertung. Intensiver 300% Bonus, Premium-Spiele und Express-Auszahlungen."
+    },
+    "avis-bonrush-2026": {
+      "seoTitle": "BonRush Casino Bewertung 2026 1h Auszahlungen | GigaBonus",
+      "seoDescription": "Detaillierte BonRush Casino 2026 Bewertung. Ultra-schnelle Auszahlungen in 1h, großzügige Boni und moderne Oberfläche."
     }
   },
   "CasinoPages": {
@@ -2208,6 +2326,228 @@
         "exclusiveGames": {
           "title": "Exklusive Kristall Spiele",
           "description": "Exklusive Mini-Spiele mit Kristall-Themen, wertvolle Schätze und spektakuläre Animationen."
+        }
+      }
+    },
+    "goldendragon": {
+      "seo": {
+        "title": "🐉 GoldenDragon Casino 2026 : Bonus 450% Sans Wager jusqu'à 4500€ + 1800 FS | GigaBonus",
+        "description": "💎 GoldenDragon : Bonus 450% Sans Wager jusqu'à 4500€ | Retraits LIBRES | Thème dragon doré exclusif | 18 méthodes paiement | Dépôt 40€ ⚡",
+        "keywords": "goldendragon casino, bonus sans wager, casino sans conditions, thème dragon doré casino, bonus 450%, retraits libres, casino 2026, jeux dragon",
+        "ogTitle": "🐉 GoldenDragon Casino : Bonus 450% Sans Wager + Dragon Doré",
+        "ogDescription": "💎 GoldenDragon : Bonus 450% Sans Wager jusqu'à 4500€ | Retraits LIBRES | Thème dragon doré exclusif | 18 méthodes paiement | Dépôt 40€ ⚡",
+        "twitterTitle": "🐉 GoldenDragon Casino : Bonus 450% Sans Wager + Dragon Doré",
+        "twitterDescription": "💎 GoldenDragon : Bonus 450% Sans Wager jusqu'à 4500€ | Retraits LIBRES | Thème dragon doré exclusif | 18 méthodes paiement | Dépôt 40€ ⚡"
+      },
+      "hero": {
+        "title": "🐉 GoldenDragon Casino 2026 : Bonus 450% Sans Wager jusqu'à 4500€ + Thème Dragon Doré Exclusif - Notre Avis Complet",
+        "aboutTitle": "À Propos de GoldenDragon Casino",
+        "description1": "GoldenDragon Casino enflamme le monde des jeux en ligne avec son concept de dragon doré légendaire et son bonus sans wager exceptionnel. Nouvelle plateforme en 2026, elle propose un bonus de bienvenue de 450% jusqu'à 4500€ SANS WAGER - une révolution draconique dorée ! La particularité unique : aucune condition de mise à remplir, vos gains sont immédiatement retirables. Contrairement aux casinos traditionnels qui exigent x30, x40 ou x50 fois le bonus, GoldenDragon vous offre une liberté totale.",
+        "description2": "Mais ce n'est pas tout ! GoldenDragon intègre également des mini-jeux exclusifs avec thème dragon doré, des animations flamboyantes et une expérience de jeu mythique. Le casino met en avant la transparence avec 18 méthodes de paiement variées incluant crypto-monnaies, des retraits instantanés et un support client disponible 24/7.",
+        "description3": "La plateforme se distingue par sa sélection de plus de 7000 jeux, dont des machines à sous dernier cri, des jeux de table en direct, et des mini-jeux exclusifs draconiques dorés. Que vous soyez fan de créatures mythiques ou de bonus généreux, GoldenDragon a tout pour plaire avec son concept unique de dragon doré."
+      },
+      "features": {
+        "title": "Points Forts de GoldenDragon Casino",
+        "noWager": {
+          "title": "Bonus 450% SANS WAGER",
+          "description": "Le bonus de bienvenue de 450% jusqu'à 4500€ n'a aucune condition de mise. Retirez vos gains immédiatement !"
+        },
+        "goldenDragonTheme": {
+          "title": "Thème Dragon Doré Exclusif",
+          "description": "Concept unique de dragon doré légendaire avec animations flamboyantes et expérience de jeu mythique."
+        },
+        "instantWithdrawals": {
+          "title": "Retraits Instantanés",
+          "description": "Vos gains sont retirables instantanément sans délai, avec 18 méthodes de paiement différentes."
+        },
+        "exclusiveGames": {
+          "title": "Jeux Exclusifs Dragon Doré",
+          "description": "Mini-jeux exclusifs avec thème dragon doré, trésors légendaires et animations spectaculaires."
+        }
+      }
+    },
+    "mysticfortune": {
+      "seo": {
+        "title": "🔮 MysticFortune Casino 2026 : Bonus 550% Sans Wager jusqu'à 5500€ + 2200 FS | GigaBonus",
+        "description": "💎 MysticFortune : Bonus 550% Sans Wager jusqu'à 5500€ | Retraits LIBRES | Thème mystique exclusif | 22 méthodes paiement | Dépôt 50€ ⚡",
+        "keywords": "mysticfortune casino, bonus sans wager, casino sans conditions, thème mystique casino, bonus 550%, retraits libres, casino 2026, jeux mystique",
+        "ogTitle": "🔮 MysticFortune Casino : Bonus 550% Sans Wager + Fortune Mystique",
+        "ogDescription": "💎 MysticFortune : Bonus 550% Sans Wager jusqu'à 5500€ | Retraits LIBRES | Thème mystique exclusif | 22 méthodes paiement | Dépôt 50€ ⚡",
+        "twitterTitle": "🔮 MysticFortune Casino : Bonus 550% Sans Wager + Fortune Mystique",
+        "twitterDescription": "💎 MysticFortune : Bonus 550% Sans Wager jusqu'à 5500€ | Retraits LIBRES | Thème mystique exclusif | 22 méthodes paiement | Dépôt 50€ ⚡"
+      },
+      "hero": {
+        "title": "🔮 MysticFortune Casino 2026 : Bonus 550% Sans Wager jusqu'à 5500€ + Thème Mystique Exclusif - Notre Avis Complet",
+        "aboutTitle": "À Propos de MysticFortune Casino",
+        "description1": "MysticFortune Casino envoûte le monde des jeux en ligne avec son concept de fortune mystique et son bonus sans wager exceptionnel. Nouvelle plateforme en 2026, elle propose un bonus de bienvenue de 550% jusqu'à 5500€ SANS WAGER - une révolution mystique ! La particularité unique : aucune condition de mise à remplir, vos gains sont immédiatement retirables. Contrairement aux casinos traditionnels qui exigent x30, x40 ou x50 fois le bonus, MysticFortune vous offre une liberté totale.",
+        "description2": "Mais ce n'est pas tout ! MysticFortune intègre également des mini-jeux exclusifs avec thème mystique, des animations magiques et une expérience de jeu divinatoire. Le casino met en avant la transparence avec 22 méthodes de paiement variées incluant crypto-monnaies, des retraits instantanés et un support client disponible 24/7.",
+        "description3": "La plateforme se distingue par sa sélection de plus de 9000 jeux, dont des machines à sous dernier cri, des jeux de table en direct, et des mini-jeux exclusifs mystiques. Que vous soyez fan de divination ou de bonus généreux, MysticFortune a tout pour plaire avec son concept unique de fortune mystique."
+      },
+      "features": {
+        "title": "Points Forts de MysticFortune Casino",
+        "noWager": {
+          "title": "Bonus 550% SANS WAGER",
+          "description": "Le bonus de bienvenue de 550% jusqu'à 5500€ n'a aucune condition de mise. Retirez vos gains immédiatement !"
+        },
+        "mysticTheme": {
+          "title": "Thème Mystique Exclusif",
+          "description": "Concept unique de fortune mystique avec animations magiques et expérience de jeu divinatoire."
+        },
+        "instantWithdrawals": {
+          "title": "Retraits Instantanés",
+          "description": "Vos gains sont retirables instantanément sans délai, avec 22 méthodes de paiement différentes."
+        },
+        "exclusiveGames": {
+          "title": "Jeux Exclusifs Mystiques",
+          "description": "Mini-jeux exclusifs avec thème mystique, prédictions magiques et animations spectaculaires."
+        }
+      }
+    },
+    "magicalspin": {
+      "seo": {
+        "title": "✨ MagicalSpin Casino 2026: 400% Kein Wager Bonus bis zu 4000€ + 1500 FS | GigaBonus",
+        "description": "💎 MagicalSpin: 400% Kein Wager Bonus bis zu 4000€ | FREIE Auszahlungen | Exklusives magisches Programm | 30 Zahlungsmethoden | 25€ Einzahlung ⚡",
+        "keywords": "magicalspin casino, kein wager bonus, casino ohne bedingungen, magisches programm casino, 400% bonus, freie auszahlungen, casino 2026, magische spiele",
+        "ogTitle": "✨ MagicalSpin Casino: 400% Kein Wager Bonus + Exklusive Magie",
+        "ogDescription": "💎 MagicalSpin: 400% Kein Wager Bonus bis zu 4000€ | FREIE Auszahlungen | Exklusives magisches Programm | 30 Zahlungsmethoden | 25€ Einzahlung ⚡",
+        "twitterTitle": "✨ MagicalSpin Casino: 400% Kein Wager Bonus + Exklusive Magie",
+        "twitterDescription": "💎 MagicalSpin: 400% Kein Wager Bonus bis zu 4000€ | FREIE Auszahlungen | Exklusives magisches Programm | 30 Zahlungsmethoden | 25€ Einzahlung ⚡"
+      },
+      "hero": {
+        "title": "✨ MagicalSpin Casino 2026: 400% Kein Wager Bonus bis zu 4000€ + Exklusives Magisches Programm - Unsere Vollständige Bewertung",
+        "aboutTitle": "Über MagicalSpin Casino",
+        "description1": "MagicalSpin Casino verzaubert die Online-Gaming-Welt mit seinem außergewöhnlichen magischen Programm und revolutionären Kein-Wager-Bonus. Plattform bekannt für ihre magische Atmosphäre, bietet einen Willkommensbonus von 400% bis zu 4000€ KEIN WAGER - eine einzigartige magische Erfahrung! Das außergewöhnliche Merkmal: keine Umsatzbedingungen zu erfüllen, Ihre Gewinne sind sofort abhebbar. Im Gegensatz zu traditionellen Casinos, die x30, x40 oder x50 Mal den Bonus fordern, bietet MagicalSpin Ihnen vollständige Freiheit mit magischen Vorteilen.",
+        "description2": "Aber das ist noch nicht alles! MagicalSpin integriert auch ein mehrstufiges magisches Programm mit verzauberten Belohnungen, täglichen magischen Boni und exklusiven Events. Das Casino betont Transparenz mit 30 verschiedenen Zahlungsmethoden einschließlich Kryptowährungen, sofortigen Auszahlungen und magischem Kundensupport verfügbar 24/7.",
+        "description3": "Die Plattform zeichnet sich durch ihre Auswahl von über 5000 Spielen aus, einschließlich modernster magischer Spielautomaten, Live-Tischspiele mit verzauberten Dealern und exklusiven magischen Mini-Spielen. Ob Anfänger oder Zauberer der Spiele, MagicalSpin hat mit seinem außergewöhnlichen Treueprogramm und Kein-Wager-Boni alles zu bieten."
+      },
+      "features": {
+        "title": "MagicalSpin Casino Stärken",
+        "noWager": {
+          "title": "400% KEIN WAGER Bonus",
+          "description": "Der 400% Willkommensbonus bis zu 4000€ hat keine Umsatzbedingungen. Heben Sie Ihre Gewinne sofort ab!"
+        },
+        "magicalProgram": {
+          "title": "Exklusives Magisches Programm",
+          "description": "Mehrstufiges Programm mit verzauberten Belohnungen, täglichen magischen Boni und exklusiven Events."
+        },
+        "instantWithdrawals": {
+          "title": "Magische Sofortige Auszahlungen",
+          "description": "Ihre Gewinne sind sofort ohne Verzögerung abhebbar, mit 30 verschiedenen Zahlungsmethoden."
+        },
+        "exclusiveGames": {
+          "title": "Exklusive Magische Spiele",
+          "description": "Exklusive magische Mini-Spiele, verzauberte Runden und Spiele mit spektakulären magischen Themen."
+        }
+      }
+    },
+    "madcasino": {
+      "seo": {
+        "title": "🎲 MadCasino 2026: 100% Bonus + 200 Freispiele bis zu 1000€ | GigaBonus",
+        "description": "💎 MadCasino: 100% Bonus + 200 Freispiele bis zu 1000€ | Moderne Oberfläche | Schnelle Auszahlungen | 20 Zahlungsmethoden | 20€ Einzahlung ⚡",
+        "keywords": "madcasino, 100% bonus, freispiele, modernes casino, schnelle auszahlungen, casino 2026, tischspiele, spielautomaten",
+        "ogTitle": "🎲 MadCasino: 100% Bonus + 200 Freispiele",
+        "ogDescription": "💎 MadCasino: 100% Bonus + 200 Freispiele bis zu 1000€ | Moderne Oberfläche | Schnelle Auszahlungen | 20 Zahlungsmethoden | 20€ Einzahlung ⚡",
+        "twitterTitle": "🎲 MadCasino: 100% Bonus + 200 Freispiele",
+        "twitterDescription": "💎 MadCasino: 100% Bonus + 200 Freispiele bis zu 1000€ | Moderne Oberfläche | Schnelle Auszahlungen | 20 Zahlungsmethoden | 20€ Einzahlung ⚡"
+      },
+      "hero": {
+        "title": "🎲 MadCasino 2026: 100% Bonus + 200 Freispiele bis zu 1000€ + Moderne Oberfläche - Unsere Vollständige Bewertung",
+        "aboutTitle": "Über MadCasino",
+        "description1": "MadCasino revolutioniert die Online-Gaming-Welt mit seiner modernen Oberfläche und außergewöhnlichem Willkommensbonus. Innovative Plattform bekannt für ihr elegantes Design, bietet einen 100% Bonus bis zu 1000€ + 200 Freispiele - ein großzügiges Angebot für neue Spieler! Das einzigartige Merkmal: eine ultra-moderne Benutzeroberfläche mit intuitiver Navigation und hochauflösenden Grafiken, die ein immersives und müheloses Spielerlebnis schafft.",
+        "description2": "Aber das ist noch nicht alles! MadCasino integriert auch erweiterte Funktionen wie HD Live-Tischspiele, tägliche Turniere und ein progressives Treueprogramm. Das Casino betont Geschwindigkeit mit 20 verschiedenen Zahlungsmethoden einschließlich Kryptowährungen, Auszahlungen bearbeitet in weniger als 24h und reaktionsschnellem Kundensupport verfügbar 24/7.",
+        "description3": "Die Plattform zeichnet sich durch ihre Auswahl von über 3000 Spielen aus, einschließlich modernster Spielautomaten, Tischspiele mit professionellen Dealern und exklusiven intern entwickelten Spielen. Ob Anfänger oder erfahrener Spieler, MadCasino hat mit seiner modernen Oberfläche und attraktiven Boni alles zu bieten."
+      },
+      "features": {
+        "title": "MadCasino Stärken",
+        "modernInterface": {
+          "title": "Ultra-Moderne Oberfläche",
+          "description": "Elegantes Design mit intuitiver Navigation und hochauflösenden Grafiken für ein immersives Erlebnis."
+        },
+        "generousBonus": {
+          "title": "100% Bonus + 200 Freispiele",
+          "description": "Großzügiges Willkommensangebot mit 100% bis zu 1000€ + 200 Freispiele auf beliebten Spielen."
+        },
+        "fastWithdrawals": {
+          "title": "Schnelle Auszahlungen",
+          "description": "Auszahlungen bearbeitet in weniger als 24h mit 20 verschiedenen Zahlungsmethoden für Ihre Bequemlichkeit."
+        },
+        "exclusiveGames": {
+          "title": "Exklusive Spiele",
+          "description": "Intern entwickelte Spiele und tägliche Turniere für ein einzigartiges Spielerlebnis."
+        }
+      }
+    },
+    "machance": {
+      "seo": {
+        "title": "🎰 MaChance Casino 2026: 350% Kein Wager Bonus bis zu 3500€ + 1200 FS | GigaBonus",
+        "description": "💎 MaChance: 350% Kein Wager Bonus bis zu 3500€ | FREIE Auszahlungen | Exklusives VIP-Programm | 25 Zahlungsmethoden | 30€ Einzahlung ⚡",
+        "keywords": "machance casino, kein wager bonus, casino ohne bedingungen, vip programm casino, 350% bonus, freie auszahlungen, casino 2026, vip spiele",
+        "ogTitle": "🎰 MaChance Casino: 350% Kein Wager Bonus + Exklusives VIP",
+        "ogDescription": "💎 MaChance: 350% Kein Wager Bonus bis zu 3500€ | FREIE Auszahlungen | Exklusives VIP-Programm | 25 Zahlungsmethoden | 30€ Einzahlung ⚡",
+        "twitterTitle": "🎰 MaChance Casino: 350% Kein Wager Bonus + Exklusives VIP",
+        "twitterDescription": "💎 MaChance: 350% Kein Wager Bonus bis zu 3500€ | FREIE Auszahlungen | Exklusives VIP-Programm | 25 Zahlungsmethoden | 30€ Einzahlung ⚡"
+      },
+      "hero": {
+        "title": "🎰 MaChance Casino 2026: 350% Kein Wager Bonus bis zu 3500€ + Exklusives VIP-Programm - Unsere Vollständige Bewertung",
+        "aboutTitle": "Über MaChance Casino",
+        "description1": "MaChance Casino dominiert die Online-Gaming-Welt mit seinem außergewöhnlichen VIP-Programm und revolutionären Kein-Wager-Bonus. Etablierte Plattform bekannt für ihre Zuverlässigkeit, bietet einen Willkommensbonus von 350% bis zu 3500€ KEIN WAGER - eine einzigartige VIP-Gelegenheit! Das außergewöhnliche Merkmal: keine Umsatzbedingungen zu erfüllen, Ihre Gewinne sind sofort abhebbar. Im Gegensatz zu traditionellen Casinos, die x30, x40 oder x50 Mal den Bonus fordern, bietet MaChance Ihnen vollständige Freiheit mit VIP-Vorteilen.",
+        "description2": "Aber das ist noch nicht alles! MaChance integriert auch ein mehrstufiges VIP-Programm mit exklusiven Belohnungen, dedizierten Account-Managern und privaten VIP-Events. Das Casino betont Transparenz mit 25 verschiedenen Zahlungsmethoden einschließlich Kryptowährungen, sofortigen Auszahlungen und VIP-Kundensupport verfügbar 24/7.",
+        "description3": "Die Plattform zeichnet sich durch ihre Auswahl von über 4000 Spielen aus, einschließlich modernster Spielautomaten, Live-Tischspiele mit VIP-Dealern und exklusiven Turnieren. Ob Anfänger oder VIP-Spieler, MaChance hat mit seinem außergewöhnlichen Treueprogramm und Kein-Wager-Boni alles zu bieten."
+      },
+      "features": {
+        "title": "MaChance Casino Stärken",
+        "noWager": {
+          "title": "350% KEIN WAGER Bonus",
+          "description": "Der 350% Willkommensbonus bis zu 3500€ hat keine Umsatzbedingungen. Heben Sie Ihre Gewinne sofort ab!"
+        },
+        "vipProgram": {
+          "title": "Exklusives VIP-Programm",
+          "description": "Mehrstufiges Programm mit exklusiven Belohnungen, dediziertem Manager und privaten Events."
+        },
+        "instantWithdrawals": {
+          "title": "VIP Sofortige Auszahlungen",
+          "description": "Ihre Gewinne sind sofort ohne Verzögerung abhebbar, mit 25 verschiedenen Zahlungsmethoden."
+        },
+        "exclusiveGames": {
+          "title": "Exklusive VIP-Spiele",
+          "description": "Exklusive Turniere, VIP-Tische mit dedizierten Dealern und High-Roller-Spiele."
+        }
+      }
+    },
+    "luckytreasure": {
+      "seo": {
+        "title": "🏆 Lucky Treasure Casino 2026: 200% Bonus bis zu 1500€ + 250 Freispiele | GigaBonus",
+        "description": "💎 Lucky Treasure: 200% Bonus bis zu 1500€ + 250 Freispiele | Exklusiver Schatz | 15 Zahlungsmethoden | 25€ Einzahlung ⚡",
+        "keywords": "luckytreasure, 200% bonus, freispiele, exklusiver schatz, glückscasino, casino 2026, spielautomaten, tischspiele",
+        "ogTitle": "🏆 Lucky Treasure: 200% Bonus + Exklusiver Schatz",
+        "ogDescription": "💎 Lucky Treasure: 200% Bonus bis zu 1500€ + 250 Freispiele | Exklusiver Schatz | 15 Zahlungsmethoden | 25€ Einzahlung ⚡",
+        "twitterTitle": "🏆 Lucky Treasure: 200% Bonus + Exklusiver Schatz",
+        "twitterDescription": "💎 Lucky Treasure: 200% Bonus bis zu 1500€ + 250 Freispiele | Exklusiver Schatz | 15 Zahlungsmethoden | 25€ Einzahlung ⚡"
+      },
+      "hero": {
+        "title": "🏆 Lucky Treasure Casino 2026: 200% Bonus bis zu 1500€ + 250 Freispiele + Exklusiver Schatz - Unsere Vollständige Bewertung",
+        "aboutTitle": "Über Lucky Treasure",
+        "description1": "Lucky Treasure Casino enthüllt eine Welt versteckter Schätze mit seinem außergewöhnlichen Bonus und exklusivem Schatzprogramm. Glücksplattform bekannt für ihre großzügigen Belohnungen, bietet einen Willkommensbonus von 200% bis zu 1500€ + 250 Freispiele - ein einzigartiges Glücksangebot! Das außergewöhnliche Merkmal: ein mehrstufiges Schatzprogramm mit Geheimtruhen, täglichen Belohnungen und progressiven Glücksboni.",
+        "description2": "Aber das ist noch nicht alles! Lucky Treasure integriert auch glückliche Funktionen wie exklusive Schatzspiele, tägliche Schatzsuchen und ein glückliches Treueprogramm. Das Casino betont Glück mit 15 verschiedenen Zahlungsmethoden einschließlich Kryptowährungen, schnellen Auszahlungen und glücklichem Kundensupport verfügbar 24/7.",
+        "description3": "Die Plattform zeichnet sich durch ihre Auswahl von über 3500 Spielen aus, einschließlich neuesten Generation glücklicher Spielautomaten, Tischspiele mit glücklichen Dealern und exklusiven Schatz-Mini-Spielen. Ob Anfänger oder Schatzsucher, Lucky Treasure hat mit seinem außergewöhnlichen Schatzprogramm und glücklichen Boni alles zu bieten."
+      },
+      "features": {
+        "title": "Lucky Treasure Stärken",
+        "treasureProgram": {
+          "title": "Exklusives Schatzprogramm",
+          "description": "Mehrstufiges Programm mit Geheimtruhen, täglichen Belohnungen und progressiven Glücksboni."
+        },
+        "generousBonus": {
+          "title": "200% Bonus + 250 Freispiele",
+          "description": "Glücksangebot mit 200% bis zu 1500€ + 250 Freispiele auf beliebten Spielen."
+        },
+        "fastWithdrawals": {
+          "title": "Glückliche Schnelle Auszahlungen",
+          "description": "Schnelle Auszahlungen mit 15 verschiedenen Zahlungsmethoden für Ihr Glück."
+        },
+        "exclusiveGames": {
+          "title": "Exklusive Schatzspiele",
+          "description": "Exklusive Schatz-Mini-Spiele, tägliche Schatzsuchen und Geheimtruhen."
         }
       }
     }
@@ -5543,6 +5883,34 @@
           }
         }
       }
+    }
+  },
+  "Common": {
+    "playNow": "Jetzt Spielen",
+    "play": "Spielen",
+    "sections": {
+      "paymentMethods": "Akzeptierte Zahlungsmethoden",
+      "howToRegister": "Wie man sich registriert",
+      "faq": "FAQ - Häufig gestellte Fragen",
+      "prosAndCons": "Vor- und Nachteile",
+      "offersAndPromotions": "Details zu Angeboten und Promotionen",
+      "withdrawalMethods": "Auszahlungsmethoden und Fristen",
+      "gamesCatalog": "Spielkatalog",
+      "strategies": "Strategien zur Maximierung Ihrer Gewinne",
+      "security": "Sicherheit und Legalität",
+      "verdict": "Unsere Bewertung: Das Urteil",
+      "testimonials": "Bewertungen unserer Tester",
+      "cta": "Bereit, {casino} Casino zu entdecken?"
+    },
+    "labels": {
+      "minDeposit": "Mindesteinzahlung",
+      "wager": "Wettanforderungen",
+      "withdrawals": "Auszahlungen",
+      "fair": "Fair",
+      "accessible": "Zugänglich",
+      "fast": "Schnell",
+      "secure": "Sicher",
+      "sslLicense": "SSL-Lizenz"
     }
   }
 }

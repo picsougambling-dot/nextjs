@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, CheckCircle2, Shield, Zap, CreditCard, Trophy, Star } from "lucide-react";
@@ -14,6 +15,9 @@ import { casinos } from "@/data/casinos";
 
 export default function SpinStarPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.spinstar');
   const casino = casinos.find(c => c.name === "SpinStar")!;
 
 
@@ -221,7 +225,7 @@ export default function SpinStarPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -251,7 +255,7 @@ export default function SpinStarPage() {
 
               {/* Payment Methods */}
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => {
                     const methodLogos: Record<string, string> = {
@@ -289,7 +293,7 @@ export default function SpinStarPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions SpinStar
+              🎁 {tCommon('sections.offersAndPromotions')} SpinStar
             </h2>
             
             <div className="grid grid-cols-1 max-w-3xl mx-auto">
@@ -316,7 +320,7 @@ export default function SpinStarPage() {
                       >
                         <a href={casino.playUrl} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-5 h-5 mr-2" />
-                          Jouer Maintenant
+                          {tCommon('playNow')}
                         </a>
                       </Button>
                     </div>
@@ -326,9 +330,9 @@ export default function SpinStarPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur SpinStar Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur SpinStar Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur SpinStar</strong> est rapide et intuitive.
@@ -449,9 +453,9 @@ export default function SpinStarPage() {
             </div>
           </section>
 
-          {/* Catalogue de Jeux */}
+          {/* {tCommon('sections.gamesCatalog')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🎮 Catalogue de Jeux SpinStar Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🎮 {tCommon('sections.gamesCatalog')} SpinStar Casino</h2>
             
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-6">
               <div className="glass-card rounded-xl p-6">
@@ -643,7 +647,7 @@ export default function SpinStarPage() {
 
           {/* Stratégies pour Maximiser les Gains */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">💡 Stratégies pour Maximiser Vos Gains</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">💡 {tCommon('sections.strategies')}</h2>
             
             <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto mb-6">
               <div className="glass-card rounded-xl p-6">
@@ -725,9 +729,9 @@ export default function SpinStarPage() {
             </div>
           </section>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🔒 Sécurité et Légalité SpinStar Casino</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🔒 {tCommon('sections.security')} SpinStar Casino</h2>
             
             <div className="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-6">
               <div className="glass-card rounded-xl p-6">
@@ -933,9 +937,9 @@ export default function SpinStarPage() {
             </div>
           </section>
 
-          {/* Avis de Nos Testeurs */}
+          {/* {tCommon('sections.testimonials')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">👥 Avis de Nos Testeurs GigaBonus</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">👥 {tCommon('sections.testimonials')} GigaBonus</h2>
             
             <div className="space-y-6 max-w-5xl mx-auto">
               <div className="glass-card rounded-xl p-6 flex gap-4">

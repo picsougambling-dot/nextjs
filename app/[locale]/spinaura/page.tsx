@@ -2,6 +2,7 @@
 
 import { useRef, useEffect } from "react";
 import { Link } from '@/i18n/navigation';
+import { useLocale, useTranslations } from 'next-intl';
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { 
@@ -27,6 +28,9 @@ import { casinos } from "@/data/casinos";
 
 export default function SpinAuraPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
+  const tCommon = useTranslations('Common');
+  const locale = useLocale();
+  const t = useTranslations('CasinoPages.spinaura');
   const casino = casinos.find(c => c.name === "SpinAura")!;
 
 
@@ -287,7 +291,7 @@ export default function SpinAuraPage() {
                   </div>
                   <a href={casino.playUrl} target="_blank" rel="sponsored noopener noreferrer">
                     <Button size="lg" className="text-xl px-12 py-7 mt-6 shadow-2xl hover:scale-105 transition-transform">
-                      Jouer Maintenant <ExternalLink className="ml-2 h-6 w-6" />
+                      {tCommon('playNow')} <ExternalLink className="ml-2 h-6 w-6" />
                     </Button>
                   </a>
                 </div>
@@ -296,7 +300,7 @@ export default function SpinAuraPage() {
 
             <div className="p-8 md:p-12">
               <h1 className="text-3xl md:text-4xl font-bold text-center text-foreground mb-8">
-                Avis SpinAura Casino 2026 : Bonus 450% jusqu'à 15 000€ - Notre Test Complet
+                {t('hero.title')}
               </h1>
 
               <div className="text-center mb-8">
@@ -346,7 +350,7 @@ export default function SpinAuraPage() {
                 >
                   <a href={casino.playUrl} target="_blank" rel="noopener noreferrer sponsored">
                     <ExternalLink className="w-6 h-6 mr-2" />
-                    Jouer Maintenant
+                    {tCommon('playNow')}
                   </a>
                 </Button>
               </div>
@@ -375,7 +379,7 @@ export default function SpinAuraPage() {
               </div>
 
               <div className="border-t border-border pt-6">
-                <h3 className="text-xl font-semibold text-foreground mb-4">Méthodes de Paiement Acceptées</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4">{tCommon('sections.paymentMethods')}</h3>
                 <div className="flex flex-wrap gap-4">
                   {casino.methods.map((method) => (
                     <img 
@@ -396,7 +400,7 @@ export default function SpinAuraPage() {
           {/* Offres et Promotions */}
           <section className="mb-12">
             <h2 className="text-4xl font-bold text-center text-foreground mb-8">
-              🎁 Détail des Offres et Promotions SpinAura
+              🎁 {tCommon('sections.offersAndPromotions')} SpinAura
             </h2>
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
@@ -433,9 +437,9 @@ export default function SpinAuraPage() {
             </div>
           </section>
 
-          {/* Comment S'inscrire */}
+          {/* {tCommon('sections.howToRegister')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 Comment S'inscrire sur SpinAura Casino ?</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-6">📝 {tCommon('sections.howToRegister')} sur SpinAura Casino ?</h2>
             <div className="space-y-6 text-foreground max-w-4xl mx-auto">
               <p className="leading-relaxed">
                 L'<strong className="text-primary">inscription sur SpinAura</strong> est rapide et simple.
@@ -559,9 +563,9 @@ export default function SpinAuraPage() {
             </div>
           </section>
 
-          {/* Catalogue de Jeux */}
+          {/* {tCommon('sections.gamesCatalog')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🎮 Catalogue de Jeux SpinAura</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🎮 {tCommon('sections.gamesCatalog')} SpinAura</h2>
             <p className="text-center text-muted-foreground mb-8 max-w-3xl mx-auto">
               SpinAura propose une <strong className="text-foreground">ludothèque premium de plus de 3000 jeux</strong> des meilleurs 
               éditeurs mondiaux. Découvrez notre sélection par catégorie.
@@ -686,9 +690,9 @@ export default function SpinAuraPage() {
             </div>
           </section>
 
-          {/* Sécurité et Légalité */}
+          {/* {tCommon('sections.security')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🔒 Sécurité et Légalité de SpinAura</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">🔒 {tCommon('sections.security')} de SpinAura</h2>
             
             <div className="grid md:grid-cols-2 gap-8 mb-8">
               <div>
@@ -1008,9 +1012,9 @@ export default function SpinAuraPage() {
             </div>
           </section>
 
-          {/* Avis de Nos Testeurs */}
+          {/* {tCommon('sections.testimonials')} */}
           <section className="glass-card rounded-2xl p-8 mb-12">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">💬 Avis de Nos Testeurs High-Rollers</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">💬 {tCommon('sections.testimonials')} High-Rollers</h2>
             
             <div className="space-y-6 max-w-4xl mx-auto">
               <div className="glass-card rounded-xl p-6 flex gap-4">
