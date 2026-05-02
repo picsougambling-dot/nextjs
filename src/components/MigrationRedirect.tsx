@@ -151,30 +151,30 @@ interface Props {
 }
 
 export default function MigrationRedirect({ language }: Props) {
-  const [mounted, setMounted] = useState(false);
   const [seconds, setSeconds] = useState(COUNTDOWN_SECONDS);
-  const [shouldRender, setShouldRender] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
   const lang: Lang = (translations[language as Lang] ? language : "en") as Lang;
   const t = translations[lang];
 
   useEffect(() => {
-    setMounted(true);
-    if (isBot()) return;
-    setShouldRender(true);
+    if (isBot()) {
+      setHidden(true);
+      return;
+    }
   }, []);
 
   useEffect(() => {
-    if (!shouldRender) return;
+    if (hidden) return;
     if (seconds <= 0) {
       window.location.replace(NEW_SITE_URL);
       return;
     }
     const id = setTimeout(() => setSeconds((s) => s - 1), 1000);
     return () => clearTimeout(id);
-  }, [seconds, shouldRender]);
+  }, [seconds, hidden]);
 
-  if (!mounted || !shouldRender) return null;
+  if (hidden) return null;
 
   return (
     <div
